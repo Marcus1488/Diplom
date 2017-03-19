@@ -7,13 +7,13 @@ import {MaterialModule} from '@angular/material';
 import {HashLocationStrategy, LocationStrategy} from "@angular/common";
 
 import {AppComponent} from './app.component';
-import {HeaderComponent} from './header/header.component';
 import {appRouting} from "./app.routing";
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent
+    HomeComponent
   ],
   imports: [
     BrowserModule,
