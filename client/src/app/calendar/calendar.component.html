@@ -1,0 +1,13 @@
+<dx-calendar #calendar
+             id="calendar-container"
+             [min]="minDateValue"
+             [max]="maxDateValue"
+             [firstDayOfWeek]="firstDay"
+             [disabled]="false"
+             [(value)]="currentValue"
+             [zoomLevel]="zoomLevels[0]"
+             [cellTemplate]="cellTemplate">
+                <span *dxTemplate="let cell of 'custom'" [ngClass]="getCellCssClass(cell.date)">
+                    {{cell.text}}
+                </span>
+</dx-calendar>

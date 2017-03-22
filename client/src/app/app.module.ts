@@ -1,19 +1,28 @@
+import 'hammerjs';
 import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
 import {FormsModule} from '@angular/forms';
 import {HttpModule} from '@angular/http';
 import {FlexLayoutModule} from '@angular/flex-layout';
 import {MaterialModule} from '@angular/material';
-import {HashLocationStrategy, LocationStrategy} from "@angular/common";
 
 import {AppComponent} from './app.component';
 import {appRouting} from "./app.routing";
-import { HomeComponent } from './home/home.component';
+import {HomeComponent} from './home/home.component';
+import {InfoStudentsComponent} from './info-students/info-students.component';
+
+import {
+  DxDataGridModule,
+  DxCalendarModule
+} from 'devextreme-angular';
+import { CalendarComponent } from './calendar/calendar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    InfoStudentsComponent,
+    CalendarComponent
   ],
   imports: [
     BrowserModule,
@@ -21,9 +30,11 @@ import { HomeComponent } from './home/home.component';
     HttpModule,
     appRouting,
     FlexLayoutModule,
-    MaterialModule
+    MaterialModule,
+    DxDataGridModule,
+    DxCalendarModule
   ],
-  providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule {
