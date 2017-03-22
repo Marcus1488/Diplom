@@ -1,4 +1,5 @@
 <dx-calendar #calendar
+             (onValueChanged)="showEvents()"
              id="calendar-container"
              [min]="minDateValue"
              [max]="maxDateValue"
@@ -7,7 +8,5 @@
              [(value)]="currentValue"
              [zoomLevel]="zoomLevels[0]"
              [cellTemplate]="cellTemplate">
-                <span *dxTemplate="let cell of 'custom'" [ngClass]="getCellCssClass(cell.date)">
-                    {{cell.text}}
-                </span>
+
 </dx-calendar>
