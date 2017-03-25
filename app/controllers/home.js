@@ -7,5 +7,9 @@ module.exports = function (app) {
 };
 
 router.get('/', function (req, res, next) {
-  res.end();
+  res.render('index');
+});
+
+router.get('/students', function (req, res, next) {
+  res.render('index');
 });
