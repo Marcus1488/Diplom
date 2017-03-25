@@ -1,5 +1,37 @@
-<dx-data-grid
-  id="gridContainer"
-  [dataSource]="customers"
-  [columns]="['CompanyName', 'City', 'State', 'Phone', 'Fax']">
-</dx-data-grid>
+<md-tab-group>
+  <md-tab label="Анкетні дані">
+    <dx-data-grid
+      id="gridContainer"
+      [dataSource]="customers"
+      [columns]="['Студ білет', 'Паспортні дані', 'Свідоцтво', 'Копія приписного']">
+    </dx-data-grid>
+  </md-tab>
+  <md-tab label="Пільговики">
+    <dx-data-grid
+      id="gridContainer"
+      [dataSource]="customers"
+      [columns]="['Студ білет', 'Паспортні дані', 'Свідоцтво', 'Копія приписного']">
+    </dx-data-grid>
+  </md-tab>
+  <md-tab label="Неповні сім'ї">
+    <dx-data-grid
+      id="gridContainer"
+      [dataSource]="customers"
+      [columns]="['Студ білет', 'Паспортні дані', 'Свідоцтво', 'Копія приписного']">
+    </dx-data-grid>
+  </md-tab>
+  <md-tab label="Актив групи">
+    <dx-data-grid
+      id="gridContainer"
+      [dataSource]="customers"
+      [columns]="['Студ білет', 'Паспортні дані', 'Свідоцтво', 'Копія приписного']">
+    </dx-data-grid>
+  </md-tab>
+  <md-tab label="Загальна">
+    <dx-data-grid
+      id="gridContainer"
+      [dataSource]="customers"
+      [columns]="['Студ білет', 'Паспортні дані', 'Свідоцтво', 'Копія приписного']">
+    </dx-data-grid>
+  </md-tab>
+</md-tab-group>

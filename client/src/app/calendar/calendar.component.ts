@@ -17,7 +17,7 @@ export class CalendarComponent implements OnInit {
   constructor() { }
 
   showEvents() {
-    console.log('hi')
+    console.log(this.currentValue)
   }
 
   ngOnInit() {
