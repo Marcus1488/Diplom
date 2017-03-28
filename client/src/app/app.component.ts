@@ -6,4 +6,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  private openedMenu = true;
+  private openedCalendar = true;
+
+  constructor() {
+
+  }
+
+  toggleMenu() {
+    this.openedMenu = !this.openedMenu;
+  }
+
+  toggleCalendar() {
+    this.openedCalendar = !this.openedCalendar;
+  }
 }
