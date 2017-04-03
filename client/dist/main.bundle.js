@@ -1,6 +1,6 @@
 webpackJsonp([1,4],{
 
-/***/ 1144:
+/***/ 1145:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -30,8 +30,8 @@ var AppComponent = (function () {
     AppComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'app-root',
-            template: __webpack_require__(1563),
-            styles: [__webpack_require__(1532)]
+            template: __webpack_require__(1565),
+            styles: [__webpack_require__(1533)]
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);
@@ -41,25 +41,26 @@ var AppComponent = (function () {
 
 /***/ }),
 
-/***/ 1145:
+/***/ 1146:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_hammerjs__ = __webpack_require__(1536);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_hammerjs__ = __webpack_require__(1538);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_hammerjs___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_hammerjs__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__ = __webpack_require__(102);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_forms__ = __webpack_require__(27);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_http__ = __webpack_require__(422);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_flex_layout__ = __webpack_require__(1061);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__angular_material__ = __webpack_require__(1097);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__app_component__ = __webpack_require__(1144);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__app_routing__ = __webpack_require__(1146);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_flex_layout__ = __webpack_require__(1062);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__angular_material__ = __webpack_require__(1098);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__app_component__ = __webpack_require__(1145);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__app_routing__ = __webpack_require__(1147);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__home_home_component__ = __webpack_require__(702);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__info_students_info_students_component__ = __webpack_require__(703);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_devextreme_angular__ = __webpack_require__(1219);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_devextreme_angular__ = __webpack_require__(1220);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_devextreme_angular___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_11_devextreme_angular__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__calendar_calendar_component__ = __webpack_require__(1147);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__calendar_calendar_component__ = __webpack_require__(1148);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__performance_quality_control_performance_quality_control_component__ = __webpack_require__(704);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -83,6 +84,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
 var AppModule = (function () {
     function AppModule() {
     }
@@ -92,7 +94,8 @@ var AppModule = (function () {
                 __WEBPACK_IMPORTED_MODULE_7__app_component__["a" /* AppComponent */],
                 __WEBPACK_IMPORTED_MODULE_9__home_home_component__["a" /* HomeComponent */],
                 __WEBPACK_IMPORTED_MODULE_10__info_students_info_students_component__["a" /* InfoStudentsComponent */],
-                __WEBPACK_IMPORTED_MODULE_12__calendar_calendar_component__["a" /* CalendarComponent */]
+                __WEBPACK_IMPORTED_MODULE_12__calendar_calendar_component__["a" /* CalendarComponent */],
+                __WEBPACK_IMPORTED_MODULE_13__performance_quality_control_performance_quality_control_component__["a" /* PerformanceQualityControlComponent */]
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__["a" /* BrowserModule */],
@@ -115,14 +118,16 @@ var AppModule = (function () {
 
 /***/ }),
 
-/***/ 1146:
+/***/ 1147:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_router__ = __webpack_require__(1133);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_router__ = __webpack_require__(1134);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__home_home_component__ = __webpack_require__(702);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__info_students_info_students_component__ = __webpack_require__(703);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__performance_quality_control_performance_quality_control_component__ = __webpack_require__(704);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return appRouting; });
+
 
 
 
@@ -134,6 +139,10 @@ var appRoutes = [
     {
         path: "students",
         component: __WEBPACK_IMPORTED_MODULE_2__info_students_info_students_component__["a" /* InfoStudentsComponent */],
+    },
+    {
+        path: "studies",
+        component: __WEBPACK_IMPORTED_MODULE_3__performance_quality_control_performance_quality_control_component__["a" /* PerformanceQualityControlComponent */],
     }
 ];
 var appRouting = __WEBPACK_IMPORTED_MODULE_0__angular_router__["a" /* RouterModule */].forRoot(appRoutes);
@@ -141,7 +150,7 @@ var appRouting = __WEBPACK_IMPORTED_MODULE_0__angular_router__["a" /* RouterModu
 
 /***/ }),
 
-/***/ 1147:
+/***/ 1148:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -175,8 +184,8 @@ var CalendarComponent = (function () {
     CalendarComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'calendar',
-            template: __webpack_require__(1564),
-            styles: [__webpack_require__(1533)]
+            template: __webpack_require__(1566),
+            styles: [__webpack_require__(1534)]
         }), 
         __metadata('design:paramtypes', [])
     ], CalendarComponent);
@@ -186,7 +195,7 @@ var CalendarComponent = (function () {
 
 /***/ }),
 
-/***/ 1148:
+/***/ 1149:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -202,10 +211,10 @@ var environment = {
 
 /***/ }),
 
-/***/ 1532:
+/***/ 1533:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(125)();
+exports = module.exports = __webpack_require__(107)();
 // imports
 
 
@@ -220,10 +229,10 @@ module.exports = module.exports.toString();
 
 /***/ }),
 
-/***/ 1533:
+/***/ 1534:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(125)();
+exports = module.exports = __webpack_require__(107)();
 // imports
 
 
@@ -238,10 +247,10 @@ module.exports = module.exports.toString();
 
 /***/ }),
 
-/***/ 1534:
+/***/ 1535:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(125)();
+exports = module.exports = __webpack_require__(107)();
 // imports
 
 
@@ -256,10 +265,10 @@ module.exports = module.exports.toString();
 
 /***/ }),
 
-/***/ 1535:
+/***/ 1536:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(125)();
+exports = module.exports = __webpack_require__(107)();
 // imports
 
 
@@ -274,45 +283,70 @@ module.exports = module.exports.toString();
 
 /***/ }),
 
-/***/ 1563:
-/***/ (function(module, exports) {
+/***/ 1537:
+/***/ (function(module, exports, __webpack_require__) {
 
-module.exports = "<header class=\"min-width-content\">\n  <div fxFill class=\"flex-container\" fxLayout=\"row\" fxLayoutAlign=\"space-around center\">\n    <div fxFlex=\"25\">\n      <img src=\"\">\n    </div>\n    <div fxFlex=\"50\" fxLayout=\"row\" fxLayoutAlign=\"center\">\n      <h1>Інформаційна сторінка класного керівника</h1>\n    </div>\n    <div fxFlex=\"25\" fxLayout=\"row\" fxLayoutAlign=\"end\" class=\"login\">\n      <button md-raised-button>Увійти</button>\n    </div>\n  </div>\n</header>\n<md-sidenav-container class=\"min-width-content\">\n  <md-sidenav [opened]=\"openedMenu\" #sidenav mode=\"side\">\n    <md-nav-list class=\"left-menu\">\n      <a md-list-item routerLink=\"\" routerLinkActive=\"active\" [routerLinkActiveOptions]=\"{exact: true}\">\n        Головна\n      </a>\n      <a md-list-item routerLink=\"students\" routerLinkActive=\"active\" [routerLinkActiveOptions]=\"{exact: true}\">\n        Відомості про студентів\n      </a>\n      <a md-list-item routerLink=\"parents\" routerLinkActive=\"active\" [routerLinkActiveOptions]=\"{exact: true}\">\n        Відомості про батьків\n      </a>\n      <a md-list-item routerLink=\"studies\" routerLinkActive=\"active\" [routerLinkActiveOptions]=\"{exact: true}\">\n        Контроль якості навчання\n      </a>\n      <a md-list-item routerLink=\"documentation\" routerLinkActive=\"active\" [routerLinkActiveOptions]=\"{exact: true}\">\n        Документація класного керівника\n      </a>\n    </md-nav-list>\n  </md-sidenav>\n\n  <!--<div class=\"toggle-menu\" (click)=\"toggleMenu()\"><md-icon>menu</md-icon></div>\n\n  <div class=\"toggle-calendar\" (click)=\"toggleCalendar()\"><md-icon>today</md-icon></div>-->\n\n  <div class=\"main-content\">\n    <router-outlet></router-outlet>\n  </div>\n\n  <md-sidenav class=\"calendar-sidenav\" [opened]=\"openedCalendar\" #sidenav mode=\"side\" align=\"end\"  md-is-locked-open=\"$mdMedia('gt-md')\">\n    <calendar></calendar>\n  </md-sidenav>\n</md-sidenav-container>\n"
+exports = module.exports = __webpack_require__(107)();
+// imports
 
-/***/ }),
 
-/***/ 1564:
-/***/ (function(module, exports) {
+// module
+exports.push([module.i, "", ""]);
 
-module.exports = "<dx-calendar #calendar\n             (onValueChanged)=\"showEvents()\"\n             id=\"calendar-container\"\n             [min]=\"minDateValue\"\n             [max]=\"maxDateValue\"\n             [firstDayOfWeek]=\"firstDay\"\n             [disabled]=\"false\"\n             [(value)]=\"currentValue\"\n             [zoomLevel]=\"zoomLevels[0]\"\n             [cellTemplate]=\"cellTemplate\">\n\n</dx-calendar>\n"
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
 
 /***/ }),
 
 /***/ 1565:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"caption\">\n  <h2>Гірничо електромеханічний коледж Державного вищого навчального закладу <br> \"Криворізький національний\n    університет\"</h2>\n</div>\n<md-input-container>\n  <input mdInput placeholder=\"Відділення\" value=\"електромеханічне\">\n</md-input-container>\n\n<!--\n<div>\n  Відділення: <span>електромеханічне</span>\n</div>\n<div>\n  Спеціальність: <span>електромеханічне</span>\n</div>\n<div>\n  Галузь знань: <span>електромеханічне</span>\n</div>\n<div>\n  Група:<span>МЕЕП-16 1/3</span>\n</div>\n<div>\n Класний керівник:<span>Майтак О.М.</span>\n</div>\n-->\n"
+module.exports = "<header class=\"min-width-content\">\n  <div fxFill class=\"flex-container\" fxLayout=\"row\" fxLayoutAlign=\"space-around center\">\n    <div fxFlex=\"25\">\n      <img src=\"\">\n    </div>\n    <div fxFlex=\"50\" fxLayout=\"row\" fxLayoutAlign=\"center\">\n      <h1>Інформаційна сторінка класного керівника</h1>\n    </div>\n    <div fxFlex=\"25\" fxLayout=\"row\" fxLayoutAlign=\"end\" class=\"login\">\n      <button md-raised-button>Увійти</button>\n    </div>\n  </div>\n</header>\n<md-sidenav-container class=\"min-width-content\">\n  <md-sidenav [opened]=\"openedMenu\" #sidenav mode=\"side\">\n    <md-nav-list class=\"left-menu\">\n      <a md-list-item routerLink=\"\" routerLinkActive=\"active\" [routerLinkActiveOptions]=\"{exact: true}\">\n        Головна\n      </a>\n      <a md-list-item routerLink=\"students\" routerLinkActive=\"active\" [routerLinkActiveOptions]=\"{exact: true}\">\n        Відомості про студентів\n      </a>\n      <a md-list-item routerLink=\"parents\" routerLinkActive=\"active\" [routerLinkActiveOptions]=\"{exact: true}\">\n        Відомості про батьків\n      </a>\n      <a md-list-item routerLink=\"studies\" routerLinkActive=\"active\" [routerLinkActiveOptions]=\"{exact: true}\">\n        Контроль якості навчання\n      </a>\n      <a md-list-item routerLink=\"documentation\" routerLinkActive=\"active\" [routerLinkActiveOptions]=\"{exact: true}\">\n        Документація класного керівника\n      </a>\n    </md-nav-list>\n  </md-sidenav>\n\n  <!--<div class=\"toggle-menu\" (click)=\"toggleMenu()\"><md-icon>menu</md-icon></div>\n\n  <div class=\"toggle-calendar\" (click)=\"toggleCalendar()\"><md-icon>today</md-icon></div>-->\n\n  <div class=\"main-content\">\n    <router-outlet></router-outlet>\n  </div>\n\n  <md-sidenav class=\"calendar-sidenav\" [opened]=\"openedCalendar\" #sidenav mode=\"side\" align=\"end\"  md-is-locked-open=\"$mdMedia('gt-md')\">\n    <calendar></calendar>\n  </md-sidenav>\n</md-sidenav-container>\n"
 
 /***/ }),
 
 /***/ 1566:
 /***/ (function(module, exports) {
 
+module.exports = "<dx-calendar #calendar\n             (onValueChanged)=\"showEvents()\"\n             id=\"calendar-container\"\n             [min]=\"minDateValue\"\n             [max]=\"maxDateValue\"\n             [firstDayOfWeek]=\"firstDay\"\n             [disabled]=\"false\"\n             [(value)]=\"currentValue\"\n             [zoomLevel]=\"zoomLevels[0]\"\n             [cellTemplate]=\"cellTemplate\">\n\n</dx-calendar>\n"
+
+/***/ }),
+
+/***/ 1567:
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"caption\">\n  <h2>Гірничо електромеханічний коледж Державного вищого навчального закладу <br> \"Криворізький національний\n    університет\"</h2>\n</div>\n<md-input-container>\n  <input mdInput placeholder=\"Відділення\" value=\"електромеханічне\">\n</md-input-container>\n\n<!--\n<div>\n  Відділення: <span>електромеханічне</span>\n</div>\n<div>\n  Спеціальність: <span>електромеханічне</span>\n</div>\n<div>\n  Галузь знань: <span>електромеханічне</span>\n</div>\n<div>\n  Група:<span>МЕЕП-16 1/3</span>\n</div>\n<div>\n Класний керівник:<span>Майтак О.М.</span>\n</div>\n-->\n"
+
+/***/ }),
+
+/***/ 1568:
+/***/ (function(module, exports) {
+
 module.exports = "<md-tab-group>\n  <md-tab label=\"Анкетні дані\">\n    <dx-data-grid\n      id=\"gridContainer\"\n      [dataSource]=\"customers\"\n      [columns]=\"['Студ білет', 'Паспортні дані', 'Свідоцтво', 'Копія приписного']\">\n    </dx-data-grid>\n  </md-tab>\n  <md-tab label=\"Пільговики\">\n    <dx-data-grid\n      id=\"gridContainer\"\n      [dataSource]=\"customers\"\n      [columns]=\"['Студ білет', 'Паспортні дані', 'Свідоцтво', 'Копія приписного']\">\n    </dx-data-grid>\n  </md-tab>\n  <md-tab label=\"Неповні сім'ї\">\n    <dx-data-grid\n      id=\"gridContainer\"\n      [dataSource]=\"customers\"\n      [columns]=\"['Студ білет', 'Паспортні дані', 'Свідоцтво', 'Копія приписного']\">\n    </dx-data-grid>\n  </md-tab>\n  <md-tab label=\"Актив групи\">\n    <dx-data-grid\n      id=\"gridContainer\"\n      [dataSource]=\"customers\"\n      [columns]=\"['Студ білет', 'Паспортні дані', 'Свідоцтво', 'Копія приписного']\">\n    </dx-data-grid>\n  </md-tab>\n  <md-tab label=\"Загальна\">\n    <dx-data-grid\n      id=\"gridContainer\"\n      [dataSource]=\"customers\"\n      [columns]=\"['Студ білет', 'Паспортні дані', 'Свідоцтво', 'Копія приписного']\">\n    </dx-data-grid>\n  </md-tab>\n</md-tab-group>\n"
 
 /***/ }),
 
-/***/ 1620:
+/***/ 1569:
+/***/ (function(module, exports) {
+
+module.exports = "<p>\n  performance-quality-control works!\n</p>\n"
+
+/***/ }),
+
+/***/ 1623:
 /***/ (function(module, exports) {
 
 /* (ignored) */
 
 /***/ }),
 
-/***/ 1621:
+/***/ 1624:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(969);
+module.exports = __webpack_require__(970);
 
 
 /***/ }),
@@ -341,8 +375,8 @@ var HomeComponent = (function () {
     HomeComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'app-home',
-            template: __webpack_require__(1565),
-            styles: [__webpack_require__(1534)]
+            template: __webpack_require__(1567),
+            styles: [__webpack_require__(1535)]
         }), 
         __metadata('design:paramtypes', [])
     ], HomeComponent);
@@ -437,8 +471,8 @@ var InfoStudentsComponent = (function () {
     InfoStudentsComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'app-info-students',
-            template: __webpack_require__(1566),
-            styles: [__webpack_require__(1535)]
+            template: __webpack_require__(1568),
+            styles: [__webpack_require__(1536)]
         }), 
         __metadata('design:paramtypes', [])
     ], InfoStudentsComponent);
@@ -448,7 +482,42 @@ var InfoStudentsComponent = (function () {
 
 /***/ }),
 
-/***/ 968:
+/***/ 704:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PerformanceQualityControlComponent; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var PerformanceQualityControlComponent = (function () {
+    function PerformanceQualityControlComponent() {
+    }
+    PerformanceQualityControlComponent.prototype.ngOnInit = function () {
+    };
+    PerformanceQualityControlComponent = __decorate([
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+            selector: 'app-performance-quality-control',
+            template: __webpack_require__(1569),
+            styles: [__webpack_require__(1537)]
+        }), 
+        __metadata('design:paramtypes', [])
+    ], PerformanceQualityControlComponent);
+    return PerformanceQualityControlComponent;
+}());
+//# sourceMappingURL=performance-quality-control.component.js.map
+
+/***/ }),
+
+/***/ 969:
 /***/ (function(module, exports) {
 
 function webpackEmptyContext(req) {
@@ -457,20 +526,20 @@ function webpackEmptyContext(req) {
 webpackEmptyContext.keys = function() { return []; };
 webpackEmptyContext.resolve = webpackEmptyContext;
 module.exports = webpackEmptyContext;
-webpackEmptyContext.id = 968;
+webpackEmptyContext.id = 969;
 
 
 /***/ }),
 
-/***/ 969:
+/***/ 970:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__ = __webpack_require__(1113);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_app_module__ = __webpack_require__(1145);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__environments_environment__ = __webpack_require__(1148);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__ = __webpack_require__(1114);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_app_module__ = __webpack_require__(1146);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__environments_environment__ = __webpack_require__(1149);
 
 
 
@@ -483,5 +552,5 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dyna
 
 /***/ })
 
-},[1621]);
+},[1624]);
 //# sourceMappingURL=main.bundle.js.map

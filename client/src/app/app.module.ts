@@ -16,13 +16,15 @@ import {
   DxCalendarModule
 } from 'devextreme-angular';
 import { CalendarComponent } from './calendar/calendar.component';
+import { PerformanceQualityControlComponent } from './performance-quality-control/performance-quality-control.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     InfoStudentsComponent,
-    CalendarComponent
+    CalendarComponent,
+    PerformanceQualityControlComponent
   ],
   imports: [
     BrowserModule,
