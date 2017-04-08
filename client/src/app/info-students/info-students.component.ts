@@ -1,4 +1,6 @@
 import {Component, OnInit} from '@angular/core';
+import {MdDialog} from "@angular/material";
+import {CreateStudentsComponent} from "./create-students/create-students.component";
 
 @Component({
   selector: 'app-info-students',
@@ -6,7 +8,8 @@ import {Component, OnInit} from '@angular/core';
   styleUrls: ['./info-students.component.scss']
 })
 export class InfoStudentsComponent implements OnInit {
-  public customers: any[] = [{
+  public customers: any[] = [
+    {
     "Студ білет": "123456",
     "Паспортні дані": "Super Mart of the West",
     "Свідоцтво": "702 SW 8th Street",
@@ -68,10 +71,13 @@ export class InfoStudentsComponent implements OnInit {
     "Копія приписного": "Bentonville"
   }];
 
-  constructor() {
-  }
+  constructor(public dialog: MdDialog) {}
 
   ngOnInit() {
   }
+
+  openCreateDialog() {
+    this.dialog.open(CreateStudentsComponent);
+}
 
 }

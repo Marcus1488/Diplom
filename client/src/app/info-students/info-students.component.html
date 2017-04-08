@@ -1,5 +1,8 @@
 <md-tab-group>
   <md-tab label="Анкетні дані">
+    <div fxLayout="row" fxLayoutAlign="end">
+      <button (click)="openCreateDialog()" md-raised-button>Додати студента</button>
+    </div>
     <dx-data-grid
       id="gridContainer"
       [dataSource]="customers"
@@ -21,17 +24,9 @@
     </dx-data-grid>
   </md-tab>
   <md-tab label="Актив групи">
-    <dx-data-grid
-      id="gridContainer"
-      [dataSource]="customers"
-      [columns]="['Студ білет', 'Паспортні дані', 'Свідоцтво', 'Копія приписного']">
-    </dx-data-grid>
+
   </md-tab>
   <md-tab label="Загальна">
-    <dx-data-grid
-      id="gridContainer"
-      [dataSource]="customers"
-      [columns]="['Студ білет', 'Паспортні дані', 'Свідоцтво', 'Копія приписного']">
-    </dx-data-grid>
+
   </md-tab>
 </md-tab-group>
