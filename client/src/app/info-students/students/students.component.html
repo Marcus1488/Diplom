@@ -1,0 +1,28 @@
+<div fxLayout="row" fxLayoutAlign="end">
+  <button (click)="openCreateDialog()" md-raised-button>Додати студента</button>
+</div>
+<dx-data-grid
+  id="students"
+  [dataSource]="customers"
+  [columns]="['Студ білет', 'Паспортні дані', 'Свідоцтво', 'Копія приписного']">
+  <dxi-column
+    dataField="Студ білет"
+    caption="Студ білет"></dxi-column>
+  <dxi-column
+    dataField="Паспортні дані"
+    caption="Паспортні дані"></dxi-column>
+  <dxi-column
+    dataField="Свідоцтво"
+    caption="Свідоцтво"></dxi-column>
+  <dxi-column
+    dataField="Копія приписного"
+    caption="Копія приписного"></dxi-column>
+
+  <dxi-column
+    caption="Дії">
+    <i class="fa fa-eye fa-lg" aria-hidden="true"></i>
+    <i class="fa fa-pencil-square-o fa-lg" aria-hidden="true"></i>
+  </dxi-column>
+
+
+</dx-data-grid>

@@ -1,0 +1,93 @@
+<md-dialog-content>
+<form>
+  <div fxLayout="row" fxLayoutAlign="space-between">
+    <md-input-container>
+      <input mdInput placeholder="Прізвище">
+    </md-input-container>
+
+    <md-input-container>
+      <input mdInput placeholder="Ім'я">
+    </md-input-container>
+
+    <md-input-container>
+      <input mdInput placeholder="По-батькові">
+    </md-input-container>
+  </div>
+  <div fxLayout="row" fxLayoutAlign="space-between">
+    <md-input-container fxFlex="49">
+      <input mdInput placeholder="Місце народження">
+    </md-input-container>
+
+    <md2-datepicker fxFlex="49" class="dob"  placeholder="Дата народження"></md2-datepicker>
+  </div>
+
+  <md-card class="passport">
+    <md-card-header>
+      <md-card-title>Паспорт</md-card-title>
+    </md-card-header>
+    <md-card-content>
+      <div fxLayout="row" fxLayoutAlign="space-between">
+
+        <md-input-container>
+          <input mdInput placeholder="Серія паспорту">
+        </md-input-container>
+
+        <md-input-container>
+          <input mdInput placeholder="Номер паспорту">
+        </md-input-container>
+
+        <md-input-container>
+          <input mdInput placeholder="Дата видачі">
+        </md-input-container>
+      </div>
+    </md-card-content>
+
+  </md-card>
+
+  <md-card class="address">
+    <md-card-header>
+      <md-card-title>Домашня адреса</md-card-title>
+    </md-card-header>
+    <md-card-content>
+      <div fxLayout="row" fxLayoutAlign="space-between">
+
+        <md-input-container fxFlex="20">
+          <input mdInput placeholder="Індекс">
+        </md-input-container>
+
+        <md-input-container fxFlex="39">
+          <input mdInput placeholder="Область">
+        </md-input-container>
+
+        <md-input-container fxFlex="39">
+          <input mdInput placeholder="Район">
+        </md-input-container>
+      </div>
+      <div fxLayout="row" fxLayoutAlign="space-between">
+
+        <md-input-container fxFlex="49">
+          <input mdInput placeholder="Місто">
+        </md-input-container>
+
+        <md-input-container fxFlex="49">
+          <input mdInput placeholder="Вулиця">
+        </md-input-container>
+      </div>
+      <div fxLayout="row" fxLayoutAlign="space-between">
+        <md-input-container fxFlex="49">
+          <input mdInput placeholder="Будинок">
+        </md-input-container>
+
+        <md-input-container fxFlex="49">
+          <input mdInput placeholder="Квартира">
+        </md-input-container>
+      </div>
+    </md-card-content>
+  </md-card>
+
+</form>
+</md-dialog-content>
+<md-dialog-actions fxLayout="row" fxLayoutAlign="space-around">
+  <button md-raised-button fxFlex="20">Зберегти</button>
+  <button md-raised-button fxFlex="20" md-dialog-close>Відмінити</button>
+</md-dialog-actions>

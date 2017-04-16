@@ -1,32 +1,17 @@
 <md-tab-group>
   <md-tab label="Анкетні дані">
-    <div fxLayout="row" fxLayoutAlign="end">
-      <button (click)="openCreateDialog()" md-raised-button>Додати студента</button>
-    </div>
-    <dx-data-grid
-      id="gridContainer"
-      [dataSource]="customers"
-      [columns]="['Студ білет', 'Паспортні дані', 'Свідоцтво', 'Копія приписного']">
-    </dx-data-grid>
+    <app-students></app-students>
   </md-tab>
   <md-tab label="Пільговики">
-    <dx-data-grid
-      id="gridContainer"
-      [dataSource]="customers"
-      [columns]="['Студ білет', 'Паспортні дані', 'Свідоцтво', 'Копія приписного']">
-    </dx-data-grid>
+    <app-beneficiaries></app-beneficiaries>
   </md-tab>
   <md-tab label="Неповні сім'ї">
-    <dx-data-grid
-      id="gridContainer"
-      [dataSource]="customers"
-      [columns]="['Студ білет', 'Паспортні дані', 'Свідоцтво', 'Копія приписного']">
-    </dx-data-grid>
+    <app-parent></app-parent>
   </md-tab>
   <md-tab label="Актив групи">
-
+    <app-active-groups></app-active-groups>
   </md-tab>
   <md-tab label="Загальна">
-
+    <app-total></app-total>
   </md-tab>
 </md-tab-group>

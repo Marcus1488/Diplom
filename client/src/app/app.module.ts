@@ -20,7 +20,12 @@ import {
 } from 'devextreme-angular';
 import {CalendarComponent} from './calendar/calendar.component';
 import {PerformanceQualityControlComponent} from './performance-quality-control/performance-quality-control.component';
-import {CreateStudentsComponent} from './info-students/create-students/create-students.component';
+import {CreateStudentsComponent} from './info-students/students/create-students/create-students.component';
+import {StudentsComponent} from './info-students/students/students.component';
+import {BeneficiariesComponent} from './info-students/beneficiaries/beneficiaries.component';
+import {ParentComponent} from './info-students/parent/parent.component';
+import {ActiveGroupsComponent} from './info-students/active-groups/active-groups.component';
+import {TotalComponent} from './info-students/total/total.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +34,12 @@ import {CreateStudentsComponent} from './info-students/create-students/create-st
     InfoStudentsComponent,
     CalendarComponent,
     PerformanceQualityControlComponent,
-    CreateStudentsComponent
+    CreateStudentsComponent,
+    StudentsComponent,
+    BeneficiariesComponent,
+    ParentComponent,
+    ActiveGroupsComponent,
+    TotalComponent
   ],
   imports: [
     BrowserModule,
