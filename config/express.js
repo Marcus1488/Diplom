@@ -15,11 +15,11 @@ module.exports = function(app, config) {
   app.locals.ENV = env;
   app.locals.ENV_DEVELOPMENT = env == 'development';
 
-  pg.defaults.ssl = true;
+  /*pg.defaults.ssl = true;
   pg.connect(configDb.db, function(err) {
     if (err) throw err;
     console.log('Connected to postgres! Getting schemas...');
-  });
+  });*/
 
   app.set('views', config.root + '/app/views');
   app.set('view engine', 'jade');
