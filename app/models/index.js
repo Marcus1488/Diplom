@@ -1,10 +1,10 @@
-var fs = require('fs'),
+let fs = require('fs'),
   path = require('path'),
   Sequelize = require('sequelize'),
   config = require('../../config/config'),
   db = {};
 
-var sequelize = new Sequelize(config.db);
+let sequelize = new Sequelize(process.env.HEROKU_POSTGRESQL_BRONZE_URL, config.db);
 
 fs.readdirSync(__dirname).filter(function (file) {
   return (file.indexOf('.') !== 0) && (file !== 'index.js');
