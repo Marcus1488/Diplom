@@ -1,25 +1,28 @@
-let fs = require('fs'),
-  path = require('path'),
-  Sequelize = require('sequelize'),
-  config = require('../../config/config'),
-  db = {};
+if (!global.hasOwnProperty('db')) {
+  let Sequelize = require('sequelize'),
+    sequelize = null;
+  let config = require('../../config/config');
+  let db = require('../../config/database.json');
 
-let sequelize = new Sequelize(config.db);
+    // the application is executed on Heroku ... use the postgres database
+    sequelize = new Sequelize(config.db, {
+      dialect:  'postgres',
+      protocol: 'postgres',
+      port:     db.port,
+      host:     db.host,
+      logging:  true,
+      dialectOptions: {
+        ssl: true
+      }
+    });
 
-fs.readdirSync(__dirname).filter(function (file) {
-  return (file.indexOf('.') !== 0) && (file !== 'index.js');
-}).forEach(function (file) {
-  let model = sequelize['import'](path.join(__dirname, file));
-  db[model.name] = model;
-});
 
-Object.keys(db).forEach(function (modelName) {
-  if ('associate' in db[modelName]) {
-    db[modelName].associate(db);
+  global.db = {
+    Sequelize: Sequelize,
+    sequelize: sequelize,
+    Students:      sequelize.import(__dirname + '/students')
+    // add your other models here
   }
-});
+}
 
-db.sequelize = sequelize;
-db.Sequelize = Sequelize;
-
-module.exports = db;
+module.exports = global.db;
