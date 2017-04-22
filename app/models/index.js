@@ -4,12 +4,12 @@ let fs = require('fs'),
   config = require('../../config/config'),
   db = {};
 
-let sequelize = new Sequelize(process.env.HEROKU_POSTGRESQL_BRONZE_URL, config.db);
+let sequelize = new Sequelize(config.db);
 
 fs.readdirSync(__dirname).filter(function (file) {
   return (file.indexOf('.') !== 0) && (file !== 'index.js');
 }).forEach(function (file) {
-  var model = sequelize['import'](path.join(__dirname, file));
+  let model = sequelize['import'](path.join(__dirname, file));
   db[model.name] = model;
 });
 
