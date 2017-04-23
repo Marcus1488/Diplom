@@ -7,11 +7,11 @@ module.exports = {
         firstName: 'Марк',
         lastName: 'Безрукавый',
         secondName: 'Валериевич',
-        dateOfBirthday: '12/03/1998',
+        dateOfBirthday: '03/12/1998',
         birthPlace: 'Кривой Рог',
         passportSeries: 'АО',
         passportNumber: '0588788',
-        passportDate: '12/03/1998',
+        passportDate: '03/12/1998',
         addressIndex: '12465',
         addressRegion: 'Днепропетроская',
         addressArea: 'Терновской',
@@ -23,7 +23,8 @@ module.exports = {
         studentTicket: '219687621654',
         beneficiaries: false,
         motherId: 1,
-        fatherId: 2
+        fatherId: 2,
+        groupId: 1
       }
     ], {});
   },

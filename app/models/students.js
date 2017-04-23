@@ -1,9 +1,5 @@
-/**
- * Created by MARK on 22.04.2017.
- */
 'use strict';
-let Promise = require('bluebird');
-let coroutine = Promise.coroutine;
+const Promise = require('bluebird');
 
 module.exports = function (sequelize, DataTypes) {
   let Students = sequelize.define('Students', {
@@ -27,78 +23,106 @@ module.exports = function (sequelize, DataTypes) {
     },
     dateOfBirthday: {
       type: DataTypes.DATE,
-      allowNull: false,
+      allowNull: true,
     },
     birthPlace: {
       type: DataTypes.STRING,
-      allowNull: false,
+      allowNull: true,
     },
     passportSeries: {
       type: DataTypes.STRING,
-      allowNull: false,
+      allowNull: true,
     },
     passportNumber: {
       type: DataTypes.STRING,
-      allowNull: false,
+      allowNull: true,
     },
     passportDate: {
       type: DataTypes.DATE,
-      allowNull: false,
+      allowNull: true,
     },
     addressIndex: {
       type: DataTypes.STRING,
-      allowNull: false,
+      allowNull: true,
     },
     addressRegion: {
       type: DataTypes.STRING,
-      allowNull: false,
+      allowNull: true,
     },
     addressArea: {
       type: DataTypes.STRING,
-      allowNull: false,
+      allowNull: true,
     },
     addressCity: {
       type: DataTypes.STRING,
-      allowNull: false,
+      allowNull: true,
     },
     addressStreet: {
       type: DataTypes.STRING,
-      allowNull: false,
+      allowNull: true,
     },
     addressHouse: {
       type: DataTypes.STRING,
-      allowNull: false,
+      allowNull: true,
     },
     addressFlat: {
       type: DataTypes.STRING,
-      allowNull: false,
+      allowNull: true,
     },
     phone: {
       type: DataTypes.STRING,
-      allowNull: false,
+      allowNull: true,
     },
     studentTicket: {
       type: DataTypes.STRING,
-      allowNull: false,
+      allowNull: true,
     },
     beneficiaries: {
       type: DataTypes.BOOLEAN,
-      allowNull: false,
+      allowNull: true,
     },
     motherId: {
       type: DataTypes.INTEGER,
-      allowNull: false,
+      allowNull: true,
     },
     fatherId: {
       type: DataTypes.INTEGER,
-      allowNull: false,
+      allowNull: true,
+    },
+    groupId: {
+      type: DataTypes.INTEGER,
+      allowNull: true
     }
   }, {
     timestamps: false,
     freezeTableName: true,
     tableName: 'Students',
     classMethods: {
-
+      addStudent: Promise.coroutine(function*(data) {
+        return Students.create({
+          firstName: data.firstName,
+          lastName: data.lastName,
+          secondName: data.secondName,
+          dateOfBirthday: data.dateOfBirthday,
+          birthPlace: data.birthPlace,
+          passportSeries: data.passportSeries,
+          passportNumber: data.passportNumber,
+          passportDate: data.passportDate,
+          addressIndex: data.addressIndex,
+          addressRegion: data.addressRegion,
+          addressArea: data.addressArea,
+          addressCity: data.addressCity,
+          addressStreet: data.addressStreet,
+          addressHouse: data.addressHouse,
+          addressFlat: data.addressFlat,
+          phone: data.phone,
+          studentTicket: data.studentTicket,
+          beneficiaries: data.beneficiaries,
+          motherId: data.motherId,
+          fatherId: data.fatherId,
+          groupId: data.groupId
+        });
+      }),
     }
   });
   return Students;

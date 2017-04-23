@@ -2,7 +2,7 @@
 
 module.exports = {
   up: function (queryInterface, Sequelize) {
-    return queryInterface.createTable('students',
+    return queryInterface.createTable('Students',
       {
         id: {
           type: Sequelize.INTEGER,
@@ -24,76 +24,80 @@ module.exports = {
         },
         dateOfBirthday: {
           type: Sequelize.DATE,
-          allowNull: false,
+          allowNull: true,
         },
         birthPlace: {
           type: Sequelize.STRING,
-          allowNull: false,
+          allowNull: true,
         },
         passportSeries: {
           type: Sequelize.STRING,
-          allowNull: false,
+          allowNull: true,
         },
         passportNumber: {
           type: Sequelize.STRING,
-          allowNull: false,
+          allowNull: true,
         },
         passportDate: {
           type: Sequelize.DATE,
-          allowNull: false,
+          allowNull: true,
         },
         addressIndex: {
           type: Sequelize.STRING,
-          allowNull: false,
+          allowNull: true,
         },
         addressRegion: {
           type: Sequelize.STRING,
-          allowNull: false,
+          allowNull: true,
         },
         addressArea: {
           type: Sequelize.STRING,
-          allowNull: false,
+          allowNull: true,
         },
         addressCity: {
           type: Sequelize.STRING,
-          allowNull: false,
+          allowNull: true,
         },
         addressStreet: {
           type: Sequelize.STRING,
-          allowNull: false,
+          allowNull: true,
         },
         addressHouse: {
           type: Sequelize.STRING,
-          allowNull: false,
+          allowNull: true,
         },
         addressFlat: {
           type: Sequelize.STRING,
-          allowNull: false,
+          allowNull: true,
         },
         phone: {
           type: Sequelize.STRING,
-          allowNull: false,
+          allowNull: true,
         },
         studentTicket: {
           type: Sequelize.STRING,
-          allowNull: false,
+          allowNull: true,
         },
         beneficiaries: {
           type: Sequelize.BOOLEAN,
-          allowNull: false,
+          allowNull: true,
         },
         motherId: {
           type: Sequelize.INTEGER,
-          allowNull: false,
+          allowNull: true,
         },
         fatherId: {
           type: Sequelize.INTEGER,
-          allowNull: false,
+          allowNull: true,
+        },
+        groupId: {
+          type: Sequelize.INTEGER,
+          allowNull: true
         }
       });
   },
 
   down: function (queryInterface, Sequelize) {
-    return queryInterface.dropTable('students');
+    return queryInterface.dropTable('Students');
   }
 };

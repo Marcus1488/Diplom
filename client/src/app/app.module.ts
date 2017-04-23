@@ -27,6 +27,10 @@ import {ParentComponent} from './info-students/parent/parent.component';
 import {ActiveGroupsComponent} from './info-students/active-groups/active-groups.component';
 import {TotalComponent} from './info-students/total/total.component';
 
+/*Services*/
+import {ApiServiceService} from "./services/api-service.service";
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -54,7 +58,7 @@ import {TotalComponent} from './info-students/total/total.component';
     DxCalendarModule
   ],
   entryComponents: [CreateStudentsComponent],
-  providers: [],
+  providers: [ApiServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule {

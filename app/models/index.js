@@ -20,8 +20,9 @@ if (!global.hasOwnProperty('db')) {
   global.db = {
     Sequelize: Sequelize,
     sequelize: sequelize,
-    Students:      sequelize.import(__dirname + '/students')
-    // add your other models here
+    Students:      sequelize.import(__dirname + '/students'),
+    Groups:      sequelize.import(__dirname + '/groups'),
+    Config:      sequelize.import(__dirname + '/config')
   }
 }
 

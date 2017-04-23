@@ -2,23 +2,24 @@
 <form>
   <div fxLayout="row" fxLayoutAlign="space-between">
     <md-input-container>
-      <input mdInput placeholder="Прізвище">
+      <input mdInput name="lastName" placeholder="Прізвище" [(ngModel)]="student.lastName">
     </md-input-container>
 
     <md-input-container>
-      <input mdInput placeholder="Ім'я">
+      <input mdInput name="firstName" placeholder="Ім'я" [(ngModel)]="student.firstName">
     </md-input-container>
 
     <md-input-container>
-      <input mdInput placeholder="По-батькові">
+      <input mdInput name="secondName" placeholder="По-батькові" [(ngModel)]="student.secondName">
     </md-input-container>
   </div>
   <div fxLayout="row" fxLayoutAlign="space-between">
     <md-input-container fxFlex="49">
-      <input mdInput placeholder="Місце народження">
+      <input mdInput name="birthPlace" placeholder="Місце народження" [(ngModel)]="student.birthPlace">
     </md-input-container>
 
-    <md2-datepicker fxFlex="49" class="dob"  placeholder="Дата народження"></md2-datepicker>
+    <md2-datepicker name="dateOfBirthday" fxFlex="49" class="dob"  placeholder="Дата народження" [(ngModel)]="student.dateOfBirthday">
+    </md2-datepicker>
   </div>
 
   <md-card class="passport">
@@ -29,16 +30,15 @@
       <div fxLayout="row" fxLayoutAlign="space-between">
 
         <md-input-container>
-          <input mdInput placeholder="Серія паспорту">
+          <input mdInput name="passportSeries" placeholder="Серія паспорту" [(ngModel)]="student.passportSeries">
         </md-input-container>
 
         <md-input-container>
-          <input mdInput placeholder="Номер паспорту">
+          <input mdInput name="passportNumber" placeholder="Номер паспорту" [(ngModel)]="student.passportNumber">
         </md-input-container>
 
-        <md-input-container>
-          <input mdInput placeholder="Дата видачі">
-        </md-input-container>
+        <md2-datepicker name="passportDate" fxFlex="33" placeholder="Дата видачі" [(ngModel)]="student.passportDate">
+        </md2-datepicker>
       </div>
     </md-card-content>
 
@@ -52,34 +52,34 @@
       <div fxLayout="row" fxLayoutAlign="space-between">
 
         <md-input-container fxFlex="20">
-          <input mdInput placeholder="Індекс">
+          <input mdInput name="addressIndex" placeholder="Індекс" [(ngModel)]="student.addressIndex">
         </md-input-container>
 
         <md-input-container fxFlex="39">
-          <input mdInput placeholder="Область">
+          <input mdInput name="addressRegion" placeholder="Область" [(ngModel)]="student.addressRegion">
         </md-input-container>
 
         <md-input-container fxFlex="39">
-          <input mdInput placeholder="Район">
+          <input mdInput name="addressArea" placeholder="Район" [(ngModel)]="student.addressArea">
         </md-input-container>
       </div>
       <div fxLayout="row" fxLayoutAlign="space-between">
 
         <md-input-container fxFlex="49">
-          <input mdInput placeholder="Місто">
+          <input mdInput name="addressCity" placeholder="Місто" [(ngModel)]="student.addressCity">
         </md-input-container>
 
         <md-input-container fxFlex="49">
-          <input mdInput placeholder="Вулиця">
+          <input mdInput name="addressStreet" placeholder="Вулиця" [(ngModel)]="student.addressStreet">
         </md-input-container>
       </div>
       <div fxLayout="row" fxLayoutAlign="space-between">
         <md-input-container fxFlex="49">
-          <input mdInput placeholder="Будинок">
+          <input mdInput name="addressHouse" placeholder="Будинок" [(ngModel)]="student.addressHouse">
         </md-input-container>
 
         <md-input-container fxFlex="49">
-          <input mdInput placeholder="Квартира">
+          <input mdInput name="addressFlat" placeholder="Квартира" [(ngModel)]="student.addressFlat">
         </md-input-container>
       </div>
     </md-card-content>
@@ -94,15 +94,15 @@
       <div fxLayout="row" fxLayoutAlign="space-between">
 
         <md-input-container fxFlex="48">
-          <input mdInput placeholder="Телефон">
+          <input mdInput name="phone" placeholder="Телефон" [(ngModel)]="student.phone">
         </md-input-container>
 
         <md-input-container fxFlex="48">
-          <input mdInput placeholder="Студ квиток">
+          <input mdInput name="studentTicket" placeholder="Студ квиток" [(ngModel)]="student.studentTicket">
         </md-input-container>
       </div>
 
-      <md-checkbox>Пільговик</md-checkbox>
+      <md-checkbox name="beneficiaries" [(ngModel)]="student.beneficiaries">Пільговик</md-checkbox>
     </md-card-content>
 
   </md-card>
@@ -172,6 +172,6 @@
 </form>
 </md-dialog-content>
 <md-dialog-actions fxLayout="row" fxLayoutAlign="space-around">
-  <button md-raised-button fxFlex="20">Зберегти</button>
+  <button md-raised-button fxFlex="20" (click)="createStudent()">Зберегти</button>
   <button md-raised-button fxFlex="20" md-dialog-close>Відмінити</button>
 </md-dialog-actions>

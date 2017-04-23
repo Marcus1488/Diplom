@@ -1,0 +1,30 @@
+<dx-data-grid
+  [dataSource]="students">
+  <dxi-column
+    dataField="studentTicket"
+    caption="Студ білет"></dxi-column>
+  <dxi-column
+    dataField="fullName"
+    caption="ФІО"></dxi-column>
+  <dxi-column
+    dataField="phone"
+    caption="Телефон"></dxi-column>
+  <dxi-column
+    dataField="dateOfBirthday"
+    caption="Дата народження"
+    dataType="date"
+    cellTemplate="date"></dxi-column>
+  <dxi-column
+    dataField="fullAddress"
+    caption="Адреса"></dxi-column>
+
+  <dxi-column
+    caption="Дії">
+    <i class="fa fa-eye fa-lg" aria-hidden="true"></i>
+    <i class="fa fa-pencil-square-o fa-lg" aria-hidden="true"></i>
+  </dxi-column>
+
+  <div *dxTemplate="let data of 'date'">
+    {{data.value | date: 'dd/MM/yyyy'}}
+  </div>
+</dx-data-grid>

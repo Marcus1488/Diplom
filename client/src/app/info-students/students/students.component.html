@@ -3,20 +3,24 @@
 </div>
 <dx-data-grid
   id="students"
-  [dataSource]="customers"
-  [columns]="['Студ білет', 'Паспортні дані', 'Свідоцтво', 'Копія приписного']">
+  [dataSource]="students">
   <dxi-column
-    dataField="Студ білет"
+    dataField="studentTicket"
     caption="Студ білет"></dxi-column>
   <dxi-column
-    dataField="Паспортні дані"
-    caption="Паспортні дані"></dxi-column>
+    dataField="fullName"
+    caption="ФІО"></dxi-column>
   <dxi-column
-    dataField="Свідоцтво"
-    caption="Свідоцтво"></dxi-column>
+    dataField="phone"
+    caption="Телефон"></dxi-column>
   <dxi-column
-    dataField="Копія приписного"
-    caption="Копія приписного"></dxi-column>
+    dataField="dateOfBirthday"
+    caption="Дата народження"
+    dataType="date"
+    cellTemplate="date"></dxi-column>
+  <dxi-column
+    dataField="fullAddress"
+    caption="Адреса"></dxi-column>
 
   <dxi-column
     caption="Дії">
@@ -24,5 +28,7 @@
     <i class="fa fa-pencil-square-o fa-lg" aria-hidden="true"></i>
   </dxi-column>
 
-
+  <div *dxTemplate="let data of 'date'">
+    {{data.value | date: 'dd/MM/yyyy'}}
+  </div>
 </dx-data-grid>

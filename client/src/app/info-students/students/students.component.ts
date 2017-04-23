@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {MdDialog} from "@angular/material";
 import {CreateStudentsComponent} from "./create-students/create-students.component";
+import {ApiServiceService} from "../../services/api-service.service";
 
 @Component({
   selector: 'app-students',
@@ -8,79 +9,37 @@ import {CreateStudentsComponent} from "./create-students/create-students.compone
   styleUrls: ['./students.component.scss']
 })
 export class StudentsComponent implements OnInit {
-  public customers: any[] = [
-    {
-      "Студ білет": "123456",
-      "Паспортні дані": "Super Mart of the West",
-      "Свідоцтво": "702 SW 8th Street",
-      "Копія приписного": "Bentonville"
-    }, {
-      "Студ білет": "123456",
-      "Паспортні дані": "Super Mart of the West",
-      "Свідоцтво": "702 SW 8th Street",
-      "Копія приписного": "Bentonville"
-    }, {
-      "Студ білет": "123456",
-      "Паспортні дані": "Super Mart of the West",
-      "Свідоцтво": "702 SW 8th Street",
-      "Копія приписного": "Bentonville"
-    }, {
-      "Студ білет": "123456",
-      "Паспортні дані": "Super Mart of the West",
-      "Свідоцтво": "702 SW 8th Street",
-      "Копія приписного": "Bentonville"
-    }, {
-      "Студ білет": "123456",
-      "Паспортні дані": "Super Mart of the West",
-      "Свідоцтво": "702 SW 8th Street",
-      "Копія приписного": "Bentonville"
-    }, {
-      "Студ білет": "123456",
-      "Паспортні дані": "Super Mart of the West",
-      "Свідоцтво": "702 SW 8th Street",
-      "Копія приписного": "Bentonville"
-    }, {
-      "Студ білет": "123456",
-      "Паспортні дані": "Super Mart of the West",
-      "Свідоцтво": "702 SW 8th Street",
-      "Копія приписного": "Bentonville"
-    }, {
-      "Студ білет": "123456",
-      "Паспортні дані": "Super Mart of the West",
-      "Свідоцтво": "702 SW 8th Street",
-      "Копія приписного": "Bentonville"
-    }, {
-      "Студ білет": "123456",
-      "Паспортні дані": "Super Mart of the West",
-      "Свідоцтво": "702 SW 8th Street",
-      "Копія приписного": "Bentonville"
-    }, {
-      "Студ білет": "123456",
-      "Паспортні дані": "Super Mart of the West",
-      "Свідоцтво": "702 SW 8th Street",
-      "Копія приписного": "Bentonville"
-    }, {
-      "Студ білет": 14135123,
-      "Паспортні дані": "Super Mart of the West",
-      "Свідоцтво": "702 SW 8th Street",
-      "Копія приписного": "Bentonville"
-    }, {
-      "Студ білет": "123456",
-      "Паспортні дані": "Super Mart of the West",
-      "Свідоцтво": "702 SW 8th Street",
-      "Копія приписного": "Bentonville"
-    }
-  ];
+  public students: any[];
+  public errorMessage: any;
 
-
-  constructor(public dialog: MdDialog) {
+  constructor(public dialog: MdDialog, private apiServiceService: ApiServiceService) {
+    this.getStudents();
   }
 
   ngOnInit() {
   }
 
+  getStudents() {
+    this.apiServiceService.getAllStudents()
+      .subscribe(
+        data => {
+          this.students = data;
+          this.students.map((student) => {
+            student.fullName = student.lastName + ' ' + student.firstName + ' ' + student.secondName;
+            student.fullAddress = student.addressStreet + ' ' + student.addressHouse + '/' + student.addressFlat;
+          })
+        },
+        error => this.errorMessage = <any>error);
+  }
+
   openCreateDialog() {
-    this.dialog.open(CreateStudentsComponent);
+    let dialogRef = this.dialog.open(CreateStudentsComponent);
+    dialogRef.afterClosed().subscribe(result => {
+      if (result) {
+        this.getStudents();
+      }
+    });
+
   }
 
 }
