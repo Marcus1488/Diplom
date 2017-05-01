@@ -77,6 +77,10 @@ module.exports = function (sequelize, DataTypes) {
       type: DataTypes.STRING,
       allowNull: true,
     },
+    reasonBeneficiaries: {
+      type: DataTypes.STRING,
+      allowNull: true,
+    },
     beneficiaries: {
       type: DataTypes.BOOLEAN,
       allowNull: true,
@@ -90,6 +94,10 @@ module.exports = function (sequelize, DataTypes) {
       allowNull: true,
     },
     groupId: {
+      type: DataTypes.INTEGER,
+      allowNull: true
+    },
+    groupAsset: {
       type: DataTypes.INTEGER,
       allowNull: true
     }
@@ -118,9 +126,51 @@ module.exports = function (sequelize, DataTypes) {
           phone: data.phone,
           studentTicket: data.studentTicket,
           beneficiaries: data.beneficiaries,
+          reasonBeneficiaries: data.reasonBeneficiaries,
           motherId: data.motherId,
           fatherId: data.fatherId,
-          groupId: data.groupId
+          groupId: data.groupId,
+          groupAsset: data.groupAsset
+        });
+      }),
+      updateStudent: Promise.coroutine(function*(data) {
+        return Students.update({
+          firstName: data.firstName,
+          lastName: data.lastName,
+          secondName: data.secondName,
+          dateOfBirthday: data.dateOfBirthday,
+          birthPlace: data.birthPlace,
+          passportSeries: data.passportSeries,
+          passportNumber: data.passportNumber,
+          passportDate: data.passportDate,
+          addressIndex: data.addressIndex,
+          addressRegion: data.addressRegion,
+          addressArea: data.addressArea,
+          addressCity: data.addressCity,
+          addressStreet: data.addressStreet,
+          addressHouse: data.addressHouse,
+          addressFlat: data.addressFlat,
+          phone: data.phone,
+          studentTicket: data.studentTicket,
+          beneficiaries: data.beneficiaries,
+          reasonBeneficiaries: data.reasonBeneficiaries,
+          motherId: data.motherId,
+          fatherId: data.fatherId,
+          groupId: data.groupId,
+          groupAsset: data.groupAsset
+        },
+        {
+          where: {
+            id: data.id
+          }
+        });
+      }),
+      deleteStudent: Promise.coroutine(function*(id) {
+        return Students.destroy(
+        {
+          where: {
+            id: id
+          }
         });
       }),
     }

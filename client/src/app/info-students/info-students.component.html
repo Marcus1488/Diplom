@@ -1,4 +1,4 @@
-<md-tab-group>
+<md-tab-group (selectChange)="changeSelectedTab($event)">
   <md-tab label="Анкетні дані">
     <app-students></app-students>
   </md-tab>

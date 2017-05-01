@@ -78,6 +78,14 @@ module.exports = {
           type: Sequelize.STRING,
           allowNull: true,
         },
+        reasonBeneficiaries: {
+          type: Sequelize.STRING,
+          allowNull: true,
+        },
+        groupAsset: {
+          type: Sequelize.INTEGER,
+          allowNull: true,
+        },
         beneficiaries: {
           type: Sequelize.BOOLEAN,
           allowNull: true,

@@ -1,0 +1,16 @@
+<dx-data-grid
+  id="parents"
+  [dataSource]="parents">
+  <dxi-column
+    dataField="fullName"
+    caption="ФІО"></dxi-column>
+  <dxi-column
+    dataField="phone"
+    caption="Телефон"></dxi-column>
+  <dxi-column
+    dataField="addressWork"
+    caption="Адреса роботи"></dxi-column>
+  <dxi-column
+    dataField="student.fullName"
+    caption="ФІО студента"></dxi-column>
+</dx-data-grid>

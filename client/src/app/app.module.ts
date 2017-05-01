@@ -20,7 +20,7 @@ import {
 } from 'devextreme-angular';
 import {CalendarComponent} from './calendar/calendar.component';
 import {PerformanceQualityControlComponent} from './performance-quality-control/performance-quality-control.component';
-import {CreateStudentsComponent} from './info-students/students/create-students/create-students.component';
+import {CreateStudentsComponent} from './info-students/create-students/create-students.component';
 import {StudentsComponent} from './info-students/students/students.component';
 import {BeneficiariesComponent} from './info-students/beneficiaries/beneficiaries.component';
 import {ParentComponent} from './info-students/parent/parent.component';
@@ -29,6 +29,8 @@ import {TotalComponent} from './info-students/total/total.component';
 
 /*Services*/
 import {ApiServiceService} from "./services/api-service.service";
+import { InfoParentsComponent } from './info-parents/info-parents.component';
+import { DeleteStudentComponent } from './info-students/delete-student/delete-student.component';
 
 
 @NgModule({
@@ -43,7 +45,9 @@ import {ApiServiceService} from "./services/api-service.service";
     BeneficiariesComponent,
     ParentComponent,
     ActiveGroupsComponent,
-    TotalComponent
+    TotalComponent,
+    InfoParentsComponent,
+    DeleteStudentComponent
   ],
   imports: [
     BrowserModule,
@@ -57,7 +61,7 @@ import {ApiServiceService} from "./services/api-service.service";
     DxDataGridModule,
     DxCalendarModule
   ],
-  entryComponents: [CreateStudentsComponent],
+  entryComponents: [CreateStudentsComponent, DeleteStudentComponent],
   providers: [ApiServiceService],
   bootstrap: [AppComponent]
 })

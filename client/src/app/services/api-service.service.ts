@@ -5,40 +5,70 @@ import {Http, Response} from "@angular/http";
 import 'rxjs/add/operator/catch';
 import 'rxjs/add/operator/map';
 
-import {Student} from '../models/students.model';
-import {Config} from "../models/config.model";
-
 @Injectable()
 export class ApiServiceService {
   students: any[];
 
   constructor(private http: Http) {
   }
-
-  getAllStudents(): Observable<Student[]> {
-    return this.http.get('/api/students')
-      .map(this.extractData)
-      .catch(this.handleError);
-  };
-
-  getBeneficiariesStudents(): Observable<Student[]> {
-    return this.http.get('/api/students/beneficiaries')
-      .map(this.extractData)
-      .catch(this.handleError);
-  };
-
-  getConfig(): Observable<Config[]> {
+  /*Global api*/
+  getConfig(): Observable<any> {
     return this.http.get('/api/config')
       .map(this.extractData)
       .catch(this.handleError);
   };
 
-  createStudent(data): Observable<Student[]> {
+  /*Api for students*/
+  getAllStudents(): Observable<any> {
+    return this.http.get('/api/students')
+      .map(this.extractData)
+      .catch(this.handleError);
+  };
+
+  getBeneficiariesStudents(): Observable<any> {
+    return this.http.get('/api/students/beneficiaries')
+      .map(this.extractData)
+      .catch(this.handleError);
+  };
+
+  getIncompleteFamilies(): Observable<any> {
+    return this.http.get('/api/students/parent')
+      .map(this.extractData)
+      .catch(this.handleError);
+  };
+
+  getGroupAssets(): Observable<any> {
+    return this.http.get('/api/students/groupAssets')
+      .map(this.extractData)
+      .catch(this.handleError);
+  };
+
+  createStudent(data): Observable<any> {
     return this.http.post('/api/students', data)
       .map(this.extractData)
       .catch(this.handleError);
   };
 
+  updateStudent(data): Observable<any> {
+    return this.http.put('/api/students', data)
+      .map(this.extractData)
+      .catch(this.handleError);
+  };
+
+  deleteStudent(data): Observable<any> {
+    return this.http.delete('/api/students', {body: data})
+      .map(this.extractData)
+      .catch(this.handleError);
+  };
+
+  /*Api for parents*/
+  getParents(): Observable<any> {
+    return this.http.get('/api/parents')
+      .map(this.extractData)
+      .catch(this.handleError);
+  };
+
+  /*Functions*/
   private extractData(res: Response) {
     let body = res.json();
     return body || {};

@@ -22,8 +22,10 @@ module.exports = {
         phone: '0965431147',
         studentTicket: '219687621654',
         beneficiaries: false,
-        motherId: 1,
-        fatherId: 2,
+        reasonBeneficiaries: '',
+        groupAsset: 0,
+        motherId: null,
+        fatherId: null,
         groupId: 1
       }
     ], {});

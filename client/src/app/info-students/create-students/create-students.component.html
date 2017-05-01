@@ -1,0 +1,231 @@
+<md-dialog-content>
+  <form>
+    <div fxLayout="row" fxLayoutAlign="space-between">
+      <md-input-container>
+        <input [disabled]="typeView === 'view'" mdInput name="lastName" placeholder="Прізвище"
+               [(ngModel)]="student.lastName">
+      </md-input-container>
+
+      <md-input-container>
+        <input [disabled]="typeView === 'view'" mdInput name="firstName" placeholder="Ім'я"
+               [(ngModel)]="student.firstName">
+      </md-input-container>
+
+      <md-input-container>
+        <input [disabled]="typeView === 'view'" mdInput name="secondName" placeholder="По-батькові"
+               [(ngModel)]="student.secondName">
+      </md-input-container>
+    </div>
+    <div fxLayout="row" fxLayoutAlign="space-between">
+      <md-input-container fxFlex="49">
+        <input [disabled]="typeView === 'view'" mdInput name="birthPlace" placeholder="Місце народження"
+               [(ngModel)]="student.birthPlace">
+      </md-input-container>
+
+      <md2-datepicker [disabled]="typeView === 'view'"
+                      name="dateOfBirthday" fxFlex="49" class="dob" placeholder="Дата народження"
+                      [(ngModel)]="student.dateOfBirthday">
+      </md2-datepicker>
+    </div>
+
+    <md-card class="passport">
+      <md-card-header>
+        <md-card-title>Паспорт</md-card-title>
+      </md-card-header>
+      <md-card-content>
+        <div fxLayout="row" fxLayoutAlign="space-between">
+
+          <md-input-container>
+            <input [disabled]="typeView === 'view'"
+                   mdInput name="passportSeries" placeholder="Серія паспорту" [(ngModel)]="student.passportSeries">
+          </md-input-container>
+
+          <md-input-container>
+            <input [disabled]="typeView === 'view'"
+                   mdInput name="passportNumber" placeholder="Номер паспорту" [(ngModel)]="student.passportNumber">
+          </md-input-container>
+
+          <md2-datepicker [disabled]="typeView === 'view'"
+                          name="passportDate" fxFlex="33" placeholder="Дата видачі" [(ngModel)]="student.passportDate">
+          </md2-datepicker>
+        </div>
+      </md-card-content>
+
+    </md-card>
+
+    <md-card class="address">
+      <md-card-header>
+        <md-card-title>Домашня адреса</md-card-title>
+      </md-card-header>
+      <md-card-content>
+        <div fxLayout="row" fxLayoutAlign="space-between">
+
+          <md-input-container fxFlex="20">
+            <input [disabled]="typeView === 'view'"
+                   mdInput name="addressIndex" placeholder="Індекс" [(ngModel)]="student.addressIndex">
+          </md-input-container>
+
+          <md-input-container fxFlex="39">
+            <input [disabled]="typeView === 'view'"
+                   mdInput name="addressRegion" placeholder="Область" [(ngModel)]="student.addressRegion">
+          </md-input-container>
+
+          <md-input-container fxFlex="39">
+            <input [disabled]="typeView === 'view'"
+                   mdInput name="addressArea" placeholder="Район" [(ngModel)]="student.addressArea">
+          </md-input-container>
+        </div>
+        <div fxLayout="row" fxLayoutAlign="space-between">
+
+          <md-input-container fxFlex="49">
+            <input [disabled]="typeView === 'view'"
+                   mdInput name="addressCity" placeholder="Місто" [(ngModel)]="student.addressCity">
+          </md-input-container>
+
+          <md-input-container fxFlex="49">
+            <input [disabled]="typeView === 'view'"
+                   mdInput name="addressStreet" placeholder="Вулиця" [(ngModel)]="student.addressStreet">
+          </md-input-container>
+        </div>
+        <div fxLayout="row" fxLayoutAlign="space-between">
+          <md-input-container fxFlex="49">
+            <input [disabled]="typeView === 'view'"
+                   mdInput name="addressHouse" placeholder="Будинок" [(ngModel)]="student.addressHouse">
+          </md-input-container>
+
+          <md-input-container fxFlex="49">
+            <input [disabled]="typeView === 'view'"
+                   mdInput name="addressFlat" placeholder="Квартира" [(ngModel)]="student.addressFlat">
+          </md-input-container>
+        </div>
+      </md-card-content>
+
+    </md-card>
+
+    <md-card class="info">
+      <md-card-header>
+        <md-card-title>Інша інформація</md-card-title>
+      </md-card-header>
+      <md-card-content>
+        <div fxLayout="row" fxLayoutAlign="space-between">
+
+          <md-input-container fxFlex="48">
+            <input [disabled]="typeView === 'view'"
+                   mdInput name="phone" placeholder="Телефон" [(ngModel)]="student.phone">
+          </md-input-container>
+
+          <md-input-container fxFlex="48">
+            <input [disabled]="typeView === 'view'"
+                   mdInput name="studentTicket" placeholder="Студ квиток" [(ngModel)]="student.studentTicket">
+          </md-input-container>
+        </div>
+        <div fxLayout="row" fxLayoutAlign="space-between center" style="padding: 0 10px">
+
+          <md-checkbox [disabled]="typeView === 'view'"
+                       name="beneficiaries" [(ngModel)]="student.beneficiaries">Пільговик
+          </md-checkbox>
+
+          <md-input-container *ngIf="student.beneficiaries" fxFlex="48">
+            <input [disabled]="typeView === 'view'"
+                   mdInput name="reasonBeneficiaries" placeholder="Причина льгот"
+                   [(ngModel)]="student.reasonBeneficiaries">
+          </md-input-container>
+        </div>
+
+        <div fxLayout="row" fxLayoutAlign="space-between center" style="padding: 0 10px; margin-top: 20px">
+
+          <md-select [disabled]="typeView === 'view'"
+                     placeholder="Роль у группі" fxFlex="48"
+                     name="reasonBeneficiaries"
+                     [(ngModel)]="student.groupAsset">
+            <md-option *ngFor="let item of groupAssets" [value]="item.id">{{item.name}}</md-option>
+          </md-select>
+        </div>
+      </md-card-content>
+
+    </md-card>
+  </form>
+
+  <form>
+    <md-card class="mother">
+      <md-card-header>
+        <md-card-title>Мати</md-card-title>
+      </md-card-header>
+      <md-card-content>
+        <div fxLayout="row" fxLayoutAlign="space-between">
+          <md-input-container fxFlex="33">
+            <input [disabled]="typeView === 'view'"
+                   mdInput placeholder="Прізвище" name="motherLastName" [(ngModel)]="mother.lastName">
+          </md-input-container>
+
+          <md-input-container fxFlex="33">
+            <input [disabled]="typeView === 'view'"
+                   mdInput placeholder="Ім'я" name="motherFirstName" [(ngModel)]="mother.firstName">
+          </md-input-container>
+          <md-input-container fxFlex="33">
+            <input [disabled]="typeView === 'view'"
+                   mdInput placeholder="По-батькові" name="motherSecondName" [(ngModel)]="mother.secondName">
+          </md-input-container>
+        </div>
+        <div fxLayout="row" fxLayoutAlign="space-between">
+
+          <md-input-container fxFlex="48">
+            <input [disabled]="typeView === 'view'"
+                   mdInput placeholder="Телефон" name="motherPhone" [(ngModel)]="mother.phone">
+          </md-input-container>
+
+          <md-input-container fxFlex="48">
+            <input [disabled]="typeView === 'view'"
+                   mdInput placeholder="Місце роботи" name="motherAddressWork" [(ngModel)]="mother.addressWork">
+          </md-input-container>
+        </div>
+      </md-card-content>
+
+    </md-card>
+  </form>
+
+  <form>
+    <md-card class="father">
+      <md-card-header>
+        <md-card-title>Батько</md-card-title>
+      </md-card-header>
+      <md-card-content>
+        <div fxLayout="row" fxLayoutAlign="space-between">
+          <md-input-container fxFlex="33">
+            <input [disabled]="typeView === 'view'"
+                   mdInput placeholder="Прізвище" name="fatherLastName" [(ngModel)]="father.lastName">
+          </md-input-container>
+
+          <md-input-container fxFlex="33">
+            <input [disabled]="typeView === 'view'"
+                   mdInput placeholder="Ім'я" name="fatherFirstName" [(ngModel)]="father.firstName">
+          </md-input-container>
+          <md-input-container fxFlex="33">
+            <input [disabled]="typeView === 'view'"
+                   mdInput placeholder="По-батькові" name="fatherSecondName" [(ngModel)]="father.secondName">
+          </md-input-container>
+        </div>
+        <div fxLayout="row" fxLayoutAlign="space-between">
+
+          <md-input-container fxFlex="48">
+            <input [disabled]="typeView === 'view'"
+                   mdInput placeholder="Телефон" name="fatherPhone" [(ngModel)]="father.phone">
+          </md-input-container>
+
+          <md-input-container fxFlex="48">
+            <input [disabled]="typeView === 'view'"
+                   mdInput placeholder="Місце роботи" name="fatherAddressWork" [(ngModel)]="father.addressWork">
+          </md-input-container>
+        </div>
+      </md-card-content>
+
+    </md-card>
+  </form>
+</md-dialog-content>
+
+
+<md-dialog-actions fxLayout="row" fxLayoutAlign="space-around">
+  <button *ngIf="typeView === 'edit'" md-raised-button fxFlex="20" (click)="updateStudent()">Оновити</button>
+  <button *ngIf="!typeView" md-raised-button fxFlex="20" (click)="createStudent()">Зберегти</button>
+  <button md-raised-button fxFlex="20" md-dialog-close>Закрити</button>
+</md-dialog-actions>

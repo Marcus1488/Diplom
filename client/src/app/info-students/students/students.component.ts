@@ -1,7 +1,8 @@
 import {Component, OnInit} from '@angular/core';
 import {MdDialog} from "@angular/material";
-import {CreateStudentsComponent} from "./create-students/create-students.component";
+import {CreateStudentsComponent} from "../create-students/create-students.component";
 import {ApiServiceService} from "../../services/api-service.service";
+import {DeleteStudentComponent} from "../delete-student/delete-student.component";
 
 @Component({
   selector: 'app-students',
@@ -39,7 +40,41 @@ export class StudentsComponent implements OnInit {
         this.getStudents();
       }
     });
-
   }
 
+  openEditDialog(data) {
+    let dialogRef = this.dialog.open(CreateStudentsComponent, {
+      data: {
+        typeView: 'edit',
+        student: data
+      }
+    });
+    dialogRef.afterClosed().subscribe(result => {
+      if (result) {
+        this.getStudents();
+      }
+    });
+  }
+
+  openDeletingDialog(data) {
+    let dialogRef = this.dialog.open(DeleteStudentComponent, {
+      data: {
+        student: data
+      }
+    });
+    dialogRef.afterClosed().subscribe(result => {
+      if (result) {
+        this.getStudents();
+      }
+    });
+  }
+
+  openViewDialog(data) {
+    this.dialog.open(CreateStudentsComponent, {
+      data: {
+        typeView: 'view',
+        student: data
+      }
+    });
+  }
 }

@@ -3,6 +3,7 @@ import {Routes, RouterModule} from "@angular/router";
 import {HomeComponent} from "./home/home.component";
 import {InfoStudentsComponent} from "./info-students/info-students.component";
 import {PerformanceQualityControlComponent} from "./performance-quality-control/performance-quality-control.component";
+import {InfoParentsComponent} from "./info-parents/info-parents.component";
 
 
 const appRoutes: Routes = [
@@ -17,6 +18,10 @@ const appRoutes: Routes = [
   {
     path: "studies",
     component: PerformanceQualityControlComponent,
+  },
+  {
+    path: "parents",
+    component: InfoParentsComponent,
   }
 ];
 

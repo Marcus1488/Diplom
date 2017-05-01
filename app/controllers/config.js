@@ -10,8 +10,8 @@ module.exports = function (app) {
 
 router.get('/config', Promise.coroutine(function *(req, res, next) {
     try {
-      let config = yield db.Config.findOne({where: {id: 1}});
-      res.status(200).json(config);
+      let config = yield db.Config.findAll();
+      res.status(200).json(config[0]);
     } catch (err) {
       return next(err);
     }

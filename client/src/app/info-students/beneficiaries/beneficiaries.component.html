@@ -17,12 +17,21 @@
   <dxi-column
     dataField="fullAddress"
     caption="Адреса"></dxi-column>
+  <dxi-column
+    dataField="reasonBeneficiaries"
+    caption="Пільга"></dxi-column>
 
   <dxi-column
-    caption="Дії">
-    <i class="fa fa-eye fa-lg" aria-hidden="true"></i>
-    <i class="fa fa-pencil-square-o fa-lg" aria-hidden="true"></i>
+    caption="Дії"
+    dataField="students"
+    cellTemplate="actions">
   </dxi-column>
+
+  <div *dxTemplate="let data of 'actions'" fxLayoutAlign="center center">
+    <md-icon (click)="openViewDialog(data.data)">remove_red_eye</md-icon>
+    <md-icon (click)="openEditDialog(data.data)">mode_edit</md-icon>
+    <md-icon (click)="openDeletingDialog(data.data)">delete</md-icon>
+  </div>
 
   <div *dxTemplate="let data of 'date'">
     {{data.value | date: 'dd/MM/yyyy'}}
