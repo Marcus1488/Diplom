@@ -23,7 +23,11 @@ if (!global.hasOwnProperty('db')) {
     Students:      sequelize.import(__dirname + '/students'),
     Groups:      sequelize.import(__dirname + '/groups'),
     Config:      sequelize.import(__dirname + '/config'),
-    Parents:      sequelize.import(__dirname + '/parents')
+    Parents:      sequelize.import(__dirname + '/parents'),
+    Items:      sequelize.import(__dirname + '/items'),
+    Ratings:      sequelize.import(__dirname + '/ratings'),
+    Omissions:      sequelize.import(__dirname + '/omissions'),
+    Months:      sequelize.import(__dirname + '/months')
   }
 }
 

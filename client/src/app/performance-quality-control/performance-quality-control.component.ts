@@ -12,4 +12,12 @@ export class PerformanceQualityControlComponent implements OnInit {
   ngOnInit() {
   }
 
+  changeSelectedTab(e) {
+    switch (e.index) {
+      case 0:
+        break;
+      case 1:
+        break;
+    }
+  }
 }

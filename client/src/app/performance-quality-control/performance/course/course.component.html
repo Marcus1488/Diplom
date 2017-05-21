@@ -1,0 +1,67 @@
+<md-card>
+  <md-card-title>{{courseNumber}} курс</md-card-title>
+  <md-card-content>
+    <md-tab-group>
+      <md-tab label="1 семестр">
+        <div class="box-tab-content">
+          <div fxLayoutAlign="end" style="margin-bottom: 10px">
+            <button md-raised-button (click)="openSettingItems(1)">Настройки предметів</button>
+          </div>
+          <div *ngIf="firstSemesterItems && firstSemesterItems.length > 0;else empty_school_items">
+            <dx-data-grid
+              id="gridContainer"
+              [dataSource]="performanceAllData.firstSemester"
+              (onRowUpdated)="updateRating($event)">
+              <dxo-editing
+                mode="cell"
+                [allowUpdating]="true">
+              </dxo-editing>
+
+              <dxi-column dataField="student.firstName" caption="ФІО" [allowEditing]="false"></dxi-column>
+
+              <dxi-column *ngFor="let entry of performanceAllData.firstSemester | keys"
+                          dataField="{{entry.key}}.rating.value"
+                          caption="{{entry.value.name}}"
+                          dataType="number"
+                          alignment="left">
+              </dxi-column>
+            </dx-data-grid>
+          </div>
+        </div>
+      </md-tab>
+      <md-tab label="2 семестр">
+        <div class="box-tab-content">
+          <div fxLayoutAlign="end"  style="margin-bottom: 10px">
+            <button md-raised-button (click)="openSettingItems(2)">Настройки предметів</button>
+          </div>
+          <div *ngIf="secondSemesterItems && secondSemesterItems.length > 0;else empty_school_items">
+            <dx-data-grid
+              id="gridContainer2"
+              [dataSource]="performanceAllData.secondSemester"
+              (onRowUpdated)="updateRating($event)">
+              <dxo-editing
+                mode="cell"
+                [allowUpdating]="true">
+              </dxo-editing>
+
+              <dxi-column dataField="student.firstName" caption="ФІО" [allowEditing]="false"></dxi-column>
+
+              <dxi-column *ngFor="let entry of performanceAllData.secondSemester | keys"
+                          dataField="{{entry.key}}.rating.value"
+                          caption="{{entry.value.name}}"
+                          dataType="number"
+                          alignment="left">
+              </dxi-column>
+            </dx-data-grid>
+          </div>
+        </div>
+      </md-tab>
+    </md-tab-group>
+  </md-card-content>
+</md-card>
+
+<ng-template #empty_school_items>
+  <div fxLayoutAlign="center">
+    Додайте предметів
+  </div>
+</ng-template>

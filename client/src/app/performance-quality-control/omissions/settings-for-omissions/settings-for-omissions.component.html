@@ -1,0 +1,16 @@
+<md-dialog-content>
+  <md-select style="width: 100%;"
+             multiple
+             placeholder="Виберіть місяці"
+             [(ngModel)]="selectedMonths"
+             [multiple]="true">
+    <md-option *ngFor="let month of monthsList" [value]="month.name">
+      {{ month.name }}
+    </md-option>
+  </md-select>
+</md-dialog-content>
+<md-dialog-actions>
+  <button class="close" md-raised-button (click)="updateMonths()">Оновити</button>
+  <button class="close" md-raised-button md-dialog-close>Закрити вікно</button>
+</md-dialog-actions>
+

@@ -31,6 +31,13 @@ import {TotalComponent} from './info-students/total/total.component';
 import {ApiServiceService} from "./services/api-service.service";
 import { InfoParentsComponent } from './info-parents/info-parents.component';
 import { DeleteStudentComponent } from './info-students/delete-student/delete-student.component';
+import { PerformanceComponent } from './performance-quality-control/performance/performance.component';
+import { OmissionsComponent } from './performance-quality-control/omissions/omissions.component';
+import { TotalPerformanceComponent } from './performance-quality-control/total/total.component';
+import { SettingsComponent } from './performance-quality-control/performance/settings/settings.component';
+import {CourseComponent, KeysPipe} from './performance-quality-control/performance/course/course.component';
+import { CourseForOmissionsComponent } from './performance-quality-control/omissions/course-for-omissions/course-for-omissions.component';
+import { SettingsForOmissionsComponent } from './performance-quality-control/omissions/settings-for-omissions/settings-for-omissions.component';
 
 
 @NgModule({
@@ -47,7 +54,15 @@ import { DeleteStudentComponent } from './info-students/delete-student/delete-st
     ActiveGroupsComponent,
     TotalComponent,
     InfoParentsComponent,
-    DeleteStudentComponent
+    DeleteStudentComponent,
+    PerformanceComponent,
+    OmissionsComponent,
+    TotalPerformanceComponent,
+    SettingsComponent,
+    CourseComponent,
+    KeysPipe,
+    CourseForOmissionsComponent,
+    SettingsForOmissionsComponent
   ],
   imports: [
     BrowserModule,
@@ -61,7 +76,11 @@ import { DeleteStudentComponent } from './info-students/delete-student/delete-st
     DxDataGridModule,
     DxCalendarModule
   ],
-  entryComponents: [CreateStudentsComponent, DeleteStudentComponent],
+  entryComponents: [
+    CreateStudentsComponent,
+    DeleteStudentComponent,
+    SettingsComponent,
+    SettingsForOmissionsComponent],
   providers: [ApiServiceService],
   bootstrap: [AppComponent]
 })

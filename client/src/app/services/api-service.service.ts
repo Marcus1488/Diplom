@@ -68,6 +68,49 @@ export class ApiServiceService {
       .catch(this.handleError);
   };
 
+  /*Api for performance*/
+  getAllPerformance(course, semester): Observable<any> {
+    return this.http.get(`/api/performance/${course}/${semester}`)
+      .map(this.extractData)
+      .catch(this.handleError);
+  };
+  getSchoolItems(course, semester): Observable<any> {
+    return this.http.get(`/api/items/${course}/${semester}`)
+      .map(this.extractData)
+      .catch(this.handleError);
+  };
+  createSchoolItem(data): Observable<any> {
+    return this.http.post(`/api/items/`, data)
+      .map(this.extractData)
+      .catch(this.handleError);
+  };
+  removeSchoolItem(id): Observable<any> {
+    return this.http.delete(`/api/items/${id}`)
+      .map(this.extractData)
+      .catch(this.handleError);
+  };
+  updateRatingById(data): Observable<any> {
+    return this.http.put(`/api/rating`, data)
+      .map(this.extractData)
+      .catch(this.handleError);
+  };
+
+  /*Api for omissions*/
+
+  getMonths(course, semester): Observable<any> {
+    return this.http.get(`/api/omissions/month/${course}/${semester}`)
+      .map(this.extractData)
+      .catch(this.handleError);
+  };
+  updateMonths(data,courseNumber, semester): Observable<any> {
+    return this.http.put(`/api/omissions/month`, {
+      data: data,
+      courseNumber: courseNumber,
+      semester: semester
+    })
+      .map(this.extractData)
+      .catch(this.handleError);
+  };
   /*Functions*/
   private extractData(res: Response) {
     let body = res.json();

@@ -1,0 +1,21 @@
+<md-dialog-content>
+  <div fxLayout="column">
+    <md-list>
+      <md-list-item *ngFor="let item of schoolItems">
+        <md-icon (click)="removeItem(item.id)" md-list-icon>close</md-icon>
+        <span>{{item.name}}</span>
+      </md-list-item>
+    </md-list>
+  </div>
+</md-dialog-content>
+<md-dialog-actions>
+  <div fxFlex="100" fxLayout="column">
+    <md-input-container>
+      <input mdInput placeholder="Назва предмету" name="nameItem" [(ngModel)]="itemName">
+    </md-input-container>
+
+    <button [disabled]="!itemName" md-raised-button (click)="createSchoolItem()">Створити</button>
+    <button class="close" md-raised-button md-dialog-close>Закрити вікно</button>
+  </div>
+</md-dialog-actions>
+
