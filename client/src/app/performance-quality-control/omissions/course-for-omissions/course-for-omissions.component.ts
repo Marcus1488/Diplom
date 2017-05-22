@@ -1,7 +1,20 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, Input, OnInit, Pipe, PipeTransform} from '@angular/core';
 import {MdDialog} from "@angular/material";
 import {ApiServiceService} from "../../../services/api-service.service";
 import {SettingsForOmissionsComponent} from "../settings-for-omissions/settings-for-omissions.component";
+
+@Pipe({name: 'keys'})
+export class OmissionKeysPipe implements PipeTransform {
+  transform(value, args:string[]) : any {
+    let keys = [];
+    for (let key in value[0]) {
+      if (key !== 'student') {
+        keys.push({key: key, value: value[0][key]});
+      }
+    }
+    return keys;
+  }
+}
 
 @Component({
   selector: 'app-course-for-omissions',
@@ -14,7 +27,7 @@ export class CourseForOmissionsComponent implements OnInit {
   errorMessage: any;
   firstSemesterItems: any;
   secondSemesterItems: any;
-  performanceAllData: any = {
+  omissionAllData: any = {
     firstSemester: [],
     secondSemester: []
   };
@@ -24,33 +37,32 @@ export class CourseForOmissionsComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.getSchoolItems(this.courseNumber);
-    this.getAllPerformance(this.courseNumber);
+    this.getMonths(this.courseNumber);
+    this.getAllOmissions(this.courseNumber);
   };
 
-  updateRating(e) {
-   /* let data;
+  updateOmissions(e) {
+    let data;
 
     for (let key in e.data) {
       data = e.key[key];
     }
 
-    this.apiServiceService.updateRatingById(data.rating)
+    this.apiServiceService.updateOmissions(data.rating)
       .subscribe(
         data => {
-          console.log('Rating updated');
+          console.log('Omissions updated');
         },
-        error => this.errorMessage = <any>error);*/
+        error => this.errorMessage = <any>error);
   }
-
-  getSchoolItems(courseNumber) {
-    this.apiServiceService.getSchoolItems(courseNumber, 1)
+  getMonths(courseNumber) {
+    this.apiServiceService.getMonths(courseNumber, 1)
       .subscribe(
         data => {
           this.firstSemesterItems = data;
         },
         error => this.errorMessage = <any>error);
-    this.apiServiceService.getSchoolItems(courseNumber, 2)
+    this.apiServiceService.getMonths(courseNumber, 2)
       .subscribe(
         data => {
           this.secondSemesterItems = data;
@@ -58,17 +70,17 @@ export class CourseForOmissionsComponent implements OnInit {
         error => this.errorMessage = <any>error);
   };
 
-  getAllPerformance(courseNumber) {
-    this.apiServiceService.getAllPerformance(courseNumber, 1)
+  getAllOmissions(courseNumber) {
+    this.apiServiceService.getAllOmissions(courseNumber, 1)
       .subscribe(
         data => {
-          this.performanceAllData.firstSemester = data;
+          this.omissionAllData.firstSemester = data;
         },
         error => this.errorMessage = <any>error);
-    this.apiServiceService.getAllPerformance(courseNumber, 2)
+    this.apiServiceService.getAllOmissions(courseNumber, 2)
       .subscribe(
         data => {
-          this.performanceAllData.secondSemester = data;
+          this.omissionAllData.secondSemester = data;
         },
         error => this.errorMessage = <any>error);
   };
@@ -81,6 +93,8 @@ export class CourseForOmissionsComponent implements OnInit {
       }
     });
     dialogRef1.afterClosed().subscribe(result => {
+      this.getMonths(this.courseNumber);
+      this.getAllOmissions(this.courseNumber);
     });
   };
 }

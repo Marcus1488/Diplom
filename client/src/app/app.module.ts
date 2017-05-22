@@ -36,7 +36,10 @@ import { OmissionsComponent } from './performance-quality-control/omissions/omis
 import { TotalPerformanceComponent } from './performance-quality-control/total/total.component';
 import { SettingsComponent } from './performance-quality-control/performance/settings/settings.component';
 import {CourseComponent, KeysPipe} from './performance-quality-control/performance/course/course.component';
-import { CourseForOmissionsComponent } from './performance-quality-control/omissions/course-for-omissions/course-for-omissions.component';
+import {
+  CourseForOmissionsComponent,
+  OmissionKeysPipe
+} from './performance-quality-control/omissions/course-for-omissions/course-for-omissions.component';
 import { SettingsForOmissionsComponent } from './performance-quality-control/omissions/settings-for-omissions/settings-for-omissions.component';
 
 
@@ -62,7 +65,8 @@ import { SettingsForOmissionsComponent } from './performance-quality-control/omi
     CourseComponent,
     KeysPipe,
     CourseForOmissionsComponent,
-    SettingsForOmissionsComponent
+    SettingsForOmissionsComponent,
+    OmissionKeysPipe
   ],
   imports: [
     BrowserModule,

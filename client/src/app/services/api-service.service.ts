@@ -96,9 +96,18 @@ export class ApiServiceService {
   };
 
   /*Api for omissions*/
-
+  getAllOmissions(course, semester): Observable<any> {
+    return this.http.get(`/api/omissions/${course}/${semester}`)
+      .map(this.extractData)
+      .catch(this.handleError);
+  };
   getMonths(course, semester): Observable<any> {
     return this.http.get(`/api/omissions/month/${course}/${semester}`)
+      .map(this.extractData)
+      .catch(this.handleError);
+  };
+  updateOmissions(data): Observable<any> {
+    return this.http.put(`/api/omissions`, data)
       .map(this.extractData)
       .catch(this.handleError);
   };

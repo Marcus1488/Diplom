@@ -10,8 +10,11 @@
           <div *ngIf="firstSemesterItems && firstSemesterItems.length > 0;else empty_school_items">
             <dx-data-grid
               id="gridContainer"
-              [dataSource]="performanceAllData.firstSemester"
-              (onRowUpdated)="updateRating($event)">
+              [dataSource]="omissionAllData.firstSemester"
+              [columnAutoWidth]="true"
+              [showBorders]="true"
+              [allowColumnReordering]="true"
+              (onRowUpdated)="updateOmissions($event)">
 
               <dxo-editing
                 mode="cell"
@@ -20,23 +23,58 @@
 
               <dxi-column dataField="student.firstName" caption="ФІО" [allowEditing]="false"></dxi-column>
 
-             <!-- <dxi-column *ngFor="let entry of performanceAllData.firstSemester | keys"
-                          dataField="{{entry.key}}.rating.value"
-                          caption="{{entry.value.name}}"
-                          dataType="number"
-                          alignment="left">
-              </dxi-column>-->
+              <dxi-column *ngFor="let entry of omissionAllData.firstSemester | keys"
+                          caption="{{entry.value.name}}">
+                <dxi-column dataField="{{entry.key}}.rating.serious"
+                            caption="Поважні"
+                            dataType="number">
+
+                </dxi-column>
+                <dxi-column dataField="{{entry.key}}.rating.notSerious"
+                            caption="Не поважні"
+                            dataType="number">
+
+                </dxi-column>
+              </dxi-column>
             </dx-data-grid>
           </div>
         </div>
       </md-tab>
       <md-tab label="2 семестр">
         <div class="box-tab-content">
-          <div fxLayoutAlign="end"  style="margin-bottom: 10px">
+          <div fxLayoutAlign="end" style="margin-bottom: 10px">
             <button md-raised-button (click)="openSettingItems(2)">Настройки місяців</button>
           </div>
           <div *ngIf="secondSemesterItems && secondSemesterItems.length > 0;else empty_school_items">
+            <dx-data-grid
+              id="gridContainer1"
+              [dataSource]="omissionAllData.secondSemester"
+              [columnAutoWidth]="true"
+              [showBorders]="true"
+              [allowColumnReordering]="true"
+              (onRowUpdated)="updateOmissions($event)">
 
+              <dxo-editing
+                mode="cell"
+                [allowUpdating]="true">
+              </dxo-editing>
+
+              <dxi-column dataField="student.firstName" caption="ФІО" [allowEditing]="false"></dxi-column>
+
+              <dxi-column *ngFor="let entry of omissionAllData.secondSemester | keys"
+                          caption="{{entry.value.name}}">
+                <dxi-column dataField="{{entry.key}}.rating.serious"
+                            caption="Поважні"
+                            dataType="number">
+
+                </dxi-column>
+                <dxi-column dataField="{{entry.key}}.rating.notSerious"
+                            caption="Не поважні"
+                            dataType="number">
+
+                </dxi-column>
+              </dxi-column>
+            </dx-data-grid>
           </div>
         </div>
       </md-tab>
