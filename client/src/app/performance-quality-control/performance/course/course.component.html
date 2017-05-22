@@ -10,6 +10,7 @@
           <div *ngIf="firstSemesterItems && firstSemesterItems.length > 0;else empty_school_items">
             <dx-data-grid
               id="gridContainer"
+              [showBorders]="true"
               [dataSource]="performanceAllData.firstSemester"
               (onRowUpdated)="updateRating($event)">
               <dxo-editing
@@ -37,6 +38,7 @@
           <div *ngIf="secondSemesterItems && secondSemesterItems.length > 0;else empty_school_items">
             <dx-data-grid
               id="gridContainer2"
+              [showBorders]="true"
               [dataSource]="performanceAllData.secondSemester"
               (onRowUpdated)="updateRating($event)">
               <dxo-editing
