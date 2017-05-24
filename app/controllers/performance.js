@@ -116,3 +116,47 @@ router.get('/performance/:courseNumber/:semester', Promise.coroutine(function *(
     }
   })
 );
+
+
+router.get('/performance/total/:courseNumber/:semester', Promise.coroutine(function *(req, res, next) {
+    try {
+      let courseNumber = req.params.courseNumber;
+      let semester = req.params.semester;
+
+      let config = yield db.Config.findAll();
+      let students = yield db.Students.findAll({where: {groupId: config[0].activeGroupId}});
+
+      let schoolItems = yield db.Items.findAll({
+        where: {
+          courseNumber: courseNumber,
+          semester: semester
+        }
+      });
+
+      let result = [];
+
+      for (let student of students) {
+        let compareData = {};
+        compareData.student = student;
+
+        for (let schoolItem of schoolItems) {
+          compareData[`schoolItems${schoolItem.id}`] = schoolItem;
+          compareData[`schoolItems${schoolItem.id}`].dataValues.rating = yield db.Ratings.findOne({
+            where: {
+              studentId: student.id,
+              itemId: schoolItem.id
+            }
+          });
+          if (!compareData[`schoolItems${schoolItem.id}`].dataValues.rating || !compareData[`schoolItems${schoolItem.id}`].dataValues.rating.value) {
+            res.status(200).json(null);
+          }
+        }
+        result.push(JSON.parse(JSON.stringify(compareData)));
+      }
+
+      res.status(200).json(result);
+    } catch (err) {
+      return next(err);
+    }
+  })
+);

@@ -69,6 +69,11 @@ export class ApiServiceService {
   };
 
   /*Api for performance*/
+  getTotalPerformance(course, semester): Observable<any> {
+    return this.http.get(`/api//performance/total/${course}/${semester}`)
+      .map(this.extractData)
+      .catch(this.handleError);
+  };
   getAllPerformance(course, semester): Observable<any> {
     return this.http.get(`/api/performance/${course}/${semester}`)
       .map(this.extractData)
@@ -120,6 +125,9 @@ export class ApiServiceService {
       .map(this.extractData)
       .catch(this.handleError);
   };
+
+
+
   /*Functions*/
   private extractData(res: Response) {
     let body = res.json();
