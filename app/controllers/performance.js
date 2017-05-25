@@ -90,6 +90,8 @@ router.get('/performance/:courseNumber/:semester', Promise.coroutine(function *(
       for (let student of students) {
         let compareData = {};
         compareData.student = student;
+        compareData.student.dataValues.fullName =
+          compareData.student.lastName + ' ' + compareData.student.firstName[0] + '. ' + compareData.student.secondName[0] + '.' ;
 
         for (let schoolItem of schoolItems) {
           compareData[`schoolItems${schoolItem.id}`] = schoolItem;
@@ -133,13 +135,33 @@ router.get('/performance/total/:courseNumber/:semester', Promise.coroutine(funct
         }
       });
 
+      let months = yield db.Months.findAll({
+        where: {
+          courseNumber: courseNumber,
+          semester: semester
+        }
+      });
+
+      if (schoolItems.length === 0) {
+        return res.send([]);
+      }
+
       let result = [];
 
       for (let student of students) {
         let compareData = {};
         compareData.student = student;
+        compareData.student.dataValues.fullName =
+          compareData.student.lastName + ' ' + compareData.student.firstName[0] + '. ' + compareData.student.secondName[0] + '.' ;
+        compareData.student.dataValues.beneficiariesUk = compareData.student.beneficiaries ? 'Так' : 'Ні';
 
+        compareData.averageScore = null;
+
+        let score = null;
+        let count = null;
         for (let schoolItem of schoolItems) {
+          count++;
+
           compareData[`schoolItems${schoolItem.id}`] = schoolItem;
           compareData[`schoolItems${schoolItem.id}`].dataValues.rating = yield db.Ratings.findOne({
             where: {
@@ -148,9 +170,36 @@ router.get('/performance/total/:courseNumber/:semester', Promise.coroutine(funct
             }
           });
           if (!compareData[`schoolItems${schoolItem.id}`].dataValues.rating || !compareData[`schoolItems${schoolItem.id}`].dataValues.rating.value) {
-            res.status(200).json(null);
+            return res.send([]);
+          }
+          score += compareData[`schoolItems${schoolItem.id}`].dataValues.rating.value;
+        }
+
+        let sumOmissions = {
+          serious: 0,
+          notSerious: 0
+        };
+
+        if (months.length > 0) {
+          for (let month of months) {
+            let omission = yield db.Omissions.findOne({
+              where: {
+                studentId: student.id,
+                itemId: month.id
+              }
+            });
+
+            sumOmissions.serious += omission ? omission.serious : null;
+            sumOmissions.notSerious += omission ? omission.notSerious : null;
           }
         }
+
+        compareData.omission = {
+          serious: sumOmissions.serious,
+          notSerious: sumOmissions.notSerious,
+          total: sumOmissions.serious + sumOmissions.notSerious
+        };
+        compareData.averageScore = (score/count).toFixed(2);
         result.push(JSON.parse(JSON.stringify(compareData)));
       }
 

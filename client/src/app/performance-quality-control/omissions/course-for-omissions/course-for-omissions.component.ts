@@ -37,9 +37,12 @@ export class CourseForOmissionsComponent implements OnInit {
   }
 
   ngOnInit() {
+  };
+
+  updateAllInfo() {
     this.getMonths(this.courseNumber);
     this.getAllOmissions(this.courseNumber);
-  };
+  }
 
   updateOmissions(e) {
     let data;

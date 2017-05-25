@@ -107,6 +107,8 @@ router.get('/omissions/:courseNumber/:semester', Promise.coroutine(function *(re
       for (let student of students) {
         let compareData = {};
         compareData.student = student;
+        compareData.student.dataValues.fullName =
+          compareData.student.lastName + ' ' + compareData.student.firstName[0] + '. ' + compareData.student.secondName[0] + '.' ;
 
         for (let month of months) {
           compareData[`month${month.id}`] = month;

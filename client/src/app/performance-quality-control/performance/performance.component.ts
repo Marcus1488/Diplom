@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit, QueryList, ViewChildren} from '@angular/core';
+import {CourseComponent} from "./course/course.component";
 
 @Component({
   selector: 'app-performance',
@@ -6,10 +7,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./performance.component.scss']
 })
 export class PerformanceComponent implements OnInit {
+  @ViewChildren(CourseComponent) courseComponents: QueryList<CourseComponent>;
 
   constructor() {}
 
   ngOnInit() {
+  }
+
+  updateInfo() {
+    this.courseComponents.forEach((child) => {
+      child.updateAllInfo();
+    });
   }
 
 }

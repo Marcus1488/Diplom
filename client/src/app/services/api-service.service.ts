@@ -70,7 +70,7 @@ export class ApiServiceService {
 
   /*Api for performance*/
   getTotalPerformance(course, semester): Observable<any> {
-    return this.http.get(`/api//performance/total/${course}/${semester}`)
+    return this.http.get(`/api/performance/total/${course}/${semester}`)
       .map(this.extractData)
       .catch(this.handleError);
   };

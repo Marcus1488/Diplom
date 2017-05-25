@@ -13,6 +13,7 @@
               [dataSource]="omissionAllData.firstSemester"
               [columnAutoWidth]="true"
               [showBorders]="true"
+              [showRowLines]="true"
               [allowColumnReordering]="true"
               (onRowUpdated)="updateOmissions($event)">
 
@@ -21,7 +22,7 @@
                 [allowUpdating]="true">
               </dxo-editing>
 
-              <dxi-column dataField="student.firstName" caption="ФІО" [allowEditing]="false"></dxi-column>
+              <dxi-column dataField="student.fullName" caption="ФІО" [allowEditing]="false"></dxi-column>
 
               <dxi-column *ngFor="let entry of omissionAllData.firstSemester | keys"
                           caption="{{entry.value.name}}">
@@ -51,6 +52,7 @@
               [dataSource]="omissionAllData.secondSemester"
               [columnAutoWidth]="true"
               [showBorders]="true"
+              [showRowLines]="true"
               [allowColumnReordering]="true"
               (onRowUpdated)="updateOmissions($event)">
 
@@ -59,7 +61,7 @@
                 [allowUpdating]="true">
               </dxo-editing>
 
-              <dxi-column dataField="student.firstName" caption="ФІО" [allowEditing]="false"></dxi-column>
+              <dxi-column dataField="student.fullName" caption="ФІО" [allowEditing]="false"></dxi-column>
 
               <dxi-column *ngFor="let entry of omissionAllData.secondSemester | keys"
                           caption="{{entry.value.name}}">

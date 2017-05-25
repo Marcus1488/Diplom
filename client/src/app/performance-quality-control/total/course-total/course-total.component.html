@@ -1,3 +1,129 @@
-<p>
-  course-total works!
-</p>
+<md-card>
+  <md-card-title>{{courseNumber}} курс</md-card-title>
+  <md-card-content>
+    <md-tab-group>
+      <md-tab label="1 семестр">
+        <div class="box-tab-content">
+          <div
+            *ngIf="performanceAllData.firstSemester && performanceAllData.firstSemester.length > 0;else empty_school_items">
+            <dx-data-grid
+              id="gridContainer3"
+              [showBorders]="true"
+              [showRowLines]="true"
+              [dataSource]="performanceAllData.firstSemester">
+              <dxo-export [enabled]="true" fileName="Total report"></dxo-export>
+
+              <dxi-column dataField="student.fullName" caption="ФІО"></dxi-column>
+
+              <dxi-column *ngFor="let entry of performanceAllData.firstSemester | keysTotal"
+                          dataField="{{entry.key}}.rating.value"
+                          caption="{{entry.value.name}}"
+                          dataType="number"
+                          alignment="left">
+              </dxi-column>
+
+              <dxi-column dataField="averageScore" caption="Середній бал" datatype="number"></dxi-column>
+
+              <dxi-column dataField="student.beneficiariesUk" caption="Пільговик"></dxi-column>
+
+              <dxi-column caption="Пропуски">
+                <dxi-column dataField="omission.serious" caption="Поважні" datatype="number"></dxi-column>
+                <dxi-column dataField="omission.notSerious" caption="Не поважні" datatype="number"></dxi-column>
+                <dxi-column dataField="omission.total" caption="Всього" datatype="number"></dxi-column>
+              </dxi-column>
+
+              <dxo-summary>
+                <dxi-total-item
+                  summaryType="sum"
+                  [customizeText]="customizeText">
+                </dxi-total-item>
+                <dxi-total-item
+                  column="omission.serious"
+                  summaryType="sum"
+                  [customizeText]="customizeText">
+                </dxi-total-item>
+                <dxi-total-item
+                  column="omission.notSerious"
+                  summaryType="sum"
+                  [customizeText]="customizeText">
+                </dxi-total-item>
+                <dxi-total-item
+                  column="omission.total"
+                  summaryType="sum"
+                  [customizeText]="customizeText">
+                </dxi-total-item>
+              </dxo-summary>
+            </dx-data-grid>
+          </div>
+        </div>
+      </md-tab>
+      <md-tab label="2 семестр">
+        <div class="box-tab-content">
+          <div
+            *ngIf="performanceAllData.secondSemester && performanceAllData.secondSemester.length > 0;else empty_school_items">
+            <dx-data-grid
+              id="gridContainer"
+              [showBorders]="true"
+              [showRowLines]="true"
+              [dataSource]="performanceAllData.secondSemester">
+              <dxo-export [enabled]="true" fileName="Total report"></dxo-export>
+
+              <dxi-column dataField="student.fullName" caption="ФІО"></dxi-column>
+
+              <dxi-column *ngFor="let entry of performanceAllData.secondSemester | keysTotal"
+                          dataField="{{entry.key}}.rating.value"
+                          caption="{{entry.value.name}}"
+                          dataType="number"
+                          alignment="left">
+              </dxi-column>
+
+              <dxi-column dataField="averageScore" caption="Середній бал" datatype="number"></dxi-column>
+
+              <dxi-column dataField="student.beneficiaries" caption="Пільговик" datatype="number"
+                          cellTemplate="beneficiariesTemplate"></dxi-column>
+
+              <dxi-column caption="Пропуски">
+                <dxi-column dataField="omission.serious" caption="Поважні" datatype="number"></dxi-column>
+                <dxi-column dataField="omission.notSerious" caption="Не поважні" datatype="number"></dxi-column>
+                <dxi-column dataField="omission.total" caption="Всього" datatype="number"></dxi-column>
+              </dxi-column>
+
+              <dxo-summary>
+                <dxi-total-item
+                  summaryType="sum"
+                  [customizeText]="customizeText">
+                </dxi-total-item>
+                <dxi-total-item
+                  column="omission.serious"
+                  summaryType="sum"
+                  [customizeText]="customizeText">
+                </dxi-total-item>
+                <dxi-total-item
+                  column="omission.notSerious"
+                  summaryType="sum"
+                  [customizeText]="customizeText">
+                </dxi-total-item>
+                <dxi-total-item
+                  column="omission.total"
+                  summaryType="sum"
+                  [customizeText]="customizeText">
+                </dxi-total-item>
+              </dxo-summary>
+
+              <div *dxTemplate="let data of 'beneficiariesTemplate'">
+                {{data.value ? 'Так' : 'Ні'}}
+              </div>
+
+            </dx-data-grid>
+          </div>
+        </div>
+      </md-tab>
+    </md-tab-group>
+  </md-card-content>
+</md-card>
+
+<ng-template #empty_school_items>
+  <div fxLayoutAlign="center">
+    Заповніть оцінки
+  </div>
+</ng-template>

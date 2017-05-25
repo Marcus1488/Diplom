@@ -37,9 +37,13 @@ export class CourseComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.updateAllInfo();
+  };
+
+  updateAllInfo() {
     this.getSchoolItems(this.courseNumber);
     this.getAllPerformance(this.courseNumber);
-  };
+  }
 
   updateRating(e) {
     let data;

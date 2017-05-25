@@ -350,7 +350,7 @@ exports = module.exports = __webpack_require__(26)(false);
 
 
 // module
-exports.push([module.i, "", ""]);
+exports.push([module.i, "md-card {\n  margin: 10px; }\n  md-card .box-tab-content {\n    margin: 10px; }\n", ""]);
 
 // exports
 
@@ -402,21 +402,21 @@ module.exports = "<div class=\"caption\">\n  <h2>Гірничо електром
 /***/ 1232:
 /***/ (function(module, exports) {
 
-module.exports = "<dx-data-grid\n  id=\"parents\"\n  [showBorders]=\"true\"\n  [dataSource]=\"parents\">\n  <dxi-column\n    dataField=\"fullName\"\n    caption=\"ФІО\"></dxi-column>\n  <dxi-column\n    dataField=\"phone\"\n    caption=\"Телефон\"></dxi-column>\n  <dxi-column\n    dataField=\"addressWork\"\n    caption=\"Адреса роботи\"></dxi-column>\n  <dxi-column\n    dataField=\"student.fullName\"\n    caption=\"ФІО студента\"></dxi-column>\n</dx-data-grid>\n"
+module.exports = "<dx-data-grid\n  id=\"parents\"\n  [showBorders]=\"true\"\n  [showRowLines]=\"true\"\n  [dataSource]=\"parents\">\n  <dxi-column\n    dataField=\"fullName\"\n    caption=\"ФІО\"></dxi-column>\n  <dxi-column\n    dataField=\"phone\"\n    caption=\"Телефон\"></dxi-column>\n  <dxi-column\n    dataField=\"addressWork\"\n    caption=\"Адреса роботи\"></dxi-column>\n  <dxi-column\n    dataField=\"student.fullName\"\n    caption=\"ФІО студента\"></dxi-column>\n</dx-data-grid>\n"
 
 /***/ }),
 
 /***/ 1233:
 /***/ (function(module, exports) {
 
-module.exports = "<dx-data-grid\n  [showBorders]=\"true\"\n  [dataSource]=\"students\">\n  <dxi-column\n    dataField=\"studentTicket\"\n    caption=\"Студ білет\"></dxi-column>\n  <dxi-column\n    dataField=\"fullName\"\n    caption=\"ФІО\"></dxi-column>\n  <dxi-column\n    caption=\"Роль у группі\"\n    dataField=\"students\"\n    cellTemplate=\"groupAssets\">\n  </dxi-column>\n  <dxi-column\n    dataField=\"phone\"\n    caption=\"Телефон\"></dxi-column>\n  <dxi-column\n    dataField=\"dateOfBirthday\"\n    caption=\"Дата народження\"\n    dataType=\"date\"\n    cellTemplate=\"date\"></dxi-column>\n  <dxi-column\n    dataField=\"fullAddress\"\n    caption=\"Адреса\"></dxi-column>\n\n  <dxi-column\n    caption=\"Дії\"\n    dataField=\"students\"\n    cellTemplate=\"actions\">\n  </dxi-column>\n\n  <div *dxTemplate=\"let data of 'actions'\" fxLayoutAlign=\"center center\">\n    <md-icon (click)=\"openViewDialog(data.data)\">remove_red_eye</md-icon>\n    <md-icon (click)=\"openEditDialog(data.data)\">mode_edit</md-icon>\n    <md-icon (click)=\"openDeletingDialog(data.data)\">delete</md-icon>\n  </div>\n\n  <div *dxTemplate=\"let data of 'date'\">\n    {{data.value | date: 'dd/MM/yyyy'}}\n  </div>\n\n  <div *dxTemplate=\"let data of 'groupAssets'\">\n    {{getNameAssetsById(data.data.groupAsset)}}\n  </div>\n</dx-data-grid>\n"
+module.exports = "<dx-data-grid\n  [showBorders]=\"true\"\n  [showRowLines]=\"true\"\n  [dataSource]=\"students\">\n  <dxi-column\n    dataField=\"studentTicket\"\n    caption=\"Студ білет\"></dxi-column>\n  <dxi-column\n    dataField=\"fullName\"\n    caption=\"ФІО\"></dxi-column>\n  <dxi-column\n    caption=\"Роль у группі\"\n    dataField=\"students\"\n    cellTemplate=\"groupAssets\">\n  </dxi-column>\n  <dxi-column\n    dataField=\"phone\"\n    caption=\"Телефон\"></dxi-column>\n  <dxi-column\n    dataField=\"dateOfBirthday\"\n    caption=\"Дата народження\"\n    dataType=\"date\"\n    cellTemplate=\"date\"></dxi-column>\n  <dxi-column\n    dataField=\"fullAddress\"\n    caption=\"Адреса\"></dxi-column>\n\n  <dxi-column\n    caption=\"Дії\"\n    dataField=\"students\"\n    cellTemplate=\"actions\">\n  </dxi-column>\n\n  <div *dxTemplate=\"let data of 'actions'\" fxLayoutAlign=\"center center\">\n    <md-icon (click)=\"openViewDialog(data.data)\">remove_red_eye</md-icon>\n    <md-icon (click)=\"openEditDialog(data.data)\">mode_edit</md-icon>\n    <md-icon (click)=\"openDeletingDialog(data.data)\">delete</md-icon>\n  </div>\n\n  <div *dxTemplate=\"let data of 'date'\">\n    {{data.value | date: 'dd/MM/yyyy'}}\n  </div>\n\n  <div *dxTemplate=\"let data of 'groupAssets'\">\n    {{getNameAssetsById(data.data.groupAsset)}}\n  </div>\n</dx-data-grid>\n"
 
 /***/ }),
 
 /***/ 1234:
 /***/ (function(module, exports) {
 
-module.exports = "<dx-data-grid\n  [showBorders]=\"true\"\n  [dataSource]=\"students\">\n  <dxi-column\n    dataField=\"studentTicket\"\n    caption=\"Студ білет\"></dxi-column>\n  <dxi-column\n    dataField=\"fullName\"\n    caption=\"ФІО\"></dxi-column>\n  <dxi-column\n    dataField=\"phone\"\n    caption=\"Телефон\"></dxi-column>\n  <dxi-column\n    dataField=\"dateOfBirthday\"\n    caption=\"Дата народження\"\n    dataType=\"date\"\n    cellTemplate=\"date\"></dxi-column>\n  <dxi-column\n    dataField=\"fullAddress\"\n    caption=\"Адреса\"></dxi-column>\n  <dxi-column\n    dataField=\"reasonBeneficiaries\"\n    caption=\"Пільга\"></dxi-column>\n\n  <dxi-column\n    caption=\"Дії\"\n    dataField=\"students\"\n    cellTemplate=\"actions\">\n  </dxi-column>\n\n  <div *dxTemplate=\"let data of 'actions'\" fxLayoutAlign=\"center center\">\n    <md-icon (click)=\"openViewDialog(data.data)\">remove_red_eye</md-icon>\n    <md-icon (click)=\"openEditDialog(data.data)\">mode_edit</md-icon>\n    <md-icon (click)=\"openDeletingDialog(data.data)\">delete</md-icon>\n  </div>\n\n  <div *dxTemplate=\"let data of 'date'\">\n    {{data.value | date: 'dd/MM/yyyy'}}\n  </div>\n</dx-data-grid>\n"
+module.exports = "<dx-data-grid\n  [showBorders]=\"true\"\n  [showRowLines]=\"true\"\n  [dataSource]=\"students\">\n  <dxi-column\n    dataField=\"studentTicket\"\n    caption=\"Студ білет\"></dxi-column>\n  <dxi-column\n    dataField=\"fullName\"\n    caption=\"ФІО\"></dxi-column>\n  <dxi-column\n    dataField=\"phone\"\n    caption=\"Телефон\"></dxi-column>\n  <dxi-column\n    dataField=\"dateOfBirthday\"\n    caption=\"Дата народження\"\n    dataType=\"date\"\n    cellTemplate=\"date\"></dxi-column>\n  <dxi-column\n    dataField=\"fullAddress\"\n    caption=\"Адреса\"></dxi-column>\n  <dxi-column\n    dataField=\"reasonBeneficiaries\"\n    caption=\"Пільга\"></dxi-column>\n\n  <dxi-column\n    caption=\"Дії\"\n    dataField=\"students\"\n    cellTemplate=\"actions\">\n  </dxi-column>\n\n  <div *dxTemplate=\"let data of 'actions'\" fxLayoutAlign=\"center center\">\n    <md-icon (click)=\"openViewDialog(data.data)\">remove_red_eye</md-icon>\n    <md-icon (click)=\"openEditDialog(data.data)\">mode_edit</md-icon>\n    <md-icon (click)=\"openDeletingDialog(data.data)\">delete</md-icon>\n  </div>\n\n  <div *dxTemplate=\"let data of 'date'\">\n    {{data.value | date: 'dd/MM/yyyy'}}\n  </div>\n</dx-data-grid>\n"
 
 /***/ }),
 
@@ -444,14 +444,14 @@ module.exports = "<md-tab-group (selectChange)=\"changeSelectedTab($event)\">\n 
 /***/ 1238:
 /***/ (function(module, exports) {
 
-module.exports = "<dx-data-grid\n  id=\"students\"\n  [showBorders]=\"true\"\n  [dataSource]=\"students\">\n  <dxi-column\n    dataField=\"studentTicket\"\n    caption=\"Студ білет\"></dxi-column>\n  <dxi-column\n    dataField=\"fullName\"\n    caption=\"ФІО\"></dxi-column>\n  <dxi-column\n    dataField=\"phone\"\n    caption=\"Телефон\"></dxi-column>\n  <dxi-column\n    dataField=\"dateOfBirthday\"\n    caption=\"Дата народження\"\n    dataType=\"date\"\n    cellTemplate=\"date\"></dxi-column>\n  <dxi-column\n    dataField=\"fullAddress\"\n    caption=\"Адреса\"></dxi-column>\n\n  <dxi-column\n    caption=\"Дії\"\n    dataField=\"students\"\n    cellTemplate=\"actions\">\n  </dxi-column>\n\n  <div *dxTemplate=\"let data of 'actions'\" fxLayoutAlign=\"center center\">\n    <md-icon (click)=\"openViewDialog(data.data)\">remove_red_eye</md-icon>\n    <md-icon (click)=\"openEditDialog(data.data)\">mode_edit</md-icon>\n    <md-icon (click)=\"openDeletingDialog(data.data)\">delete</md-icon>\n  </div>\n\n  <div *dxTemplate=\"let data of 'date'\">\n    {{data.value | date: 'dd/MM/yyyy'}}\n  </div>\n</dx-data-grid>\n"
+module.exports = "<dx-data-grid\n  id=\"students\"\n  [showBorders]=\"true\"\n  [showRowLines]=\"true\"\n  [dataSource]=\"students\">\n  <dxi-column\n    dataField=\"studentTicket\"\n    caption=\"Студ білет\"></dxi-column>\n  <dxi-column\n    dataField=\"fullName\"\n    caption=\"ФІО\"></dxi-column>\n  <dxi-column\n    dataField=\"phone\"\n    caption=\"Телефон\"></dxi-column>\n  <dxi-column\n    dataField=\"dateOfBirthday\"\n    caption=\"Дата народження\"\n    dataType=\"date\"\n    cellTemplate=\"date\"></dxi-column>\n  <dxi-column\n    dataField=\"fullAddress\"\n    caption=\"Адреса\"></dxi-column>\n\n  <dxi-column\n    caption=\"Дії\"\n    dataField=\"students\"\n    cellTemplate=\"actions\">\n  </dxi-column>\n\n  <div *dxTemplate=\"let data of 'actions'\" fxLayoutAlign=\"center center\">\n    <md-icon (click)=\"openViewDialog(data.data)\">remove_red_eye</md-icon>\n    <md-icon (click)=\"openEditDialog(data.data)\">mode_edit</md-icon>\n    <md-icon (click)=\"openDeletingDialog(data.data)\">delete</md-icon>\n  </div>\n\n  <div *dxTemplate=\"let data of 'date'\">\n    {{data.value | date: 'dd/MM/yyyy'}}\n  </div>\n</dx-data-grid>\n"
 
 /***/ }),
 
 /***/ 1239:
 /***/ (function(module, exports) {
 
-module.exports = "<div fxLayout=\"row\" fxLayoutAlign=\"end\">\n  <button (click)=\"openCreateDialog()\" md-raised-button>Додати студента</button>\n</div>\n<dx-data-grid\n  id=\"students\"\n  [showBorders]=\"true\"\n  [dataSource]=\"students\">\n  <dxi-column\n    dataField=\"studentTicket\"\n    caption=\"Студ білет\"></dxi-column>\n  <dxi-column\n    dataField=\"fullName\"\n    caption=\"ФІО\"></dxi-column>\n  <dxi-column\n    dataField=\"phone\"\n    caption=\"Телефон\"></dxi-column>\n  <dxi-column\n    dataField=\"dateOfBirthday\"\n    caption=\"Дата народження\"\n    dataType=\"date\"\n    cellTemplate=\"date\"></dxi-column>\n  <dxi-column\n    dataField=\"fullAddress\"\n    caption=\"Адреса\"></dxi-column>\n\n  <dxi-column\n    caption=\"Дії\"\n    dataField=\"students\"\n    cellTemplate=\"actions\">\n  </dxi-column>\n\n  <div *dxTemplate=\"let data of 'actions'\" fxLayoutAlign=\"center center\">\n    <md-icon (click)=\"openViewDialog(data.data)\">remove_red_eye</md-icon>\n    <md-icon (click)=\"openEditDialog(data.data)\">mode_edit</md-icon>\n    <md-icon (click)=\"openDeletingDialog(data.data)\">delete</md-icon>\n  </div>\n\n  <div *dxTemplate=\"let data of 'date'\">\n    {{data.value | date: 'dd/MM/yyyy'}}\n  </div>\n</dx-data-grid>\n"
+module.exports = "<div fxLayout=\"row\" fxLayoutAlign=\"end\">\n  <button (click)=\"openCreateDialog()\" md-raised-button>Додати студента</button>\n</div>\n<dx-data-grid\n  id=\"students\"\n  [showBorders]=\"true\"\n  [showRowLines]=\"true\"\n  [dataSource]=\"students\">\n  <dxi-column\n    dataField=\"studentTicket\"\n    caption=\"Студ білет\"></dxi-column>\n  <dxi-column\n    dataField=\"fullName\"\n    caption=\"ФІО\"></dxi-column>\n  <dxi-column\n    dataField=\"phone\"\n    caption=\"Телефон\"></dxi-column>\n  <dxi-column\n    dataField=\"dateOfBirthday\"\n    caption=\"Дата народження\"\n    dataType=\"date\"\n    cellTemplate=\"date\"></dxi-column>\n  <dxi-column\n    dataField=\"fullAddress\"\n    caption=\"Адреса\"></dxi-column>\n\n  <dxi-column\n    caption=\"Дії\"\n    dataField=\"students\"\n    cellTemplate=\"actions\">\n  </dxi-column>\n\n  <div *dxTemplate=\"let data of 'actions'\" fxLayoutAlign=\"center center\">\n    <md-icon (click)=\"openViewDialog(data.data)\">remove_red_eye</md-icon>\n    <md-icon (click)=\"openEditDialog(data.data)\">mode_edit</md-icon>\n    <md-icon (click)=\"openDeletingDialog(data.data)\">delete</md-icon>\n  </div>\n\n  <div *dxTemplate=\"let data of 'date'\">\n    {{data.value | date: 'dd/MM/yyyy'}}\n  </div>\n</dx-data-grid>\n"
 
 /***/ }),
 
@@ -465,7 +465,7 @@ module.exports = ""
 /***/ 1241:
 /***/ (function(module, exports) {
 
-module.exports = "<md-card>\n  <md-card-title>{{courseNumber}} курс</md-card-title>\n  <md-card-content>\n    <md-tab-group>\n      <md-tab label=\"1 семестр\">\n        <div class=\"box-tab-content\">\n          <div fxLayoutAlign=\"end\" style=\"margin-bottom: 10px\">\n            <button md-raised-button (click)=\"openSettingItems(1)\">Настройки місяців</button>\n          </div>\n          <div *ngIf=\"firstSemesterItems && firstSemesterItems.length > 0;else empty_school_items\">\n            <dx-data-grid\n              id=\"gridContainer\"\n              [dataSource]=\"omissionAllData.firstSemester\"\n              [columnAutoWidth]=\"true\"\n              [showBorders]=\"true\"\n              [allowColumnReordering]=\"true\"\n              (onRowUpdated)=\"updateOmissions($event)\">\n\n              <dxo-editing\n                mode=\"cell\"\n                [allowUpdating]=\"true\">\n              </dxo-editing>\n\n              <dxi-column dataField=\"student.firstName\" caption=\"ФІО\" [allowEditing]=\"false\"></dxi-column>\n\n              <dxi-column *ngFor=\"let entry of omissionAllData.firstSemester | keys\"\n                          caption=\"{{entry.value.name}}\">\n                <dxi-column dataField=\"{{entry.key}}.rating.serious\"\n                            caption=\"Поважні\"\n                            dataType=\"number\">\n\n                </dxi-column>\n                <dxi-column dataField=\"{{entry.key}}.rating.notSerious\"\n                            caption=\"Не поважні\"\n                            dataType=\"number\">\n\n                </dxi-column>\n              </dxi-column>\n            </dx-data-grid>\n          </div>\n        </div>\n      </md-tab>\n      <md-tab label=\"2 семестр\">\n        <div class=\"box-tab-content\">\n          <div fxLayoutAlign=\"end\" style=\"margin-bottom: 10px\">\n            <button md-raised-button (click)=\"openSettingItems(2)\">Настройки місяців</button>\n          </div>\n          <div *ngIf=\"secondSemesterItems && secondSemesterItems.length > 0;else empty_school_items\">\n            <dx-data-grid\n              id=\"gridContainer1\"\n              [dataSource]=\"omissionAllData.secondSemester\"\n              [columnAutoWidth]=\"true\"\n              [showBorders]=\"true\"\n              [allowColumnReordering]=\"true\"\n              (onRowUpdated)=\"updateOmissions($event)\">\n\n              <dxo-editing\n                mode=\"cell\"\n                [allowUpdating]=\"true\">\n              </dxo-editing>\n\n              <dxi-column dataField=\"student.firstName\" caption=\"ФІО\" [allowEditing]=\"false\"></dxi-column>\n\n              <dxi-column *ngFor=\"let entry of omissionAllData.secondSemester | keys\"\n                          caption=\"{{entry.value.name}}\">\n                <dxi-column dataField=\"{{entry.key}}.rating.serious\"\n                            caption=\"Поважні\"\n                            dataType=\"number\">\n\n                </dxi-column>\n                <dxi-column dataField=\"{{entry.key}}.rating.notSerious\"\n                            caption=\"Не поважні\"\n                            dataType=\"number\">\n\n                </dxi-column>\n              </dxi-column>\n            </dx-data-grid>\n          </div>\n        </div>\n      </md-tab>\n    </md-tab-group>\n  </md-card-content>\n</md-card>\n\n<ng-template #empty_school_items>\n  <div fxLayoutAlign=\"center\">\n    Додайте місяців\n  </div>\n</ng-template>\n"
+module.exports = "<md-card>\n  <md-card-title>{{courseNumber}} курс</md-card-title>\n  <md-card-content>\n    <md-tab-group>\n      <md-tab label=\"1 семестр\">\n        <div class=\"box-tab-content\">\n          <div fxLayoutAlign=\"end\" style=\"margin-bottom: 10px\">\n            <button md-raised-button (click)=\"openSettingItems(1)\">Настройки місяців</button>\n          </div>\n          <div *ngIf=\"firstSemesterItems && firstSemesterItems.length > 0;else empty_school_items\">\n            <dx-data-grid\n              id=\"gridContainer\"\n              [dataSource]=\"omissionAllData.firstSemester\"\n              [columnAutoWidth]=\"true\"\n              [showBorders]=\"true\"\n              [showRowLines]=\"true\"\n              [allowColumnReordering]=\"true\"\n              (onRowUpdated)=\"updateOmissions($event)\">\n\n              <dxo-editing\n                mode=\"cell\"\n                [allowUpdating]=\"true\">\n              </dxo-editing>\n\n              <dxi-column dataField=\"student.fullName\" caption=\"ФІО\" [allowEditing]=\"false\"></dxi-column>\n\n              <dxi-column *ngFor=\"let entry of omissionAllData.firstSemester | keys\"\n                          caption=\"{{entry.value.name}}\">\n                <dxi-column dataField=\"{{entry.key}}.rating.serious\"\n                            caption=\"Поважні\"\n                            dataType=\"number\">\n\n                </dxi-column>\n                <dxi-column dataField=\"{{entry.key}}.rating.notSerious\"\n                            caption=\"Не поважні\"\n                            dataType=\"number\">\n\n                </dxi-column>\n              </dxi-column>\n            </dx-data-grid>\n          </div>\n        </div>\n      </md-tab>\n      <md-tab label=\"2 семестр\">\n        <div class=\"box-tab-content\">\n          <div fxLayoutAlign=\"end\" style=\"margin-bottom: 10px\">\n            <button md-raised-button (click)=\"openSettingItems(2)\">Настройки місяців</button>\n          </div>\n          <div *ngIf=\"secondSemesterItems && secondSemesterItems.length > 0;else empty_school_items\">\n            <dx-data-grid\n              id=\"gridContainer1\"\n              [dataSource]=\"omissionAllData.secondSemester\"\n              [columnAutoWidth]=\"true\"\n              [showBorders]=\"true\"\n              [showRowLines]=\"true\"\n              [allowColumnReordering]=\"true\"\n              (onRowUpdated)=\"updateOmissions($event)\">\n\n              <dxo-editing\n                mode=\"cell\"\n                [allowUpdating]=\"true\">\n              </dxo-editing>\n\n              <dxi-column dataField=\"student.fullName\" caption=\"ФІО\" [allowEditing]=\"false\"></dxi-column>\n\n              <dxi-column *ngFor=\"let entry of omissionAllData.secondSemester | keys\"\n                          caption=\"{{entry.value.name}}\">\n                <dxi-column dataField=\"{{entry.key}}.rating.serious\"\n                            caption=\"Поважні\"\n                            dataType=\"number\">\n\n                </dxi-column>\n                <dxi-column dataField=\"{{entry.key}}.rating.notSerious\"\n                            caption=\"Не поважні\"\n                            dataType=\"number\">\n\n                </dxi-column>\n              </dxi-column>\n            </dx-data-grid>\n          </div>\n        </div>\n      </md-tab>\n    </md-tab-group>\n  </md-card-content>\n</md-card>\n\n<ng-template #empty_school_items>\n  <div fxLayoutAlign=\"center\">\n    Додайте місяців\n  </div>\n</ng-template>\n"
 
 /***/ }),
 
@@ -493,7 +493,7 @@ module.exports = "<md-tab-group (selectChange)=\"changeSelectedTab($event)\">\n 
 /***/ 1245:
 /***/ (function(module, exports) {
 
-module.exports = "<md-card>\n  <md-card-title>{{courseNumber}} курс</md-card-title>\n  <md-card-content>\n    <md-tab-group>\n      <md-tab label=\"1 семестр\">\n        <div class=\"box-tab-content\">\n          <div fxLayoutAlign=\"end\" style=\"margin-bottom: 10px\">\n            <button md-raised-button (click)=\"openSettingItems(1)\">Настройки предметів</button>\n          </div>\n          <div *ngIf=\"firstSemesterItems && firstSemesterItems.length > 0;else empty_school_items\">\n            <dx-data-grid\n              id=\"gridContainer\"\n              [showBorders]=\"true\"\n              [dataSource]=\"performanceAllData.firstSemester\"\n              (onRowUpdated)=\"updateRating($event)\">\n              <dxo-editing\n                mode=\"cell\"\n                [allowUpdating]=\"true\">\n              </dxo-editing>\n\n              <dxi-column dataField=\"student.firstName\" caption=\"ФІО\" [allowEditing]=\"false\"></dxi-column>\n\n              <dxi-column *ngFor=\"let entry of performanceAllData.firstSemester | keys\"\n                          dataField=\"{{entry.key}}.rating.value\"\n                          caption=\"{{entry.value.name}}\"\n                          dataType=\"number\"\n                          alignment=\"left\">\n              </dxi-column>\n            </dx-data-grid>\n          </div>\n        </div>\n      </md-tab>\n      <md-tab label=\"2 семестр\">\n        <div class=\"box-tab-content\">\n          <div fxLayoutAlign=\"end\"  style=\"margin-bottom: 10px\">\n            <button md-raised-button (click)=\"openSettingItems(2)\">Настройки предметів</button>\n          </div>\n          <div *ngIf=\"secondSemesterItems && secondSemesterItems.length > 0;else empty_school_items\">\n            <dx-data-grid\n              id=\"gridContainer2\"\n              [showBorders]=\"true\"\n              [dataSource]=\"performanceAllData.secondSemester\"\n              (onRowUpdated)=\"updateRating($event)\">\n              <dxo-editing\n                mode=\"cell\"\n                [allowUpdating]=\"true\">\n              </dxo-editing>\n\n              <dxi-column dataField=\"student.firstName\" caption=\"ФІО\" [allowEditing]=\"false\"></dxi-column>\n\n              <dxi-column *ngFor=\"let entry of performanceAllData.secondSemester | keys\"\n                          dataField=\"{{entry.key}}.rating.value\"\n                          caption=\"{{entry.value.name}}\"\n                          dataType=\"number\"\n                          alignment=\"left\">\n              </dxi-column>\n            </dx-data-grid>\n          </div>\n        </div>\n      </md-tab>\n    </md-tab-group>\n  </md-card-content>\n</md-card>\n\n<ng-template #empty_school_items>\n  <div fxLayoutAlign=\"center\">\n    Додайте предметів\n  </div>\n</ng-template>\n"
+module.exports = "<md-card>\n  <md-card-title>{{courseNumber}} курс</md-card-title>\n  <md-card-content>\n    <md-tab-group>\n      <md-tab label=\"1 семестр\">\n        <div class=\"box-tab-content\">\n          <div fxLayoutAlign=\"end\" style=\"margin-bottom: 10px\">\n            <button md-raised-button (click)=\"openSettingItems(1)\">Настройки предметів</button>\n          </div>\n          <div *ngIf=\"firstSemesterItems && firstSemesterItems.length > 0;else empty_school_items\">\n            <dx-data-grid\n              id=\"gridContainer\"\n              [showBorders]=\"true\"\n              [showRowLines]=\"true\"\n              [dataSource]=\"performanceAllData.firstSemester\"\n              (onRowUpdated)=\"updateRating($event)\">\n              <dxo-editing\n                mode=\"cell\"\n                [allowUpdating]=\"true\">\n              </dxo-editing>\n\n              <dxi-column dataField=\"student.fullName\" caption=\"ФІО\" [allowEditing]=\"false\"></dxi-column>\n\n              <dxi-column *ngFor=\"let entry of performanceAllData.firstSemester | keys\"\n                          dataField=\"{{entry.key}}.rating.value\"\n                          caption=\"{{entry.value.name}}\"\n                          dataType=\"number\"\n                          alignment=\"left\">\n              </dxi-column>\n            </dx-data-grid>\n          </div>\n        </div>\n      </md-tab>\n      <md-tab label=\"2 семестр\">\n        <div class=\"box-tab-content\">\n          <div fxLayoutAlign=\"end\"  style=\"margin-bottom: 10px\">\n            <button md-raised-button (click)=\"openSettingItems(2)\">Настройки предметів</button>\n          </div>\n          <div *ngIf=\"secondSemesterItems && secondSemesterItems.length > 0;else empty_school_items\">\n            <dx-data-grid\n              id=\"gridContainer2\"\n              [showBorders]=\"true\"\n              [showRowLines]=\"true\"\n              [dataSource]=\"performanceAllData.secondSemester\"\n              (onRowUpdated)=\"updateRating($event)\">\n              <dxo-editing\n                mode=\"cell\"\n                [allowUpdating]=\"true\">\n              </dxo-editing>\n\n              <dxi-column dataField=\"student.fullName\" caption=\"ФІО\" [allowEditing]=\"false\"></dxi-column>\n\n              <dxi-column *ngFor=\"let entry of performanceAllData.secondSemester | keys\"\n                          dataField=\"{{entry.key}}.rating.value\"\n                          caption=\"{{entry.value.name}}\"\n                          dataType=\"number\"\n                          alignment=\"left\">\n              </dxi-column>\n            </dx-data-grid>\n          </div>\n        </div>\n      </md-tab>\n    </md-tab-group>\n  </md-card-content>\n</md-card>\n\n<ng-template #empty_school_items>\n  <div fxLayoutAlign=\"center\">\n    Додайте предметів\n  </div>\n</ng-template>\n"
 
 /***/ }),
 
@@ -514,7 +514,7 @@ module.exports = "<md-dialog-content>\n  <div fxLayout=\"column\">\n    <md-list
 /***/ 1248:
 /***/ (function(module, exports) {
 
-module.exports = "<p>\n  course-total works!\n</p>\n"
+module.exports = "<md-card>\n  <md-card-title>{{courseNumber}} курс</md-card-title>\n  <md-card-content>\n    <md-tab-group>\n      <md-tab label=\"1 семестр\">\n        <div class=\"box-tab-content\">\n          <div\n            *ngIf=\"performanceAllData.firstSemester && performanceAllData.firstSemester.length > 0;else empty_school_items\">\n            <dx-data-grid\n              id=\"gridContainer3\"\n              [showBorders]=\"true\"\n              [showRowLines]=\"true\"\n              [dataSource]=\"performanceAllData.firstSemester\">\n              <dxo-export [enabled]=\"true\" fileName=\"Total report\"></dxo-export>\n\n              <dxi-column dataField=\"student.fullName\" caption=\"ФІО\"></dxi-column>\n\n              <dxi-column *ngFor=\"let entry of performanceAllData.firstSemester | keysTotal\"\n                          dataField=\"{{entry.key}}.rating.value\"\n                          caption=\"{{entry.value.name}}\"\n                          dataType=\"number\"\n                          alignment=\"left\">\n              </dxi-column>\n\n              <dxi-column dataField=\"averageScore\" caption=\"Середній бал\" datatype=\"number\"></dxi-column>\n\n              <dxi-column dataField=\"student.beneficiariesUk\" caption=\"Пільговик\"></dxi-column>\n\n              <dxi-column caption=\"Пропуски\">\n                <dxi-column dataField=\"omission.serious\" caption=\"Поважні\" datatype=\"number\"></dxi-column>\n                <dxi-column dataField=\"omission.notSerious\" caption=\"Не поважні\" datatype=\"number\"></dxi-column>\n                <dxi-column dataField=\"omission.total\" caption=\"Всього\" datatype=\"number\"></dxi-column>\n              </dxi-column>\n\n              <dxo-summary>\n                <dxi-total-item\n                  summaryType=\"sum\"\n                  [customizeText]=\"customizeText\">\n                </dxi-total-item>\n                <dxi-total-item\n                  column=\"omission.serious\"\n                  summaryType=\"sum\"\n                  [customizeText]=\"customizeText\">\n                </dxi-total-item>\n                <dxi-total-item\n                  column=\"omission.notSerious\"\n                  summaryType=\"sum\"\n                  [customizeText]=\"customizeText\">\n                </dxi-total-item>\n                <dxi-total-item\n                  column=\"omission.total\"\n                  summaryType=\"sum\"\n                  [customizeText]=\"customizeText\">\n                </dxi-total-item>\n              </dxo-summary>\n            </dx-data-grid>\n          </div>\n        </div>\n      </md-tab>\n      <md-tab label=\"2 семестр\">\n        <div class=\"box-tab-content\">\n          <div\n            *ngIf=\"performanceAllData.secondSemester && performanceAllData.secondSemester.length > 0;else empty_school_items\">\n            <dx-data-grid\n              id=\"gridContainer\"\n              [showBorders]=\"true\"\n              [showRowLines]=\"true\"\n              [dataSource]=\"performanceAllData.secondSemester\">\n              <dxo-export [enabled]=\"true\" fileName=\"Total report\"></dxo-export>\n\n              <dxi-column dataField=\"student.fullName\" caption=\"ФІО\"></dxi-column>\n\n              <dxi-column *ngFor=\"let entry of performanceAllData.secondSemester | keysTotal\"\n                          dataField=\"{{entry.key}}.rating.value\"\n                          caption=\"{{entry.value.name}}\"\n                          dataType=\"number\"\n                          alignment=\"left\">\n              </dxi-column>\n\n              <dxi-column dataField=\"averageScore\" caption=\"Середній бал\" datatype=\"number\"></dxi-column>\n\n              <dxi-column dataField=\"student.beneficiaries\" caption=\"Пільговик\" datatype=\"number\"\n                          cellTemplate=\"beneficiariesTemplate\"></dxi-column>\n\n              <dxi-column caption=\"Пропуски\">\n                <dxi-column dataField=\"omission.serious\" caption=\"Поважні\" datatype=\"number\"></dxi-column>\n                <dxi-column dataField=\"omission.notSerious\" caption=\"Не поважні\" datatype=\"number\"></dxi-column>\n                <dxi-column dataField=\"omission.total\" caption=\"Всього\" datatype=\"number\"></dxi-column>\n              </dxi-column>\n\n              <dxo-summary>\n                <dxi-total-item\n                  summaryType=\"sum\"\n                  [customizeText]=\"customizeText\">\n                </dxi-total-item>\n                <dxi-total-item\n                  column=\"omission.serious\"\n                  summaryType=\"sum\"\n                  [customizeText]=\"customizeText\">\n                </dxi-total-item>\n                <dxi-total-item\n                  column=\"omission.notSerious\"\n                  summaryType=\"sum\"\n                  [customizeText]=\"customizeText\">\n                </dxi-total-item>\n                <dxi-total-item\n                  column=\"omission.total\"\n                  summaryType=\"sum\"\n                  [customizeText]=\"customizeText\">\n                </dxi-total-item>\n              </dxo-summary>\n\n              <div *dxTemplate=\"let data of 'beneficiariesTemplate'\">\n                {{data.value ? 'Так' : 'Ні'}}\n              </div>\n\n            </dx-data-grid>\n          </div>\n        </div>\n      </md-tab>\n    </md-tab-group>\n  </md-card-content>\n</md-card>\n\n<ng-template #empty_school_items>\n  <div fxLayoutAlign=\"center\">\n    Заповніть оцінки\n  </div>\n</ng-template>\n"
 
 /***/ }),
 
@@ -535,7 +535,7 @@ module.exports = "<app-course-total *ngFor=\"let item of [1, 2, 3, 4]\" [courseN
 /***/ 1310:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(722);
+module.exports = __webpack_require__(728);
 
 
 /***/ }),
@@ -1370,6 +1370,180 @@ var _a, _b;
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_material__ = __webpack_require__(67);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_api_service_service__ = __webpack_require__(54);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__settings_for_omissions_settings_for_omissions_component__ = __webpack_require__(409);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return OmissionKeysPipe; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CourseForOmissionsComponent; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+var OmissionKeysPipe = (function () {
+    function OmissionKeysPipe() {
+    }
+    OmissionKeysPipe.prototype.transform = function (value, args) {
+        var keys = [];
+        for (var key in value[0]) {
+            if (key !== 'student') {
+                keys.push({ key: key, value: value[0][key] });
+            }
+        }
+        return keys;
+    };
+    return OmissionKeysPipe;
+}());
+OmissionKeysPipe = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Pipe"])({ name: 'keys' })
+], OmissionKeysPipe);
+
+var CourseForOmissionsComponent = (function () {
+    function CourseForOmissionsComponent(dialog, apiServiceService) {
+        this.dialog = dialog;
+        this.apiServiceService = apiServiceService;
+        this.omissionAllData = {
+            firstSemester: [],
+            secondSemester: []
+        };
+    }
+    CourseForOmissionsComponent.prototype.ngOnInit = function () {
+    };
+    ;
+    CourseForOmissionsComponent.prototype.updateAllInfo = function () {
+        this.getMonths(this.courseNumber);
+        this.getAllOmissions(this.courseNumber);
+    };
+    CourseForOmissionsComponent.prototype.updateOmissions = function (e) {
+        var _this = this;
+        var data;
+        for (var key in e.data) {
+            data = e.key[key];
+        }
+        this.apiServiceService.updateOmissions(data.rating)
+            .subscribe(function (data) {
+            console.log('Omissions updated');
+        }, function (error) { return _this.errorMessage = error; });
+    };
+    CourseForOmissionsComponent.prototype.getMonths = function (courseNumber) {
+        var _this = this;
+        this.apiServiceService.getMonths(courseNumber, 1)
+            .subscribe(function (data) {
+            _this.firstSemesterItems = data;
+        }, function (error) { return _this.errorMessage = error; });
+        this.apiServiceService.getMonths(courseNumber, 2)
+            .subscribe(function (data) {
+            _this.secondSemesterItems = data;
+        }, function (error) { return _this.errorMessage = error; });
+    };
+    ;
+    CourseForOmissionsComponent.prototype.getAllOmissions = function (courseNumber) {
+        var _this = this;
+        this.apiServiceService.getAllOmissions(courseNumber, 1)
+            .subscribe(function (data) {
+            _this.omissionAllData.firstSemester = data;
+        }, function (error) { return _this.errorMessage = error; });
+        this.apiServiceService.getAllOmissions(courseNumber, 2)
+            .subscribe(function (data) {
+            _this.omissionAllData.secondSemester = data;
+        }, function (error) { return _this.errorMessage = error; });
+    };
+    ;
+    CourseForOmissionsComponent.prototype.openSettingItems = function (semester) {
+        var _this = this;
+        var dialogRef1 = this.dialog.open(__WEBPACK_IMPORTED_MODULE_3__settings_for_omissions_settings_for_omissions_component__["a" /* SettingsForOmissionsComponent */], {
+            data: {
+                courseNumber: this.courseNumber,
+                semester: semester,
+            }
+        });
+        dialogRef1.afterClosed().subscribe(function (result) {
+            _this.getMonths(_this.courseNumber);
+            _this.getAllOmissions(_this.courseNumber);
+        });
+    };
+    ;
+    return CourseForOmissionsComponent;
+}());
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
+    __metadata("design:type", Number)
+], CourseForOmissionsComponent.prototype, "courseNumber", void 0);
+CourseForOmissionsComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        selector: 'app-course-for-omissions',
+        template: __webpack_require__(1241),
+        styles: [__webpack_require__(1143)]
+    }),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_material__["b" /* MdDialog */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_material__["b" /* MdDialog */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__services_api_service_service__["a" /* ApiServiceService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__services_api_service_service__["a" /* ApiServiceService */]) === "function" && _b || Object])
+], CourseForOmissionsComponent);
+
+var _a, _b;
+//# sourceMappingURL=course-for-omissions.component.js.map
+
+/***/ }),
+
+/***/ 408:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__course_for_omissions_course_for_omissions_component__ = __webpack_require__(407);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return OmissionsComponent; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var OmissionsComponent = (function () {
+    function OmissionsComponent() {
+    }
+    OmissionsComponent.prototype.ngOnInit = function () {
+    };
+    OmissionsComponent.prototype.updateInfo = function () {
+        this.courseForOmissionsComponents.forEach(function (child) {
+            child.updateAllInfo();
+        });
+    };
+    return OmissionsComponent;
+}());
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewChildren"])(__WEBPACK_IMPORTED_MODULE_1__course_for_omissions_course_for_omissions_component__["a" /* CourseForOmissionsComponent */]),
+    __metadata("design:type", typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["QueryList"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["QueryList"]) === "function" && _a || Object)
+], OmissionsComponent.prototype, "courseForOmissionsComponents", void 0);
+OmissionsComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        selector: 'app-omissions',
+        template: __webpack_require__(1242),
+        styles: [__webpack_require__(1144)]
+    }),
+    __metadata("design:paramtypes", [])
+], OmissionsComponent);
+
+var _a;
+//# sourceMappingURL=omissions.component.js.map
+
+/***/ }),
+
+/***/ 409:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_api_service_service__ = __webpack_require__(54);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_material__ = __webpack_require__(67);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SettingsForOmissionsComponent; });
@@ -1493,11 +1667,14 @@ var _a, _b;
 
 /***/ }),
 
-/***/ 408:
+/***/ 410:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__total_total_component__ = __webpack_require__(415);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__omissions_omissions_component__ = __webpack_require__(408);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__performance_performance_component__ = __webpack_require__(412);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PerformanceQualityControlComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -1509,6 +1686,9 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
+
+
+
 var PerformanceQualityControlComponent = (function () {
     function PerformanceQualityControlComponent() {
     }
@@ -1517,13 +1697,30 @@ var PerformanceQualityControlComponent = (function () {
     PerformanceQualityControlComponent.prototype.changeSelectedTab = function (e) {
         switch (e.index) {
             case 0:
+                this.performanceComponent.updateInfo();
                 break;
             case 1:
+                this.omissionsComponent.updateInfo();
+                break;
+            case 2:
+                this.totalPerformanceComponent.updateInfo();
                 break;
         }
     };
     return PerformanceQualityControlComponent;
 }());
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewChild"])(__WEBPACK_IMPORTED_MODULE_1__total_total_component__["a" /* TotalPerformanceComponent */]),
+    __metadata("design:type", typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__total_total_component__["a" /* TotalPerformanceComponent */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__total_total_component__["a" /* TotalPerformanceComponent */]) === "function" && _a || Object)
+], PerformanceQualityControlComponent.prototype, "totalPerformanceComponent", void 0);
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewChild"])(__WEBPACK_IMPORTED_MODULE_2__omissions_omissions_component__["a" /* OmissionsComponent */]),
+    __metadata("design:type", typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__omissions_omissions_component__["a" /* OmissionsComponent */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__omissions_omissions_component__["a" /* OmissionsComponent */]) === "function" && _b || Object)
+], PerformanceQualityControlComponent.prototype, "omissionsComponent", void 0);
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewChild"])(__WEBPACK_IMPORTED_MODULE_3__performance_performance_component__["a" /* PerformanceComponent */]),
+    __metadata("design:type", typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3__performance_performance_component__["a" /* PerformanceComponent */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__performance_performance_component__["a" /* PerformanceComponent */]) === "function" && _c || Object)
+], PerformanceQualityControlComponent.prototype, "performanceComponent", void 0);
 PerformanceQualityControlComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'app-performance-quality-control',
@@ -1533,11 +1730,187 @@ PerformanceQualityControlComponent = __decorate([
     __metadata("design:paramtypes", [])
 ], PerformanceQualityControlComponent);
 
+var _a, _b, _c;
 //# sourceMappingURL=performance-quality-control.component.js.map
 
 /***/ }),
 
-/***/ 409:
+/***/ 411:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_material__ = __webpack_require__(67);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__settings_settings_component__ = __webpack_require__(413);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_api_service_service__ = __webpack_require__(54);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return KeysPipe; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CourseComponent; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+var KeysPipe = (function () {
+    function KeysPipe() {
+    }
+    KeysPipe.prototype.transform = function (value, args) {
+        var keys = [];
+        for (var key in value[0]) {
+            if (key !== 'student') {
+                keys.push({ key: key, value: value[0][key] });
+            }
+        }
+        return keys;
+    };
+    return KeysPipe;
+}());
+KeysPipe = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Pipe"])({ name: 'keys' })
+], KeysPipe);
+
+var CourseComponent = (function () {
+    function CourseComponent(dialog, apiServiceService) {
+        this.dialog = dialog;
+        this.apiServiceService = apiServiceService;
+        this.performanceAllData = {
+            firstSemester: [],
+            secondSemester: []
+        };
+    }
+    CourseComponent.prototype.ngOnInit = function () {
+        this.updateAllInfo();
+    };
+    ;
+    CourseComponent.prototype.updateAllInfo = function () {
+        this.getSchoolItems(this.courseNumber);
+        this.getAllPerformance(this.courseNumber);
+    };
+    CourseComponent.prototype.updateRating = function (e) {
+        var _this = this;
+        var data;
+        for (var key in e.data) {
+            data = e.key[key];
+        }
+        this.apiServiceService.updateRatingById(data.rating)
+            .subscribe(function (data) {
+            console.log('Rating updated');
+        }, function (error) { return _this.errorMessage = error; });
+    };
+    CourseComponent.prototype.getSchoolItems = function (courseNumber) {
+        var _this = this;
+        this.apiServiceService.getSchoolItems(courseNumber, 1)
+            .subscribe(function (data) {
+            _this.firstSemesterItems = data;
+        }, function (error) { return _this.errorMessage = error; });
+        this.apiServiceService.getSchoolItems(courseNumber, 2)
+            .subscribe(function (data) {
+            _this.secondSemesterItems = data;
+        }, function (error) { return _this.errorMessage = error; });
+    };
+    ;
+    CourseComponent.prototype.getAllPerformance = function (courseNumber) {
+        var _this = this;
+        this.apiServiceService.getAllPerformance(courseNumber, 1)
+            .subscribe(function (data) {
+            _this.performanceAllData.firstSemester = data;
+        }, function (error) { return _this.errorMessage = error; });
+        this.apiServiceService.getAllPerformance(courseNumber, 2)
+            .subscribe(function (data) {
+            _this.performanceAllData.secondSemester = data;
+        }, function (error) { return _this.errorMessage = error; });
+    };
+    ;
+    CourseComponent.prototype.openSettingItems = function (semester) {
+        var _this = this;
+        var dialogRef = this.dialog.open(__WEBPACK_IMPORTED_MODULE_2__settings_settings_component__["a" /* SettingsComponent */], {
+            data: {
+                courseNumber: this.courseNumber,
+                semester: semester,
+            }
+        });
+        dialogRef.afterClosed().subscribe(function (result) {
+            _this.getSchoolItems(_this.courseNumber);
+            _this.getAllPerformance(_this.courseNumber);
+        });
+    };
+    ;
+    return CourseComponent;
+}());
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
+    __metadata("design:type", Number)
+], CourseComponent.prototype, "courseNumber", void 0);
+CourseComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        selector: 'app-course',
+        template: __webpack_require__(1245),
+        styles: [__webpack_require__(1147)]
+    }),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_material__["b" /* MdDialog */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_material__["b" /* MdDialog */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_3__services_api_service_service__["a" /* ApiServiceService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__services_api_service_service__["a" /* ApiServiceService */]) === "function" && _b || Object])
+], CourseComponent);
+
+var _a, _b;
+//# sourceMappingURL=course.component.js.map
+
+/***/ }),
+
+/***/ 412:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__course_course_component__ = __webpack_require__(411);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PerformanceComponent; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var PerformanceComponent = (function () {
+    function PerformanceComponent() {
+    }
+    PerformanceComponent.prototype.ngOnInit = function () {
+    };
+    PerformanceComponent.prototype.updateInfo = function () {
+        this.courseComponents.forEach(function (child) {
+            child.updateAllInfo();
+        });
+    };
+    return PerformanceComponent;
+}());
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewChildren"])(__WEBPACK_IMPORTED_MODULE_1__course_course_component__["a" /* CourseComponent */]),
+    __metadata("design:type", typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["QueryList"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["QueryList"]) === "function" && _a || Object)
+], PerformanceComponent.prototype, "courseComponents", void 0);
+PerformanceComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        selector: 'app-performance',
+        template: __webpack_require__(1246),
+        styles: [__webpack_require__(1148)]
+    }),
+    __metadata("design:paramtypes", [])
+], PerformanceComponent);
+
+var _a;
+//# sourceMappingURL=performance.component.js.map
+
+/***/ }),
+
+/***/ 413:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1618,6 +1991,143 @@ var _a, _b;
 
 /***/ }),
 
+/***/ 414:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_api_service_service__ = __webpack_require__(54);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return KeysTotalPipe; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return CourseTotalComponent; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var KeysTotalPipe = (function () {
+    function KeysTotalPipe() {
+    }
+    KeysTotalPipe.prototype.transform = function (value, args) {
+        var keys = [];
+        for (var key in value[0]) {
+            if (this.checkKeys(key)) {
+                keys.push({ key: key, value: value[0][key] });
+            }
+        }
+        return keys;
+    };
+    KeysTotalPipe.prototype.checkKeys = function (key) {
+        return key !== 'student' && key !== 'averageScore' && key !== 'omission';
+    };
+    return KeysTotalPipe;
+}());
+KeysTotalPipe = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Pipe"])({ name: 'keysTotal' })
+], KeysTotalPipe);
+
+var CourseTotalComponent = (function () {
+    function CourseTotalComponent(apiServiceService) {
+        this.apiServiceService = apiServiceService;
+        this.performanceAllData = {
+            firstSemester: [],
+            secondSemester: []
+        };
+    }
+    CourseTotalComponent.prototype.ngOnInit = function () {
+    };
+    ;
+    CourseTotalComponent.prototype.updateAllInfo = function () {
+        this.getTotalPerformance(this.courseNumber);
+    };
+    CourseTotalComponent.prototype.getTotalPerformance = function (courseNumber) {
+        var _this = this;
+        this.apiServiceService.getTotalPerformance(courseNumber, 1)
+            .subscribe(function (data) {
+            _this.performanceAllData.firstSemester = data;
+        }, function (error) { return _this.errorMessage = error; });
+        this.apiServiceService.getTotalPerformance(courseNumber, 2)
+            .subscribe(function (data) {
+            _this.performanceAllData.secondSemester = data;
+        }, function (error) { return _this.errorMessage = error; });
+    };
+    ;
+    CourseTotalComponent.prototype.customizeText = function (data) {
+        return data.value;
+    };
+    return CourseTotalComponent;
+}());
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
+    __metadata("design:type", Number)
+], CourseTotalComponent.prototype, "courseNumber", void 0);
+CourseTotalComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        selector: 'app-course-total',
+        template: __webpack_require__(1248),
+        styles: [__webpack_require__(1150)]
+    }),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__services_api_service_service__["a" /* ApiServiceService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__services_api_service_service__["a" /* ApiServiceService */]) === "function" && _a || Object])
+], CourseTotalComponent);
+
+var _a;
+//# sourceMappingURL=course-total.component.js.map
+
+/***/ }),
+
+/***/ 415:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__course_total_course_total_component__ = __webpack_require__(414);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TotalPerformanceComponent; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var TotalPerformanceComponent = (function () {
+    function TotalPerformanceComponent() {
+    }
+    TotalPerformanceComponent.prototype.ngOnInit = function () {
+    };
+    TotalPerformanceComponent.prototype.updateInfo = function () {
+        this.courseTotalComponents.forEach(function (child) {
+            child.updateAllInfo();
+        });
+    };
+    return TotalPerformanceComponent;
+}());
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewChildren"])(__WEBPACK_IMPORTED_MODULE_1__course_total_course_total_component__["b" /* CourseTotalComponent */]),
+    __metadata("design:type", typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["QueryList"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["QueryList"]) === "function" && _a || Object)
+], TotalPerformanceComponent.prototype, "courseTotalComponents", void 0);
+TotalPerformanceComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        selector: 'app-total-performance',
+        template: __webpack_require__(1249),
+        styles: [__webpack_require__(1151)]
+    }),
+    __metadata("design:paramtypes", [])
+], TotalPerformanceComponent);
+
+var _a;
+//# sourceMappingURL=total.component.js.map
+
+/***/ }),
+
 /***/ 54:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -1626,7 +2136,7 @@ var _a, _b;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__ = __webpack_require__(18);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_http__ = __webpack_require__(277);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_catch__ = __webpack_require__(703);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_catch__ = __webpack_require__(709);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_catch___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_catch__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_map__ = __webpack_require__(115);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_map__);
@@ -1708,7 +2218,7 @@ var ApiServiceService = (function () {
     ;
     /*Api for performance*/
     ApiServiceService.prototype.getTotalPerformance = function (course, semester) {
-        return this.http.get("/api//performance/total/" + course + "/" + semester)
+        return this.http.get("/api/performance/total/" + course + "/" + semester)
             .map(this.extractData)
             .catch(this.handleError);
     };
@@ -1802,7 +2312,7 @@ var _a;
 
 /***/ }),
 
-/***/ 721:
+/***/ 727:
 /***/ (function(module, exports) {
 
 function webpackEmptyContext(req) {
@@ -1811,19 +2321,19 @@ function webpackEmptyContext(req) {
 webpackEmptyContext.keys = function() { return []; };
 webpackEmptyContext.resolve = webpackEmptyContext;
 module.exports = webpackEmptyContext;
-webpackEmptyContext.id = 721;
+webpackEmptyContext.id = 727;
 
 
 /***/ }),
 
-/***/ 722:
+/***/ 728:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__ = __webpack_require__(745);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_app_module__ = __webpack_require__(749);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__ = __webpack_require__(751);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_app_module__ = __webpack_require__(755);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__environments_environment__ = __webpack_require__(759);
 
 
@@ -1837,7 +2347,7 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dyna
 
 /***/ }),
 
-/***/ 748:
+/***/ 754:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1879,7 +2389,7 @@ AppComponent = __decorate([
 
 /***/ }),
 
-/***/ 749:
+/***/ 755:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1889,35 +2399,35 @@ AppComponent = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_core__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_forms__ = __webpack_require__(25);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_http__ = __webpack_require__(277);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_flex_layout__ = __webpack_require__(742);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_flex_layout__ = __webpack_require__(748);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__angular_material__ = __webpack_require__(67);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_md2__ = __webpack_require__(1221);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__app_component__ = __webpack_require__(748);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__app_routing__ = __webpack_require__(750);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__app_component__ = __webpack_require__(754);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__app_routing__ = __webpack_require__(756);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__home_home_component__ = __webpack_require__(400);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__info_students_info_students_component__ = __webpack_require__(404);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__angular_platform_browser_animations__ = __webpack_require__(746);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__angular_platform_browser_animations__ = __webpack_require__(752);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13_devextreme_angular__ = __webpack_require__(817);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13_devextreme_angular___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_13_devextreme_angular__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__calendar_calendar_component__ = __webpack_require__(751);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__performance_quality_control_performance_quality_control_component__ = __webpack_require__(408);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__calendar_calendar_component__ = __webpack_require__(757);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__performance_quality_control_performance_quality_control_component__ = __webpack_require__(410);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__info_students_create_students_create_students_component__ = __webpack_require__(179);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__info_students_students_students_component__ = __webpack_require__(406);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__info_students_beneficiaries_beneficiaries_component__ = __webpack_require__(403);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__info_students_parent_parent_component__ = __webpack_require__(405);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__info_students_active_groups_active_groups_component__ = __webpack_require__(402);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__info_students_total_total_component__ = __webpack_require__(752);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__info_students_total_total_component__ = __webpack_require__(758);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__services_api_service_service__ = __webpack_require__(54);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__info_parents_info_parents_component__ = __webpack_require__(401);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__info_students_delete_student_delete_student_component__ = __webpack_require__(180);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__performance_quality_control_performance_performance_component__ = __webpack_require__(756);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__performance_quality_control_omissions_omissions_component__ = __webpack_require__(754);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__performance_quality_control_total_total_component__ = __webpack_require__(758);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__performance_quality_control_performance_settings_settings_component__ = __webpack_require__(409);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__performance_quality_control_performance_course_course_component__ = __webpack_require__(755);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_30__performance_quality_control_omissions_course_for_omissions_course_for_omissions_component__ = __webpack_require__(753);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_31__performance_quality_control_omissions_settings_for_omissions_settings_for_omissions_component__ = __webpack_require__(407);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_32__performance_quality_control_total_course_total_course_total_component__ = __webpack_require__(757);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__performance_quality_control_performance_performance_component__ = __webpack_require__(412);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__performance_quality_control_omissions_omissions_component__ = __webpack_require__(408);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__performance_quality_control_total_total_component__ = __webpack_require__(415);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__performance_quality_control_performance_settings_settings_component__ = __webpack_require__(413);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__performance_quality_control_performance_course_course_component__ = __webpack_require__(411);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_30__performance_quality_control_omissions_course_for_omissions_course_for_omissions_component__ = __webpack_require__(407);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_31__performance_quality_control_omissions_settings_for_omissions_settings_for_omissions_component__ = __webpack_require__(409);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_32__performance_quality_control_total_course_total_course_total_component__ = __webpack_require__(414);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -1989,7 +2499,8 @@ AppModule = __decorate([
             __WEBPACK_IMPORTED_MODULE_30__performance_quality_control_omissions_course_for_omissions_course_for_omissions_component__["a" /* CourseForOmissionsComponent */],
             __WEBPACK_IMPORTED_MODULE_31__performance_quality_control_omissions_settings_for_omissions_settings_for_omissions_component__["a" /* SettingsForOmissionsComponent */],
             __WEBPACK_IMPORTED_MODULE_30__performance_quality_control_omissions_course_for_omissions_course_for_omissions_component__["b" /* OmissionKeysPipe */],
-            __WEBPACK_IMPORTED_MODULE_32__performance_quality_control_total_course_total_course_total_component__["a" /* CourseTotalComponent */]
+            __WEBPACK_IMPORTED_MODULE_32__performance_quality_control_total_course_total_course_total_component__["a" /* KeysTotalPipe */],
+            __WEBPACK_IMPORTED_MODULE_32__performance_quality_control_total_course_total_course_total_component__["b" /* CourseTotalComponent */]
         ],
         imports: [
             __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__["a" /* BrowserModule */],
@@ -2018,14 +2529,14 @@ AppModule = __decorate([
 
 /***/ }),
 
-/***/ 750:
+/***/ 756:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_router__ = __webpack_require__(747);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_router__ = __webpack_require__(753);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__home_home_component__ = __webpack_require__(400);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__info_students_info_students_component__ = __webpack_require__(404);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__performance_quality_control_performance_quality_control_component__ = __webpack_require__(408);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__performance_quality_control_performance_quality_control_component__ = __webpack_require__(410);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__info_parents_info_parents_component__ = __webpack_require__(401);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return appRouting; });
 
@@ -2056,7 +2567,7 @@ var appRouting = __WEBPACK_IMPORTED_MODULE_0__angular_router__["a" /* RouterModu
 
 /***/ }),
 
-/***/ 751:
+/***/ 757:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2102,7 +2613,7 @@ CalendarComponent = __decorate([
 
 /***/ }),
 
-/***/ 752:
+/***/ 758:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2133,424 +2644,6 @@ TotalComponent = __decorate([
     }),
     __metadata("design:paramtypes", [])
 ], TotalComponent);
-
-//# sourceMappingURL=total.component.js.map
-
-/***/ }),
-
-/***/ 753:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_material__ = __webpack_require__(67);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_api_service_service__ = __webpack_require__(54);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__settings_for_omissions_settings_for_omissions_component__ = __webpack_require__(407);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return OmissionKeysPipe; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CourseForOmissionsComponent; });
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-
-var OmissionKeysPipe = (function () {
-    function OmissionKeysPipe() {
-    }
-    OmissionKeysPipe.prototype.transform = function (value, args) {
-        var keys = [];
-        for (var key in value[0]) {
-            if (key !== 'student') {
-                keys.push({ key: key, value: value[0][key] });
-            }
-        }
-        return keys;
-    };
-    return OmissionKeysPipe;
-}());
-OmissionKeysPipe = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Pipe"])({ name: 'keys' })
-], OmissionKeysPipe);
-
-var CourseForOmissionsComponent = (function () {
-    function CourseForOmissionsComponent(dialog, apiServiceService) {
-        this.dialog = dialog;
-        this.apiServiceService = apiServiceService;
-        this.omissionAllData = {
-            firstSemester: [],
-            secondSemester: []
-        };
-    }
-    CourseForOmissionsComponent.prototype.ngOnInit = function () {
-        this.getMonths(this.courseNumber);
-        this.getAllOmissions(this.courseNumber);
-    };
-    ;
-    CourseForOmissionsComponent.prototype.updateOmissions = function (e) {
-        var _this = this;
-        var data;
-        for (var key in e.data) {
-            data = e.key[key];
-        }
-        this.apiServiceService.updateOmissions(data.rating)
-            .subscribe(function (data) {
-            console.log('Omissions updated');
-        }, function (error) { return _this.errorMessage = error; });
-    };
-    CourseForOmissionsComponent.prototype.getMonths = function (courseNumber) {
-        var _this = this;
-        this.apiServiceService.getMonths(courseNumber, 1)
-            .subscribe(function (data) {
-            _this.firstSemesterItems = data;
-        }, function (error) { return _this.errorMessage = error; });
-        this.apiServiceService.getMonths(courseNumber, 2)
-            .subscribe(function (data) {
-            _this.secondSemesterItems = data;
-        }, function (error) { return _this.errorMessage = error; });
-    };
-    ;
-    CourseForOmissionsComponent.prototype.getAllOmissions = function (courseNumber) {
-        var _this = this;
-        this.apiServiceService.getAllOmissions(courseNumber, 1)
-            .subscribe(function (data) {
-            _this.omissionAllData.firstSemester = data;
-        }, function (error) { return _this.errorMessage = error; });
-        this.apiServiceService.getAllOmissions(courseNumber, 2)
-            .subscribe(function (data) {
-            _this.omissionAllData.secondSemester = data;
-        }, function (error) { return _this.errorMessage = error; });
-    };
-    ;
-    CourseForOmissionsComponent.prototype.openSettingItems = function (semester) {
-        var _this = this;
-        var dialogRef1 = this.dialog.open(__WEBPACK_IMPORTED_MODULE_3__settings_for_omissions_settings_for_omissions_component__["a" /* SettingsForOmissionsComponent */], {
-            data: {
-                courseNumber: this.courseNumber,
-                semester: semester,
-            }
-        });
-        dialogRef1.afterClosed().subscribe(function (result) {
-            _this.getMonths(_this.courseNumber);
-            _this.getAllOmissions(_this.courseNumber);
-        });
-    };
-    ;
-    return CourseForOmissionsComponent;
-}());
-__decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
-    __metadata("design:type", Number)
-], CourseForOmissionsComponent.prototype, "courseNumber", void 0);
-CourseForOmissionsComponent = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-        selector: 'app-course-for-omissions',
-        template: __webpack_require__(1241),
-        styles: [__webpack_require__(1143)]
-    }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_material__["b" /* MdDialog */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_material__["b" /* MdDialog */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__services_api_service_service__["a" /* ApiServiceService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__services_api_service_service__["a" /* ApiServiceService */]) === "function" && _b || Object])
-], CourseForOmissionsComponent);
-
-var _a, _b;
-//# sourceMappingURL=course-for-omissions.component.js.map
-
-/***/ }),
-
-/***/ 754:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(2);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return OmissionsComponent; });
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-var OmissionsComponent = (function () {
-    function OmissionsComponent() {
-    }
-    OmissionsComponent.prototype.ngOnInit = function () {
-    };
-    return OmissionsComponent;
-}());
-OmissionsComponent = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-        selector: 'app-omissions',
-        template: __webpack_require__(1242),
-        styles: [__webpack_require__(1144)]
-    }),
-    __metadata("design:paramtypes", [])
-], OmissionsComponent);
-
-//# sourceMappingURL=omissions.component.js.map
-
-/***/ }),
-
-/***/ 755:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_material__ = __webpack_require__(67);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__settings_settings_component__ = __webpack_require__(409);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_api_service_service__ = __webpack_require__(54);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return KeysPipe; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CourseComponent; });
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-
-var KeysPipe = (function () {
-    function KeysPipe() {
-    }
-    KeysPipe.prototype.transform = function (value, args) {
-        var keys = [];
-        for (var key in value[0]) {
-            if (key !== 'student') {
-                keys.push({ key: key, value: value[0][key] });
-            }
-        }
-        return keys;
-    };
-    return KeysPipe;
-}());
-KeysPipe = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Pipe"])({ name: 'keys' })
-], KeysPipe);
-
-var CourseComponent = (function () {
-    function CourseComponent(dialog, apiServiceService) {
-        this.dialog = dialog;
-        this.apiServiceService = apiServiceService;
-        this.performanceAllData = {
-            firstSemester: [],
-            secondSemester: []
-        };
-    }
-    CourseComponent.prototype.ngOnInit = function () {
-        this.getSchoolItems(this.courseNumber);
-        this.getAllPerformance(this.courseNumber);
-    };
-    ;
-    CourseComponent.prototype.updateRating = function (e) {
-        var _this = this;
-        var data;
-        for (var key in e.data) {
-            data = e.key[key];
-        }
-        this.apiServiceService.updateRatingById(data.rating)
-            .subscribe(function (data) {
-            console.log('Rating updated');
-        }, function (error) { return _this.errorMessage = error; });
-    };
-    CourseComponent.prototype.getSchoolItems = function (courseNumber) {
-        var _this = this;
-        this.apiServiceService.getSchoolItems(courseNumber, 1)
-            .subscribe(function (data) {
-            _this.firstSemesterItems = data;
-        }, function (error) { return _this.errorMessage = error; });
-        this.apiServiceService.getSchoolItems(courseNumber, 2)
-            .subscribe(function (data) {
-            _this.secondSemesterItems = data;
-        }, function (error) { return _this.errorMessage = error; });
-    };
-    ;
-    CourseComponent.prototype.getAllPerformance = function (courseNumber) {
-        var _this = this;
-        this.apiServiceService.getAllPerformance(courseNumber, 1)
-            .subscribe(function (data) {
-            _this.performanceAllData.firstSemester = data;
-        }, function (error) { return _this.errorMessage = error; });
-        this.apiServiceService.getAllPerformance(courseNumber, 2)
-            .subscribe(function (data) {
-            _this.performanceAllData.secondSemester = data;
-        }, function (error) { return _this.errorMessage = error; });
-    };
-    ;
-    CourseComponent.prototype.openSettingItems = function (semester) {
-        var _this = this;
-        var dialogRef = this.dialog.open(__WEBPACK_IMPORTED_MODULE_2__settings_settings_component__["a" /* SettingsComponent */], {
-            data: {
-                courseNumber: this.courseNumber,
-                semester: semester,
-            }
-        });
-        dialogRef.afterClosed().subscribe(function (result) {
-            _this.getSchoolItems(_this.courseNumber);
-            _this.getAllPerformance(_this.courseNumber);
-        });
-    };
-    ;
-    return CourseComponent;
-}());
-__decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
-    __metadata("design:type", Number)
-], CourseComponent.prototype, "courseNumber", void 0);
-CourseComponent = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-        selector: 'app-course',
-        template: __webpack_require__(1245),
-        styles: [__webpack_require__(1147)]
-    }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_material__["b" /* MdDialog */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_material__["b" /* MdDialog */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_3__services_api_service_service__["a" /* ApiServiceService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__services_api_service_service__["a" /* ApiServiceService */]) === "function" && _b || Object])
-], CourseComponent);
-
-var _a, _b;
-//# sourceMappingURL=course.component.js.map
-
-/***/ }),
-
-/***/ 756:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(2);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PerformanceComponent; });
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-var PerformanceComponent = (function () {
-    function PerformanceComponent() {
-    }
-    PerformanceComponent.prototype.ngOnInit = function () {
-    };
-    return PerformanceComponent;
-}());
-PerformanceComponent = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-        selector: 'app-performance',
-        template: __webpack_require__(1246),
-        styles: [__webpack_require__(1148)]
-    }),
-    __metadata("design:paramtypes", [])
-], PerformanceComponent);
-
-//# sourceMappingURL=performance.component.js.map
-
-/***/ }),
-
-/***/ 757:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_api_service_service__ = __webpack_require__(54);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CourseTotalComponent; });
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-var CourseTotalComponent = (function () {
-    function CourseTotalComponent(apiServiceService) {
-        this.apiServiceService = apiServiceService;
-        this.performanceAllData = {
-            firstSemester: [],
-            secondSemester: []
-        };
-    }
-    CourseTotalComponent.prototype.ngOnInit = function () {
-        this.getTotalPerformance(this.courseNumber);
-    };
-    ;
-    CourseTotalComponent.prototype.getTotalPerformance = function (courseNumber) {
-        var _this = this;
-        this.apiServiceService.getAllPerformance(courseNumber, 1)
-            .subscribe(function (data) {
-            _this.performanceAllData.firstSemester = data;
-        }, function (error) { return _this.errorMessage = error; });
-        this.apiServiceService.getAllPerformance(courseNumber, 2)
-            .subscribe(function (data) {
-            _this.performanceAllData.secondSemester = data;
-        }, function (error) { return _this.errorMessage = error; });
-    };
-    ;
-    return CourseTotalComponent;
-}());
-__decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
-    __metadata("design:type", Number)
-], CourseTotalComponent.prototype, "courseNumber", void 0);
-CourseTotalComponent = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-        selector: 'app-course-total',
-        template: __webpack_require__(1248),
-        styles: [__webpack_require__(1150)]
-    }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__services_api_service_service__["a" /* ApiServiceService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__services_api_service_service__["a" /* ApiServiceService */]) === "function" && _a || Object])
-], CourseTotalComponent);
-
-var _a;
-//# sourceMappingURL=course-total.component.js.map
-
-/***/ }),
-
-/***/ 758:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(2);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TotalPerformanceComponent; });
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-var TotalPerformanceComponent = (function () {
-    function TotalPerformanceComponent() {
-    }
-    TotalPerformanceComponent.prototype.ngOnInit = function () {
-    };
-    return TotalPerformanceComponent;
-}());
-TotalPerformanceComponent = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-        selector: 'app-total-performance',
-        template: __webpack_require__(1249),
-        styles: [__webpack_require__(1151)]
-    }),
-    __metadata("design:paramtypes", [])
-], TotalPerformanceComponent);
 
 //# sourceMappingURL=total.component.js.map
 

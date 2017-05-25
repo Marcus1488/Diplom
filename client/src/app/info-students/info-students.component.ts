@@ -1,4 +1,4 @@
-import {Component, ComponentRef, OnInit, ViewChild} from '@angular/core';
+import {Component,  OnInit, ViewChild} from '@angular/core';
 import {BeneficiariesComponent} from "./beneficiaries/beneficiaries.component";
 import {StudentsComponent} from "./students/students.component";
 import {ParentComponent} from "./parent/parent.component";

@@ -41,7 +41,10 @@ import {
   OmissionKeysPipe
 } from './performance-quality-control/omissions/course-for-omissions/course-for-omissions.component';
 import { SettingsForOmissionsComponent } from './performance-quality-control/omissions/settings-for-omissions/settings-for-omissions.component';
-import { CourseTotalComponent } from './performance-quality-control/total/course-total/course-total.component';
+import {
+  CourseTotalComponent,
+  KeysTotalPipe
+} from './performance-quality-control/total/course-total/course-total.component';
 
 
 @NgModule({
@@ -68,6 +71,7 @@ import { CourseTotalComponent } from './performance-quality-control/total/course
     CourseForOmissionsComponent,
     SettingsForOmissionsComponent,
     OmissionKeysPipe,
+    KeysTotalPipe,
     CourseTotalComponent
   ],
   imports: [
