@@ -1,3 +1,5 @@
+export declare let require: any;
+
 import 'hammerjs';
 import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
@@ -11,21 +13,18 @@ import {AppComponent} from './app.component';
 import {appRouting} from "./app.routing";
 import {HomeComponent} from './home/home.component';
 import {InfoStudentsComponent} from './info-students/info-students.component';
-import {NoopAnimationsModule} from '@angular/platform-browser/animations';
-
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 import {
   DxDataGridModule,
   DxCalendarModule
 } from 'devextreme-angular';
-import {CalendarComponent} from './calendar/calendar.component';
 import {PerformanceQualityControlComponent} from './performance-quality-control/performance-quality-control.component';
 import {CreateStudentsComponent} from './info-students/create-students/create-students.component';
 import {StudentsComponent} from './info-students/students/students.component';
 import {BeneficiariesComponent} from './info-students/beneficiaries/beneficiaries.component';
 import {ParentComponent} from './info-students/parent/parent.component';
 import {ActiveGroupsComponent} from './info-students/active-groups/active-groups.component';
-import {TotalComponent} from './info-students/total/total.component';
 
 /*Services*/
 import {ApiServiceService} from "./services/api-service.service";
@@ -45,21 +44,26 @@ import {
   CourseTotalComponent,
   KeysTotalPipe
 } from './performance-quality-control/total/course-total/course-total.component';
+import { HolidaysComponent } from './home/holidays/holidays.component';
+import {locale, loadMessages} from 'devextreme/localization';
+import 'devextreme-intl';
+import { LoginComponent } from './login/login.component';
 
+let messagesUk = require("./../uk.json");
+loadMessages(messagesUk);
+locale("uk");
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     InfoStudentsComponent,
-    CalendarComponent,
     PerformanceQualityControlComponent,
     CreateStudentsComponent,
     StudentsComponent,
     BeneficiariesComponent,
     ParentComponent,
     ActiveGroupsComponent,
-    TotalComponent,
     InfoParentsComponent,
     DeleteStudentComponent,
     PerformanceComponent,
@@ -72,12 +76,14 @@ import {
     SettingsForOmissionsComponent,
     OmissionKeysPipe,
     KeysTotalPipe,
-    CourseTotalComponent
+    CourseTotalComponent,
+    HolidaysComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    NoopAnimationsModule,
+    BrowserAnimationsModule,
     MaterialModule,
     Md2Module,
     HttpModule,
@@ -90,7 +96,9 @@ import {
     CreateStudentsComponent,
     DeleteStudentComponent,
     SettingsComponent,
-    SettingsForOmissionsComponent],
+    SettingsForOmissionsComponent,
+    HolidaysComponent
+  ],
   providers: [ApiServiceService],
   bootstrap: [AppComponent]
 })

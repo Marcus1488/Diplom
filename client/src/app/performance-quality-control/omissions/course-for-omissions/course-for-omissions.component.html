@@ -34,9 +34,17 @@
                 <dxi-column dataField="{{entry.key}}.rating.notSerious"
                             caption="Не поважні"
                             dataType="number">
-
+                </dxi-column>
+                <dxi-column dataField="{{entry.key}}.rating"
+                            [allowEditing]="false"
+                            caption="Всього"
+                            cellTemplate="total">
                 </dxi-column>
               </dxi-column>
+
+              <div *dxTemplate="let data of 'total'" fxLayoutAlign="center center">
+                {{data.value.serious + data.value.notSerious}}
+              </div>
             </dx-data-grid>
           </div>
         </div>
@@ -55,7 +63,6 @@
               [showRowLines]="true"
               [allowColumnReordering]="true"
               (onRowUpdated)="updateOmissions($event)">
-
               <dxo-editing
                 mode="cell"
                 [allowUpdating]="true">

@@ -1,11 +1,41 @@
-<div class="caption">
-  <h2>Гірничо електромеханічний коледж Державного вищого навчального закладу <br> "Криворізький національний
-    університет"</h2>
-</div>
-<md-input-container>
-  <input mdInput placeholder="Відділення" value="електромеханічне">
-</md-input-container>
+<md-sidenav-container>
+  <div>
+    <div class="caption">
+      <h2>ГІРНИЧО ЕЛЕКТРОМЕХАНІЧНИЙ КОЛЕДЖ<br>Державного вищого навчального закладу<br>"Криворізький національний
+        університет"</h2>
+    </div>
+    <md-input-container>
+      <input mdInput placeholder="Відділення" value="електромеханічне">
+    </md-input-container>
+  </div>
+  <md-sidenav class="calendar-sidenav" [opened]="true" #sidenav mode="side" align="end">
+    <dx-calendar #calendar
+                 (onValueChanged)="getHolidaysByDate()"
+                 id="calendar-container"
+                 [min]="minDateValue"
+                 [max]="maxDateValue"
+                 [firstDayOfWeek]="0"
+                 [disabled]="false"
+                 [(value)]="currentValue"
+                 [zoomLevel]="zoomLevels[0]"
+                 [cellTemplate]="cellTemplate">
+    </dx-calendar>
 
+    <div class="holiday-list">
+      <h3 *ngIf="holidays && holidays.length > 0;else empty_holidays">Список подій:</h3>
+      <md-list>
+        <md-list-item *ngFor="let holiday of holidays">{{holiday.name}}</md-list-item>
+      </md-list>
+    </div>
+
+    <button md-mini-fab class="button-edit-holidays" (click)="openHolidays()">
+      <md-icon>edit</md-icon>
+    </button>
+  </md-sidenav>
+</md-sidenav-container>
+<ng-template #empty_holidays>
+  <h3>Немає запланованих подій на обрану дату!</h3>
+</ng-template>
 <!--
 <div>
   Відділення: <span>електромеханічне</span>

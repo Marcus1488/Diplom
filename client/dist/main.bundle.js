@@ -1,6 +1,6 @@
 webpackJsonp([1,4],{
 
-/***/ 1131:
+/***/ 1132:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(26)(false);
@@ -18,24 +18,6 @@ module.exports = module.exports.toString();
 
 /***/ }),
 
-/***/ 1132:
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(26)(false);
-// imports
-
-
-// module
-exports.push([module.i, "", ""]);
-
-// exports
-
-
-/*** EXPORTS FROM exports-loader ***/
-module.exports = module.exports.toString();
-
-/***/ }),
-
 /***/ 1133:
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -44,7 +26,7 @@ exports = module.exports = __webpack_require__(26)(false);
 
 
 // module
-exports.push([module.i, ".caption {\n  text-align: center; }\n", ""]);
+exports.push([module.i, "", ""]);
 
 // exports
 
@@ -62,7 +44,7 @@ exports = module.exports = __webpack_require__(26)(false);
 
 
 // module
-exports.push([module.i, "", ""]);
+exports.push([module.i, ".caption {\n  text-align: center; }\n\nmd-sidenav-container {\n  height: calc(100vh - 50px); }\n  md-sidenav-container md-sidenav {\n    max-width: 282px; }\n\n.button-edit-holidays {\n  position: absolute;\n  bottom: 10px;\n  right: 10px; }\n\n.holiday-list h3 {\n  text-align: center;\n  margin-bottom: 0px !important; }\n\n.holiday-list md-list {\n  max-height: 300px;\n  overflow: auto; }\n  .holiday-list md-list md-list-item {\n    border-bottom: 1px solid rgba(212, 212, 212, 0.56); }\n  .holiday-list md-list md-list-item:last-child {\n    border-bottom: none; }\n", ""]);
 
 // exports
 
@@ -116,7 +98,7 @@ exports = module.exports = __webpack_require__(26)(false);
 
 
 // module
-exports.push([module.i, "md-card {\n  margin: 5px 0; }\n\nmd-input-container {\n  margin: 0 10px; }\n\nmd2-datepicker {\n  margin-right: 10px;\n  margin-top: -9px; }\n", ""]);
+exports.push([module.i, "", ""]);
 
 // exports
 
@@ -134,7 +116,7 @@ exports = module.exports = __webpack_require__(26)(false);
 
 
 // module
-exports.push([module.i, "", ""]);
+exports.push([module.i, "md-card {\n  margin: 5px 0; }\n\nmd-input-container {\n  margin: 0 10px; }\n\nmd2-datepicker {\n  margin-right: 10px;\n  margin-top: -9px; }\n", ""]);
 
 // exports
 
@@ -152,7 +134,7 @@ exports = module.exports = __webpack_require__(26)(false);
 
 
 // module
-exports.push([module.i, "#gridContainer {\n  width: 100%; }\n\nbutton {\n  margin: 15px 10px; }\n", ""]);
+exports.push([module.i, "", ""]);
 
 // exports
 
@@ -170,7 +152,7 @@ exports = module.exports = __webpack_require__(26)(false);
 
 
 // module
-exports.push([module.i, "", ""]);
+exports.push([module.i, "#gridContainer {\n  width: 100%; }\n\nbutton {\n  margin: 15px 10px; }\n", ""]);
 
 // exports
 
@@ -188,7 +170,7 @@ exports = module.exports = __webpack_require__(26)(false);
 
 
 // module
-exports.push([module.i, "button {\n  margin: 15px 10px; }\n", ""]);
+exports.push([module.i, "", ""]);
 
 // exports
 
@@ -206,7 +188,7 @@ exports = module.exports = __webpack_require__(26)(false);
 
 
 // module
-exports.push([module.i, "", ""]);
+exports.push([module.i, "button {\n  margin: 15px 10px; }\n", ""]);
 
 // exports
 
@@ -224,7 +206,7 @@ exports = module.exports = __webpack_require__(26)(false);
 
 
 // module
-exports.push([module.i, "md-card {\n  margin: 10px; }\n  md-card .box-tab-content {\n    margin: 10px; }\n", ""]);
+exports.push([module.i, "md-input-container {\n  width: 100%; }\n", ""]);
 
 // exports
 
@@ -242,7 +224,7 @@ exports = module.exports = __webpack_require__(26)(false);
 
 
 // module
-exports.push([module.i, "", ""]);
+exports.push([module.i, "md-card {\n  margin: 10px; }\n  md-card .box-tab-content {\n    margin: 10px; }\n", ""]);
 
 // exports
 
@@ -260,7 +242,7 @@ exports = module.exports = __webpack_require__(26)(false);
 
 
 // module
-exports.push([module.i, ".close {\n  margin-top: 10px; }\n\nbutton {\n  margin: 0 10px; }\n", ""]);
+exports.push([module.i, "", ""]);
 
 // exports
 
@@ -278,7 +260,7 @@ exports = module.exports = __webpack_require__(26)(false);
 
 
 // module
-exports.push([module.i, "", ""]);
+exports.push([module.i, ".close {\n  margin-top: 10px; }\n\nbutton {\n  margin: 0 10px; }\n", ""]);
 
 // exports
 
@@ -296,7 +278,7 @@ exports = module.exports = __webpack_require__(26)(false);
 
 
 // module
-exports.push([module.i, "md-card {\n  margin: 10px; }\n  md-card .box-tab-content {\n    margin: 10px; }\n", ""]);
+exports.push([module.i, "", ""]);
 
 // exports
 
@@ -314,7 +296,7 @@ exports = module.exports = __webpack_require__(26)(false);
 
 
 // module
-exports.push([module.i, "", ""]);
+exports.push([module.i, "md-card {\n  margin: 10px; }\n  md-card .box-tab-content {\n    margin: 10px; }\n", ""]);
 
 // exports
 
@@ -332,7 +314,7 @@ exports = module.exports = __webpack_require__(26)(false);
 
 
 // module
-exports.push([module.i, ".left {\n  border-right: 1px solid rgba(199, 199, 199, 0.72); }\n\n.close {\n  margin-top: 10px; }\n", ""]);
+exports.push([module.i, "", ""]);
 
 // exports
 
@@ -350,7 +332,7 @@ exports = module.exports = __webpack_require__(26)(false);
 
 
 // module
-exports.push([module.i, "md-card {\n  margin: 10px; }\n  md-card .box-tab-content {\n    margin: 10px; }\n", ""]);
+exports.push([module.i, ".left {\n  border-right: 1px solid rgba(199, 199, 199, 0.72); }\n\n.close {\n  margin-top: 10px; }\n", ""]);
 
 // exports
 
@@ -368,6 +350,24 @@ exports = module.exports = __webpack_require__(26)(false);
 
 
 // module
+exports.push([module.i, "md-card {\n  margin: 10px; }\n  md-card .box-tab-content {\n    margin: 10px; }\n", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ 1152:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(26)(false);
+// imports
+
+
+// module
 exports.push([module.i, "", ""]);
 
 // exports
@@ -378,150 +378,362 @@ module.exports = module.exports.toString();
 
 /***/ }),
 
-/***/ 1229:
+/***/ 1159:
 /***/ (function(module, exports) {
 
-module.exports = "<header class=\"min-width-content\">\n  <div fxFill class=\"flex-container\" fxLayout=\"row\" fxLayoutAlign=\"space-around center\">\n    <div fxFlex=\"25\">\n      <img src=\"\">\n    </div>\n    <div fxFlex=\"50\" fxLayout=\"row\" fxLayoutAlign=\"center\">\n      <h1>Інформаційна сторінка класного керівника</h1>\n    </div>\n    <div fxFlex=\"25\" fxLayout=\"row\" fxLayoutAlign=\"end\" class=\"login\">\n      <button md-raised-button>Увійти</button>\n    </div>\n  </div>\n</header>\n<md-sidenav-container class=\"min-width-content\">\n  <md-sidenav [opened]=\"openedMenu\" #sidenav mode=\"side\">\n    <md-nav-list class=\"left-menu\">\n      <a md-list-item routerLink=\"\" routerLinkActive=\"active\" [routerLinkActiveOptions]=\"{exact: true}\">\n        Головна\n      </a>\n      <a md-list-item routerLink=\"students\" routerLinkActive=\"active\" [routerLinkActiveOptions]=\"{exact: true}\">\n        Відомості про студентів\n      </a>\n      <a md-list-item routerLink=\"parents\" routerLinkActive=\"active\" [routerLinkActiveOptions]=\"{exact: true}\">\n        Відомості про батьків\n      </a>\n      <a md-list-item routerLink=\"studies\" routerLinkActive=\"active\" [routerLinkActiveOptions]=\"{exact: true}\">\n        Контроль якості навчання\n      </a>\n      <a md-list-item routerLink=\"documentation\" routerLinkActive=\"active\" [routerLinkActiveOptions]=\"{exact: true}\">\n        Документація класного керівника\n      </a>\n    </md-nav-list>\n  </md-sidenav>\n\n  <!--<div class=\"toggle-menu\" (click)=\"toggleMenu()\"><md-icon>menu</md-icon></div>\n\n  <div class=\"toggle-calendar\" (click)=\"toggleCalendar()\"><md-icon>today</md-icon></div>-->\n\n  <div class=\"main-content\">\n    <router-outlet></router-outlet>\n  </div>\n\n <!-- <md-sidenav class=\"calendar-sidenav\" [opened]=\"openedCalendar\" #sidenav mode=\"side\" align=\"end\"  md-is-locked-open=\"$mdMedia('gt-md')\">\n    <calendar></calendar>\n  </md-sidenav>-->\n</md-sidenav-container>\n"
-
-/***/ }),
-
-/***/ 1230:
-/***/ (function(module, exports) {
-
-module.exports = "<dx-calendar #calendar\n             (onValueChanged)=\"showEvents()\"\n             id=\"calendar-container\"\n             [min]=\"minDateValue\"\n             [max]=\"maxDateValue\"\n             [firstDayOfWeek]=\"firstDay\"\n             [disabled]=\"false\"\n             [(value)]=\"currentValue\"\n             [zoomLevel]=\"zoomLevels[0]\"\n             [cellTemplate]=\"cellTemplate\">\n\n</dx-calendar>\n"
+module.exports = {
+	"uk": {
+		"Yes": "Так",
+		"No": "Ні",
+		"Cancel": "Відміна",
+		"Clear": "Очистити",
+		"Done": "Готово",
+		"Loading": "Завантаження...",
+		"Select": "Обрати...",
+		"Search": "Пошук",
+		"Back": "Назад",
+		"OK": "OK",
+		"dxCollectionWidget-noDataText": "Немає даних для відображення",
+		"validation-required": "Поле необхідно заповнити",
+		"validation-required-formatted": "Необхідно заповнити: {0}",
+		"validation-numeric": "Значення повинно бути числом",
+		"validation-numeric-formatted": "Значення поля {0} повинне бути числом",
+		"validation-range": "Значення поля не входить до діапазону",
+		"validation-range-formatted": "Значення поля {0} не входить до діапазону",
+		"validation-stringLength": "Хибна довжина значення у полі",
+		"validation-stringLength-formatted": "Хибна довжина значення у полі {0}",
+		"validation-custom": "Недопустиме значення",
+		"validation-custom-formatted": "Недопустиме значення: {0}",
+		"validation-compare": "Значення полів не відповідають одне одному.",
+		"validation-compare-formatted": "Значення поля {0} не відповідне",
+		"validation-pattern": "Значення не відповідає шаблону",
+		"validation-pattern-formatted": "Значення поля {0} не відповідає шаблону",
+		"validation-email": "Недопустиме значення email",
+		"validation-email-formatted": "Недопустиме значення {0}",
+		"validation-mask": "Недопустиме значення",
+		"dxLookup-searchPlaceholder": "Мінімальна кількість символів: {0}",
+		"dxList-pullingDownText": "Потягніть, щоб оновити...",
+		"dxList-pulledDownText": "Відпустіть, щоб оновити...",
+		"dxList-refreshingText": "Оновлення...",
+		"dxList-pageLoadingText": "Завантаження...",
+		"dxList-nextButtonText": "Далі",
+		"dxList-selectAll": "Обрати все",
+		"dxListEditDecorator-delete": "Видалити",
+		"dxListEditDecorator-more": "Більше",
+		"dxScrollView-pullingDownText": "Потягніть, щоб оновити...",
+		"dxScrollView-pulledDownText": "Відпустіть, щоб оновити...",
+		"dxScrollView-refreshingText": "Оновлення...",
+		"dxScrollView-reachBottomText": "Завантаження...",
+		"dxDateBox-simulatedDataPickerTitleTime": "Оберіть час",
+		"dxDateBox-simulatedDataPickerTitleDate": "Оберіть дату",
+		"dxDateBox-simulatedDataPickerTitleDateTime": "Оберіть дату і час",
+		"dxDateBox-validation-datetime": "Значення повинне бути датою/часом",
+		"dxFileUploader-selectFile": "Оберіть файл",
+		"dxFileUploader-dropFile": "або Перемістіть файл сюди",
+		"dxFileUploader-bytes": "байт",
+		"dxFileUploader-kb": "кБ",
+		"dxFileUploader-Mb": "МБ",
+		"dxFileUploader-Gb": "ГБ",
+		"dxFileUploader-upload": "Завантажити",
+		"dxFileUploader-uploaded": "завантажено",
+		"dxFileUploader-readyToUpload": "Готово до завантаження",
+		"dxFileUploader-uploadFailedMessage": "Завантаження не вдалося",
+		"dxRangeSlider-ariaFrom": "Від",
+		"dxRangeSlider-ariaTill": "До",
+		"dxSwitch-onText": "УВIМК",
+		"dxSwitch-offText": "ВИМК",
+		"dxForm-optionalMark": "необов'язковий",
+		"dxForm-requiredMessage": " Поле {0} не може залишатися порожнім",
+		"dxNumberBox-invalidValueMessage": "Значение должно быть числом",
+		"dxDataGrid-columnChooserTitle": "Вибір стовпців",
+		"dxDataGrid-columnChooserEmptyText": "Перетягніть стовпець сюди, щоб приховати його",
+		"dxDataGrid-groupContinuesMessage": "Продовження на наступній сторінці",
+		"dxDataGrid-groupContinuedMessage": "Продовження з попередньої сторінки",
+		"dxDataGrid-groupHeaderText": "Сгруппировать данные по этому столбцу",
+		"dxDataGrid-ungroupHeaderText": "Разгруппировать данные по этому столбцу",
+		"dxDataGrid-ungroupAllText": "Сбросить группирование",
+		"dxDataGrid-editingEditRow": "Редагувати",
+		"dxDataGrid-editingSaveRowChanges": "Зберегти",
+		"dxDataGrid-editingCancelRowChanges": "Скасувати",
+		"dxDataGrid-editingDeleteRow": "Видалити",
+		"dxDataGrid-editingUndeleteRow": "Відновити",
+		"dxDataGrid-editingConfirmDeleteMessage": "Ви впевнені, что хочете видалити цей Запис?",
+		"dxDataGrid-validationCancelChanges": "Скасувати зміни",
+		"dxDataGrid-groupPanelEmptyText": "Перетягніть стовпець сюди, щоб згрупувати по ньому",
+		"dxDataGrid-noDataText": "Немає даних",
+		"dxDataGrid-searchPanelPlaceholder": "Пошук...",
+		"dxDataGrid-filterRowShowAllText": "(Всі)",
+		"dxDataGrid-filterRowResetOperationText": "Скинути",
+		"dxDataGrid-filterRowOperationEquals": "Дорівнює",
+		"dxDataGrid-filterRowOperationNotEquals": "Не дорівнює",
+		"dxDataGrid-filterRowOperationLess": "Менше",
+		"dxDataGrid-filterRowOperationLessOrEquals": "Менше або дорівнює",
+		"dxDataGrid-filterRowOperationGreater": "Більше",
+		"dxDataGrid-filterRowOperationGreaterOrEquals": "Більше або дорівнює",
+		"dxDataGrid-filterRowOperationStartsWith": "Починається з",
+		"dxDataGrid-filterRowOperationContains": "Містить",
+		"dxDataGrid-filterRowOperationNotContains": "Не містить",
+		"dxDataGrid-filterRowOperationEndsWith": "Закінчується на",
+		"dxDataGrid-filterRowOperationBetween": "В діапазоні",
+		"dxDataGrid-filterRowOperationBetweenStartText": "Початок",
+		"dxDataGrid-filterRowOperationBetweenEndText": "Кінець",
+		"dxDataGrid-applyFilterText": "Застосувати фільтр",
+		"dxDataGrid-trueText": "Так",
+		"dxDataGrid-falseText": "Ні",
+		"dxDataGrid-sortingAscendingText": "Сортувати за зростанням",
+		"dxDataGrid-sortingDescendingText": "Сортувати за спаданням",
+		"dxDataGrid-sortingClearText": "Скинути сортування",
+		"dxDataGrid-editingSaveAllChanges": "Зберегти зміни",
+		"dxDataGrid-editingCancelAllChanges": "Скасувати зміни",
+		"dxDataGrid-editingAddRow": "Додати рядок",
+		"dxDataGrid-summaryMin": "Мін: {0}",
+		"dxDataGrid-summaryMinOtherColumn": "Мін по {1} : {0}",
+		"dxDataGrid-summaryMax": "Макс: {0}",
+		"dxDataGrid-summaryMaxOtherColumn": "Макс по {1} : {0}",
+		"dxDataGrid-summaryAvg": "Срзнач: {0}",
+		"dxDataGrid-summaryAvgOtherColumn": "Срзнач по {1} : {0}",
+		"dxDataGrid-summarySum": "Сумм: {0}",
+		"dxDataGrid-summarySumOtherColumn": "Сумм по {1} : {0}",
+		"dxDataGrid-summaryCount": "Кільк.: {0}",
+		"dxDataGrid-columnFixingFix": "Закріпити",
+		"dxDataGrid-columnFixingUnfix": "Відкріпити",
+		"dxDataGrid-columnFixingLeftPosition": "Ліворуч",
+		"dxDataGrid-columnFixingRightPosition": "Праворуч",
+		"dxDataGrid-exportTo": "Експортувати",
+		"dxDataGrid-exportToExcel": "Експортувати  в Excel файл",
+		"dxDataGrid-excelFormat": "Excel файл",
+		"dxDataGrid-selectedRows": "Вибрані рядки",
+		"dxDataGrid-exportAll": "Експортувати усе",
+		"dxDataGrid-exportSelectedRows": "Експортувати обрані рядки",
+		"dxDataGrid-headerFilterEmptyValue": "(Порожнє)",
+		"dxDataGrid-headerFilterOK": "ОК",
+		"dxDataGrid-headerFilterCancel": "Скасувати",
+		"dxDataGrid-ariaColumn": "Стовпець",
+		"dxDataGrid-ariaValue": "Значення",
+		"dxDataGrid-ariaFilterCell": "Фільтр",
+		"dxDataGrid-ariaCollapse": "Згорнути",
+		"dxDataGrid-ariaExpand": "Розгорнути",
+		"dxDataGrid-ariaDataGrid": "Таблиця  даних",
+		"dxDataGrid-ariaSearchInGrid": "Шукати в таблиці даних",
+		"dxDataGrid-ariaSelectAll": "Вибрати все",
+		"dxDataGrid-ariaSelectRow": "Вибрати рядок",
+		"dxPager-infoText": "Сторінка {0} з {1} (Всього елементів: {2})",
+		"dxPager-pagesCountText": "з",
+		"dxPivotGrid-grandTotal": "Разом",
+		"dxPivotGrid-total": "{0} Всього",
+		"dxPivotGrid-fieldChooserTitle": "Вибір полів",
+		"dxPivotGrid-showFieldChooser": "Показати вибір полів",
+		"dxPivotGrid-expandAll": "Розкрити всі",
+		"dxPivotGrid-collapseAll": "Згорнути всі",
+		"dxPivotGrid-sortColumnBySummary": "Сортувати \"{0}\" по цій колонці",
+		"dxPivotGrid-sortRowBySummary": "Сортувати \"{0}\" по цьому рядку",
+		"dxPivotGrid-removeAllSorting": "Скинути все сортування",
+		"dxPivotGrid-rowFields": "Поля рядків",
+		"dxPivotGrid-columnFields": "Поля стовпців",
+		"dxPivotGrid-dataFields": "Поля даних",
+		"dxPivotGrid-filterFields": "Поля фільтрів",
+		"dxPivotGrid-allFields": "Всі поля",
+		"dxPivotGrid-columnFieldArea": "Перетягніть поля стовпців cюди",
+		"dxPivotGrid-dataFieldArea": "Перетягніть поля даних cюди",
+		"dxPivotGrid-rowFieldArea": "Перетягніть поля рядків cюди",
+		"dxPivotGrid-filterFieldArea": "Перетягніть поля фільтрів cюди",
+		"dxScheduler-editorLabelTitle": "Назва",
+		"dxScheduler-editorLabelStartDate": "Дата початку",
+		"dxScheduler-editorLabelEndDate": "Дата завершення",
+		"dxScheduler-editorLabelDescription": "Опис",
+		"dxScheduler-editorLabelRecurrence": "Повторення",
+		"dxScheduler-openAppointment": "Відкрити завдання",
+		"dxScheduler-recurrenceNever": "Ніколи",
+		"dxScheduler-recurrenceDaily": "Щодня",
+		"dxScheduler-recurrenceWeekly": "Щотижня",
+		"dxScheduler-recurrenceMonthly": "Щомісяця",
+		"dxScheduler-recurrenceYearly": "Щорічно",
+		"dxScheduler-recurrenceEvery": "Інтервал",
+		"dxScheduler-recurrenceEnd": "Завершити повторення",
+		"dxScheduler-recurrenceAfter": "Кількість повторень",
+		"dxScheduler-recurrenceOn": "Повторювати до",
+		"dxScheduler-recurrenceRepeatDaily": "днів(дня)",
+		"dxScheduler-recurrenceRepeatWeekly": "тижні(тижнів)",
+		"dxScheduler-recurrenceRepeatMonthly": "місяці(місяців)",
+		"dxScheduler-recurrenceRepeatYearly": "року(років)",
+		"dxScheduler-recurrenceRepeatOnDate": "до даты",
+		"dxScheduler-recurrenceRepeatCount": "повторень",
+		"dxScheduler-switcherDay": "День",
+		"dxScheduler-switcherWeek": "Тиждень",
+		"dxScheduler-switcherWorkWeek": "Рабочій тиждень",
+		"dxScheduler-switcherMonth": "Місяць",
+		"dxScheduler-switcherTimelineDay": "Хронологія дня",
+		"dxScheduler-switcherTimelineWeek": "Хронологія тижня",
+		"dxScheduler-switcherTimelineWorkWeek": "Хронологія рабочого тижня",
+		"dxScheduler-switcherTimelineMonth": "Хронологія місяцю",
+		"dxScheduler-switcherAgenda": "Розклад",
+		"dxScheduler-allDay": "Весь день",
+		"dxScheduler-confirmRecurrenceEditMessage": "Ви бажаєте відредагувати лише цю подію або всю серію?",
+		"dxScheduler-confirmRecurrenceDeleteMessage": "Ви бажаєте видалити лише цю подію або всю серію?",
+		"dxScheduler-confirmRecurrenceEditSeries": "Всю серію",
+		"dxScheduler-confirmRecurrenceDeleteSeries": "Всю серію",
+		"dxScheduler-confirmRecurrenceEditOccurrence": "Тільки цю подію",
+		"dxScheduler-confirmRecurrenceDeleteOccurrence": "Тільки цю подію",
+		"dxScheduler-noTimezoneTitle": "Часовой пояс не обрано",
+		"dxCalendar-todayButtonText": "Сьогодні",
+		"dxCalendar-ariaWidgetName": "Календарь",
+		"dxColorView-ariaRed": "Червоний",
+		"dxColorView-ariaGreen": "Зелений",
+		"dxColorView-ariaBlue": "Синій",
+		"dxColorView-ariaAlpha": "Прозорість",
+		"dxColorView-ariaHex": "Код кольору",
+		"vizExport-printingButtonText": "Друк",
+		"vizExport-titleMenuText": "Експорт/Друк",
+		"vizExport-exportButtonText": "{0} файл"
+	}
+};
 
 /***/ }),
 
 /***/ 1231:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"caption\">\n  <h2>Гірничо електромеханічний коледж Державного вищого навчального закладу <br> \"Криворізький національний\n    університет\"</h2>\n</div>\n<md-input-container>\n  <input mdInput placeholder=\"Відділення\" value=\"електромеханічне\">\n</md-input-container>\n\n<!--\n<div>\n  Відділення: <span>електромеханічне</span>\n</div>\n<div>\n  Спеціальність: <span>електромеханічне</span>\n</div>\n<div>\n  Галузь знань: <span>електромеханічне</span>\n</div>\n<div>\n  Група:<span>МЕЕП-16 1/3</span>\n</div>\n<div>\n Класний керівник:<span>Майтак О.М.</span>\n</div>\n-->\n"
+module.exports = "<header class=\"min-width-content\">\r\n  <div fxFill class=\"flex-container\" fxLayout=\"row\" fxLayoutAlign=\"space-around center\">\r\n    <div fxFlex=\"25\">\r\n      <img src=\"\">\r\n    </div>\r\n    <div fxFlex=\"50\" fxLayout=\"row\" fxLayoutAlign=\"center\">\r\n      <h1>Інформаційна сторінка класного керівника</h1>\r\n    </div>\r\n    <div fxFlex=\"25\" fxLayout=\"row\" fxLayoutAlign=\"end\" class=\"login\">\r\n      <button md-raised-button routerLink=\"login\">Увійти</button>\r\n    </div>\r\n  </div>\r\n</header>\r\n<md-sidenav-container class=\"min-width-content\">\r\n  <md-sidenav [opened]=\"true\" #sidenav mode=\"side\">\r\n    <md-nav-list class=\"left-menu\">\r\n      <a md-list-item routerLink=\"\" routerLinkActive=\"active\" [routerLinkActiveOptions]=\"{exact: true}\">\r\n        Головна\r\n      </a>\r\n      <a md-list-item routerLink=\"students\" routerLinkActive=\"active\" [routerLinkActiveOptions]=\"{exact: true}\">\r\n        Відомості про студентів\r\n      </a>\r\n      <a md-list-item routerLink=\"parents\" routerLinkActive=\"active\" [routerLinkActiveOptions]=\"{exact: true}\">\r\n        Відомості про батьків\r\n      </a>\r\n      <a md-list-item routerLink=\"studies\" routerLinkActive=\"active\" [routerLinkActiveOptions]=\"{exact: true}\">\r\n        Контроль якості навчання\r\n      </a>\r\n      <a md-list-item routerLink=\"documentation\" routerLinkActive=\"active\" [routerLinkActiveOptions]=\"{exact: true}\">\r\n        Документація класного керівника\r\n      </a>\r\n    </md-nav-list>\r\n  </md-sidenav>\r\n  <div class=\"main-content\">\r\n    <router-outlet></router-outlet>\r\n  </div>\r\n</md-sidenav-container>\r\n"
 
 /***/ }),
 
 /***/ 1232:
 /***/ (function(module, exports) {
 
-module.exports = "<dx-data-grid\n  id=\"parents\"\n  [showBorders]=\"true\"\n  [showRowLines]=\"true\"\n  [dataSource]=\"parents\">\n  <dxi-column\n    dataField=\"fullName\"\n    caption=\"ФІО\"></dxi-column>\n  <dxi-column\n    dataField=\"phone\"\n    caption=\"Телефон\"></dxi-column>\n  <dxi-column\n    dataField=\"addressWork\"\n    caption=\"Адреса роботи\"></dxi-column>\n  <dxi-column\n    dataField=\"student.fullName\"\n    caption=\"ФІО студента\"></dxi-column>\n</dx-data-grid>\n"
+module.exports = "<h1>Події:</h1>\n\n<dx-data-grid\n  [showBorders]=\"true\"\n  [showRowLines]=\"true\"\n  [dataSource]=\"holidays\"\n  (onRowInserted)=\"addHoliday($event)\"\n  (onRowUpdated)=\"updateHoliday($event)\"\n  (onRowRemoved)=\"deleteHoliday($event)\">\n  <dxo-filter-row\n    [visible]=\"true\"\n    betweenStartText=\"З\"\n    betweenEndText=\"По\"\n    resetOperationText=\"Відмінити\"></dxo-filter-row>\n  <dxo-editing\n    mode=\"row\"\n    [allowUpdating]=\"true\"\n    [allowDeleting]=\"true\"\n    [allowAdding]=\"true\">\n  </dxo-editing>\n  <dxo-paging [pageSize]=\"10\"></dxo-paging>\n  <dxo-pager\n    [showPageSizeSelector]=\"true\"\n    [allowedPageSizes]=\"[5, 10]\"\n    [showInfo]=\"true\">\n  </dxo-pager>\n\n  <dxi-column\n    dataField=\"name\"\n    caption=\"Назва події\"\n    dataType=\"string\">\n    <dxi-validation-rule type=\"required\"></dxi-validation-rule>\n  </dxi-column>\n  <dxi-column\n    dataField=\"date\"\n    caption=\"Дата події\"\n    dataType=\"date\"\n    format=\"monthAndDay\">\n    <dxi-validation-rule type=\"required\"></dxi-validation-rule>\n  </dxi-column>\n  <!-- <dxi-column\n    caption=\"Дії\"\n    dataField=\"students\"\n    cellTemplate=\"actions\">\n  </dxi-column>\n\n  <div *dxTemplate=\"let data of 'actions'\" fxLayoutAlign=\"center center\">\n    <md-icon (click)=\"openViewDialog(data.data)\">remove_red_eye</md-icon>\n    <md-icon (click)=\"openEditDialog(data.data)\">mode_edit</md-icon>\n    <md-icon (click)=\"openDeletingDialog(data.data)\">delete</md-icon>\n  </div>-->\n</dx-data-grid>\n"
 
 /***/ }),
 
 /***/ 1233:
 /***/ (function(module, exports) {
 
-module.exports = "<dx-data-grid\n  [showBorders]=\"true\"\n  [showRowLines]=\"true\"\n  [dataSource]=\"students\">\n  <dxi-column\n    dataField=\"studentTicket\"\n    caption=\"Студ білет\"></dxi-column>\n  <dxi-column\n    dataField=\"fullName\"\n    caption=\"ФІО\"></dxi-column>\n  <dxi-column\n    caption=\"Роль у группі\"\n    dataField=\"students\"\n    cellTemplate=\"groupAssets\">\n  </dxi-column>\n  <dxi-column\n    dataField=\"phone\"\n    caption=\"Телефон\"></dxi-column>\n  <dxi-column\n    dataField=\"dateOfBirthday\"\n    caption=\"Дата народження\"\n    dataType=\"date\"\n    cellTemplate=\"date\"></dxi-column>\n  <dxi-column\n    dataField=\"fullAddress\"\n    caption=\"Адреса\"></dxi-column>\n\n  <dxi-column\n    caption=\"Дії\"\n    dataField=\"students\"\n    cellTemplate=\"actions\">\n  </dxi-column>\n\n  <div *dxTemplate=\"let data of 'actions'\" fxLayoutAlign=\"center center\">\n    <md-icon (click)=\"openViewDialog(data.data)\">remove_red_eye</md-icon>\n    <md-icon (click)=\"openEditDialog(data.data)\">mode_edit</md-icon>\n    <md-icon (click)=\"openDeletingDialog(data.data)\">delete</md-icon>\n  </div>\n\n  <div *dxTemplate=\"let data of 'date'\">\n    {{data.value | date: 'dd/MM/yyyy'}}\n  </div>\n\n  <div *dxTemplate=\"let data of 'groupAssets'\">\n    {{getNameAssetsById(data.data.groupAsset)}}\n  </div>\n</dx-data-grid>\n"
+module.exports = "<md-sidenav-container>\n  <div>\n    <div class=\"caption\">\n      <h2>ГІРНИЧО ЕЛЕКТРОМЕХАНІЧНИЙ КОЛЕДЖ<br>Державного вищого навчального закладу<br>\"Криворізький національний\n        університет\"</h2>\n    </div>\n    <md-input-container>\n      <input mdInput placeholder=\"Відділення\" value=\"електромеханічне\">\n    </md-input-container>\n  </div>\n  <md-sidenav class=\"calendar-sidenav\" [opened]=\"true\" #sidenav mode=\"side\" align=\"end\">\n    <dx-calendar #calendar\n                 (onValueChanged)=\"getHolidaysByDate()\"\n                 id=\"calendar-container\"\n                 [min]=\"minDateValue\"\n                 [max]=\"maxDateValue\"\n                 [firstDayOfWeek]=\"0\"\n                 [disabled]=\"false\"\n                 [(value)]=\"currentValue\"\n                 [zoomLevel]=\"zoomLevels[0]\"\n                 [cellTemplate]=\"cellTemplate\">\n    </dx-calendar>\n\n    <div class=\"holiday-list\">\n      <h3 *ngIf=\"holidays && holidays.length > 0;else empty_holidays\">Список подій:</h3>\n      <md-list>\n        <md-list-item *ngFor=\"let holiday of holidays\">{{holiday.name}}</md-list-item>\n      </md-list>\n    </div>\n\n    <button md-mini-fab class=\"button-edit-holidays\" (click)=\"openHolidays()\">\n      <md-icon>edit</md-icon>\n    </button>\n  </md-sidenav>\n</md-sidenav-container>\n<ng-template #empty_holidays>\n  <h3>Немає запланованих подій на обрану дату!</h3>\n</ng-template>\n<!--\n<div>\n  Відділення: <span>електромеханічне</span>\n</div>\n<div>\n  Спеціальність: <span>електромеханічне</span>\n</div>\n<div>\n  Галузь знань: <span>електромеханічне</span>\n</div>\n<div>\n  Група:<span>МЕЕП-16 1/3</span>\n</div>\n<div>\n Класний керівник:<span>Майтак О.М.</span>\n</div>\n-->\n"
 
 /***/ }),
 
 /***/ 1234:
 /***/ (function(module, exports) {
 
-module.exports = "<dx-data-grid\n  [showBorders]=\"true\"\n  [showRowLines]=\"true\"\n  [dataSource]=\"students\">\n  <dxi-column\n    dataField=\"studentTicket\"\n    caption=\"Студ білет\"></dxi-column>\n  <dxi-column\n    dataField=\"fullName\"\n    caption=\"ФІО\"></dxi-column>\n  <dxi-column\n    dataField=\"phone\"\n    caption=\"Телефон\"></dxi-column>\n  <dxi-column\n    dataField=\"dateOfBirthday\"\n    caption=\"Дата народження\"\n    dataType=\"date\"\n    cellTemplate=\"date\"></dxi-column>\n  <dxi-column\n    dataField=\"fullAddress\"\n    caption=\"Адреса\"></dxi-column>\n  <dxi-column\n    dataField=\"reasonBeneficiaries\"\n    caption=\"Пільга\"></dxi-column>\n\n  <dxi-column\n    caption=\"Дії\"\n    dataField=\"students\"\n    cellTemplate=\"actions\">\n  </dxi-column>\n\n  <div *dxTemplate=\"let data of 'actions'\" fxLayoutAlign=\"center center\">\n    <md-icon (click)=\"openViewDialog(data.data)\">remove_red_eye</md-icon>\n    <md-icon (click)=\"openEditDialog(data.data)\">mode_edit</md-icon>\n    <md-icon (click)=\"openDeletingDialog(data.data)\">delete</md-icon>\n  </div>\n\n  <div *dxTemplate=\"let data of 'date'\">\n    {{data.value | date: 'dd/MM/yyyy'}}\n  </div>\n</dx-data-grid>\n"
+module.exports = "<dx-data-grid\r\n  id=\"parents\"\r\n  [showBorders]=\"true\"\r\n  [showRowLines]=\"true\"\r\n  [dataSource]=\"parents\">\r\n  <dxo-paging [pageSize]=\"10\"></dxo-paging>\r\n  <dxo-pager\r\n    [showPageSizeSelector]=\"true\"\r\n    [allowedPageSizes]=\"[5, 10, 15, 20]\"\r\n    [showInfo]=\"true\">\r\n  </dxo-pager>\r\n  <dxi-column\r\n    dataField=\"fullName\"\r\n    caption=\"ФІО\"></dxi-column>\r\n  <dxi-column\r\n    dataField=\"phone\"\r\n    caption=\"Телефон\"></dxi-column>\r\n  <dxi-column\r\n    dataField=\"addressWork\"\r\n    caption=\"Адреса роботи\"></dxi-column>\r\n  <dxi-column\r\n    dataField=\"student.fullName\"\r\n    caption=\"ФІО студента\"></dxi-column>\r\n</dx-data-grid>\r\n"
 
 /***/ }),
 
 /***/ 1235:
 /***/ (function(module, exports) {
 
-module.exports = "<md-dialog-content>\n  <form>\n    <div fxLayout=\"row\" fxLayoutAlign=\"space-between\">\n      <md-input-container>\n        <input [disabled]=\"typeView === 'view'\" mdInput name=\"lastName\" placeholder=\"Прізвище\"\n               [(ngModel)]=\"student.lastName\">\n      </md-input-container>\n\n      <md-input-container>\n        <input [disabled]=\"typeView === 'view'\" mdInput name=\"firstName\" placeholder=\"Ім'я\"\n               [(ngModel)]=\"student.firstName\">\n      </md-input-container>\n\n      <md-input-container>\n        <input [disabled]=\"typeView === 'view'\" mdInput name=\"secondName\" placeholder=\"По-батькові\"\n               [(ngModel)]=\"student.secondName\">\n      </md-input-container>\n    </div>\n    <div fxLayout=\"row\" fxLayoutAlign=\"space-between\">\n      <md-input-container fxFlex=\"49\">\n        <input [disabled]=\"typeView === 'view'\" mdInput name=\"birthPlace\" placeholder=\"Місце народження\"\n               [(ngModel)]=\"student.birthPlace\">\n      </md-input-container>\n\n      <md2-datepicker [disabled]=\"typeView === 'view'\"\n                      name=\"dateOfBirthday\" fxFlex=\"49\" class=\"dob\" placeholder=\"Дата народження\"\n                      [(ngModel)]=\"student.dateOfBirthday\">\n      </md2-datepicker>\n    </div>\n\n    <md-card class=\"passport\">\n      <md-card-header>\n        <md-card-title>Паспорт</md-card-title>\n      </md-card-header>\n      <md-card-content>\n        <div fxLayout=\"row\" fxLayoutAlign=\"space-between\">\n\n          <md-input-container>\n            <input [disabled]=\"typeView === 'view'\"\n                   mdInput name=\"passportSeries\" placeholder=\"Серія паспорту\" [(ngModel)]=\"student.passportSeries\">\n          </md-input-container>\n\n          <md-input-container>\n            <input [disabled]=\"typeView === 'view'\"\n                   mdInput name=\"passportNumber\" placeholder=\"Номер паспорту\" [(ngModel)]=\"student.passportNumber\">\n          </md-input-container>\n\n          <md2-datepicker [disabled]=\"typeView === 'view'\"\n                          name=\"passportDate\" fxFlex=\"33\" placeholder=\"Дата видачі\" [(ngModel)]=\"student.passportDate\">\n          </md2-datepicker>\n        </div>\n      </md-card-content>\n\n    </md-card>\n\n    <md-card class=\"address\">\n      <md-card-header>\n        <md-card-title>Домашня адреса</md-card-title>\n      </md-card-header>\n      <md-card-content>\n        <div fxLayout=\"row\" fxLayoutAlign=\"space-between\">\n\n          <md-input-container fxFlex=\"20\">\n            <input [disabled]=\"typeView === 'view'\"\n                   mdInput name=\"addressIndex\" placeholder=\"Індекс\" [(ngModel)]=\"student.addressIndex\">\n          </md-input-container>\n\n          <md-input-container fxFlex=\"39\">\n            <input [disabled]=\"typeView === 'view'\"\n                   mdInput name=\"addressRegion\" placeholder=\"Область\" [(ngModel)]=\"student.addressRegion\">\n          </md-input-container>\n\n          <md-input-container fxFlex=\"39\">\n            <input [disabled]=\"typeView === 'view'\"\n                   mdInput name=\"addressArea\" placeholder=\"Район\" [(ngModel)]=\"student.addressArea\">\n          </md-input-container>\n        </div>\n        <div fxLayout=\"row\" fxLayoutAlign=\"space-between\">\n\n          <md-input-container fxFlex=\"49\">\n            <input [disabled]=\"typeView === 'view'\"\n                   mdInput name=\"addressCity\" placeholder=\"Місто\" [(ngModel)]=\"student.addressCity\">\n          </md-input-container>\n\n          <md-input-container fxFlex=\"49\">\n            <input [disabled]=\"typeView === 'view'\"\n                   mdInput name=\"addressStreet\" placeholder=\"Вулиця\" [(ngModel)]=\"student.addressStreet\">\n          </md-input-container>\n        </div>\n        <div fxLayout=\"row\" fxLayoutAlign=\"space-between\">\n          <md-input-container fxFlex=\"49\">\n            <input [disabled]=\"typeView === 'view'\"\n                   mdInput name=\"addressHouse\" placeholder=\"Будинок\" [(ngModel)]=\"student.addressHouse\">\n          </md-input-container>\n\n          <md-input-container fxFlex=\"49\">\n            <input [disabled]=\"typeView === 'view'\"\n                   mdInput name=\"addressFlat\" placeholder=\"Квартира\" [(ngModel)]=\"student.addressFlat\">\n          </md-input-container>\n        </div>\n      </md-card-content>\n\n    </md-card>\n\n    <md-card class=\"info\">\n      <md-card-header>\n        <md-card-title>Інша інформація</md-card-title>\n      </md-card-header>\n      <md-card-content>\n        <div fxLayout=\"row\" fxLayoutAlign=\"space-between\">\n\n          <md-input-container fxFlex=\"48\">\n            <input [disabled]=\"typeView === 'view'\"\n                   mdInput name=\"phone\" placeholder=\"Телефон\" [(ngModel)]=\"student.phone\">\n          </md-input-container>\n\n          <md-input-container fxFlex=\"48\">\n            <input [disabled]=\"typeView === 'view'\"\n                   mdInput name=\"studentTicket\" placeholder=\"Студ квиток\" [(ngModel)]=\"student.studentTicket\">\n          </md-input-container>\n        </div>\n        <div fxLayout=\"row\" fxLayoutAlign=\"space-between center\" style=\"padding: 0 10px\">\n\n          <md-checkbox [disabled]=\"typeView === 'view'\"\n                       name=\"beneficiaries\" [(ngModel)]=\"student.beneficiaries\">Пільговик\n          </md-checkbox>\n\n          <md-input-container *ngIf=\"student.beneficiaries\" fxFlex=\"48\">\n            <input [disabled]=\"typeView === 'view'\"\n                   mdInput name=\"reasonBeneficiaries\" placeholder=\"Причина льгот\"\n                   [(ngModel)]=\"student.reasonBeneficiaries\">\n          </md-input-container>\n        </div>\n\n        <div fxLayout=\"row\" fxLayoutAlign=\"space-between center\" style=\"padding: 0 10px; margin-top: 20px\">\n\n          <md-select [disabled]=\"typeView === 'view'\"\n                     placeholder=\"Роль у группі\" fxFlex=\"48\"\n                     name=\"reasonBeneficiaries\"\n                     [(ngModel)]=\"student.groupAsset\">\n            <md-option *ngFor=\"let item of groupAssets\" [value]=\"item.id\">{{item.name}}</md-option>\n          </md-select>\n        </div>\n      </md-card-content>\n\n    </md-card>\n  </form>\n\n  <form>\n    <md-card class=\"mother\">\n      <md-card-header>\n        <md-card-title>Мати</md-card-title>\n      </md-card-header>\n      <md-card-content>\n        <div fxLayout=\"row\" fxLayoutAlign=\"space-between\">\n          <md-input-container fxFlex=\"33\">\n            <input [disabled]=\"typeView === 'view'\"\n                   mdInput placeholder=\"Прізвище\" name=\"motherLastName\" [(ngModel)]=\"mother.lastName\">\n          </md-input-container>\n\n          <md-input-container fxFlex=\"33\">\n            <input [disabled]=\"typeView === 'view'\"\n                   mdInput placeholder=\"Ім'я\" name=\"motherFirstName\" [(ngModel)]=\"mother.firstName\">\n          </md-input-container>\n          <md-input-container fxFlex=\"33\">\n            <input [disabled]=\"typeView === 'view'\"\n                   mdInput placeholder=\"По-батькові\" name=\"motherSecondName\" [(ngModel)]=\"mother.secondName\">\n          </md-input-container>\n        </div>\n        <div fxLayout=\"row\" fxLayoutAlign=\"space-between\">\n\n          <md-input-container fxFlex=\"48\">\n            <input [disabled]=\"typeView === 'view'\"\n                   mdInput placeholder=\"Телефон\" name=\"motherPhone\" [(ngModel)]=\"mother.phone\">\n          </md-input-container>\n\n          <md-input-container fxFlex=\"48\">\n            <input [disabled]=\"typeView === 'view'\"\n                   mdInput placeholder=\"Місце роботи\" name=\"motherAddressWork\" [(ngModel)]=\"mother.addressWork\">\n          </md-input-container>\n        </div>\n      </md-card-content>\n\n    </md-card>\n  </form>\n\n  <form>\n    <md-card class=\"father\">\n      <md-card-header>\n        <md-card-title>Батько</md-card-title>\n      </md-card-header>\n      <md-card-content>\n        <div fxLayout=\"row\" fxLayoutAlign=\"space-between\">\n          <md-input-container fxFlex=\"33\">\n            <input [disabled]=\"typeView === 'view'\"\n                   mdInput placeholder=\"Прізвище\" name=\"fatherLastName\" [(ngModel)]=\"father.lastName\">\n          </md-input-container>\n\n          <md-input-container fxFlex=\"33\">\n            <input [disabled]=\"typeView === 'view'\"\n                   mdInput placeholder=\"Ім'я\" name=\"fatherFirstName\" [(ngModel)]=\"father.firstName\">\n          </md-input-container>\n          <md-input-container fxFlex=\"33\">\n            <input [disabled]=\"typeView === 'view'\"\n                   mdInput placeholder=\"По-батькові\" name=\"fatherSecondName\" [(ngModel)]=\"father.secondName\">\n          </md-input-container>\n        </div>\n        <div fxLayout=\"row\" fxLayoutAlign=\"space-between\">\n\n          <md-input-container fxFlex=\"48\">\n            <input [disabled]=\"typeView === 'view'\"\n                   mdInput placeholder=\"Телефон\" name=\"fatherPhone\" [(ngModel)]=\"father.phone\">\n          </md-input-container>\n\n          <md-input-container fxFlex=\"48\">\n            <input [disabled]=\"typeView === 'view'\"\n                   mdInput placeholder=\"Місце роботи\" name=\"fatherAddressWork\" [(ngModel)]=\"father.addressWork\">\n          </md-input-container>\n        </div>\n      </md-card-content>\n\n    </md-card>\n  </form>\n</md-dialog-content>\n\n\n<md-dialog-actions fxLayout=\"row\" fxLayoutAlign=\"space-around\">\n  <button *ngIf=\"typeView === 'edit'\" md-raised-button fxFlex=\"20\" (click)=\"updateStudent()\">Оновити</button>\n  <button *ngIf=\"!typeView\" md-raised-button fxFlex=\"20\" (click)=\"createStudent()\">Зберегти</button>\n  <button md-raised-button fxFlex=\"20\" md-dialog-close>Закрити</button>\n</md-dialog-actions>\n"
+module.exports = "<dx-data-grid\r\n  [showBorders]=\"true\"\r\n  [showRowLines]=\"true\"\r\n  [dataSource]=\"students\">\r\n  <dxo-paging [pageSize]=\"10\"></dxo-paging>\r\n  <dxo-pager\r\n    [showPageSizeSelector]=\"true\"\r\n    [allowedPageSizes]=\"[5, 10, 15, 20]\"\r\n    [showInfo]=\"true\">\r\n  </dxo-pager>\r\n  <dxi-column\r\n    dataField=\"studentTicket\"\r\n    caption=\"Студ білет\"></dxi-column>\r\n  <dxi-column\r\n    dataField=\"fullName\"\r\n    caption=\"ФІО\"></dxi-column>\r\n  <dxi-column\r\n    caption=\"Роль у группі\"\r\n    dataField=\"students\"\r\n    cellTemplate=\"groupAssets\">\r\n  </dxi-column>\r\n  <dxi-column\r\n    dataField=\"phone\"\r\n    caption=\"Телефон\"></dxi-column>\r\n  <dxi-column\r\n    dataField=\"dateOfBirthday\"\r\n    caption=\"Дата народження\"\r\n    dataType=\"date\"\r\n    cellTemplate=\"date\"></dxi-column>\r\n  <dxi-column\r\n    dataField=\"fullAddress\"\r\n    caption=\"Адреса\"></dxi-column>\r\n\r\n  <dxi-column\r\n    caption=\"Дії\"\r\n    dataField=\"students\"\r\n    cellTemplate=\"actions\">\r\n  </dxi-column>\r\n\r\n  <div *dxTemplate=\"let data of 'actions'\" fxLayoutAlign=\"center center\">\r\n    <md-icon (click)=\"openViewDialog(data.data)\">remove_red_eye</md-icon>\r\n    <md-icon (click)=\"openEditDialog(data.data)\">mode_edit</md-icon>\r\n    <md-icon (click)=\"openDeletingDialog(data.data)\">delete</md-icon>\r\n  </div>\r\n\r\n  <div *dxTemplate=\"let data of 'date'\">\r\n    {{data.value | date: 'dd/MM/yyyy'}}\r\n  </div>\r\n\r\n  <div *dxTemplate=\"let data of 'groupAssets'\">\r\n    {{getNameAssetsById(data.data.groupAsset)}}\r\n  </div>\r\n</dx-data-grid>\r\n"
 
 /***/ }),
 
 /***/ 1236:
 /***/ (function(module, exports) {
 
-module.exports = "  <h2>Ви дійсно хочете видалити дані про студента?</h2>\n<md-dialog-actions fxLayout=\"row\" fxLayoutAlign=\"space-around\">\n  <button md-raised-button fxFlex=\"20\" (click)=\"deleteStudent()\">Так</button>\n  <button md-raised-button fxFlex=\"20\" md-dialog-close>Ні</button>\n</md-dialog-actions>\n"
+module.exports = "<dx-data-grid\r\n  [showBorders]=\"true\"\r\n  [showRowLines]=\"true\"\r\n  [dataSource]=\"students\">\r\n  <dxo-paging [pageSize]=\"10\"></dxo-paging>\r\n  <dxo-pager\r\n    [showPageSizeSelector]=\"true\"\r\n    [allowedPageSizes]=\"[5, 10, 15, 20]\"\r\n    [showInfo]=\"true\">\r\n  </dxo-pager>\r\n  <dxi-column\r\n    dataField=\"studentTicket\"\r\n    caption=\"Студ білет\"></dxi-column>\r\n  <dxi-column\r\n    dataField=\"fullName\"\r\n    caption=\"ФІО\"></dxi-column>\r\n  <dxi-column\r\n    dataField=\"phone\"\r\n    caption=\"Телефон\"></dxi-column>\r\n  <dxi-column\r\n    dataField=\"dateOfBirthday\"\r\n    caption=\"Дата народження\"\r\n    dataType=\"date\"\r\n    cellTemplate=\"date\"></dxi-column>\r\n  <dxi-column\r\n    dataField=\"fullAddress\"\r\n    caption=\"Адреса\"></dxi-column>\r\n  <dxi-column\r\n    dataField=\"reasonBeneficiaries\"\r\n    caption=\"Пільга\"></dxi-column>\r\n\r\n  <dxi-column\r\n    caption=\"Дії\"\r\n    dataField=\"students\"\r\n    cellTemplate=\"actions\">\r\n  </dxi-column>\r\n\r\n  <div *dxTemplate=\"let data of 'actions'\" fxLayoutAlign=\"center center\">\r\n    <md-icon (click)=\"openViewDialog(data.data)\">remove_red_eye</md-icon>\r\n    <md-icon (click)=\"openEditDialog(data.data)\">mode_edit</md-icon>\r\n    <md-icon (click)=\"openDeletingDialog(data.data)\">delete</md-icon>\r\n  </div>\r\n\r\n  <div *dxTemplate=\"let data of 'date'\">\r\n    {{data.value | date: 'dd/MM/yyyy'}}\r\n  </div>\r\n</dx-data-grid>\r\n"
 
 /***/ }),
 
 /***/ 1237:
 /***/ (function(module, exports) {
 
-module.exports = "<md-tab-group (selectChange)=\"changeSelectedTab($event)\">\n  <md-tab label=\"Анкетні дані\">\n    <app-students></app-students>\n  </md-tab>\n  <md-tab label=\"Пільговики\">\n    <app-beneficiaries></app-beneficiaries>\n  </md-tab>\n  <md-tab label=\"Неповні сім'ї\">\n    <app-parent></app-parent>\n  </md-tab>\n  <md-tab label=\"Актив групи\">\n    <app-active-groups></app-active-groups>\n  </md-tab>\n</md-tab-group>\n"
+module.exports = "<md-dialog-content>\n  <form>\n    <div fxLayout=\"row\" fxLayoutAlign=\"space-between\">\n      <md-input-container>\n        <input [disabled]=\"typeView === 'view'\" mdInput name=\"lastName\" placeholder=\"Прізвище\"\n               [(ngModel)]=\"student.lastName\">\n      </md-input-container>\n\n      <md-input-container>\n        <input [disabled]=\"typeView === 'view'\" mdInput name=\"firstName\" placeholder=\"Ім'я\"\n               [(ngModel)]=\"student.firstName\">\n      </md-input-container>\n\n      <md-input-container>\n        <input [disabled]=\"typeView === 'view'\" mdInput name=\"secondName\" placeholder=\"По-батькові\"\n               [(ngModel)]=\"student.secondName\">\n      </md-input-container>\n    </div>\n    <div fxLayout=\"row\" fxLayoutAlign=\"space-between\">\n      <md-input-container fxFlex=\"49\">\n        <input [disabled]=\"typeView === 'view'\" mdInput name=\"birthPlace\" placeholder=\"Місце народження\"\n               [(ngModel)]=\"student.birthPlace\">\n      </md-input-container>\n\n      <md2-datepicker [disabled]=\"typeView === 'view'\"\n                      name=\"dateOfBirthday\" fxFlex=\"49\" class=\"dob\" placeholder=\"Дата народження\"\n                      [(ngModel)]=\"student.dateOfBirthday\">\n      </md2-datepicker>\n    </div>\n\n    <md-card class=\"passport\">\n      <md-card-header>\n        <md-card-title>Паспорт</md-card-title>\n      </md-card-header>\n      <md-card-content>\n        <div fxLayout=\"row\" fxLayoutAlign=\"space-between\">\n\n          <md-input-container>\n            <input [disabled]=\"typeView === 'view'\"\n                   mdInput name=\"passportSeries\" placeholder=\"Серія паспорту\" [(ngModel)]=\"student.passportSeries\">\n          </md-input-container>\n\n          <md-input-container>\n            <input [disabled]=\"typeView === 'view'\"\n                   mdInput name=\"passportNumber\" placeholder=\"Номер паспорту\" [(ngModel)]=\"student.passportNumber\">\n          </md-input-container>\n\n          <md2-datepicker [disabled]=\"typeView === 'view'\"\n                          name=\"passportDate\" fxFlex=\"33\" placeholder=\"Дата видачі\" [(ngModel)]=\"student.passportDate\">\n          </md2-datepicker>\n        </div>\n      </md-card-content>\n\n    </md-card>\n\n    <md-card class=\"address\">\n      <md-card-header>\n        <md-card-title>Домашня адреса</md-card-title>\n      </md-card-header>\n      <md-card-content>\n        <div fxLayout=\"row\" fxLayoutAlign=\"space-between\">\n\n          <md-input-container fxFlex=\"20\">\n            <input [disabled]=\"typeView === 'view'\"\n                   mdInput name=\"addressIndex\" placeholder=\"Індекс\" [(ngModel)]=\"student.addressIndex\">\n          </md-input-container>\n\n          <md-input-container fxFlex=\"39\">\n            <input [disabled]=\"typeView === 'view'\"\n                   mdInput name=\"addressRegion\" placeholder=\"Область\" [(ngModel)]=\"student.addressRegion\">\n          </md-input-container>\n\n          <md-input-container fxFlex=\"39\">\n            <input [disabled]=\"typeView === 'view'\"\n                   mdInput name=\"addressArea\" placeholder=\"Район\" [(ngModel)]=\"student.addressArea\">\n          </md-input-container>\n        </div>\n        <div fxLayout=\"row\" fxLayoutAlign=\"space-between\">\n\n          <md-input-container fxFlex=\"49\">\n            <input [disabled]=\"typeView === 'view'\"\n                   mdInput name=\"addressCity\" placeholder=\"Місто\" [(ngModel)]=\"student.addressCity\">\n          </md-input-container>\n\n          <md-input-container fxFlex=\"49\">\n            <input [disabled]=\"typeView === 'view'\"\n                   mdInput name=\"addressStreet\" placeholder=\"Вулиця\" [(ngModel)]=\"student.addressStreet\">\n          </md-input-container>\n        </div>\n        <div fxLayout=\"row\" fxLayoutAlign=\"space-between\">\n          <md-input-container fxFlex=\"49\">\n            <input [disabled]=\"typeView === 'view'\"\n                   mdInput name=\"addressHouse\" placeholder=\"Будинок\" [(ngModel)]=\"student.addressHouse\">\n          </md-input-container>\n\n          <md-input-container fxFlex=\"49\">\n            <input [disabled]=\"typeView === 'view'\"\n                   mdInput name=\"addressFlat\" placeholder=\"Квартира\" [(ngModel)]=\"student.addressFlat\">\n          </md-input-container>\n        </div>\n      </md-card-content>\n\n    </md-card>\n\n    <md-card class=\"info\">\n      <md-card-header>\n        <md-card-title>Інша інформація</md-card-title>\n      </md-card-header>\n      <md-card-content>\n        <div fxLayout=\"row\" fxLayoutAlign=\"space-between\">\n\n          <md-input-container fxFlex=\"48\">\n            <input [disabled]=\"typeView === 'view'\"\n                   mdInput name=\"phone\" placeholder=\"Телефон\" [(ngModel)]=\"student.phone\">\n          </md-input-container>\n\n          <md-input-container fxFlex=\"48\">\n            <input [disabled]=\"typeView === 'view'\"\n                   mdInput name=\"studentTicket\" placeholder=\"Студ квиток\" [(ngModel)]=\"student.studentTicket\">\n          </md-input-container>\n        </div>\n        <div fxLayout=\"row\" fxLayoutAlign=\"space-between center\" style=\"padding: 0 10px\">\n\n          <md-checkbox [disabled]=\"typeView === 'view'\"\n                       name=\"beneficiaries\" [(ngModel)]=\"student.beneficiaries\">Пільговик\n          </md-checkbox>\n\n          <md-input-container *ngIf=\"student.beneficiaries\" fxFlex=\"48\">\n            <input [disabled]=\"typeView === 'view'\"\n                   mdInput name=\"reasonBeneficiaries\" placeholder=\"Причина льгот\"\n                   [(ngModel)]=\"student.reasonBeneficiaries\">\n          </md-input-container>\n        </div>\n\n        <div fxLayout=\"row\" fxLayoutAlign=\"space-between center\" style=\"padding: 0 10px; margin-top: 20px\">\n\n          <md-select [disabled]=\"typeView === 'view'\"\n                     placeholder=\"Роль у группі\" fxFlex=\"48\"\n                     name=\"reasonBeneficiaries\"\n                     [(ngModel)]=\"student.groupAsset\">\n            <md-option *ngFor=\"let item of groupAssets\" [value]=\"item.id\">{{item.name}}</md-option>\n          </md-select>\n        </div>\n      </md-card-content>\n\n    </md-card>\n  </form>\n\n  <form>\n    <md-card class=\"mother\">\n      <md-card-header>\n        <md-card-title>Мати</md-card-title>\n      </md-card-header>\n      <md-card-content>\n        <div fxLayout=\"row\" fxLayoutAlign=\"space-between\">\n          <md-input-container fxFlex=\"33\">\n            <input [disabled]=\"typeView === 'view'\"\n                   mdInput placeholder=\"Прізвище\" name=\"motherLastName\" [(ngModel)]=\"mother.lastName\">\n          </md-input-container>\n\n          <md-input-container fxFlex=\"33\">\n            <input [disabled]=\"typeView === 'view'\"\n                   mdInput placeholder=\"Ім'я\" name=\"motherFirstName\" [(ngModel)]=\"mother.firstName\">\n          </md-input-container>\n          <md-input-container fxFlex=\"33\">\n            <input [disabled]=\"typeView === 'view'\"\n                   mdInput placeholder=\"По-батькові\" name=\"motherSecondName\" [(ngModel)]=\"mother.secondName\">\n          </md-input-container>\n        </div>\n        <div fxLayout=\"row\" fxLayoutAlign=\"space-between\">\n\n          <md-input-container fxFlex=\"48\">\n            <input [disabled]=\"typeView === 'view'\"\n                   mdInput placeholder=\"Телефон\" name=\"motherPhone\" [(ngModel)]=\"mother.phone\">\n          </md-input-container>\n\n          <md-input-container fxFlex=\"48\">\n            <input [disabled]=\"typeView === 'view'\"\n                   mdInput placeholder=\"Місце роботи\" name=\"motherAddressWork\" [(ngModel)]=\"mother.addressWork\">\n          </md-input-container>\n        </div>\n      </md-card-content>\n\n    </md-card>\n  </form>\n\n  <form>\n    <md-card class=\"father\">\n      <md-card-header>\n        <md-card-title>Батько</md-card-title>\n      </md-card-header>\n      <md-card-content>\n        <div fxLayout=\"row\" fxLayoutAlign=\"space-between\">\n          <md-input-container fxFlex=\"33\">\n            <input [disabled]=\"typeView === 'view'\"\n                   mdInput placeholder=\"Прізвище\" name=\"fatherLastName\" [(ngModel)]=\"father.lastName\">\n          </md-input-container>\n\n          <md-input-container fxFlex=\"33\">\n            <input [disabled]=\"typeView === 'view'\"\n                   mdInput placeholder=\"Ім'я\" name=\"fatherFirstName\" [(ngModel)]=\"father.firstName\">\n          </md-input-container>\n          <md-input-container fxFlex=\"33\">\n            <input [disabled]=\"typeView === 'view'\"\n                   mdInput placeholder=\"По-батькові\" name=\"fatherSecondName\" [(ngModel)]=\"father.secondName\">\n          </md-input-container>\n        </div>\n        <div fxLayout=\"row\" fxLayoutAlign=\"space-between\">\n\n          <md-input-container fxFlex=\"48\">\n            <input [disabled]=\"typeView === 'view'\"\n                   mdInput placeholder=\"Телефон\" name=\"fatherPhone\" [(ngModel)]=\"father.phone\">\n          </md-input-container>\n\n          <md-input-container fxFlex=\"48\">\n            <input [disabled]=\"typeView === 'view'\"\n                   mdInput placeholder=\"Місце роботи\" name=\"fatherAddressWork\" [(ngModel)]=\"father.addressWork\">\n          </md-input-container>\n        </div>\n      </md-card-content>\n\n    </md-card>\n  </form>\n</md-dialog-content>\n\n\n<md-dialog-actions fxLayout=\"row\" fxLayoutAlign=\"space-around\">\n  <button *ngIf=\"typeView === 'edit'\" md-raised-button fxFlex=\"20\" (click)=\"updateStudent()\">Оновити</button>\n  <button *ngIf=\"!typeView\" md-raised-button fxFlex=\"20\" (click)=\"createStudent()\">Зберегти</button>\n  <button md-raised-button fxFlex=\"20\" md-dialog-close>Закрити</button>\n</md-dialog-actions>\n"
 
 /***/ }),
 
 /***/ 1238:
 /***/ (function(module, exports) {
 
-module.exports = "<dx-data-grid\n  id=\"students\"\n  [showBorders]=\"true\"\n  [showRowLines]=\"true\"\n  [dataSource]=\"students\">\n  <dxi-column\n    dataField=\"studentTicket\"\n    caption=\"Студ білет\"></dxi-column>\n  <dxi-column\n    dataField=\"fullName\"\n    caption=\"ФІО\"></dxi-column>\n  <dxi-column\n    dataField=\"phone\"\n    caption=\"Телефон\"></dxi-column>\n  <dxi-column\n    dataField=\"dateOfBirthday\"\n    caption=\"Дата народження\"\n    dataType=\"date\"\n    cellTemplate=\"date\"></dxi-column>\n  <dxi-column\n    dataField=\"fullAddress\"\n    caption=\"Адреса\"></dxi-column>\n\n  <dxi-column\n    caption=\"Дії\"\n    dataField=\"students\"\n    cellTemplate=\"actions\">\n  </dxi-column>\n\n  <div *dxTemplate=\"let data of 'actions'\" fxLayoutAlign=\"center center\">\n    <md-icon (click)=\"openViewDialog(data.data)\">remove_red_eye</md-icon>\n    <md-icon (click)=\"openEditDialog(data.data)\">mode_edit</md-icon>\n    <md-icon (click)=\"openDeletingDialog(data.data)\">delete</md-icon>\n  </div>\n\n  <div *dxTemplate=\"let data of 'date'\">\n    {{data.value | date: 'dd/MM/yyyy'}}\n  </div>\n</dx-data-grid>\n"
+module.exports = "  <h2>Ви дійсно хочете видалити дані про студента?</h2>\n<md-dialog-actions fxLayout=\"row\" fxLayoutAlign=\"space-around\">\n  <button md-raised-button fxFlex=\"20\" (click)=\"deleteStudent()\">Так</button>\n  <button md-raised-button fxFlex=\"20\" md-dialog-close>Ні</button>\n</md-dialog-actions>\n"
 
 /***/ }),
 
 /***/ 1239:
 /***/ (function(module, exports) {
 
-module.exports = "<div fxLayout=\"row\" fxLayoutAlign=\"end\">\n  <button (click)=\"openCreateDialog()\" md-raised-button>Додати студента</button>\n</div>\n<dx-data-grid\n  id=\"students\"\n  [showBorders]=\"true\"\n  [showRowLines]=\"true\"\n  [dataSource]=\"students\">\n  <dxi-column\n    dataField=\"studentTicket\"\n    caption=\"Студ білет\"></dxi-column>\n  <dxi-column\n    dataField=\"fullName\"\n    caption=\"ФІО\"></dxi-column>\n  <dxi-column\n    dataField=\"phone\"\n    caption=\"Телефон\"></dxi-column>\n  <dxi-column\n    dataField=\"dateOfBirthday\"\n    caption=\"Дата народження\"\n    dataType=\"date\"\n    cellTemplate=\"date\"></dxi-column>\n  <dxi-column\n    dataField=\"fullAddress\"\n    caption=\"Адреса\"></dxi-column>\n\n  <dxi-column\n    caption=\"Дії\"\n    dataField=\"students\"\n    cellTemplate=\"actions\">\n  </dxi-column>\n\n  <div *dxTemplate=\"let data of 'actions'\" fxLayoutAlign=\"center center\">\n    <md-icon (click)=\"openViewDialog(data.data)\">remove_red_eye</md-icon>\n    <md-icon (click)=\"openEditDialog(data.data)\">mode_edit</md-icon>\n    <md-icon (click)=\"openDeletingDialog(data.data)\">delete</md-icon>\n  </div>\n\n  <div *dxTemplate=\"let data of 'date'\">\n    {{data.value | date: 'dd/MM/yyyy'}}\n  </div>\n</dx-data-grid>\n"
+module.exports = "<md-tab-group (selectChange)=\"changeSelectedTab($event)\">\r\n  <md-tab label=\"Анкетні дані\">\r\n    <app-students></app-students>\r\n  </md-tab>\r\n  <md-tab label=\"Пільговики\">\r\n    <app-beneficiaries></app-beneficiaries>\r\n  </md-tab>\r\n  <md-tab label=\"Неповні сім'ї\">\r\n    <app-parent></app-parent>\r\n  </md-tab>\r\n  <md-tab label=\"Актив групи\">\r\n    <app-active-groups></app-active-groups>\r\n  </md-tab>\r\n</md-tab-group>\r\n"
 
 /***/ }),
 
 /***/ 1240:
 /***/ (function(module, exports) {
 
-module.exports = ""
+module.exports = "<dx-data-grid\r\n  id=\"students\"\r\n  [showBorders]=\"true\"\r\n  [showRowLines]=\"true\"\r\n  [dataSource]=\"students\">\r\n  <dxo-paging [pageSize]=\"10\"></dxo-paging>\r\n  <dxo-pager\r\n    [showPageSizeSelector]=\"true\"\r\n    [allowedPageSizes]=\"[5, 10, 15, 20]\"\r\n    [showInfo]=\"true\">\r\n  </dxo-pager>\r\n  <dxi-column\r\n    dataField=\"studentTicket\"\r\n    caption=\"Студ білет\"></dxi-column>\r\n  <dxi-column\r\n    dataField=\"fullName\"\r\n    caption=\"ФІО\"></dxi-column>\r\n  <dxi-column\r\n    dataField=\"phone\"\r\n    caption=\"Телефон\"></dxi-column>\r\n  <dxi-column\r\n    dataField=\"dateOfBirthday\"\r\n    caption=\"Дата народження\"\r\n    dataType=\"date\"\r\n    cellTemplate=\"date\"></dxi-column>\r\n  <dxi-column\r\n    dataField=\"fullAddress\"\r\n    caption=\"Адреса\"></dxi-column>\r\n\r\n  <dxi-column\r\n    caption=\"Дії\"\r\n    dataField=\"students\"\r\n    cellTemplate=\"actions\">\r\n  </dxi-column>\r\n\r\n  <div *dxTemplate=\"let data of 'actions'\" fxLayoutAlign=\"center center\">\r\n    <md-icon (click)=\"openViewDialog(data.data)\">remove_red_eye</md-icon>\r\n    <md-icon (click)=\"openEditDialog(data.data)\">mode_edit</md-icon>\r\n    <md-icon (click)=\"openDeletingDialog(data.data)\">delete</md-icon>\r\n  </div>\r\n\r\n  <div *dxTemplate=\"let data of 'date'\">\r\n    {{data.value | date: 'dd/MM/yyyy'}}\r\n  </div>\r\n</dx-data-grid>\r\n"
 
 /***/ }),
 
 /***/ 1241:
 /***/ (function(module, exports) {
 
-module.exports = "<md-card>\n  <md-card-title>{{courseNumber}} курс</md-card-title>\n  <md-card-content>\n    <md-tab-group>\n      <md-tab label=\"1 семестр\">\n        <div class=\"box-tab-content\">\n          <div fxLayoutAlign=\"end\" style=\"margin-bottom: 10px\">\n            <button md-raised-button (click)=\"openSettingItems(1)\">Настройки місяців</button>\n          </div>\n          <div *ngIf=\"firstSemesterItems && firstSemesterItems.length > 0;else empty_school_items\">\n            <dx-data-grid\n              id=\"gridContainer\"\n              [dataSource]=\"omissionAllData.firstSemester\"\n              [columnAutoWidth]=\"true\"\n              [showBorders]=\"true\"\n              [showRowLines]=\"true\"\n              [allowColumnReordering]=\"true\"\n              (onRowUpdated)=\"updateOmissions($event)\">\n\n              <dxo-editing\n                mode=\"cell\"\n                [allowUpdating]=\"true\">\n              </dxo-editing>\n\n              <dxi-column dataField=\"student.fullName\" caption=\"ФІО\" [allowEditing]=\"false\"></dxi-column>\n\n              <dxi-column *ngFor=\"let entry of omissionAllData.firstSemester | keys\"\n                          caption=\"{{entry.value.name}}\">\n                <dxi-column dataField=\"{{entry.key}}.rating.serious\"\n                            caption=\"Поважні\"\n                            dataType=\"number\">\n\n                </dxi-column>\n                <dxi-column dataField=\"{{entry.key}}.rating.notSerious\"\n                            caption=\"Не поважні\"\n                            dataType=\"number\">\n\n                </dxi-column>\n              </dxi-column>\n            </dx-data-grid>\n          </div>\n        </div>\n      </md-tab>\n      <md-tab label=\"2 семестр\">\n        <div class=\"box-tab-content\">\n          <div fxLayoutAlign=\"end\" style=\"margin-bottom: 10px\">\n            <button md-raised-button (click)=\"openSettingItems(2)\">Настройки місяців</button>\n          </div>\n          <div *ngIf=\"secondSemesterItems && secondSemesterItems.length > 0;else empty_school_items\">\n            <dx-data-grid\n              id=\"gridContainer1\"\n              [dataSource]=\"omissionAllData.secondSemester\"\n              [columnAutoWidth]=\"true\"\n              [showBorders]=\"true\"\n              [showRowLines]=\"true\"\n              [allowColumnReordering]=\"true\"\n              (onRowUpdated)=\"updateOmissions($event)\">\n\n              <dxo-editing\n                mode=\"cell\"\n                [allowUpdating]=\"true\">\n              </dxo-editing>\n\n              <dxi-column dataField=\"student.fullName\" caption=\"ФІО\" [allowEditing]=\"false\"></dxi-column>\n\n              <dxi-column *ngFor=\"let entry of omissionAllData.secondSemester | keys\"\n                          caption=\"{{entry.value.name}}\">\n                <dxi-column dataField=\"{{entry.key}}.rating.serious\"\n                            caption=\"Поважні\"\n                            dataType=\"number\">\n\n                </dxi-column>\n                <dxi-column dataField=\"{{entry.key}}.rating.notSerious\"\n                            caption=\"Не поважні\"\n                            dataType=\"number\">\n\n                </dxi-column>\n              </dxi-column>\n            </dx-data-grid>\n          </div>\n        </div>\n      </md-tab>\n    </md-tab-group>\n  </md-card-content>\n</md-card>\n\n<ng-template #empty_school_items>\n  <div fxLayoutAlign=\"center\">\n    Додайте місяців\n  </div>\n</ng-template>\n"
+module.exports = "<div fxLayout=\"row\" fxLayoutAlign=\"end\">\r\n  <button (click)=\"openCreateDialog()\" md-raised-button>Додати студента</button>\r\n</div>\r\n<dx-data-grid\r\n  id=\"students\"\r\n  [showBorders]=\"true\"\r\n  [showRowLines]=\"true\"\r\n  [dataSource]=\"students\">\r\n  <dxo-paging [pageSize]=\"10\"></dxo-paging>\r\n  <dxo-pager\r\n    [showPageSizeSelector]=\"true\"\r\n    [allowedPageSizes]=\"[5, 10, 15, 20]\"\r\n    [showInfo]=\"true\">\r\n  </dxo-pager>\r\n  <dxi-column\r\n    dataField=\"studentTicket\"\r\n    caption=\"Студ білет\"></dxi-column>\r\n  <dxi-column\r\n    dataField=\"fullName\"\r\n    caption=\"ФІО\"></dxi-column>\r\n  <dxi-column\r\n    dataField=\"phone\"\r\n    caption=\"Телефон\"></dxi-column>\r\n  <dxi-column\r\n    dataField=\"dateOfBirthday\"\r\n    caption=\"Дата народження\"\r\n    dataType=\"date\"\r\n    cellTemplate=\"date\"></dxi-column>\r\n  <dxi-column\r\n    dataField=\"fullAddress\"\r\n    caption=\"Адреса\"></dxi-column>\r\n\r\n  <dxi-column\r\n    caption=\"Дії\"\r\n    dataField=\"students\"\r\n    cellTemplate=\"actions\">\r\n  </dxi-column>\r\n\r\n  <div *dxTemplate=\"let data of 'actions'\" fxLayoutAlign=\"center center\">\r\n    <md-icon (click)=\"openViewDialog(data.data)\">remove_red_eye</md-icon>\r\n    <md-icon (click)=\"openEditDialog(data.data)\">mode_edit</md-icon>\r\n    <md-icon (click)=\"openDeletingDialog(data.data)\">delete</md-icon>\r\n  </div>\r\n\r\n  <div *dxTemplate=\"let data of 'date'\">\r\n    {{data.value | date: 'dd/MM/yyyy'}}\r\n  </div>\r\n</dx-data-grid>\r\n"
 
 /***/ }),
 
 /***/ 1242:
 /***/ (function(module, exports) {
 
-module.exports = "<app-course-for-omissions *ngFor=\"let item of [1, 2, 3, 4]\" [courseNumber]=\"item\"></app-course-for-omissions>\n"
+module.exports = "<div style=\"height: calc(100vh - 50px);\" fxFlex=\"100\" fxLayoutAlign=\"center center\">\n  <md-card fxFlex=\"350px\">\n    <md-card-content>\n      <form>\n        <div fxLayout=\"column\" fxLayoutAlign=\"space-between center\">\n          <md-input-container>\n            <input mdInput name=\"login\" placeholder=\"Login\"\n                   [(ngModel)]=\"login\">\n          </md-input-container>\n          <md-input-container>\n            <input mdInput name=\"password\" placeholder=\"Password\"\n                   [(ngModel)]=\"password\" type=\"password\">\n          </md-input-container>\n          <button md-raised-button [disabled]=\"!login || !password\" (click)=\"auth()\">Увійти</button>\n        </div>\n      </form>\n    </md-card-content>\n  </md-card>\n</div>\n"
 
 /***/ }),
 
 /***/ 1243:
 /***/ (function(module, exports) {
 
-module.exports = "<md-dialog-content>\n  <md-select style=\"width: 100%;\"\n             multiple\n             placeholder=\"Виберіть місяці\"\n             [(ngModel)]=\"selectedMonths\"\n             [multiple]=\"true\">\n    <md-option *ngFor=\"let month of monthsList\" [value]=\"month.name\">\n      {{ month.name }}\n    </md-option>\n  </md-select>\n</md-dialog-content>\n<md-dialog-actions>\n  <button class=\"close\" md-raised-button (click)=\"updateMonths()\">Оновити</button>\n  <button class=\"close\" md-raised-button md-dialog-close>Закрити вікно</button>\n</md-dialog-actions>\n\n"
+module.exports = "<md-card>\r\n  <md-card-title>{{courseNumber}} курс</md-card-title>\r\n  <md-card-content>\r\n    <md-tab-group>\r\n      <md-tab label=\"1 семестр\">\r\n        <div class=\"box-tab-content\">\r\n          <div fxLayoutAlign=\"end\" style=\"margin-bottom: 10px\">\r\n            <button md-raised-button (click)=\"openSettingItems(1)\">Настройки місяців</button>\r\n          </div>\r\n          <div *ngIf=\"firstSemesterItems && firstSemesterItems.length > 0;else empty_school_items\">\r\n            <dx-data-grid\r\n              id=\"gridContainer\"\r\n              [dataSource]=\"omissionAllData.firstSemester\"\r\n              [columnAutoWidth]=\"true\"\r\n              [showBorders]=\"true\"\r\n              [showRowLines]=\"true\"\r\n              [allowColumnReordering]=\"true\"\r\n              (onRowUpdated)=\"updateOmissions($event)\">\r\n\r\n              <dxo-editing\r\n                mode=\"cell\"\r\n                [allowUpdating]=\"true\">\r\n              </dxo-editing>\r\n\r\n              <dxi-column dataField=\"student.fullName\" caption=\"ФІО\" [allowEditing]=\"false\"></dxi-column>\r\n\r\n              <dxi-column *ngFor=\"let entry of omissionAllData.firstSemester | keys\"\r\n                          caption=\"{{entry.value.name}}\">\r\n                <dxi-column dataField=\"{{entry.key}}.rating.serious\"\r\n                            caption=\"Поважні\"\r\n                            dataType=\"number\">\r\n\r\n                </dxi-column>\r\n                <dxi-column dataField=\"{{entry.key}}.rating.notSerious\"\r\n                            caption=\"Не поважні\"\r\n                            dataType=\"number\">\r\n                </dxi-column>\r\n                <dxi-column dataField=\"{{entry.key}}.rating\"\r\n                            [allowEditing]=\"false\"\r\n                            caption=\"Всього\"\r\n                            cellTemplate=\"total\">\r\n                </dxi-column>\r\n              </dxi-column>\r\n\r\n              <div *dxTemplate=\"let data of 'total'\" fxLayoutAlign=\"center center\">\r\n                {{data.value.serious + data.value.notSerious}}\r\n              </div>\r\n            </dx-data-grid>\r\n          </div>\r\n        </div>\r\n      </md-tab>\r\n      <md-tab label=\"2 семестр\">\r\n        <div class=\"box-tab-content\">\r\n          <div fxLayoutAlign=\"end\" style=\"margin-bottom: 10px\">\r\n            <button md-raised-button (click)=\"openSettingItems(2)\">Настройки місяців</button>\r\n          </div>\r\n          <div *ngIf=\"secondSemesterItems && secondSemesterItems.length > 0;else empty_school_items\">\r\n            <dx-data-grid\r\n              id=\"gridContainer1\"\r\n              [dataSource]=\"omissionAllData.secondSemester\"\r\n              [columnAutoWidth]=\"true\"\r\n              [showBorders]=\"true\"\r\n              [showRowLines]=\"true\"\r\n              [allowColumnReordering]=\"true\"\r\n              (onRowUpdated)=\"updateOmissions($event)\">\r\n              <dxo-editing\r\n                mode=\"cell\"\r\n                [allowUpdating]=\"true\">\r\n              </dxo-editing>\r\n\r\n              <dxi-column dataField=\"student.fullName\" caption=\"ФІО\" [allowEditing]=\"false\"></dxi-column>\r\n\r\n              <dxi-column *ngFor=\"let entry of omissionAllData.secondSemester | keys\"\r\n                          caption=\"{{entry.value.name}}\">\r\n                <dxi-column dataField=\"{{entry.key}}.rating.serious\"\r\n                            caption=\"Поважні\"\r\n                            dataType=\"number\">\r\n\r\n                </dxi-column>\r\n                <dxi-column dataField=\"{{entry.key}}.rating.notSerious\"\r\n                            caption=\"Не поважні\"\r\n                            dataType=\"number\">\r\n\r\n                </dxi-column>\r\n              </dxi-column>\r\n            </dx-data-grid>\r\n          </div>\r\n        </div>\r\n      </md-tab>\r\n    </md-tab-group>\r\n  </md-card-content>\r\n</md-card>\r\n\r\n<ng-template #empty_school_items>\r\n  <div fxLayoutAlign=\"center\">\r\n    Додайте місяців\r\n  </div>\r\n</ng-template>\r\n"
 
 /***/ }),
 
 /***/ 1244:
 /***/ (function(module, exports) {
 
-module.exports = "<md-tab-group (selectChange)=\"changeSelectedTab($event)\">\n  <md-tab label=\"Оцінки\">\n    <app-performance></app-performance>\n  </md-tab>\n  <md-tab label=\"Пропуски\">\n    <app-omissions></app-omissions>\n  </md-tab>\n  <md-tab label=\"Загальна\">\n    <app-total-performance></app-total-performance>\n  </md-tab>\n</md-tab-group>\n"
+module.exports = "<app-course-for-omissions *ngFor=\"let item of [1, 2, 3, 4]\" [courseNumber]=\"item\"></app-course-for-omissions>\n"
 
 /***/ }),
 
 /***/ 1245:
 /***/ (function(module, exports) {
 
-module.exports = "<md-card>\n  <md-card-title>{{courseNumber}} курс</md-card-title>\n  <md-card-content>\n    <md-tab-group>\n      <md-tab label=\"1 семестр\">\n        <div class=\"box-tab-content\">\n          <div fxLayoutAlign=\"end\" style=\"margin-bottom: 10px\">\n            <button md-raised-button (click)=\"openSettingItems(1)\">Настройки предметів</button>\n          </div>\n          <div *ngIf=\"firstSemesterItems && firstSemesterItems.length > 0;else empty_school_items\">\n            <dx-data-grid\n              id=\"gridContainer\"\n              [showBorders]=\"true\"\n              [showRowLines]=\"true\"\n              [dataSource]=\"performanceAllData.firstSemester\"\n              (onRowUpdated)=\"updateRating($event)\">\n              <dxo-editing\n                mode=\"cell\"\n                [allowUpdating]=\"true\">\n              </dxo-editing>\n\n              <dxi-column dataField=\"student.fullName\" caption=\"ФІО\" [allowEditing]=\"false\"></dxi-column>\n\n              <dxi-column *ngFor=\"let entry of performanceAllData.firstSemester | keys\"\n                          dataField=\"{{entry.key}}.rating.value\"\n                          caption=\"{{entry.value.name}}\"\n                          dataType=\"number\"\n                          alignment=\"left\">\n              </dxi-column>\n            </dx-data-grid>\n          </div>\n        </div>\n      </md-tab>\n      <md-tab label=\"2 семестр\">\n        <div class=\"box-tab-content\">\n          <div fxLayoutAlign=\"end\"  style=\"margin-bottom: 10px\">\n            <button md-raised-button (click)=\"openSettingItems(2)\">Настройки предметів</button>\n          </div>\n          <div *ngIf=\"secondSemesterItems && secondSemesterItems.length > 0;else empty_school_items\">\n            <dx-data-grid\n              id=\"gridContainer2\"\n              [showBorders]=\"true\"\n              [showRowLines]=\"true\"\n              [dataSource]=\"performanceAllData.secondSemester\"\n              (onRowUpdated)=\"updateRating($event)\">\n              <dxo-editing\n                mode=\"cell\"\n                [allowUpdating]=\"true\">\n              </dxo-editing>\n\n              <dxi-column dataField=\"student.fullName\" caption=\"ФІО\" [allowEditing]=\"false\"></dxi-column>\n\n              <dxi-column *ngFor=\"let entry of performanceAllData.secondSemester | keys\"\n                          dataField=\"{{entry.key}}.rating.value\"\n                          caption=\"{{entry.value.name}}\"\n                          dataType=\"number\"\n                          alignment=\"left\">\n              </dxi-column>\n            </dx-data-grid>\n          </div>\n        </div>\n      </md-tab>\n    </md-tab-group>\n  </md-card-content>\n</md-card>\n\n<ng-template #empty_school_items>\n  <div fxLayoutAlign=\"center\">\n    Додайте предметів\n  </div>\n</ng-template>\n"
+module.exports = "<md-dialog-content>\n  <md-select style=\"width: 100%;\"\n             multiple\n             placeholder=\"Виберіть місяці\"\n             [(ngModel)]=\"selectedMonths\"\n             [multiple]=\"true\">\n    <md-option *ngFor=\"let month of monthsList\" [value]=\"month.name\">\n      {{ month.name }}\n    </md-option>\n  </md-select>\n</md-dialog-content>\n<md-dialog-actions>\n  <button class=\"close\" md-raised-button (click)=\"updateMonths()\">Оновити</button>\n  <button class=\"close\" md-raised-button md-dialog-close>Закрити вікно</button>\n</md-dialog-actions>\n\n"
 
 /***/ }),
 
 /***/ 1246:
 /***/ (function(module, exports) {
 
-module.exports = "<app-course *ngFor=\"let item of [1, 2, 3, 4]\" [courseNumber]=\"item\"></app-course>\n"
+module.exports = "<md-tab-group (selectChange)=\"changeSelectedTab($event)\">\r\n  <md-tab label=\"Оцінки\">\r\n    <app-performance></app-performance>\r\n  </md-tab>\r\n  <md-tab label=\"Пропуски\">\r\n    <app-omissions></app-omissions>\r\n  </md-tab>\r\n  <md-tab label=\"Загальна\">\r\n    <app-total-performance></app-total-performance>\r\n  </md-tab>\r\n</md-tab-group>\r\n"
 
 /***/ }),
 
 /***/ 1247:
 /***/ (function(module, exports) {
 
-module.exports = "<md-dialog-content>\n  <div fxLayout=\"column\">\n    <md-list>\n      <md-list-item *ngFor=\"let item of schoolItems\">\n        <md-icon (click)=\"removeItem(item.id)\" md-list-icon>close</md-icon>\n        <span>{{item.name}}</span>\n      </md-list-item>\n    </md-list>\n  </div>\n</md-dialog-content>\n<md-dialog-actions>\n  <div fxFlex=\"100\" fxLayout=\"column\">\n    <md-input-container>\n      <input mdInput placeholder=\"Назва предмету\" name=\"nameItem\" [(ngModel)]=\"itemName\">\n    </md-input-container>\n\n    <button [disabled]=\"!itemName\" md-raised-button (click)=\"createSchoolItem()\">Створити</button>\n    <button class=\"close\" md-raised-button md-dialog-close>Закрити вікно</button>\n  </div>\n</md-dialog-actions>\n\n"
+module.exports = "<md-card>\r\n  <md-card-title>{{courseNumber}} курс</md-card-title>\r\n  <md-card-content>\r\n    <md-tab-group>\r\n      <md-tab label=\"1 семестр\">\r\n        <div class=\"box-tab-content\">\r\n          <div fxLayoutAlign=\"end\" style=\"margin-bottom: 10px\">\r\n            <button md-raised-button (click)=\"openSettingItems(1)\">Настройки предметів</button>\r\n          </div>\r\n          <div *ngIf=\"firstSemesterItems && firstSemesterItems.length > 0;else empty_school_items\">\r\n            <dx-data-grid\r\n              id=\"gridContainer\"\r\n              [showBorders]=\"true\"\r\n              [showRowLines]=\"true\"\r\n              [dataSource]=\"performanceAllData.firstSemester\"\r\n              (onRowUpdated)=\"updateRating($event)\">\r\n              <dxo-editing\r\n                mode=\"cell\"\r\n                [allowUpdating]=\"true\">\r\n              </dxo-editing>\r\n\r\n              <dxi-column dataField=\"student.fullName\" caption=\"ФІО\" [allowEditing]=\"false\"></dxi-column>\r\n\r\n              <dxi-column *ngFor=\"let entry of performanceAllData.firstSemester | keys\"\r\n                          dataField=\"{{entry.key}}.rating.value\"\r\n                          caption=\"{{entry.value.name}}\"\r\n                          dataType=\"number\"\r\n                          alignment=\"left\">\r\n              </dxi-column>\r\n            </dx-data-grid>\r\n          </div>\r\n        </div>\r\n      </md-tab>\r\n      <md-tab label=\"2 семестр\">\r\n        <div class=\"box-tab-content\">\r\n          <div fxLayoutAlign=\"end\"  style=\"margin-bottom: 10px\">\r\n            <button md-raised-button (click)=\"openSettingItems(2)\">Настройки предметів</button>\r\n          </div>\r\n          <div *ngIf=\"secondSemesterItems && secondSemesterItems.length > 0;else empty_school_items\">\r\n            <dx-data-grid\r\n              id=\"gridContainer2\"\r\n              [showBorders]=\"true\"\r\n              [showRowLines]=\"true\"\r\n              [dataSource]=\"performanceAllData.secondSemester\"\r\n              (onRowUpdated)=\"updateRating($event)\">\r\n              <dxo-editing\r\n                mode=\"cell\"\r\n                [allowUpdating]=\"true\">\r\n              </dxo-editing>\r\n\r\n              <dxi-column dataField=\"student.fullName\" caption=\"ФІО\" [allowEditing]=\"false\"></dxi-column>\r\n\r\n              <dxi-column *ngFor=\"let entry of performanceAllData.secondSemester | keys\"\r\n                          dataField=\"{{entry.key}}.rating.value\"\r\n                          caption=\"{{entry.value.name}}\"\r\n                          dataType=\"number\"\r\n                          alignment=\"left\">\r\n              </dxi-column>\r\n            </dx-data-grid>\r\n          </div>\r\n        </div>\r\n      </md-tab>\r\n    </md-tab-group>\r\n  </md-card-content>\r\n</md-card>\r\n\r\n<ng-template #empty_school_items>\r\n  <div fxLayoutAlign=\"center\">\r\n    Додайте предметів\r\n  </div>\r\n</ng-template>\r\n"
 
 /***/ }),
 
 /***/ 1248:
 /***/ (function(module, exports) {
 
-module.exports = "<md-card>\n  <md-card-title>{{courseNumber}} курс</md-card-title>\n  <md-card-content>\n    <md-tab-group>\n      <md-tab label=\"1 семестр\">\n        <div class=\"box-tab-content\">\n          <div\n            *ngIf=\"performanceAllData.firstSemester && performanceAllData.firstSemester.length > 0;else empty_school_items\">\n            <dx-data-grid\n              id=\"gridContainer3\"\n              [showBorders]=\"true\"\n              [showRowLines]=\"true\"\n              [dataSource]=\"performanceAllData.firstSemester\">\n              <dxo-export [enabled]=\"true\" fileName=\"Total report\"></dxo-export>\n\n              <dxi-column dataField=\"student.fullName\" caption=\"ФІО\"></dxi-column>\n\n              <dxi-column *ngFor=\"let entry of performanceAllData.firstSemester | keysTotal\"\n                          dataField=\"{{entry.key}}.rating.value\"\n                          caption=\"{{entry.value.name}}\"\n                          dataType=\"number\"\n                          alignment=\"left\">\n              </dxi-column>\n\n              <dxi-column dataField=\"averageScore\" caption=\"Середній бал\" datatype=\"number\"></dxi-column>\n\n              <dxi-column dataField=\"student.beneficiariesUk\" caption=\"Пільговик\"></dxi-column>\n\n              <dxi-column caption=\"Пропуски\">\n                <dxi-column dataField=\"omission.serious\" caption=\"Поважні\" datatype=\"number\"></dxi-column>\n                <dxi-column dataField=\"omission.notSerious\" caption=\"Не поважні\" datatype=\"number\"></dxi-column>\n                <dxi-column dataField=\"omission.total\" caption=\"Всього\" datatype=\"number\"></dxi-column>\n              </dxi-column>\n\n              <dxo-summary>\n                <dxi-total-item\n                  summaryType=\"sum\"\n                  [customizeText]=\"customizeText\">\n                </dxi-total-item>\n                <dxi-total-item\n                  column=\"omission.serious\"\n                  summaryType=\"sum\"\n                  [customizeText]=\"customizeText\">\n                </dxi-total-item>\n                <dxi-total-item\n                  column=\"omission.notSerious\"\n                  summaryType=\"sum\"\n                  [customizeText]=\"customizeText\">\n                </dxi-total-item>\n                <dxi-total-item\n                  column=\"omission.total\"\n                  summaryType=\"sum\"\n                  [customizeText]=\"customizeText\">\n                </dxi-total-item>\n              </dxo-summary>\n            </dx-data-grid>\n          </div>\n        </div>\n      </md-tab>\n      <md-tab label=\"2 семестр\">\n        <div class=\"box-tab-content\">\n          <div\n            *ngIf=\"performanceAllData.secondSemester && performanceAllData.secondSemester.length > 0;else empty_school_items\">\n            <dx-data-grid\n              id=\"gridContainer\"\n              [showBorders]=\"true\"\n              [showRowLines]=\"true\"\n              [dataSource]=\"performanceAllData.secondSemester\">\n              <dxo-export [enabled]=\"true\" fileName=\"Total report\"></dxo-export>\n\n              <dxi-column dataField=\"student.fullName\" caption=\"ФІО\"></dxi-column>\n\n              <dxi-column *ngFor=\"let entry of performanceAllData.secondSemester | keysTotal\"\n                          dataField=\"{{entry.key}}.rating.value\"\n                          caption=\"{{entry.value.name}}\"\n                          dataType=\"number\"\n                          alignment=\"left\">\n              </dxi-column>\n\n              <dxi-column dataField=\"averageScore\" caption=\"Середній бал\" datatype=\"number\"></dxi-column>\n\n              <dxi-column dataField=\"student.beneficiaries\" caption=\"Пільговик\" datatype=\"number\"\n                          cellTemplate=\"beneficiariesTemplate\"></dxi-column>\n\n              <dxi-column caption=\"Пропуски\">\n                <dxi-column dataField=\"omission.serious\" caption=\"Поважні\" datatype=\"number\"></dxi-column>\n                <dxi-column dataField=\"omission.notSerious\" caption=\"Не поважні\" datatype=\"number\"></dxi-column>\n                <dxi-column dataField=\"omission.total\" caption=\"Всього\" datatype=\"number\"></dxi-column>\n              </dxi-column>\n\n              <dxo-summary>\n                <dxi-total-item\n                  summaryType=\"sum\"\n                  [customizeText]=\"customizeText\">\n                </dxi-total-item>\n                <dxi-total-item\n                  column=\"omission.serious\"\n                  summaryType=\"sum\"\n                  [customizeText]=\"customizeText\">\n                </dxi-total-item>\n                <dxi-total-item\n                  column=\"omission.notSerious\"\n                  summaryType=\"sum\"\n                  [customizeText]=\"customizeText\">\n                </dxi-total-item>\n                <dxi-total-item\n                  column=\"omission.total\"\n                  summaryType=\"sum\"\n                  [customizeText]=\"customizeText\">\n                </dxi-total-item>\n              </dxo-summary>\n\n              <div *dxTemplate=\"let data of 'beneficiariesTemplate'\">\n                {{data.value ? 'Так' : 'Ні'}}\n              </div>\n\n            </dx-data-grid>\n          </div>\n        </div>\n      </md-tab>\n    </md-tab-group>\n  </md-card-content>\n</md-card>\n\n<ng-template #empty_school_items>\n  <div fxLayoutAlign=\"center\">\n    Заповніть оцінки\n  </div>\n</ng-template>\n"
+module.exports = "<app-course *ngFor=\"let item of [1, 2, 3, 4]\" [courseNumber]=\"item\"></app-course>\n"
 
 /***/ }),
 
 /***/ 1249:
 /***/ (function(module, exports) {
 
-module.exports = "<app-course-total *ngFor=\"let item of [1, 2, 3, 4]\" [courseNumber]=\"item\"></app-course-total>\n"
+module.exports = "<md-dialog-content>\n  <div fxLayout=\"column\">\n    <md-list>\n      <md-list-item *ngFor=\"let item of schoolItems\">\n        <md-icon (click)=\"removeItem(item.id)\" md-list-icon>close</md-icon>\n        <span>{{item.name}}</span>\n      </md-list-item>\n    </md-list>\n  </div>\n</md-dialog-content>\n<md-dialog-actions>\n  <div fxFlex=\"100\" fxLayout=\"column\">\n    <md-input-container>\n      <input mdInput placeholder=\"Назва предмету\" name=\"nameItem\" [(ngModel)]=\"itemName\">\n    </md-input-container>\n\n    <button [disabled]=\"!itemName\" md-raised-button (click)=\"createSchoolItem()\">Створити</button>\n    <button class=\"close\" md-raised-button md-dialog-close>Закрити вікно</button>\n  </div>\n</md-dialog-actions>\n\n"
+
+/***/ }),
+
+/***/ 1250:
+/***/ (function(module, exports) {
+
+module.exports = "<md-card>\r\n  <md-card-title>{{courseNumber}} курс</md-card-title>\r\n  <md-card-content>\r\n    <md-tab-group>\r\n      <md-tab label=\"1 семестр\">\r\n        <div class=\"box-tab-content\">\r\n          <div\r\n            *ngIf=\"performanceAllData.firstSemester && performanceAllData.firstSemester.length > 0;else empty_school_items\">\r\n            <dx-data-grid\r\n              id=\"gridContainer3\"\r\n              [showBorders]=\"true\"\r\n              [showRowLines]=\"true\"\r\n              [dataSource]=\"performanceAllData.firstSemester\">\r\n              <dxo-export [enabled]=\"true\" fileName=\"Total report\"></dxo-export>\r\n\r\n              <dxi-column dataField=\"student.fullName\" caption=\"ФІО\"></dxi-column>\r\n\r\n              <dxi-column *ngFor=\"let entry of performanceAllData.firstSemester | keysTotal\"\r\n                          dataField=\"{{entry.key}}.rating.value\"\r\n                          caption=\"{{entry.value.name}}\"\r\n                          dataType=\"number\"\r\n                          alignment=\"left\">\r\n              </dxi-column>\r\n\r\n              <dxi-column dataField=\"averageScore\" caption=\"Середній бал\" datatype=\"number\"></dxi-column>\r\n\r\n              <dxi-column dataField=\"student.beneficiariesUk\" caption=\"Пільговик\"></dxi-column>\r\n\r\n              <dxi-column caption=\"Пропуски\">\r\n                <dxi-column dataField=\"omission.serious\" caption=\"Поважні\" datatype=\"number\"></dxi-column>\r\n                <dxi-column dataField=\"omission.notSerious\" caption=\"Не поважні\" datatype=\"number\"></dxi-column>\r\n                <dxi-column dataField=\"omission.total\" caption=\"Всього\" datatype=\"number\"></dxi-column>\r\n              </dxi-column>\r\n\r\n              <dxo-summary>\r\n                <dxi-total-item\r\n                  summaryType=\"sum\"\r\n                  [customizeText]=\"customizeText\">\r\n                </dxi-total-item>\r\n                <dxi-total-item\r\n                  column=\"omission.serious\"\r\n                  summaryType=\"sum\"\r\n                  [customizeText]=\"customizeText\">\r\n                </dxi-total-item>\r\n                <dxi-total-item\r\n                  column=\"omission.notSerious\"\r\n                  summaryType=\"sum\"\r\n                  [customizeText]=\"customizeText\">\r\n                </dxi-total-item>\r\n                <dxi-total-item\r\n                  column=\"omission.total\"\r\n                  summaryType=\"sum\"\r\n                  [customizeText]=\"customizeText\">\r\n                </dxi-total-item>\r\n              </dxo-summary>\r\n            </dx-data-grid>\r\n          </div>\r\n        </div>\r\n      </md-tab>\r\n      <md-tab label=\"2 семестр\">\r\n        <div class=\"box-tab-content\">\r\n          <div\r\n            *ngIf=\"performanceAllData.secondSemester && performanceAllData.secondSemester.length > 0;else empty_school_items\">\r\n            <dx-data-grid\r\n              id=\"gridContainer\"\r\n              [showBorders]=\"true\"\r\n              [showRowLines]=\"true\"\r\n              [dataSource]=\"performanceAllData.secondSemester\">\r\n              <dxo-export [enabled]=\"true\" fileName=\"Total report\"></dxo-export>\r\n\r\n              <dxi-column dataField=\"student.fullName\" caption=\"ФІО\"></dxi-column>\r\n\r\n              <dxi-column *ngFor=\"let entry of performanceAllData.secondSemester | keysTotal\"\r\n                          dataField=\"{{entry.key}}.rating.value\"\r\n                          caption=\"{{entry.value.name}}\"\r\n                          dataType=\"number\"\r\n                          alignment=\"left\">\r\n              </dxi-column>\r\n\r\n              <dxi-column dataField=\"averageScore\" caption=\"Середній бал\" datatype=\"number\"></dxi-column>\r\n\r\n              <dxi-column dataField=\"student.beneficiaries\" caption=\"Пільговик\" datatype=\"number\"\r\n                          cellTemplate=\"beneficiariesTemplate\"></dxi-column>\r\n\r\n              <dxi-column caption=\"Пропуски\">\r\n                <dxi-column dataField=\"omission.serious\" caption=\"Поважні\" datatype=\"number\"></dxi-column>\r\n                <dxi-column dataField=\"omission.notSerious\" caption=\"Не поважні\" datatype=\"number\"></dxi-column>\r\n                <dxi-column dataField=\"omission.total\" caption=\"Всього\" datatype=\"number\"></dxi-column>\r\n              </dxi-column>\r\n\r\n              <dxo-summary>\r\n                <dxi-total-item\r\n                  summaryType=\"sum\"\r\n                  [customizeText]=\"customizeText\">\r\n                </dxi-total-item>\r\n                <dxi-total-item\r\n                  column=\"omission.serious\"\r\n                  summaryType=\"sum\"\r\n                  [customizeText]=\"customizeText\">\r\n                </dxi-total-item>\r\n                <dxi-total-item\r\n                  column=\"omission.notSerious\"\r\n                  summaryType=\"sum\"\r\n                  [customizeText]=\"customizeText\">\r\n                </dxi-total-item>\r\n                <dxi-total-item\r\n                  column=\"omission.total\"\r\n                  summaryType=\"sum\"\r\n                  [customizeText]=\"customizeText\">\r\n                </dxi-total-item>\r\n              </dxo-summary>\r\n\r\n              <div *dxTemplate=\"let data of 'beneficiariesTemplate'\">\r\n                {{data.value ? 'Так' : 'Ні'}}\r\n              </div>\r\n\r\n            </dx-data-grid>\r\n          </div>\r\n        </div>\r\n      </md-tab>\r\n    </md-tab-group>\r\n  </md-card-content>\r\n</md-card>\r\n\r\n<ng-template #empty_school_items>\r\n  <div fxLayoutAlign=\"center\">\r\n    Заповніть оцінки\r\n  </div>\r\n</ng-template>\r\n"
+
+/***/ }),
+
+/***/ 1251:
+/***/ (function(module, exports) {
+
+module.exports = "<app-course-total *ngFor=\"let item of [1, 2, 3, 4]\" [courseNumber]=\"item\"></app-course-total>\r\n"
 
 /***/ }),
 
@@ -535,18 +747,18 @@ module.exports = "<app-course-total *ngFor=\"let item of [1, 2, 3, 4]\" [courseN
 /***/ 1310:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(728);
+module.exports = __webpack_require__(730);
 
 
 /***/ }),
 
-/***/ 179:
+/***/ 178:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_material__ = __webpack_require__(67);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_api_service_service__ = __webpack_require__(54);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_material__ = __webpack_require__(50);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_api_service_service__ = __webpack_require__(44);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CreateStudentsComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -715,10 +927,10 @@ var CreateStudentsComponent = (function () {
 CreateStudentsComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'app-create-students',
-        template: __webpack_require__(1235),
-        styles: [__webpack_require__(1137)]
+        template: __webpack_require__(1237),
+        styles: [__webpack_require__(1138)]
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_material__["d" /* MdDialogRef */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_material__["d" /* MdDialogRef */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__services_api_service_service__["a" /* ApiServiceService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__services_api_service_service__["a" /* ApiServiceService */]) === "function" && _b || Object])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_material__["c" /* MdDialogRef */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_material__["c" /* MdDialogRef */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__services_api_service_service__["a" /* ApiServiceService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__services_api_service_service__["a" /* ApiServiceService */]) === "function" && _b || Object])
 ], CreateStudentsComponent);
 
 var _a, _b;
@@ -726,13 +938,13 @@ var _a, _b;
 
 /***/ }),
 
-/***/ 180:
+/***/ 179:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_api_service_service__ = __webpack_require__(54);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_material__ = __webpack_require__(67);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_api_service_service__ = __webpack_require__(44);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_material__ = __webpack_require__(50);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DeleteStudentComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -767,10 +979,10 @@ var DeleteStudentComponent = (function () {
 DeleteStudentComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'app-delete-student',
-        template: __webpack_require__(1236),
-        styles: [__webpack_require__(1138)]
+        template: __webpack_require__(1238),
+        styles: [__webpack_require__(1139)]
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__angular_material__["d" /* MdDialogRef */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_material__["d" /* MdDialogRef */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__services_api_service_service__["a" /* ApiServiceService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__services_api_service_service__["a" /* ApiServiceService */]) === "function" && _b || Object])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__angular_material__["c" /* MdDialogRef */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_material__["c" /* MdDialogRef */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__services_api_service_service__["a" /* ApiServiceService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__services_api_service_service__["a" /* ApiServiceService */]) === "function" && _b || Object])
 ], DeleteStudentComponent);
 
 var _a, _b;
@@ -778,11 +990,89 @@ var _a, _b;
 
 /***/ }),
 
-/***/ 400:
+/***/ 401:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_material__ = __webpack_require__(50);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_api_service_service__ = __webpack_require__(44);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HolidaysComponent; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var HolidaysComponent = (function () {
+    function HolidaysComponent(dialogRef, apiServiceService) {
+        this.dialogRef = dialogRef;
+        this.apiServiceService = apiServiceService;
+    }
+    HolidaysComponent.prototype.ngOnInit = function () {
+        this.getAllHolidays();
+    };
+    HolidaysComponent.prototype.getAllHolidays = function () {
+        var _this = this;
+        this.apiServiceService.getHolidays()
+            .subscribe(function (data) {
+            _this.holidays = data;
+        }, function (error) { return _this.errorMessage = error; });
+    };
+    HolidaysComponent.prototype.addHoliday = function (event) {
+        var _this = this;
+        var data = event.data;
+        this.apiServiceService.addHoliday(data)
+            .subscribe(function (data) {
+            _this.getAllHolidays();
+        }, function (error) { return _this.errorMessage = error; });
+    };
+    HolidaysComponent.prototype.updateHoliday = function (event) {
+        var _this = this;
+        var data = event.key;
+        this.apiServiceService.updateHoliday(data)
+            .subscribe(function (data) {
+            _this.getAllHolidays();
+        }, function (error) { return _this.errorMessage = error; });
+    };
+    HolidaysComponent.prototype.deleteHoliday = function (event) {
+        var _this = this;
+        var data = event.data;
+        this.apiServiceService.deleteHoliday(data.id)
+            .subscribe(function (data) {
+            _this.getAllHolidays();
+        }, function (error) { return _this.errorMessage = error; });
+    };
+    return HolidaysComponent;
+}());
+HolidaysComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        selector: 'app-holidays',
+        template: __webpack_require__(1232),
+        styles: [__webpack_require__(1133)]
+    }),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_material__["c" /* MdDialogRef */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_material__["c" /* MdDialogRef */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__services_api_service_service__["a" /* ApiServiceService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__services_api_service_service__["a" /* ApiServiceService */]) === "function" && _b || Object])
+], HolidaysComponent);
+
+var _a, _b;
+//# sourceMappingURL=holidays.component.js.map
+
+/***/ }),
+
+/***/ 402:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__holidays_holidays_component__ = __webpack_require__(401);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_material__ = __webpack_require__(50);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_api_service_service__ = __webpack_require__(44);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomeComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -794,32 +1084,57 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
+
+
+
 var HomeComponent = (function () {
-    function HomeComponent() {
+    function HomeComponent(dialog, apiServiceService) {
+        this.dialog = dialog;
+        this.apiServiceService = apiServiceService;
+        this.currentValue = new Date();
+        this.minDateValue = undefined;
+        this.maxDateValue = undefined;
+        this.zoomLevels = [
+            "month", "year", "decade", "century"
+        ];
+        this.cellTemplate = "cell";
     }
     HomeComponent.prototype.ngOnInit = function () {
+        var token = JSON.parse(localStorage.getItem('token'));
+        console.log(token);
+    };
+    HomeComponent.prototype.getHolidaysByDate = function () {
+        var _this = this;
+        this.apiServiceService.getHolidaysByDate(this.currentValue)
+            .subscribe(function (data) {
+            _this.holidays = data;
+        }, function (error) { return _this.errorMessage = error; });
+    };
+    HomeComponent.prototype.openHolidays = function () {
+        this.dialog.open(__WEBPACK_IMPORTED_MODULE_1__holidays_holidays_component__["a" /* HolidaysComponent */]);
     };
     return HomeComponent;
 }());
 HomeComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'app-home',
-        template: __webpack_require__(1231),
-        styles: [__webpack_require__(1133)]
+        template: __webpack_require__(1233),
+        styles: [__webpack_require__(1134)]
     }),
-    __metadata("design:paramtypes", [])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__angular_material__["d" /* MdDialog */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_material__["d" /* MdDialog */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_3__services_api_service_service__["a" /* ApiServiceService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__services_api_service_service__["a" /* ApiServiceService */]) === "function" && _b || Object])
 ], HomeComponent);
 
+var _a, _b;
 //# sourceMappingURL=home.component.js.map
 
 /***/ }),
 
-/***/ 401:
+/***/ 403:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_api_service_service__ = __webpack_require__(54);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_api_service_service__ = __webpack_require__(44);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return InfoParentsComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -855,8 +1170,8 @@ var InfoParentsComponent = (function () {
 InfoParentsComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'app-info-parents',
-        template: __webpack_require__(1232),
-        styles: [__webpack_require__(1134)]
+        template: __webpack_require__(1234),
+        styles: [__webpack_require__(1135)]
     }),
     __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__services_api_service_service__["a" /* ApiServiceService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__services_api_service_service__["a" /* ApiServiceService */]) === "function" && _a || Object])
 ], InfoParentsComponent);
@@ -866,15 +1181,15 @@ var _a;
 
 /***/ }),
 
-/***/ 402:
+/***/ 404:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_material__ = __webpack_require__(67);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_api_service_service__ = __webpack_require__(54);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__create_students_create_students_component__ = __webpack_require__(179);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__delete_student_delete_student_component__ = __webpack_require__(180);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_material__ = __webpack_require__(50);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_api_service_service__ = __webpack_require__(44);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__create_students_create_students_component__ = __webpack_require__(178);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__delete_student_delete_student_component__ = __webpack_require__(179);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ActiveGroupsComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -986,10 +1301,10 @@ var ActiveGroupsComponent = (function () {
 ActiveGroupsComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'app-active-groups',
-        template: __webpack_require__(1233),
-        styles: [__webpack_require__(1135)]
+        template: __webpack_require__(1235),
+        styles: [__webpack_require__(1136)]
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__services_api_service_service__["a" /* ApiServiceService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__services_api_service_service__["a" /* ApiServiceService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__angular_material__["b" /* MdDialog */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_material__["b" /* MdDialog */]) === "function" && _b || Object])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__services_api_service_service__["a" /* ApiServiceService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__services_api_service_service__["a" /* ApiServiceService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__angular_material__["d" /* MdDialog */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_material__["d" /* MdDialog */]) === "function" && _b || Object])
 ], ActiveGroupsComponent);
 
 var _a, _b;
@@ -997,15 +1312,15 @@ var _a, _b;
 
 /***/ }),
 
-/***/ 403:
+/***/ 405:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_api_service_service__ = __webpack_require__(54);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_material__ = __webpack_require__(67);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__create_students_create_students_component__ = __webpack_require__(179);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__delete_student_delete_student_component__ = __webpack_require__(180);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_api_service_service__ = __webpack_require__(44);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_material__ = __webpack_require__(50);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__create_students_create_students_component__ = __webpack_require__(178);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__delete_student_delete_student_component__ = __webpack_require__(179);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return BeneficiariesComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -1079,10 +1394,10 @@ var BeneficiariesComponent = (function () {
 BeneficiariesComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'app-beneficiaries',
-        template: __webpack_require__(1234),
-        styles: [__webpack_require__(1136)]
+        template: __webpack_require__(1236),
+        styles: [__webpack_require__(1137)]
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__services_api_service_service__["a" /* ApiServiceService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__services_api_service_service__["a" /* ApiServiceService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__angular_material__["b" /* MdDialog */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_material__["b" /* MdDialog */]) === "function" && _b || Object])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__services_api_service_service__["a" /* ApiServiceService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__services_api_service_service__["a" /* ApiServiceService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__angular_material__["d" /* MdDialog */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_material__["d" /* MdDialog */]) === "function" && _b || Object])
 ], BeneficiariesComponent);
 
 var _a, _b;
@@ -1090,15 +1405,15 @@ var _a, _b;
 
 /***/ }),
 
-/***/ 404:
+/***/ 406:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__beneficiaries_beneficiaries_component__ = __webpack_require__(403);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__students_students_component__ = __webpack_require__(406);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__parent_parent_component__ = __webpack_require__(405);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__active_groups_active_groups_component__ = __webpack_require__(402);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__beneficiaries_beneficiaries_component__ = __webpack_require__(405);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__students_students_component__ = __webpack_require__(408);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__parent_parent_component__ = __webpack_require__(407);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__active_groups_active_groups_component__ = __webpack_require__(404);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return InfoStudentsComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -1133,8 +1448,6 @@ var InfoStudentsComponent = (function () {
             case 3:
                 this.activeGroupsComponent.getGroupAssets();
                 break;
-            case 4:
-                break;
         }
     };
     return InfoStudentsComponent;
@@ -1158,8 +1471,8 @@ __decorate([
 InfoStudentsComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'app-info-students',
-        template: __webpack_require__(1237),
-        styles: [__webpack_require__(1139)]
+        template: __webpack_require__(1239),
+        styles: [__webpack_require__(1140)]
     }),
     __metadata("design:paramtypes", [])
 ], InfoStudentsComponent);
@@ -1169,15 +1482,15 @@ var _a, _b, _c, _d;
 
 /***/ }),
 
-/***/ 405:
+/***/ 407:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_api_service_service__ = __webpack_require__(54);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_app_info_students_create_students_create_students_component__ = __webpack_require__(179);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__delete_student_delete_student_component__ = __webpack_require__(180);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_material__ = __webpack_require__(67);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_api_service_service__ = __webpack_require__(44);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_app_info_students_create_students_create_students_component__ = __webpack_require__(178);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__delete_student_delete_student_component__ = __webpack_require__(179);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_material__ = __webpack_require__(50);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ParentComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -1251,10 +1564,10 @@ var ParentComponent = (function () {
 ParentComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'app-parent',
-        template: __webpack_require__(1238),
-        styles: [__webpack_require__(1140)]
+        template: __webpack_require__(1240),
+        styles: [__webpack_require__(1141)]
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__services_api_service_service__["a" /* ApiServiceService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__services_api_service_service__["a" /* ApiServiceService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_4__angular_material__["b" /* MdDialog */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__angular_material__["b" /* MdDialog */]) === "function" && _b || Object])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__services_api_service_service__["a" /* ApiServiceService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__services_api_service_service__["a" /* ApiServiceService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_4__angular_material__["d" /* MdDialog */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__angular_material__["d" /* MdDialog */]) === "function" && _b || Object])
 ], ParentComponent);
 
 var _a, _b;
@@ -1262,15 +1575,15 @@ var _a, _b;
 
 /***/ }),
 
-/***/ 406:
+/***/ 408:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_material__ = __webpack_require__(67);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__create_students_create_students_component__ = __webpack_require__(179);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_api_service_service__ = __webpack_require__(54);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__delete_student_delete_student_component__ = __webpack_require__(180);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_material__ = __webpack_require__(50);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__create_students_create_students_component__ = __webpack_require__(178);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_api_service_service__ = __webpack_require__(44);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__delete_student_delete_student_component__ = __webpack_require__(179);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return StudentsComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -1354,10 +1667,10 @@ var StudentsComponent = (function () {
 StudentsComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'app-students',
-        template: __webpack_require__(1239),
-        styles: [__webpack_require__(1141)]
+        template: __webpack_require__(1241),
+        styles: [__webpack_require__(1142)]
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_material__["b" /* MdDialog */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_material__["b" /* MdDialog */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_3__services_api_service_service__["a" /* ApiServiceService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__services_api_service_service__["a" /* ApiServiceService */]) === "function" && _b || Object])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_material__["d" /* MdDialog */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_material__["d" /* MdDialog */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_3__services_api_service_service__["a" /* ApiServiceService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__services_api_service_service__["a" /* ApiServiceService */]) === "function" && _b || Object])
 ], StudentsComponent);
 
 var _a, _b;
@@ -1365,14 +1678,71 @@ var _a, _b;
 
 /***/ }),
 
-/***/ 407:
+/***/ 409:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_material__ = __webpack_require__(67);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_api_service_service__ = __webpack_require__(54);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__settings_for_omissions_settings_for_omissions_component__ = __webpack_require__(409);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_api_service_service__ = __webpack_require__(44);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_material__ = __webpack_require__(50);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LoginComponent; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var LoginComponent = (function () {
+    function LoginComponent(apiServiceService, snackBar) {
+        this.apiServiceService = apiServiceService;
+        this.snackBar = snackBar;
+    }
+    LoginComponent.prototype.ngOnInit = function () {
+    };
+    LoginComponent.prototype.auth = function () {
+        var _this = this;
+        this.apiServiceService.login(this.login, this.password)
+            .subscribe(function (token) {
+            localStorage.setItem('token', JSON.stringify({ token: token }));
+        }, function (error) {
+            _this.errorMessage = error;
+            console.log(_this.errorMessage);
+            _this.snackBar.open('Login or password invalid', '401.1', {
+                extraClasses: ['custom-snackBar'],
+                duration: 1000
+            });
+        });
+    };
+    return LoginComponent;
+}());
+LoginComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        selector: 'app-login',
+        template: __webpack_require__(1242),
+        styles: [__webpack_require__(1143)]
+    }),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__services_api_service_service__["a" /* ApiServiceService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__services_api_service_service__["a" /* ApiServiceService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__angular_material__["b" /* MdSnackBar */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_material__["b" /* MdSnackBar */]) === "function" && _b || Object])
+], LoginComponent);
+
+var _a, _b;
+//# sourceMappingURL=login.component.js.map
+
+/***/ }),
+
+/***/ 410:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_material__ = __webpack_require__(50);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_api_service_service__ = __webpack_require__(44);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__settings_for_omissions_settings_for_omissions_component__ = __webpack_require__(412);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return OmissionKeysPipe; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CourseForOmissionsComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -1480,10 +1850,10 @@ __decorate([
 CourseForOmissionsComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'app-course-for-omissions',
-        template: __webpack_require__(1241),
-        styles: [__webpack_require__(1143)]
+        template: __webpack_require__(1243),
+        styles: [__webpack_require__(1144)]
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_material__["b" /* MdDialog */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_material__["b" /* MdDialog */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__services_api_service_service__["a" /* ApiServiceService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__services_api_service_service__["a" /* ApiServiceService */]) === "function" && _b || Object])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_material__["d" /* MdDialog */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_material__["d" /* MdDialog */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__services_api_service_service__["a" /* ApiServiceService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__services_api_service_service__["a" /* ApiServiceService */]) === "function" && _b || Object])
 ], CourseForOmissionsComponent);
 
 var _a, _b;
@@ -1491,12 +1861,12 @@ var _a, _b;
 
 /***/ }),
 
-/***/ 408:
+/***/ 411:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__course_for_omissions_course_for_omissions_component__ = __webpack_require__(407);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__course_for_omissions_course_for_omissions_component__ = __webpack_require__(410);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return OmissionsComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -1528,8 +1898,8 @@ __decorate([
 OmissionsComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'app-omissions',
-        template: __webpack_require__(1242),
-        styles: [__webpack_require__(1144)]
+        template: __webpack_require__(1244),
+        styles: [__webpack_require__(1145)]
     }),
     __metadata("design:paramtypes", [])
 ], OmissionsComponent);
@@ -1539,13 +1909,13 @@ var _a;
 
 /***/ }),
 
-/***/ 409:
+/***/ 412:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_api_service_service__ = __webpack_require__(54);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_material__ = __webpack_require__(67);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_api_service_service__ = __webpack_require__(44);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_material__ = __webpack_require__(50);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SettingsForOmissionsComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -1655,11 +2025,11 @@ var SettingsForOmissionsComponent = (function () {
 SettingsForOmissionsComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'app-settings-for-omissions',
-        template: __webpack_require__(1243),
-        styles: [__webpack_require__(1145)]
+        template: __webpack_require__(1245),
+        styles: [__webpack_require__(1146)]
     }),
-    __param(2, __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Inject"])(__WEBPACK_IMPORTED_MODULE_2__angular_material__["c" /* MD_DIALOG_DATA */])),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__angular_material__["d" /* MdDialogRef */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_material__["d" /* MdDialogRef */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__services_api_service_service__["a" /* ApiServiceService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__services_api_service_service__["a" /* ApiServiceService */]) === "function" && _b || Object, Object])
+    __param(2, __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Inject"])(__WEBPACK_IMPORTED_MODULE_2__angular_material__["e" /* MD_DIALOG_DATA */])),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__angular_material__["c" /* MdDialogRef */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_material__["c" /* MdDialogRef */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__services_api_service_service__["a" /* ApiServiceService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__services_api_service_service__["a" /* ApiServiceService */]) === "function" && _b || Object, Object])
 ], SettingsForOmissionsComponent);
 
 var _a, _b;
@@ -1667,14 +2037,14 @@ var _a, _b;
 
 /***/ }),
 
-/***/ 410:
+/***/ 413:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__total_total_component__ = __webpack_require__(415);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__omissions_omissions_component__ = __webpack_require__(408);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__performance_performance_component__ = __webpack_require__(412);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__total_total_component__ = __webpack_require__(418);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__omissions_omissions_component__ = __webpack_require__(411);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__performance_performance_component__ = __webpack_require__(415);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PerformanceQualityControlComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -1724,8 +2094,8 @@ __decorate([
 PerformanceQualityControlComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'app-performance-quality-control',
-        template: __webpack_require__(1244),
-        styles: [__webpack_require__(1146)]
+        template: __webpack_require__(1246),
+        styles: [__webpack_require__(1147)]
     }),
     __metadata("design:paramtypes", [])
 ], PerformanceQualityControlComponent);
@@ -1735,14 +2105,14 @@ var _a, _b, _c;
 
 /***/ }),
 
-/***/ 411:
+/***/ 414:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_material__ = __webpack_require__(67);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__settings_settings_component__ = __webpack_require__(413);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_api_service_service__ = __webpack_require__(54);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_material__ = __webpack_require__(50);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__settings_settings_component__ = __webpack_require__(416);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_api_service_service__ = __webpack_require__(44);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return KeysPipe; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CourseComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -1851,10 +2221,10 @@ __decorate([
 CourseComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'app-course',
-        template: __webpack_require__(1245),
-        styles: [__webpack_require__(1147)]
+        template: __webpack_require__(1247),
+        styles: [__webpack_require__(1148)]
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_material__["b" /* MdDialog */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_material__["b" /* MdDialog */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_3__services_api_service_service__["a" /* ApiServiceService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__services_api_service_service__["a" /* ApiServiceService */]) === "function" && _b || Object])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_material__["d" /* MdDialog */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_material__["d" /* MdDialog */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_3__services_api_service_service__["a" /* ApiServiceService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__services_api_service_service__["a" /* ApiServiceService */]) === "function" && _b || Object])
 ], CourseComponent);
 
 var _a, _b;
@@ -1862,12 +2232,12 @@ var _a, _b;
 
 /***/ }),
 
-/***/ 412:
+/***/ 415:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__course_course_component__ = __webpack_require__(411);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__course_course_component__ = __webpack_require__(414);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PerformanceComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -1899,8 +2269,8 @@ __decorate([
 PerformanceComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'app-performance',
-        template: __webpack_require__(1246),
-        styles: [__webpack_require__(1148)]
+        template: __webpack_require__(1248),
+        styles: [__webpack_require__(1149)]
     }),
     __metadata("design:paramtypes", [])
 ], PerformanceComponent);
@@ -1910,13 +2280,13 @@ var _a;
 
 /***/ }),
 
-/***/ 413:
+/***/ 416:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_material__ = __webpack_require__(67);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_api_service_service__ = __webpack_require__(54);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_material__ = __webpack_require__(50);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_api_service_service__ = __webpack_require__(44);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SettingsComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -1979,11 +2349,11 @@ var SettingsComponent = (function () {
 SettingsComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'app-settings',
-        template: __webpack_require__(1247),
-        styles: [__webpack_require__(1149)]
+        template: __webpack_require__(1249),
+        styles: [__webpack_require__(1150)]
     }),
-    __param(2, __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Inject"])(__WEBPACK_IMPORTED_MODULE_1__angular_material__["c" /* MD_DIALOG_DATA */])),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_material__["d" /* MdDialogRef */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_material__["d" /* MdDialogRef */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__services_api_service_service__["a" /* ApiServiceService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__services_api_service_service__["a" /* ApiServiceService */]) === "function" && _b || Object, Object])
+    __param(2, __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Inject"])(__WEBPACK_IMPORTED_MODULE_1__angular_material__["e" /* MD_DIALOG_DATA */])),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_material__["c" /* MdDialogRef */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_material__["c" /* MdDialogRef */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__services_api_service_service__["a" /* ApiServiceService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__services_api_service_service__["a" /* ApiServiceService */]) === "function" && _b || Object, Object])
 ], SettingsComponent);
 
 var _a, _b;
@@ -1991,12 +2361,12 @@ var _a, _b;
 
 /***/ }),
 
-/***/ 414:
+/***/ 417:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_api_service_service__ = __webpack_require__(54);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_api_service_service__ = __webpack_require__(44);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return KeysTotalPipe; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return CourseTotalComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -2069,8 +2439,8 @@ __decorate([
 CourseTotalComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'app-course-total',
-        template: __webpack_require__(1248),
-        styles: [__webpack_require__(1150)]
+        template: __webpack_require__(1250),
+        styles: [__webpack_require__(1151)]
     }),
     __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__services_api_service_service__["a" /* ApiServiceService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__services_api_service_service__["a" /* ApiServiceService */]) === "function" && _a || Object])
 ], CourseTotalComponent);
@@ -2080,12 +2450,12 @@ var _a;
 
 /***/ }),
 
-/***/ 415:
+/***/ 418:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__course_total_course_total_component__ = __webpack_require__(414);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__course_total_course_total_component__ = __webpack_require__(417);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TotalPerformanceComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -2117,8 +2487,8 @@ __decorate([
 TotalPerformanceComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'app-total-performance',
-        template: __webpack_require__(1249),
-        styles: [__webpack_require__(1151)]
+        template: __webpack_require__(1251),
+        styles: [__webpack_require__(1152)]
     }),
     __metadata("design:paramtypes", [])
 ], TotalPerformanceComponent);
@@ -2128,17 +2498,17 @@ var _a;
 
 /***/ }),
 
-/***/ 54:
+/***/ 44:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__ = __webpack_require__(18);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_http__ = __webpack_require__(277);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_catch__ = __webpack_require__(709);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_http__ = __webpack_require__(279);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_catch__ = __webpack_require__(710);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_catch___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_catch__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_map__ = __webpack_require__(115);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_map__ = __webpack_require__(114);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_map__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ApiServiceService; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -2282,6 +2652,57 @@ var ApiServiceService = (function () {
             .catch(this.handleError);
     };
     ;
+    /*Holidays*/
+    ApiServiceService.prototype.getHolidays = function () {
+        return this.http.get("/api/holidays")
+            .map(this.extractData)
+            .catch(this.handleError);
+    };
+    ApiServiceService.prototype.getHolidaysByDate = function (date) {
+        return this.http.get("/api/holidays/" + date)
+            .map(this.extractData)
+            .catch(this.handleError);
+    };
+    ApiServiceService.prototype.deleteHoliday = function (id) {
+        return this.http.delete("/api/holidays/" + id)
+            .map(this.extractData)
+            .catch(this.handleError);
+    };
+    ;
+    ApiServiceService.prototype.updateHoliday = function (data) {
+        return this.http.put("/api/holidays", {
+            data: data
+        })
+            .map(this.extractData)
+            .catch(this.handleError);
+    };
+    ;
+    ApiServiceService.prototype.addHoliday = function (data) {
+        return this.http.post("/api/holidays", {
+            data: data
+        })
+            .map(this.extractData)
+            .catch(this.handleError);
+    };
+    ;
+    /*Auth*/
+    ApiServiceService.prototype.login = function (login, password) {
+        return this.http.post("/api/login", {
+            data: {
+                login: login,
+                password: password
+            }
+        })
+            .map(this.extractData)
+            .catch(this.handleError);
+    };
+    ApiServiceService.prototype.changePassword = function (data) {
+        return this.http.post("/api/login/change", {
+            data: data
+        })
+            .map(this.extractData)
+            .catch(this.handleError);
+    };
     /*Functions*/
     ApiServiceService.prototype.extractData = function (res) {
         var body = res.json();
@@ -2312,7 +2733,7 @@ var _a;
 
 /***/ }),
 
-/***/ 727:
+/***/ 729:
 /***/ (function(module, exports) {
 
 function webpackEmptyContext(req) {
@@ -2321,19 +2742,19 @@ function webpackEmptyContext(req) {
 webpackEmptyContext.keys = function() { return []; };
 webpackEmptyContext.resolve = webpackEmptyContext;
 module.exports = webpackEmptyContext;
-webpackEmptyContext.id = 727;
+webpackEmptyContext.id = 729;
 
 
 /***/ }),
 
-/***/ 728:
+/***/ 730:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__ = __webpack_require__(751);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_app_module__ = __webpack_require__(755);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__ = __webpack_require__(753);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_app_module__ = __webpack_require__(757);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__environments_environment__ = __webpack_require__(759);
 
 
@@ -2347,7 +2768,7 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dyna
 
 /***/ }),
 
-/***/ 754:
+/***/ 756:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2365,22 +2786,14 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 var AppComponent = (function () {
     function AppComponent() {
-        this.openedMenu = true;
-        this.openedCalendar = true;
     }
-    AppComponent.prototype.toggleMenu = function () {
-        this.openedMenu = !this.openedMenu;
-    };
-    AppComponent.prototype.toggleCalendar = function () {
-        this.openedCalendar = !this.openedCalendar;
-    };
     return AppComponent;
 }());
 AppComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'app-root',
-        template: __webpack_require__(1229),
-        styles: [__webpack_require__(1131)]
+        template: __webpack_require__(1231),
+        styles: [__webpack_require__(1132)]
     }),
     __metadata("design:paramtypes", [])
 ], AppComponent);
@@ -2389,45 +2802,49 @@ AppComponent = __decorate([
 
 /***/ }),
 
-/***/ 755:
+/***/ 757:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_hammerjs__ = __webpack_require__(1155);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_hammerjs__ = __webpack_require__(1156);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_hammerjs___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_hammerjs__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__ = __webpack_require__(77);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_core__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_forms__ = __webpack_require__(25);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_http__ = __webpack_require__(277);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_flex_layout__ = __webpack_require__(748);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__angular_material__ = __webpack_require__(67);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_md2__ = __webpack_require__(1221);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__app_component__ = __webpack_require__(754);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__app_routing__ = __webpack_require__(756);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__home_home_component__ = __webpack_require__(400);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__info_students_info_students_component__ = __webpack_require__(404);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__angular_platform_browser_animations__ = __webpack_require__(752);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_http__ = __webpack_require__(279);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_flex_layout__ = __webpack_require__(750);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__angular_material__ = __webpack_require__(50);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_md2__ = __webpack_require__(1214);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__app_component__ = __webpack_require__(756);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__app_routing__ = __webpack_require__(758);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__home_home_component__ = __webpack_require__(402);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__info_students_info_students_component__ = __webpack_require__(406);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__angular_platform_browser_animations__ = __webpack_require__(754);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13_devextreme_angular__ = __webpack_require__(817);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13_devextreme_angular___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_13_devextreme_angular__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__calendar_calendar_component__ = __webpack_require__(757);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__performance_quality_control_performance_quality_control_component__ = __webpack_require__(410);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__info_students_create_students_create_students_component__ = __webpack_require__(179);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__info_students_students_students_component__ = __webpack_require__(406);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__info_students_beneficiaries_beneficiaries_component__ = __webpack_require__(403);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__info_students_parent_parent_component__ = __webpack_require__(405);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__info_students_active_groups_active_groups_component__ = __webpack_require__(402);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__info_students_total_total_component__ = __webpack_require__(758);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__services_api_service_service__ = __webpack_require__(54);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__info_parents_info_parents_component__ = __webpack_require__(401);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__info_students_delete_student_delete_student_component__ = __webpack_require__(180);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__performance_quality_control_performance_performance_component__ = __webpack_require__(412);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__performance_quality_control_omissions_omissions_component__ = __webpack_require__(408);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__performance_quality_control_total_total_component__ = __webpack_require__(415);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__performance_quality_control_performance_settings_settings_component__ = __webpack_require__(413);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__performance_quality_control_performance_course_course_component__ = __webpack_require__(411);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_30__performance_quality_control_omissions_course_for_omissions_course_for_omissions_component__ = __webpack_require__(407);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_31__performance_quality_control_omissions_settings_for_omissions_settings_for_omissions_component__ = __webpack_require__(409);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_32__performance_quality_control_total_course_total_course_total_component__ = __webpack_require__(414);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__performance_quality_control_performance_quality_control_component__ = __webpack_require__(413);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__info_students_create_students_create_students_component__ = __webpack_require__(178);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__info_students_students_students_component__ = __webpack_require__(408);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__info_students_beneficiaries_beneficiaries_component__ = __webpack_require__(405);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__info_students_parent_parent_component__ = __webpack_require__(407);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__info_students_active_groups_active_groups_component__ = __webpack_require__(404);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__services_api_service_service__ = __webpack_require__(44);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__info_parents_info_parents_component__ = __webpack_require__(403);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__info_students_delete_student_delete_student_component__ = __webpack_require__(179);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__performance_quality_control_performance_performance_component__ = __webpack_require__(415);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__performance_quality_control_omissions_omissions_component__ = __webpack_require__(411);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__performance_quality_control_total_total_component__ = __webpack_require__(418);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__performance_quality_control_performance_settings_settings_component__ = __webpack_require__(416);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__performance_quality_control_performance_course_course_component__ = __webpack_require__(414);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__performance_quality_control_omissions_course_for_omissions_course_for_omissions_component__ = __webpack_require__(410);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__performance_quality_control_omissions_settings_for_omissions_settings_for_omissions_component__ = __webpack_require__(412);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_30__performance_quality_control_total_course_total_course_total_component__ = __webpack_require__(417);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_31__home_holidays_holidays_component__ = __webpack_require__(401);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_32_devextreme_localization__ = __webpack_require__(567);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_32_devextreme_localization___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_32_devextreme_localization__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_33_devextreme_intl__ = __webpack_require__(883);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_33_devextreme_intl___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_33_devextreme_intl__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_34__login_login_component__ = __webpack_require__(409);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -2435,8 +2852,6 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-
-
 
 
 
@@ -2469,6 +2884,13 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
+
+
+
+
+var messagesUk = __webpack_require__(1159);
+__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_32_devextreme_localization__["loadMessages"])(messagesUk);
+__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_32_devextreme_localization__["locale"])("uk");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -2480,32 +2902,32 @@ AppModule = __decorate([
             __WEBPACK_IMPORTED_MODULE_8__app_component__["a" /* AppComponent */],
             __WEBPACK_IMPORTED_MODULE_10__home_home_component__["a" /* HomeComponent */],
             __WEBPACK_IMPORTED_MODULE_11__info_students_info_students_component__["a" /* InfoStudentsComponent */],
-            __WEBPACK_IMPORTED_MODULE_14__calendar_calendar_component__["a" /* CalendarComponent */],
-            __WEBPACK_IMPORTED_MODULE_15__performance_quality_control_performance_quality_control_component__["a" /* PerformanceQualityControlComponent */],
-            __WEBPACK_IMPORTED_MODULE_16__info_students_create_students_create_students_component__["a" /* CreateStudentsComponent */],
-            __WEBPACK_IMPORTED_MODULE_17__info_students_students_students_component__["a" /* StudentsComponent */],
-            __WEBPACK_IMPORTED_MODULE_18__info_students_beneficiaries_beneficiaries_component__["a" /* BeneficiariesComponent */],
-            __WEBPACK_IMPORTED_MODULE_19__info_students_parent_parent_component__["a" /* ParentComponent */],
-            __WEBPACK_IMPORTED_MODULE_20__info_students_active_groups_active_groups_component__["a" /* ActiveGroupsComponent */],
-            __WEBPACK_IMPORTED_MODULE_21__info_students_total_total_component__["a" /* TotalComponent */],
-            __WEBPACK_IMPORTED_MODULE_23__info_parents_info_parents_component__["a" /* InfoParentsComponent */],
-            __WEBPACK_IMPORTED_MODULE_24__info_students_delete_student_delete_student_component__["a" /* DeleteStudentComponent */],
-            __WEBPACK_IMPORTED_MODULE_25__performance_quality_control_performance_performance_component__["a" /* PerformanceComponent */],
-            __WEBPACK_IMPORTED_MODULE_26__performance_quality_control_omissions_omissions_component__["a" /* OmissionsComponent */],
-            __WEBPACK_IMPORTED_MODULE_27__performance_quality_control_total_total_component__["a" /* TotalPerformanceComponent */],
-            __WEBPACK_IMPORTED_MODULE_28__performance_quality_control_performance_settings_settings_component__["a" /* SettingsComponent */],
-            __WEBPACK_IMPORTED_MODULE_29__performance_quality_control_performance_course_course_component__["a" /* CourseComponent */],
-            __WEBPACK_IMPORTED_MODULE_29__performance_quality_control_performance_course_course_component__["b" /* KeysPipe */],
-            __WEBPACK_IMPORTED_MODULE_30__performance_quality_control_omissions_course_for_omissions_course_for_omissions_component__["a" /* CourseForOmissionsComponent */],
-            __WEBPACK_IMPORTED_MODULE_31__performance_quality_control_omissions_settings_for_omissions_settings_for_omissions_component__["a" /* SettingsForOmissionsComponent */],
-            __WEBPACK_IMPORTED_MODULE_30__performance_quality_control_omissions_course_for_omissions_course_for_omissions_component__["b" /* OmissionKeysPipe */],
-            __WEBPACK_IMPORTED_MODULE_32__performance_quality_control_total_course_total_course_total_component__["a" /* KeysTotalPipe */],
-            __WEBPACK_IMPORTED_MODULE_32__performance_quality_control_total_course_total_course_total_component__["b" /* CourseTotalComponent */]
+            __WEBPACK_IMPORTED_MODULE_14__performance_quality_control_performance_quality_control_component__["a" /* PerformanceQualityControlComponent */],
+            __WEBPACK_IMPORTED_MODULE_15__info_students_create_students_create_students_component__["a" /* CreateStudentsComponent */],
+            __WEBPACK_IMPORTED_MODULE_16__info_students_students_students_component__["a" /* StudentsComponent */],
+            __WEBPACK_IMPORTED_MODULE_17__info_students_beneficiaries_beneficiaries_component__["a" /* BeneficiariesComponent */],
+            __WEBPACK_IMPORTED_MODULE_18__info_students_parent_parent_component__["a" /* ParentComponent */],
+            __WEBPACK_IMPORTED_MODULE_19__info_students_active_groups_active_groups_component__["a" /* ActiveGroupsComponent */],
+            __WEBPACK_IMPORTED_MODULE_21__info_parents_info_parents_component__["a" /* InfoParentsComponent */],
+            __WEBPACK_IMPORTED_MODULE_22__info_students_delete_student_delete_student_component__["a" /* DeleteStudentComponent */],
+            __WEBPACK_IMPORTED_MODULE_23__performance_quality_control_performance_performance_component__["a" /* PerformanceComponent */],
+            __WEBPACK_IMPORTED_MODULE_24__performance_quality_control_omissions_omissions_component__["a" /* OmissionsComponent */],
+            __WEBPACK_IMPORTED_MODULE_25__performance_quality_control_total_total_component__["a" /* TotalPerformanceComponent */],
+            __WEBPACK_IMPORTED_MODULE_26__performance_quality_control_performance_settings_settings_component__["a" /* SettingsComponent */],
+            __WEBPACK_IMPORTED_MODULE_27__performance_quality_control_performance_course_course_component__["a" /* CourseComponent */],
+            __WEBPACK_IMPORTED_MODULE_27__performance_quality_control_performance_course_course_component__["b" /* KeysPipe */],
+            __WEBPACK_IMPORTED_MODULE_28__performance_quality_control_omissions_course_for_omissions_course_for_omissions_component__["a" /* CourseForOmissionsComponent */],
+            __WEBPACK_IMPORTED_MODULE_29__performance_quality_control_omissions_settings_for_omissions_settings_for_omissions_component__["a" /* SettingsForOmissionsComponent */],
+            __WEBPACK_IMPORTED_MODULE_28__performance_quality_control_omissions_course_for_omissions_course_for_omissions_component__["b" /* OmissionKeysPipe */],
+            __WEBPACK_IMPORTED_MODULE_30__performance_quality_control_total_course_total_course_total_component__["a" /* KeysTotalPipe */],
+            __WEBPACK_IMPORTED_MODULE_30__performance_quality_control_total_course_total_course_total_component__["b" /* CourseTotalComponent */],
+            __WEBPACK_IMPORTED_MODULE_31__home_holidays_holidays_component__["a" /* HolidaysComponent */],
+            __WEBPACK_IMPORTED_MODULE_34__login_login_component__["a" /* LoginComponent */]
         ],
         imports: [
             __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__["a" /* BrowserModule */],
             __WEBPACK_IMPORTED_MODULE_3__angular_forms__["FormsModule"],
-            __WEBPACK_IMPORTED_MODULE_12__angular_platform_browser_animations__["a" /* NoopAnimationsModule */],
+            __WEBPACK_IMPORTED_MODULE_12__angular_platform_browser_animations__["a" /* BrowserAnimationsModule */],
             __WEBPACK_IMPORTED_MODULE_6__angular_material__["a" /* MaterialModule */],
             __WEBPACK_IMPORTED_MODULE_7_md2__["a" /* Md2Module */],
             __WEBPACK_IMPORTED_MODULE_4__angular_http__["a" /* HttpModule */],
@@ -2515,12 +2937,13 @@ AppModule = __decorate([
             __WEBPACK_IMPORTED_MODULE_13_devextreme_angular__["DxCalendarModule"]
         ],
         entryComponents: [
-            __WEBPACK_IMPORTED_MODULE_16__info_students_create_students_create_students_component__["a" /* CreateStudentsComponent */],
-            __WEBPACK_IMPORTED_MODULE_24__info_students_delete_student_delete_student_component__["a" /* DeleteStudentComponent */],
-            __WEBPACK_IMPORTED_MODULE_28__performance_quality_control_performance_settings_settings_component__["a" /* SettingsComponent */],
-            __WEBPACK_IMPORTED_MODULE_31__performance_quality_control_omissions_settings_for_omissions_settings_for_omissions_component__["a" /* SettingsForOmissionsComponent */]
+            __WEBPACK_IMPORTED_MODULE_15__info_students_create_students_create_students_component__["a" /* CreateStudentsComponent */],
+            __WEBPACK_IMPORTED_MODULE_22__info_students_delete_student_delete_student_component__["a" /* DeleteStudentComponent */],
+            __WEBPACK_IMPORTED_MODULE_26__performance_quality_control_performance_settings_settings_component__["a" /* SettingsComponent */],
+            __WEBPACK_IMPORTED_MODULE_29__performance_quality_control_omissions_settings_for_omissions_settings_for_omissions_component__["a" /* SettingsForOmissionsComponent */],
+            __WEBPACK_IMPORTED_MODULE_31__home_holidays_holidays_component__["a" /* HolidaysComponent */]
         ],
-        providers: [__WEBPACK_IMPORTED_MODULE_22__services_api_service_service__["a" /* ApiServiceService */]],
+        providers: [__WEBPACK_IMPORTED_MODULE_20__services_api_service_service__["a" /* ApiServiceService */]],
         bootstrap: [__WEBPACK_IMPORTED_MODULE_8__app_component__["a" /* AppComponent */]]
     })
 ], AppModule);
@@ -2529,16 +2952,18 @@ AppModule = __decorate([
 
 /***/ }),
 
-/***/ 756:
+/***/ 758:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_router__ = __webpack_require__(753);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__home_home_component__ = __webpack_require__(400);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__info_students_info_students_component__ = __webpack_require__(404);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__performance_quality_control_performance_quality_control_component__ = __webpack_require__(410);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__info_parents_info_parents_component__ = __webpack_require__(401);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_router__ = __webpack_require__(755);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__home_home_component__ = __webpack_require__(402);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__info_students_info_students_component__ = __webpack_require__(406);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__performance_quality_control_performance_quality_control_component__ = __webpack_require__(413);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__info_parents_info_parents_component__ = __webpack_require__(403);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__login_login_component__ = __webpack_require__(409);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return appRouting; });
+
 
 
 
@@ -2560,92 +2985,14 @@ var appRoutes = [
     {
         path: "parents",
         component: __WEBPACK_IMPORTED_MODULE_4__info_parents_info_parents_component__["a" /* InfoParentsComponent */],
+    },
+    {
+        path: "login",
+        component: __WEBPACK_IMPORTED_MODULE_5__login_login_component__["a" /* LoginComponent */],
     }
 ];
 var appRouting = __WEBPACK_IMPORTED_MODULE_0__angular_router__["a" /* RouterModule */].forRoot(appRoutes);
 //# sourceMappingURL=app.routing.js.map
-
-/***/ }),
-
-/***/ 757:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(2);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CalendarComponent; });
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-var CalendarComponent = (function () {
-    function CalendarComponent() {
-        this.currentValue = new Date();
-        this.minDateValue = undefined;
-        this.maxDateValue = undefined;
-        this.zoomLevels = [
-            "month", "year", "decade", "century"
-        ];
-        this.cellTemplate = "cell";
-    }
-    CalendarComponent.prototype.showEvents = function () {
-        console.log(this.currentValue);
-    };
-    CalendarComponent.prototype.ngOnInit = function () {
-    };
-    return CalendarComponent;
-}());
-CalendarComponent = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-        selector: 'calendar',
-        template: __webpack_require__(1230),
-        styles: [__webpack_require__(1132)]
-    }),
-    __metadata("design:paramtypes", [])
-], CalendarComponent);
-
-//# sourceMappingURL=calendar.component.js.map
-
-/***/ }),
-
-/***/ 758:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(2);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TotalComponent; });
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-var TotalComponent = (function () {
-    function TotalComponent() {
-    }
-    TotalComponent.prototype.ngOnInit = function () {
-    };
-    return TotalComponent;
-}());
-TotalComponent = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-        selector: 'app-total',
-        template: __webpack_require__(1240),
-        styles: [__webpack_require__(1142)]
-    }),
-    __metadata("design:paramtypes", [])
-], TotalComponent);
-
-//# sourceMappingURL=total.component.js.map
 
 /***/ }),
 

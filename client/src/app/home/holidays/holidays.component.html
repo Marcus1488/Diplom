@@ -1,0 +1,52 @@
+<h1>Події:</h1>
+
+<dx-data-grid
+  [showBorders]="true"
+  [showRowLines]="true"
+  [dataSource]="holidays"
+  (onRowInserted)="addHoliday($event)"
+  (onRowUpdated)="updateHoliday($event)"
+  (onRowRemoved)="deleteHoliday($event)">
+  <dxo-filter-row
+    [visible]="true"
+    betweenStartText="З"
+    betweenEndText="По"
+    resetOperationText="Відмінити"></dxo-filter-row>
+  <dxo-editing
+    mode="row"
+    [allowUpdating]="true"
+    [allowDeleting]="true"
+    [allowAdding]="true">
+  </dxo-editing>
+  <dxo-paging [pageSize]="10"></dxo-paging>
+  <dxo-pager
+    [showPageSizeSelector]="true"
+    [allowedPageSizes]="[5, 10]"
+    [showInfo]="true">
+  </dxo-pager>
+
+  <dxi-column
+    dataField="name"
+    caption="Назва події"
+    dataType="string">
+    <dxi-validation-rule type="required"></dxi-validation-rule>
+  </dxi-column>
+  <dxi-column
+    dataField="date"
+    caption="Дата події"
+    dataType="date"
+    format="monthAndDay">
+    <dxi-validation-rule type="required"></dxi-validation-rule>
+  </dxi-column>
+  <!-- <dxi-column
+    caption="Дії"
+    dataField="students"
+    cellTemplate="actions">
+  </dxi-column>
+
+  <div *dxTemplate="let data of 'actions'" fxLayoutAlign="center center">
+    <md-icon (click)="openViewDialog(data.data)">remove_red_eye</md-icon>
+    <md-icon (click)="openEditDialog(data.data)">mode_edit</md-icon>
+    <md-icon (click)="openDeletingDialog(data.data)">delete</md-icon>
+  </div>-->
+</dx-data-grid>

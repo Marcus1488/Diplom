@@ -7,12 +7,12 @@
       <h1>Інформаційна сторінка класного керівника</h1>
     </div>
     <div fxFlex="25" fxLayout="row" fxLayoutAlign="end" class="login">
-      <button md-raised-button>Увійти</button>
+      <button md-raised-button routerLink="login">Увійти</button>
     </div>
   </div>
 </header>
 <md-sidenav-container class="min-width-content">
-  <md-sidenav [opened]="openedMenu" #sidenav mode="side">
+  <md-sidenav [opened]="true" #sidenav mode="side">
     <md-nav-list class="left-menu">
       <a md-list-item routerLink="" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
         Головна
@@ -31,16 +31,7 @@
       </a>
     </md-nav-list>
   </md-sidenav>
-
-  <!--<div class="toggle-menu" (click)="toggleMenu()"><md-icon>menu</md-icon></div>
-
-  <div class="toggle-calendar" (click)="toggleCalendar()"><md-icon>today</md-icon></div>-->
-
   <div class="main-content">
     <router-outlet></router-outlet>
   </div>
-
- <!-- <md-sidenav class="calendar-sidenav" [opened]="openedCalendar" #sidenav mode="side" align="end"  md-is-locked-open="$mdMedia('gt-md')">
-    <calendar></calendar>
-  </md-sidenav>-->
 </md-sidenav-container>

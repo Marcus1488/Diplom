@@ -10,6 +10,24 @@ module.exports = function (sequelize, DataTypes) {
     },
     activeGroupId: {
       type: DataTypes.INTEGER,
+    },
+    login: {
+      type: DataTypes.STRING,
+    },
+    password: {
+      type: DataTypes.STRING,
+    },
+    department: {
+      type: DataTypes.STRING,
+    },
+    speciality: {
+      type: DataTypes.STRING,
+    },
+    discipline: {
+      type: DataTypes.STRING,
+    },
+    teacher: {
+      type: DataTypes.STRING,
     }
   }, {
     timestamps: false,

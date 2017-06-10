@@ -27,7 +27,8 @@ if (!global.hasOwnProperty('db')) {
     Items:      sequelize.import(__dirname + '/items'),
     Ratings:      sequelize.import(__dirname + '/ratings'),
     Omissions:      sequelize.import(__dirname + '/omissions'),
-    Months:      sequelize.import(__dirname + '/months')
+    Months:      sequelize.import(__dirname + '/months'),
+    Holidays:      sequelize.import(__dirname + '/holidays')
   }
 }
 

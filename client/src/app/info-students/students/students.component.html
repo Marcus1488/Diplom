@@ -6,6 +6,12 @@
   [showBorders]="true"
   [showRowLines]="true"
   [dataSource]="students">
+  <dxo-paging [pageSize]="10"></dxo-paging>
+  <dxo-pager
+    [showPageSizeSelector]="true"
+    [allowedPageSizes]="[5, 10, 15, 20]"
+    [showInfo]="true">
+  </dxo-pager>
   <dxi-column
     dataField="studentTicket"
     caption="Студ білет"></dxi-column>

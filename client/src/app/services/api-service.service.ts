@@ -127,6 +127,59 @@ export class ApiServiceService {
   };
 
 
+  /*Holidays*/
+  getHolidays(): Observable<any> {
+    return this.http.get(`/api/holidays`)
+      .map(this.extractData)
+      .catch(this.handleError);
+  }
+
+  getHolidaysByDate(date): Observable<any> {
+    return this.http.get(`/api/holidays/${date}`)
+      .map(this.extractData)
+      .catch(this.handleError);
+  }
+
+  deleteHoliday(id): Observable<any> {
+    return this.http.delete(`/api/holidays/${id}`)
+      .map(this.extractData)
+      .catch(this.handleError);
+  };
+
+  updateHoliday(data): Observable<any> {
+    return this.http.put(`/api/holidays`, {
+      data: data
+    })
+      .map(this.extractData)
+      .catch(this.handleError);
+  };
+
+  addHoliday(data): Observable<any> {
+    return this.http.post(`/api/holidays`, {
+      data: data
+    })
+      .map(this.extractData)
+      .catch(this.handleError);
+  };
+
+  /*Auth*/
+  login(login, password): Observable<any> {
+    return this.http.post(`/api/login`, {
+      data: {
+        login: login,
+        password: password
+      }
+    })
+      .map(this.extractData)
+      .catch(this.handleError);
+  }
+  changePassword(data): Observable<any> {
+    return this.http.post(`/api/login/change`, {
+      data: data
+    })
+      .map(this.extractData)
+      .catch(this.handleError);
+  }
 
   /*Functions*/
   private extractData(res: Response) {

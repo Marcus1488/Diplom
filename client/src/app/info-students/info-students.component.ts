@@ -35,8 +35,6 @@ export class InfoStudentsComponent implements OnInit {
       case 3:
         this.activeGroupsComponent.getGroupAssets();
         break;
-      case 4:
-        break;
     }
   }
 }
