@@ -100,6 +100,10 @@ module.exports = function (sequelize, DataTypes) {
     groupAsset: {
       type: DataTypes.INTEGER,
       allowNull: true
+    },
+    position: {
+      type: DataTypes.STRING,
+      allowNull: true
     }
   }, {
     timestamps: false,
@@ -130,48 +134,50 @@ module.exports = function (sequelize, DataTypes) {
           motherId: data.motherId,
           fatherId: data.fatherId,
           groupId: data.groupId,
+          position: data.position,
           groupAsset: data.groupAsset
         });
       }),
       updateStudent: Promise.coroutine(function*(data) {
         return Students.update({
-          firstName: data.firstName,
-          lastName: data.lastName,
-          secondName: data.secondName,
-          dateOfBirthday: data.dateOfBirthday,
-          birthPlace: data.birthPlace,
-          passportSeries: data.passportSeries,
-          passportNumber: data.passportNumber,
-          passportDate: data.passportDate,
-          addressIndex: data.addressIndex,
-          addressRegion: data.addressRegion,
-          addressArea: data.addressArea,
-          addressCity: data.addressCity,
-          addressStreet: data.addressStreet,
-          addressHouse: data.addressHouse,
-          addressFlat: data.addressFlat,
-          phone: data.phone,
-          studentTicket: data.studentTicket,
-          beneficiaries: data.beneficiaries,
-          reasonBeneficiaries: data.reasonBeneficiaries,
-          motherId: data.motherId,
-          fatherId: data.fatherId,
-          groupId: data.groupId,
-          groupAsset: data.groupAsset
-        },
-        {
-          where: {
-            id: data.id
-          }
-        });
+            firstName: data.firstName,
+            lastName: data.lastName,
+            secondName: data.secondName,
+            dateOfBirthday: data.dateOfBirthday,
+            birthPlace: data.birthPlace,
+            passportSeries: data.passportSeries,
+            passportNumber: data.passportNumber,
+            passportDate: data.passportDate,
+            addressIndex: data.addressIndex,
+            addressRegion: data.addressRegion,
+            addressArea: data.addressArea,
+            addressCity: data.addressCity,
+            addressStreet: data.addressStreet,
+            addressHouse: data.addressHouse,
+            addressFlat: data.addressFlat,
+            phone: data.phone,
+            studentTicket: data.studentTicket,
+            beneficiaries: data.beneficiaries,
+            reasonBeneficiaries: data.reasonBeneficiaries,
+            motherId: data.motherId,
+            fatherId: data.fatherId,
+            groupId: data.groupId,
+            position: data.position,
+            groupAsset: data.groupAsset
+          },
+          {
+            where: {
+              id: data.id
+            }
+          });
       }),
       deleteStudent: Promise.coroutine(function*(id) {
         return Students.destroy(
-        {
-          where: {
-            id: id
-          }
-        });
+          {
+            where: {
+              id: id
+            }
+          });
       }),
     }
   });

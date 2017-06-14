@@ -5,6 +5,7 @@ import {InfoStudentsComponent} from "./info-students/info-students.component";
 import {PerformanceQualityControlComponent} from "./performance-quality-control/performance-quality-control.component";
 import {InfoParentsComponent} from "./info-parents/info-parents.component";
 import {LoginComponent} from "./login/login.component";
+import {DocumentationComponent} from "./documentation/documentation.component";
 
 
 const appRoutes: Routes = [
@@ -27,6 +28,10 @@ const appRoutes: Routes = [
   {
     path: "login",
     component: LoginComponent,
+  },
+  {
+    path: "documentation",
+    component: DocumentationComponent,
   }
 ];
 

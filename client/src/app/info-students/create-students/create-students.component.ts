@@ -1,6 +1,7 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {MdDialogRef} from "@angular/material";
-import {ApiServiceService} from "../../services/api-service.service";
+import {ApiServiceService} from "../../services/api-service.service"
+import {FormControl} from "@angular/forms";
 
 @Component({
   selector: 'app-create-students',
@@ -8,6 +9,7 @@ import {ApiServiceService} from "../../services/api-service.service";
   styleUrls: ['./create-students.component.scss']
 })
 export class CreateStudentsComponent implements OnInit {
+  infoForm = new FormControl();
   public errorMessage: any;
   public student: any = {
     firstName: '',

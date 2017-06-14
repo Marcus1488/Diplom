@@ -1,0 +1,32 @@
+<div style="height: calc(100vh - 50px);">
+  <div class="file-list" fxFlex="40" fxLayout="column" fxLayoutAlign="start center">
+    <md-card>
+      <md-card-title>Список файлів:</md-card-title>
+      <md-card-content>
+        <md-list>
+          <md-list-item>
+            <md-icon md-list-icon>close</md-icon>
+            <span>students.pdf</span>
+          </md-list-item>
+          <md-list-item>
+            <md-icon md-list-icon>close</md-icon>
+            <span>отчет1.pdf</span>
+          </md-list-item>
+          <md-list-item>
+            <md-icon md-list-icon>close</md-icon>
+            <span>отчет5.pdf</span>
+          </md-list-item>
+        </md-list>
+      </md-card-content>
+      <md-card-actions>
+        <button md-mini-fab class="add-file">
+          <md-icon>add</md-icon>
+        </button>
+      </md-card-actions>
+    </md-card>
+  </div>
+  <div class="view-pdf" fxFlex="60" fxLayout="column" fxLayoutAlign="start center">
+    <h2>Перегляд файлу: </h2>
+    <iframe width="70%" height="80%" [src]="pageurl" type="application/pdf"></iframe>
+  </div>
+</div>

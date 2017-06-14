@@ -21,4 +21,15 @@
   <dxi-column
     dataField="student.fullName"
     caption="ФІО студента"></dxi-column>
+  <dxi-column
+    caption="Дії"
+    dataField="students"
+    cellTemplate="actions">
+  </dxi-column>
+
+  <div *dxTemplate="let data of 'actions'" fxLayoutAlign="center center">
+    <md-icon (click)="openViewDialog(data.data)">remove_red_eye</md-icon>
+    <md-icon (click)="openEditDialog(data.data)">mode_edit</md-icon>
+    <md-icon (click)="openDeletingDialog(data.data)">delete</md-icon>
+  </div>
 </dx-data-grid>

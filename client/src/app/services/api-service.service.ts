@@ -11,12 +11,35 @@ export class ApiServiceService {
 
   constructor(private http: Http) {
   }
+
   /*Global api*/
   getConfig(): Observable<any> {
     return this.http.get('/api/config')
       .map(this.extractData)
       .catch(this.handleError);
   };
+
+  updateConfig(data): Observable<any> {
+    return this.http.put(`/api/config`, {
+      data: data
+    })
+      .map(this.extractData)
+      .catch(this.handleError);
+  }
+
+  getGroups(): Observable<any> {
+    return this.http.get(`/api/groups`)
+      .map(this.extractData)
+      .catch(this.handleError);
+  }
+
+  createGroup(data): Observable<any> {
+    return this.http.post(`/api/groups`, {
+      data: data
+    })
+      .map(this.extractData)
+      .catch(this.handleError);
+  }
 
   /*Api for students*/
   getAllStudents(): Observable<any> {
@@ -67,6 +90,18 @@ export class ApiServiceService {
       .map(this.extractData)
       .catch(this.handleError);
   };
+  updateParent(id, data): Observable<any> {
+    return this.http.put(`/api/parents/${id}`, {
+      data: data
+    })
+      .map(this.extractData)
+      .catch(this.handleError);
+  };
+  deleteParent(id): Observable<any> {
+    return this.http.delete(`/api/parents/${id}`)
+      .map(this.extractData)
+      .catch(this.handleError);
+  };
 
   /*Api for performance*/
   getTotalPerformance(course, semester): Observable<any> {
@@ -74,26 +109,31 @@ export class ApiServiceService {
       .map(this.extractData)
       .catch(this.handleError);
   };
+
   getAllPerformance(course, semester): Observable<any> {
     return this.http.get(`/api/performance/${course}/${semester}`)
       .map(this.extractData)
       .catch(this.handleError);
   };
+
   getSchoolItems(course, semester): Observable<any> {
     return this.http.get(`/api/items/${course}/${semester}`)
       .map(this.extractData)
       .catch(this.handleError);
   };
+
   createSchoolItem(data): Observable<any> {
     return this.http.post(`/api/items/`, data)
       .map(this.extractData)
       .catch(this.handleError);
   };
+
   removeSchoolItem(id): Observable<any> {
     return this.http.delete(`/api/items/${id}`)
       .map(this.extractData)
       .catch(this.handleError);
   };
+
   updateRatingById(data): Observable<any> {
     return this.http.put(`/api/rating`, data)
       .map(this.extractData)
@@ -106,17 +146,20 @@ export class ApiServiceService {
       .map(this.extractData)
       .catch(this.handleError);
   };
+
   getMonths(course, semester): Observable<any> {
     return this.http.get(`/api/omissions/month/${course}/${semester}`)
       .map(this.extractData)
       .catch(this.handleError);
   };
+
   updateOmissions(data): Observable<any> {
     return this.http.put(`/api/omissions`, data)
       .map(this.extractData)
       .catch(this.handleError);
   };
-  updateMonths(data,courseNumber, semester): Observable<any> {
+
+  updateMonths(data, courseNumber, semester): Observable<any> {
     return this.http.put(`/api/omissions/month`, {
       data: data,
       courseNumber: courseNumber,
@@ -173,6 +216,7 @@ export class ApiServiceService {
       .map(this.extractData)
       .catch(this.handleError);
   }
+
   changePassword(data): Observable<any> {
     return this.http.post(`/api/login/change`, {
       data: data

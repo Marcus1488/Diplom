@@ -1,0 +1,46 @@
+<div fxLayout="row" fxLayoutAlign="center">
+  <div class="blocks" fxLayout="column" fxLayoutAlign="center">
+    <md-input-container>
+      <input mdInput name="department" placeholder="Відділення"
+             [(ngModel)]="config.department">
+    </md-input-container>
+
+    <md-input-container>
+      <input mdInput name="speciality" placeholder="Спеціальність"
+             [(ngModel)]="config.speciality">
+    </md-input-container>
+
+    <md-input-container>
+      <input mdInput name="discipline" placeholder="Спеціальність"
+             [(ngModel)]="config.discipline">
+    </md-input-container>
+
+    <md-select placeholder="Група" [(ngModel)]="config.activeGroupId" name="food">
+      <md-option *ngFor="let group of groups" [value]="group.id">
+        {{group.name}}
+      </md-option>
+    </md-select>
+
+    <md-input-container>
+      <input mdInput name="teacher" placeholder="Класний керівник"
+             [(ngModel)]="config.teacher">
+    </md-input-container>
+  </div>
+
+  <div class="blocks" fxLayout="column" fxLayoutAlign="center">
+    <md-input-container>
+      <input mdInput name="groupName" placeholder="Назва групи"
+             [(ngModel)]="groupName">
+    </md-input-container>
+    <button md-raised-button [disabled]="!groupName" (click)="createGroup()">Створити групу</button>
+  </div>
+</div>
+<div fxLayout="row" fxLayoutAlign="space-around">
+  <button md-raised-button
+          [disabled]="!config.department || !config.speciality ||
+          !config.discipline || !config.activeGroupId || !config.teacher"
+          (click)="updateConfig()">
+    Зберегти зміни
+  </button>
+  <button md-raised-button md-dialog-close>Закрити вікно</button>
+</div>

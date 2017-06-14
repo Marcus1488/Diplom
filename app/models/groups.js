@@ -1,4 +1,5 @@
 'use strict';
+const Promise = require('bluebird');
 
 module.exports = function (sequelize, DataTypes) {
   let Groups = sequelize.define('Groups', {
@@ -16,7 +17,11 @@ module.exports = function (sequelize, DataTypes) {
     freezeTableName: true,
     tableName: 'Groups',
     classMethods: {
-
+      addGroup: Promise.coroutine(function*(name) {
+        return Groups.create({
+          name: name
+        });
+      }),
     }
   });
   return Groups;

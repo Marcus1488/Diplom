@@ -12,8 +12,50 @@ module.exports = function (app) {
 router.get('/config', Promise.coroutine(function *(req, res, next) {
     try {
       let config = yield db.Config.findAll();
+      let group = yield db.Groups.findOne({where: {id: config[0].activeGroupId}});
+
+      config[0].dataValues.group = group;
 
       res.status(200).json(config[0]);
+    } catch (err) {
+      return next(err);
+    }
+  })
+);
+
+router.put('/config', Promise.coroutine(function *(req, res, next) {
+    try {
+      let data = req.body.data;
+
+      let config = yield db.Config.findAll();
+
+      let updateConfig = yield db.Config.changeConfig(data, config[0].id);
+
+      res.status(200).json(updateConfig);
+    } catch (err) {
+      return next(err);
+    }
+  })
+);
+
+router.get('/groups', Promise.coroutine(function *(req, res, next) {
+    try {
+      let groups = yield db.Groups.findAll();
+
+      res.status(200).json(groups);
+    } catch (err) {
+      return next(err);
+    }
+  })
+);
+
+router.post('/groups', Promise.coroutine(function *(req, res, next) {
+    try {
+      let data = req.body.data;
+
+      let groups = yield db.Groups.addGroup(data);
+
+      res.status(200).json(groups);
     } catch (err) {
       return next(err);
     }
