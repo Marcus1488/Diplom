@@ -39,7 +39,7 @@ export class DocumentationComponent implements OnInit {
   }
 
   viewPdf(file) {
-    this.pdfSrc = `http://localhost:3000/api/file/${file.name}`;
+    this.pdfSrc = `http://diplom-bezrukaviy.herokuapp.com/api/file/${file.name}`;
     this.pageurl = this.domSanitizer.bypassSecurityTrustResourceUrl(this.pdfSrc);
   }
 
