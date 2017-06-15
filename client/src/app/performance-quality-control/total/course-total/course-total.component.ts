@@ -38,10 +38,12 @@ export class CourseTotalComponent implements OnInit {
   ngOnInit() {
   };
 
+  /*оновлення інформації при переході на вкладку*/
   updateAllInfo() {
     this.getTotalPerformance(this.courseNumber);
   }
 
+  /*Отримання інформації для звіту*/
   getTotalPerformance(courseNumber) {
     this.apiServiceService.getTotalPerformance(courseNumber, 1)
       .subscribe(
@@ -57,6 +59,7 @@ export class CourseTotalComponent implements OnInit {
         error => this.errorMessage = <any>error);
   };
 
+  /*Кастомізація тексту*/
   customizeText(data) {
     return data.value;
   }

@@ -14,6 +14,7 @@ export class TotalPerformanceComponent implements OnInit {
   ngOnInit() {
   }
 
+  /*оновлення інформації при переході на вкладку*/
   updateInfo() {
     this.courseTotalComponents.forEach((child) => {
       child.updateAllInfo();

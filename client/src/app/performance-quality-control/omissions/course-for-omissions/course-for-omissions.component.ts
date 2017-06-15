@@ -2,6 +2,7 @@ import {Component, Input, OnInit, Pipe, PipeTransform} from '@angular/core';
 import {MdDialog} from "@angular/material";
 import {ApiServiceService} from "../../../services/api-service.service";
 import {SettingsForOmissionsComponent} from "../settings-for-omissions/settings-for-omissions.component";
+import {GlobalService} from "app/services/global.service";
 
 @Pipe({name: 'keys'})
 export class OmissionKeysPipe implements PipeTransform {
@@ -23,6 +24,7 @@ export class OmissionKeysPipe implements PipeTransform {
 })
 export class CourseForOmissionsComponent implements OnInit {
   @Input() courseNumber: number;
+  token = JSON.parse(localStorage.getItem('token'));
 
   errorMessage: any;
   firstSemesterItems: any;
@@ -33,17 +35,22 @@ export class CourseForOmissionsComponent implements OnInit {
   };
 
   constructor(public dialog: MdDialog,
-              private apiServiceService: ApiServiceService) {
+              private apiServiceService: ApiServiceService, private globalSrv: GlobalService) {
+    globalSrv.itemValue.subscribe((token) => {
+      this.token = token;
+    })
   }
 
   ngOnInit() {
   };
 
+  /*Отримання інформації для таблиць*/
   updateAllInfo() {
     this.getMonths(this.courseNumber);
     this.getAllOmissions(this.courseNumber);
   }
 
+  /*Оновлення пропусків для вибраного місяця та студента*/
   updateOmissions(e) {
     let data;
 
@@ -58,6 +65,8 @@ export class CourseForOmissionsComponent implements OnInit {
         },
         error => this.errorMessage = <any>error);
   }
+
+  /*Отримання списку місяців для семестрів*/
   getMonths(courseNumber) {
     this.apiServiceService.getMonths(courseNumber, 1)
       .subscribe(
@@ -73,6 +82,7 @@ export class CourseForOmissionsComponent implements OnInit {
         error => this.errorMessage = <any>error);
   };
 
+  /*Отримання інформації по пропускам*/
   getAllOmissions(courseNumber) {
     this.apiServiceService.getAllOmissions(courseNumber, 1)
       .subscribe(
@@ -88,6 +98,7 @@ export class CourseForOmissionsComponent implements OnInit {
         error => this.errorMessage = <any>error);
   };
 
+  /*Відкриття модального вікна з налаштуванням місяців*/
   openSettingItems(semester) {
     let dialogRef1 = this.dialog.open(SettingsForOmissionsComponent, {
       data: {

@@ -18,6 +18,16 @@ export class ApiServiceService {
       .map(this.extractData)
       .catch(this.handleError);
   };
+  getFiles(): Observable<any> {
+    return this.http.get('/api/files')
+      .map(this.extractData)
+      .catch(this.handleError);
+  };
+  removeFiles(id): Observable<any> {
+    return this.http.delete(`/api//file/${id}`)
+      .map(this.extractData)
+      .catch(this.handleError);
+  };
 
   updateConfig(data): Observable<any> {
     return this.http.put(`/api/config`, {

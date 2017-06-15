@@ -3,6 +3,11 @@
   [showBorders]="true"
   [showRowLines]="true"
   [dataSource]="parents">
+  <dxo-filter-row
+    [visible]="true"
+    betweenStartText="З"
+    betweenEndText="По"
+    resetOperationText="Відмінити"></dxo-filter-row>
   <dxo-paging [pageSize]="10"></dxo-paging>
   <dxo-pager
     [showPageSizeSelector]="true"
@@ -21,7 +26,7 @@
   <dxi-column
     dataField="student.fullName"
     caption="ФІО студента"></dxi-column>
-  <dxi-column
+  <dxi-column *ngIf="token"
     caption="Дії"
     dataField="students"
     cellTemplate="actions">

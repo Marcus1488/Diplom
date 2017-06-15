@@ -2,6 +2,11 @@
   [showBorders]="true"
   [showRowLines]="true"
   [dataSource]="students">
+  <dxo-filter-row
+    [visible]="true"
+    betweenStartText="З"
+    betweenEndText="По"
+    resetOperationText="Відмінити"></dxo-filter-row>
   <dxo-paging [pageSize]="10"></dxo-paging>
   <dxo-pager
     [showPageSizeSelector]="true"
@@ -29,7 +34,7 @@
     dataField="reasonBeneficiaries"
     caption="Пільга"></dxi-column>
 
-  <dxi-column
+  <dxi-column *ngIf="token"
     caption="Дії"
     dataField="students"
     cellTemplate="actions">

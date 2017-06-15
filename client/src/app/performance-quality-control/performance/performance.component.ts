@@ -14,6 +14,7 @@ export class PerformanceComponent implements OnInit {
   ngOnInit() {
   }
 
+  /*оновлення інформації*/
   updateInfo() {
     this.courseComponents.forEach((child) => {
       child.updateAllInfo();

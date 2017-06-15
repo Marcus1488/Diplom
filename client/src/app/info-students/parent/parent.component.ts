@@ -3,6 +3,7 @@ import {ApiServiceService} from "../../services/api-service.service";
 import {CreateStudentsComponent} from "app/info-students/create-students/create-students.component";
 import {DeleteStudentComponent} from "../delete-student/delete-student.component";
 import {MdDialog} from "@angular/material";
+import {GlobalService} from "../../services/global.service";
 
 @Component({
   selector: 'app-parent',
@@ -10,15 +11,20 @@ import {MdDialog} from "@angular/material";
   styleUrls: ['./parent.component.scss']
 })
 export class ParentComponent implements OnInit {
+  token = JSON.parse(localStorage.getItem('token'));
   students: any;
   errorMessage: any;
 
-  constructor(public apiServiceService: ApiServiceService, public dialog: MdDialog) {
+  constructor(public apiServiceService: ApiServiceService, public dialog: MdDialog, private globalSrv: GlobalService) {
+    globalSrv.itemValue.subscribe((token) => {
+      this.token = token;
+    })
   }
 
   ngOnInit() {
   }
 
+  /*Откримання інформації про студентів*/
   getIncompleteFamilies() {
     this.apiServiceService.getIncompleteFamilies()
       .subscribe(
@@ -32,6 +38,7 @@ export class ParentComponent implements OnInit {
         error => this.errorMessage = <any>error);
   }
 
+  /*Відкриття модального вікна для редагування інформації про студента*/
   openEditDialog(data) {
     let dialogRef = this.dialog.open(CreateStudentsComponent, {
       data: {
@@ -46,6 +53,7 @@ export class ParentComponent implements OnInit {
     });
   }
 
+  /*Відкриття модального вікна для видалення інформації про студента*/
   openDeletingDialog(data) {
     let dialogRef = this.dialog.open(DeleteStudentComponent, {
       data: {
@@ -59,6 +67,7 @@ export class ParentComponent implements OnInit {
     });
   }
 
+  /*Відкриття модального вікна для перегляду інформації про студента*/
   openViewDialog(data) {
     this.dialog.open(CreateStudentsComponent, {
       data: {

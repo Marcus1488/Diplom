@@ -1,3 +1,4 @@
+import {GlobalService} from "./services/global.service";
 export declare let require: any;
 
 import 'hammerjs';
@@ -53,11 +54,13 @@ import {EditDefaultInfoComponent} from './home/edit-default-info/edit-default-in
 import { ViewInfoParentsComponent } from './info-parents/view-info-parents/view-info-parents.component';
 import { DeleteParentsComponent } from './info-parents/delete-parents/delete-parents.component';
 import { TypeNumberDirective } from './type-number.directive';
+import { UploadFilesComponent } from './documentation/upload-files/upload-files.component';
 
 let messagesUk = require("./../uk.json");
 loadMessages(messagesUk);
 locale("uk");
 
+/*Список модулів проекта*/
 @NgModule({
   declarations: [
     AppComponent,
@@ -89,7 +92,8 @@ locale("uk");
     EditDefaultInfoComponent,
     ViewInfoParentsComponent,
     DeleteParentsComponent,
-    TypeNumberDirective
+    TypeNumberDirective,
+    UploadFilesComponent
   ],
   imports: [
     BrowserModule,
@@ -111,9 +115,10 @@ locale("uk");
     HolidaysComponent,
     EditDefaultInfoComponent,
     ViewInfoParentsComponent,
-    DeleteParentsComponent
+    DeleteParentsComponent,
+    UploadFilesComponent
   ],
-  providers: [ApiServiceService],
+  providers: [ApiServiceService, GlobalService],
   bootstrap: [AppComponent]
 })
 export class AppModule {

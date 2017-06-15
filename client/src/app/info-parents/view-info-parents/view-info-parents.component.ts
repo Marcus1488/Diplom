@@ -20,6 +20,7 @@ export class ViewInfoParentsComponent implements OnInit {
   ngOnInit() {
   }
 
+  /*Запит на оновлення інформації про батьків*/
   updateParent() {
     this.apiServiceService.updateParent(this.newData.parent.id, this.newData.parent)
       .subscribe(

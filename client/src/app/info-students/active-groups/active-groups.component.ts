@@ -3,6 +3,7 @@ import {MdDialog} from "@angular/material";
 import {ApiServiceService} from "../../services/api-service.service";
 import {CreateStudentsComponent} from "../create-students/create-students.component";
 import {DeleteStudentComponent} from "../delete-student/delete-student.component";
+import {GlobalService} from "../../services/global.service";
 
 @Component({
   selector: 'app-active-groups',
@@ -10,6 +11,7 @@ import {DeleteStudentComponent} from "../delete-student/delete-student.component
   styleUrls: ['./active-groups.component.scss']
 })
 export class ActiveGroupsComponent implements OnInit {
+  token = JSON.parse(localStorage.getItem('token'));
   public students: any[];
   public errorMessage: any;
   public groupAssets: any[] = [
@@ -47,17 +49,22 @@ export class ActiveGroupsComponent implements OnInit {
     }
   ];
 
-  constructor(private apiServiceService: ApiServiceService, public dialog: MdDialog) {
+  constructor(private apiServiceService: ApiServiceService, public dialog: MdDialog, private globalSrv: GlobalService) {
+    globalSrv.itemValue.subscribe((token) => {
+      this.token = token;
+    })
   }
 
   ngOnInit() {
   }
 
+  /*Отримання назви групи по його id*/
   getNameAssetsById(id) {
     let name = this.groupAssets.find(groupAsset => groupAsset.id == id).name;
     return name;
   }
 
+  /*Запит на откримання інформації про всіх студентів*/
   getGroupAssets() {
     this.apiServiceService.getGroupAssets()
       .subscribe(
@@ -71,6 +78,7 @@ export class ActiveGroupsComponent implements OnInit {
         error => this.errorMessage = <any>error);
   }
 
+  /*Відкриття модального вікна для редагування інформації про студента*/
   openEditDialog(data) {
     let dialogRef = this.dialog.open(CreateStudentsComponent, {
       data: {
@@ -85,6 +93,7 @@ export class ActiveGroupsComponent implements OnInit {
     });
   }
 
+  /*Відкриття модального вікна для видалення інформації про студента*/
   openDeletingDialog(data) {
     let dialogRef = this.dialog.open(DeleteStudentComponent, {
       data: {
@@ -98,6 +107,7 @@ export class ActiveGroupsComponent implements OnInit {
     });
   }
 
+  /*Відкриття модального вікна для перегляду інформації про студента*/
   openViewDialog(data) {
     this.dialog.open(CreateStudentsComponent, {
       data: {

@@ -14,6 +14,7 @@ export class OmissionsComponent implements OnInit {
   ngOnInit() {
   }
 
+  /*оновлення інформації*/
   updateInfo() {
     this.courseForOmissionsComponents.forEach((child) => {
       child.updateAllInfo();

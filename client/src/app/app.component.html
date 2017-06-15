@@ -6,8 +6,11 @@
     <div fxFlex="50" fxLayout="row" fxLayoutAlign="center">
       <h1>Інформаційна сторінка класного керівника</h1>
     </div>
-    <div fxFlex="25" fxLayout="row" fxLayoutAlign="end" class="login">
+    <div *ngIf="!token" fxFlex="25" fxLayout="row" fxLayoutAlign="end" class="login">
       <button md-raised-button routerLink="login">Увійти</button>
+    </div>
+    <div *ngIf="token"  fxFlex="25" fxLayout="row" fxLayoutAlign="end" class="login">
+      <button md-raised-button (click)="logout()">Вийти</button>
     </div>
   </div>
 </header>

@@ -4,7 +4,7 @@
     <md-tab-group>
       <md-tab label="1 семестр">
         <div class="box-tab-content">
-          <div fxLayoutAlign="end" style="margin-bottom: 10px">
+          <div fxLayoutAlign="end" style="margin-bottom: 10px" *ngIf="token">
             <button md-raised-button (click)="openSettingItems(1)">Настройки місяців</button>
           </div>
           <div *ngIf="firstSemesterItems && firstSemesterItems.length > 0;else empty_school_items">
@@ -19,7 +19,7 @@
 
               <dxo-editing
                 mode="cell"
-                [allowUpdating]="true">
+                [allowUpdating]="token ? true : false">
               </dxo-editing>
 
               <dxi-column dataField="student.fullName" caption="ФІО" [allowEditing]="false"></dxi-column>
@@ -51,7 +51,7 @@
       </md-tab>
       <md-tab label="2 семестр">
         <div class="box-tab-content">
-          <div fxLayoutAlign="end" style="margin-bottom: 10px">
+          <div fxLayoutAlign="end" style="margin-bottom: 10px" *ngIf="token">
             <button md-raised-button (click)="openSettingItems(2)">Настройки місяців</button>
           </div>
           <div *ngIf="secondSemesterItems && secondSemesterItems.length > 0;else empty_school_items">
@@ -65,7 +65,7 @@
               (onRowUpdated)="updateOmissions($event)">
               <dxo-editing
                 mode="cell"
-                [allowUpdating]="true">
+                [allowUpdating]="token ? true : false">
               </dxo-editing>
 
               <dxi-column dataField="student.fullName" caption="ФІО" [allowEditing]="false"></dxi-column>

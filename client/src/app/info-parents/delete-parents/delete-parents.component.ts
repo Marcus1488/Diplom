@@ -20,6 +20,7 @@ export class DeleteParentsComponent implements OnInit {
   ngOnInit() {
   }
 
+  /*Запит на видалення інформації про батьків*/
   deleteParent() {
     this.apiServiceService.deleteParent(this.parent.id)
       .subscribe(

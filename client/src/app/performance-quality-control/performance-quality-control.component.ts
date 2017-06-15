@@ -21,6 +21,7 @@ export class PerformanceQualityControlComponent implements OnInit {
   ngOnInit() {
   }
 
+  /*Оновлення інформації при переході між табами*/
   changeSelectedTab(e) {
     switch (e.index) {
       case 0:

@@ -3,6 +3,7 @@ import {MdDialog} from "@angular/material";
 import {CreateStudentsComponent} from "../create-students/create-students.component";
 import {ApiServiceService} from "../../services/api-service.service";
 import {DeleteStudentComponent} from "../delete-student/delete-student.component";
+import {GlobalService} from "../../services/global.service";
 
 @Component({
   selector: 'app-students',
@@ -10,16 +11,21 @@ import {DeleteStudentComponent} from "../delete-student/delete-student.component
   styleUrls: ['./students.component.scss']
 })
 export class StudentsComponent implements OnInit {
+  token = JSON.parse(localStorage.getItem('token'));
   public students: any[];
   public errorMessage: any;
 
-  constructor(public dialog: MdDialog, private apiServiceService: ApiServiceService) {
+  constructor(public dialog: MdDialog, private apiServiceService: ApiServiceService, private globalSrv: GlobalService) {
+    globalSrv.itemValue.subscribe((token) => {
+      this.token = token;
+    });
     this.getStudents();
   }
 
   ngOnInit() {
   }
 
+  /*Откримання інформації про студентів*/
   getStudents() {
     this.apiServiceService.getAllStudents()
       .subscribe(
@@ -33,6 +39,7 @@ export class StudentsComponent implements OnInit {
         error => this.errorMessage = <any>error);
   }
 
+  /*Відкриття модального вікна для створення нового студента*/
   openCreateDialog() {
     let dialogRef = this.dialog.open(CreateStudentsComponent);
     dialogRef.afterClosed().subscribe(result => {
@@ -42,6 +49,7 @@ export class StudentsComponent implements OnInit {
     });
   }
 
+  /*Відкриття модального вікна для редагування інформації про студента*/
   openEditDialog(data) {
     let dialogRef = this.dialog.open(CreateStudentsComponent, {
       data: {
@@ -56,6 +64,7 @@ export class StudentsComponent implements OnInit {
     });
   }
 
+  /*Відкриття модального вікна для видалення інформації про студента*/
   openDeletingDialog(data) {
     let dialogRef = this.dialog.open(DeleteStudentComponent, {
       data: {
@@ -69,6 +78,7 @@ export class StudentsComponent implements OnInit {
     });
   }
 
+  /*Відкриття модального вікна для перегляду інформації про студента*/
   openViewDialog(data) {
     this.dialog.open(CreateStudentsComponent, {
       data: {

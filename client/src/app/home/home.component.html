@@ -2,8 +2,8 @@
   <div class="info-block" fxLayout="column">
     <div>
       <h2>ГІРНИЧО-ЕЛЕКТРОМЕХАНІЧНИЙ КОЛЕДЖ</h2>
-      <h2>Державного вищого навчального закладу</h2>
-      <h2>"Криворізький національний університет"</h2>
+      <h3>Державного вищого навчального закладу</h3>
+      <h3>"Криворізький національний університет"</h3>
     </div>
     <br>
     <br>
@@ -22,7 +22,7 @@
     <div>
       <h3>Класний керівник: <span>{{config.teacher}}</span></h3>
     </div>
-    <button md-mini-fab class="button-edit-holidays" (click)="editDefaultInfo()">
+    <button md-mini-fab *ngIf="token" class="button-edit-holidays" (click)="editDefaultInfo()">
       <md-icon>edit</md-icon>
     </button>
   </div>
@@ -46,7 +46,7 @@
       </md-list>
     </div>
 
-    <button md-mini-fab class="button-edit-holidays" (click)="openHolidays()">
+    <button *ngIf="token" md-mini-fab class="button-edit-holidays" (click)="openHolidays()">
       <md-icon>edit</md-icon>
     </button>
   </md-sidenav>

@@ -1,6 +1,8 @@
 import {Component, OnInit, ViewContainerRef} from '@angular/core';
 import {ApiServiceService} from "../services/api-service.service";
 import {MdSnackBar} from '@angular/material';
+import {Router} from "@angular/router";
+import {GlobalService} from "../services/global.service";
 
 @Component({
   selector: 'app-login',
@@ -12,17 +14,22 @@ export class LoginComponent implements OnInit {
   private password: string;
   private errorMessage: string;
 
-  constructor(private apiServiceService: ApiServiceService, public snackBar: MdSnackBar) {
+  constructor(private apiServiceService: ApiServiceService,
+              private globalSrv: GlobalService,
+              public snackBar: MdSnackBar,
+              private router: Router) {
   }
 
   ngOnInit() {
   }
 
+  /*Запит для авторізації*/
   auth() {
     this.apiServiceService.login(this.login, this.password)
       .subscribe(
         token => {
-          localStorage.setItem('token', JSON.stringify({token: token}));
+          this.globalSrv.theToken = token;
+          this.router.navigate(['/']);
         },
         error => {
           this.errorMessage = <any>error;

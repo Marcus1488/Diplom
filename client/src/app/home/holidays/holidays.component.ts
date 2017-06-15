@@ -20,6 +20,7 @@ export class HolidaysComponent implements OnInit {
     this.getAllHolidays();
   }
 
+  /*Запит на сервер для отримання всіх подій*/
   getAllHolidays() {
     this.apiServiceService.getHolidays()
       .subscribe(
@@ -29,6 +30,7 @@ export class HolidaysComponent implements OnInit {
         error => this.errorMessage = <any>error);
   }
 
+  /*Запит на сервер для створення події*/
   addHoliday(event) {
     let data = event.data;
 
@@ -40,6 +42,7 @@ export class HolidaysComponent implements OnInit {
         error => this.errorMessage = <any>error);
   }
 
+  /*Запит на сервер для оновлення події*/
   updateHoliday(event) {
     let data = event.key;
 
@@ -51,6 +54,7 @@ export class HolidaysComponent implements OnInit {
         error => this.errorMessage = <any>error);
   }
 
+  /*Запит на сервер для видалення обраної події*/
   deleteHoliday(event) {
     let data = event.data;
 

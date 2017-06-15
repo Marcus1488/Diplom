@@ -28,6 +28,7 @@ export class EditDefaultInfoComponent implements OnInit {
   ngOnInit() {
   }
 
+  /*Запит на отримання конфігу с серверу*/
   getConfig() {
     this.apiServiceService.getConfig()
       .subscribe(
@@ -37,6 +38,7 @@ export class EditDefaultInfoComponent implements OnInit {
         error => this.errorMessage = <any>error);
   }
 
+  /*Запит на отримання списку груп з серверу*/
   getGroups() {
     this.apiServiceService.getGroups()
       .subscribe(
@@ -46,6 +48,7 @@ export class EditDefaultInfoComponent implements OnInit {
         error => this.errorMessage = <any>error);
   }
 
+  /*Запит на створення групи*/
   createGroup() {
     this.apiServiceService.createGroup(this.groupName)
       .subscribe(
@@ -57,6 +60,7 @@ export class EditDefaultInfoComponent implements OnInit {
         error => this.errorMessage = <any>error);
   }
 
+  /*Запит на оновлення вибраної групи*/
   updateConfig() {
     this.apiServiceService.updateConfig(this.config)
       .subscribe(

@@ -19,6 +19,7 @@ export class DeleteStudentComponent implements OnInit {
   ngOnInit() {
   }
 
+  /*Запит на видалення інформації про обраного студента*/
   deleteStudent() {
     this.apiServiceService.deleteStudent(this.student)
       .subscribe(

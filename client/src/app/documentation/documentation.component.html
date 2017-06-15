@@ -3,23 +3,15 @@
     <md-card>
       <md-card-title>Список файлів:</md-card-title>
       <md-card-content>
-        <md-list>
-          <md-list-item>
-            <md-icon md-list-icon>close</md-icon>
-            <span>students.pdf</span>
-          </md-list-item>
-          <md-list-item>
-            <md-icon md-list-icon>close</md-icon>
-            <span>отчет1.pdf</span>
-          </md-list-item>
-          <md-list-item>
-            <md-icon md-list-icon>close</md-icon>
-            <span>отчет5.pdf</span>
+        <md-list style="max-height: 85%;overflow: auto;">
+          <md-list-item *ngFor="let file of files">
+            <md-icon md-list-icon *ngIf="token" (click)="removeFiles(file.id)">close</md-icon>
+            <span (click)="viewPdf(file)">{{file.name}}</span>
           </md-list-item>
         </md-list>
       </md-card-content>
-      <md-card-actions>
-        <button md-mini-fab class="add-file">
+      <md-card-actions *ngIf="token">
+        <button md-mini-fab class="add-file" (click)="openUploadDialog()">
           <md-icon>add</md-icon>
         </button>
       </md-card-actions>
@@ -27,6 +19,6 @@
   </div>
   <div class="view-pdf" fxFlex="60" fxLayout="column" fxLayoutAlign="start center">
     <h2>Перегляд файлу: </h2>
-    <iframe width="70%" height="80%" [src]="pageurl" type="application/pdf"></iframe>
+    <iframe *ngIf="pdfSrc" width="70%" height="80%" [src]="pageurl" type="application/pdf"></iframe>
   </div>
 </div>

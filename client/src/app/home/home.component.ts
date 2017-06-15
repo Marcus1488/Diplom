@@ -3,6 +3,7 @@ import {HolidaysComponent} from "./holidays/holidays.component";
 import {MdDialog} from "@angular/material";
 import {ApiServiceService} from "../services/api-service.service";
 import {EditDefaultInfoComponent} from "./edit-default-info/edit-default-info.component";
+import {GlobalService} from "../services/global.service";
 
 @Component({
   selector: 'app-home',
@@ -10,6 +11,8 @@ import {EditDefaultInfoComponent} from "./edit-default-info/edit-default-info.co
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
+  token = JSON.parse(localStorage.getItem('token'));
+
   currentValue: Date = new Date();
   minDateValue: Date = undefined;
   maxDateValue: Date = undefined;
@@ -29,16 +32,20 @@ export class HomeComponent implements OnInit {
     }
   };
 
-  constructor(public dialog: MdDialog, private apiServiceService: ApiServiceService) {
+
+  constructor(public dialog: MdDialog, private apiServiceService: ApiServiceService, private globalSrv: GlobalService) {
+    globalSrv.itemValue.subscribe((token) => {
+      this.token = token;
+    })
   }
 
+  /*Отримання даних при ініціалізації компонента*/
   ngOnInit() {
     this.getConfig();
     this.getHolidaysByDate();
-    /*let token = JSON.parse(localStorage.getItem('token'));
-    console.log(token);*/
   }
 
+  /*Отримання подій по вибраній даті*/
   getHolidaysByDate() {
     this.apiServiceService.getHolidaysByDate(this.currentValue)
       .subscribe(
@@ -48,10 +55,12 @@ export class HomeComponent implements OnInit {
         error => this.errorMessage = <any>error);
   }
 
+  /*Відкриття діалогово вікна з таблицею подій*/
   openHolidays() {
     this.dialog.open(HolidaysComponent);
   }
 
+  /*Запит на api для редагування основної інформації*/
   editDefaultInfo() {
     let dialogRef = this.dialog.open(EditDefaultInfoComponent);
     dialogRef.afterClosed().subscribe(result => {
@@ -59,6 +68,7 @@ export class HomeComponent implements OnInit {
     });
   }
 
+  /*Отримання конфігу з сервера*/
   getConfig() {
     this.apiServiceService.getConfig()
       .subscribe(

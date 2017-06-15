@@ -3,6 +3,7 @@ import {ApiServiceService} from "../../services/api-service.service";
 import {MdDialog} from "@angular/material";
 import {CreateStudentsComponent} from "../create-students/create-students.component";
 import {DeleteStudentComponent} from "../delete-student/delete-student.component";
+import {GlobalService} from "../../services/global.service";
 
 @Component({
   selector: 'app-beneficiaries',
@@ -10,15 +11,20 @@ import {DeleteStudentComponent} from "../delete-student/delete-student.component
   styleUrls: ['./beneficiaries.component.scss']
 })
 export class BeneficiariesComponent implements OnInit {
+  token = JSON.parse(localStorage.getItem('token'));
   public students: any[];
   public errorMessage: any;
 
-  constructor(private apiServiceService: ApiServiceService, public dialog: MdDialog) {
+  constructor(private apiServiceService: ApiServiceService, public dialog: MdDialog, private globalSrv: GlobalService) {
+    globalSrv.itemValue.subscribe((token) => {
+      this.token = token;
+    })
   }
 
   ngOnInit() {
   }
 
+  /*Откримання інформації про студентів*/
   getBeneficiariesStudents() {
     this.apiServiceService.getBeneficiariesStudents()
       .subscribe(
@@ -32,6 +38,7 @@ export class BeneficiariesComponent implements OnInit {
         error => this.errorMessage = <any>error);
   }
 
+  /*Відкриття модального вікна для редагування інформації про студента*/
   openEditDialog(data) {
     let dialogRef = this.dialog.open(CreateStudentsComponent, {
       data: {
@@ -46,6 +53,7 @@ export class BeneficiariesComponent implements OnInit {
     });
   }
 
+  /*Відкриття модального вікна для видалення інформації про студента*/
   openDeletingDialog(data) {
     let dialogRef = this.dialog.open(DeleteStudentComponent, {
       data: {
@@ -59,6 +67,7 @@ export class BeneficiariesComponent implements OnInit {
     });
   }
 
+  /*Відкриття модального вікна для перегляду інформації про студента*/
   openViewDialog(data) {
     this.dialog.open(CreateStudentsComponent, {
       data: {

@@ -1,5 +1,6 @@
 import { Directive, ElementRef, HostListener, Input } from '@angular/core';
 
+/*Директива, яка дозволяє ввести тільки цифри*/
 @Directive({
   selector: '[TypeNumberDirective]'
 })
@@ -9,6 +10,7 @@ export class TypeNumberDirective {
 
   @Input() TypeNumberDirective: boolean;
 
+  /*Слухач подій*/
   @HostListener('keydown', ['$event']) onKeyDown(event) {
     let e = <KeyboardEvent> event;
     if (this.TypeNumberDirective) {

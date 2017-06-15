@@ -2,6 +2,7 @@ import {Component, Input, OnInit, Pipe, PipeTransform} from '@angular/core';
 import {MdDialog, MdDialogRef} from '@angular/material';
 import {SettingsComponent} from "../settings/settings.component";
 import {ApiServiceService} from "../../../services/api-service.service";
+import {GlobalService} from "../../../services/global.service";
 
 @Pipe({name: 'keys'})
 export class KeysPipe implements PipeTransform {
@@ -23,6 +24,7 @@ export class KeysPipe implements PipeTransform {
 })
 export class CourseComponent implements OnInit {
   @Input() courseNumber: number;
+  token = JSON.parse(localStorage.getItem('token'));
 
   errorMessage: any;
   firstSemesterItems: any;
@@ -33,18 +35,23 @@ export class CourseComponent implements OnInit {
   };
 
   constructor(public dialog: MdDialog,
-              private apiServiceService: ApiServiceService) {
+              private apiServiceService: ApiServiceService, private globalSrv: GlobalService) {
+    globalSrv.itemValue.subscribe((token) => {
+      this.token = token;
+    })
   }
 
   ngOnInit() {
     this.updateAllInfo();
   };
 
+  /*Отримання всієї інформації*/
   updateAllInfo() {
     this.getSchoolItems(this.courseNumber);
     this.getAllPerformance(this.courseNumber);
   }
 
+  /*Оновлення інформації по оцінкам для обраного студента*/
   updateRating(e) {
     let data;
 
@@ -60,6 +67,7 @@ export class CourseComponent implements OnInit {
         error => this.errorMessage = <any>error);
   }
 
+  /*Отримання всех предметів для обраного семестру*/
   getSchoolItems(courseNumber) {
     this.apiServiceService.getSchoolItems(courseNumber, 1)
       .subscribe(
@@ -75,6 +83,7 @@ export class CourseComponent implements OnInit {
         error => this.errorMessage = <any>error);
   };
 
+  /*Отримання всіх оцінок для двох семестрів*/
   getAllPerformance(courseNumber) {
     this.apiServiceService.getAllPerformance(courseNumber, 1)
       .subscribe(
@@ -90,6 +99,7 @@ export class CourseComponent implements OnInit {
         error => this.errorMessage = <any>error);
   };
 
+  /*Відкриття вікна для редагування предметів*/
   openSettingItems(semester) {
     let dialogRef = this.dialog.open(SettingsComponent, {
       data: {

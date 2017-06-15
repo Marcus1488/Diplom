@@ -86,6 +86,7 @@ export class CreateStudentsComponent implements OnInit {
   public config: any;
   public typeView: any;
 
+  /*Отримання даних при ініціалізації модального вікна*/
   constructor(public dialogRef: MdDialogRef<CreateStudentsComponent>,
               private apiServiceService: ApiServiceService) {
     if (this.dialogRef._containerInstance.dialogConfig && this.dialogRef._containerInstance.dialogConfig.data) {
@@ -115,6 +116,7 @@ export class CreateStudentsComponent implements OnInit {
           this.config = data;
           this.student.groupId = this.config.activeGroupId;
 
+          /*аналіз інформації про батьків*/
           if (this.mother.firstName && this.mother.lastName && this.mother.secondName
             && this.mother.phone && this.mother.addressWork) {
             this.student.mother = this.mother;
@@ -133,6 +135,7 @@ export class CreateStudentsComponent implements OnInit {
             }
           }
 
+          /*Запит на створення нового студента*/
           this.apiServiceService.createStudent(this.student)
             .subscribe(
               data => {
@@ -145,6 +148,7 @@ export class CreateStudentsComponent implements OnInit {
   }
 
   updateStudent() {
+    /*аналіз інформації про батьків*/
     if (this.mother.firstName && this.mother.lastName && this.mother.secondName
       && this.mother.phone && this.mother.addressWork) {
       this.student.mother = this.mother;
@@ -163,6 +167,7 @@ export class CreateStudentsComponent implements OnInit {
       }
     }
 
+    /*Запит на оновлення даних про студента*/
     this.apiServiceService.updateStudent(this.student)
       .subscribe(
         data => {
