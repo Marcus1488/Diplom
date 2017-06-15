@@ -1442,6 +1442,7 @@ var DocumentationComponent = (function () {
             _this.token = token;
         });
     }
+    /*Завантащення списку файлів*/
     DocumentationComponent.prototype.getFiles = function () {
         var _this = this;
         this.apiServiceService.getFiles()
@@ -1449,10 +1450,12 @@ var DocumentationComponent = (function () {
             _this.files = data;
         }, function (error) { return _this.errorMessage = error; });
     };
+    /*функція для перегляду файлу*/
     DocumentationComponent.prototype.viewPdf = function (file) {
         this.pdfSrc = "http://diplom-bezrukaviy.herokuapp.com/api/file/" + file.name;
         this.pageurl = this.domSanitizer.bypassSecurityTrustResourceUrl(this.pdfSrc);
     };
+    /*функція для виделання файла по його id*/
     DocumentationComponent.prototype.removeFiles = function (id) {
         var _this = this;
         this.apiServiceService.removeFiles(id)
@@ -1463,6 +1466,7 @@ var DocumentationComponent = (function () {
     DocumentationComponent.prototype.ngOnInit = function () {
         this.getFiles();
     };
+    /*Функція для відкриття модального вікна з завантаженням файлів*/
     DocumentationComponent.prototype.openUploadDialog = function () {
         var _this = this;
         var dialogRef = this.dialog.open(__WEBPACK_IMPORTED_MODULE_4__upload_files_upload_files_component__["a" /* UploadFilesComponent */]);
@@ -3488,8 +3492,10 @@ var GlobalService = (function () {
         },
         /*Сетер для встановленню токена при авторізації*/
         set: function (token) {
-            this.itemValue.next(token);
-            localStorage.setItem('token', JSON.stringify({ token: token }));
+            if (token) {
+                this.itemValue.next(token);
+                localStorage.setItem('token', JSON.stringify({ token: token }));
+            }
         },
         enumerable: true,
         configurable: true

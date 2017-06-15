@@ -29,6 +29,7 @@ export class DocumentationComponent implements OnInit {
     })
   }
 
+  /*Завантащення списку файлів*/
   getFiles() {
     this.apiServiceService.getFiles()
       .subscribe(
@@ -38,11 +39,13 @@ export class DocumentationComponent implements OnInit {
         error => this.errorMessage = <any>error);
   }
 
+  /*функція для перегляду файлу*/
   viewPdf(file) {
     this.pdfSrc = `http://diplom-bezrukaviy.herokuapp.com/api/file/${file.name}`;
     this.pageurl = this.domSanitizer.bypassSecurityTrustResourceUrl(this.pdfSrc);
   }
 
+  /*функція для виделання файла по його id*/
   removeFiles(id) {
     this.apiServiceService.removeFiles(id)
       .subscribe(
@@ -56,6 +59,7 @@ export class DocumentationComponent implements OnInit {
     this.getFiles();
   }
 
+  /*Функція для відкриття модального вікна з завантаженням файлів*/
   openUploadDialog() {
     let dialogRef = this.dialog.open(UploadFilesComponent);
     dialogRef.afterClosed().subscribe(result => {

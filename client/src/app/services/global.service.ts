@@ -11,8 +11,10 @@ export class GlobalService {
 
   /*Сетер для встановленню токена при авторізації*/
   set theToken(token) {
-    this.itemValue.next(token);
-    localStorage.setItem('token', JSON.stringify({token: token}));
+    if (token) {
+      this.itemValue.next(token);
+      localStorage.setItem('token', JSON.stringify({token: token}));
+    }
   }
 
   /*Гетер для токена*/
