@@ -12,3 +12,15 @@ router.get('/', function (req, res, next) {
 router.get('/students', function (req, res, next) {
   res.render('index');
 });
+
+router.get('/parents', function (req, res, next) {
+  res.render('index');
+});
+
+router.get('/studies', function (req, res, next) {
+  res.render('index');
+});
+
+router.get('/documentation', function (req, res, next) {
+  res.render('index');
+});
