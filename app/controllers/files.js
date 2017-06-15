@@ -24,7 +24,7 @@ router.get('/files', Promise.coroutine(function *(req, res, next) {
 
 const storage = multer.diskStorage({
   destination: function (req, files, cb) {
-    cb(null, './uploads/')
+    cb(null, `${path.resolve(__dirname, '../../uploads/')}`)
   },
   filename: function (req, files, cb) {
     cb(null, files.originalname);
