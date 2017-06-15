@@ -1450,7 +1450,7 @@ var DocumentationComponent = (function () {
         }, function (error) { return _this.errorMessage = error; });
     };
     DocumentationComponent.prototype.viewPdf = function (file) {
-        this.pdfSrc = "http://localhost:3000/api/file/" + file.name;
+        this.pdfSrc = "http://diplom-bezrukaviy.herokuapp.com/api/file/" + file.name;
         this.pageurl = this.domSanitizer.bypassSecurityTrustResourceUrl(this.pdfSrc);
     };
     DocumentationComponent.prototype.removeFiles = function (id) {
