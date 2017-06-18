@@ -123,7 +123,7 @@
         <div fxLayout="row" fxLayoutAlign="space-between center" style="padding: 0 10px; margin-top: 20px">
 
           <md-select [disabled]="typeView === 'view'"
-                     placeholder="Роль у группі" fxFlex="48"
+                     placeholder="Роль у групі" fxFlex="48"
                      name="groupAsset"
                      [(ngModel)]="student.groupAsset">
             <md-option *ngFor="let item of groupAssets" [value]="item.id">{{item.name}}</md-option>

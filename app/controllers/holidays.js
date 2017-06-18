@@ -36,7 +36,26 @@ router.get('/holidays/:date', Promise.coroutine(function *(req, res, next) {
           return holiday
         }
       });
-      res.status(200).json(holidays);
+
+      let config = yield db.Config.findAll();
+      let students = yield db.Students.findAll({where: {groupId: config[0].activeGroupId}});
+
+      let birthdateList = [];
+        _.forEach(students, (student) => {
+        let newMonth =  moment(student.dateOfBirthday).get('month');
+        let newDay =  moment(student.dateOfBirthday).get('date');
+
+        if (month === newMonth && day === newDay) {
+          let obj = {
+            name: `День народження - ${student.lastName + ' ' + student.firstName}`
+          };
+          birthdateList.push(obj);
+        }
+      });
+
+      let allHolidays = holidays.concat(birthdateList);
+
+      res.status(200).json(allHolidays);
     } catch (err) {
       return next(err);
     }
