@@ -1,0 +1,37 @@
+<md-dialog-content>
+
+  <form #infoForm="ngForm">
+    <div fxLayout="row" fxLayoutAlign="space-between">
+      <md-input-container fxFlex="33">
+        <input required [disabled]="newData.typeView === 'view'"
+               mdInput placeholder="Прізвище" name="lastName" [(ngModel)]="newData.parent.lastName">
+      </md-input-container>
+
+      <md-input-container fxFlex="33">
+        <input required [disabled]="newData.typeView === 'view'"
+               mdInput placeholder="Ім'я" name="firstName" [(ngModel)]="newData.parent.firstName">
+      </md-input-container>
+      <md-input-container fxFlex="33">
+        <input required [disabled]="newData.typeView === 'view'"
+               mdInput placeholder="По-батькові" name="secondName" [(ngModel)]="newData.parent.secondName">
+      </md-input-container>
+    </div>
+    <div fxLayout="row" fxLayoutAlign="space-between">
+
+      <md-input-container fxFlex="48">
+        <input required TypeNumberDirective="true" [disabled]="newData.typeView === 'view'"
+               mdInput placeholder="Телефон" name="phone" [(ngModel)]="newData.parent.phone">
+      </md-input-container>
+
+      <md-input-container fxFlex="48">
+        <input [disabled]="newData.typeView === 'view'"
+               mdInput placeholder="Місце роботи" name="addressWork" [(ngModel)]="newData.parent.addressWork">
+      </md-input-container>
+    </div>
+  </form>
+</md-dialog-content>
+
+<md-dialog-actions fxLayout="row" fxLayoutAlign="space-around">
+  <button [disabled]="!infoForm.valid" *ngIf="newData.typeView === 'edit'" md-raised-button fxFlex="20" (click)="updateParent()">Оновити</button>
+  <button md-raised-button fxFlex="20" md-dialog-close>Закрити</button>
+</md-dialog-actions>

@@ -1,0 +1,10 @@
+.blocks {
+  width: 300px;
+
+  &:last-child {
+    margin-left: 20px;
+  }
+}
+md-select {
+  margin: 10px 0;
+}

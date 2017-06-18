@@ -1,0 +1,52 @@
+<dx-data-grid
+  [showBorders]="true"
+  [showRowLines]="true"
+  [dataSource]="students">
+  <dxo-filter-row
+    [visible]="true"
+    betweenStartText="З"
+    betweenEndText="По"
+    resetOperationText="Відмінити"></dxo-filter-row>
+  <dxo-paging [pageSize]="10"></dxo-paging>
+  <dxo-pager
+    [showPageSizeSelector]="true"
+    [allowedPageSizes]="[5, 10, 15, 20]"
+    [showInfo]="true">
+  </dxo-pager>
+  <dxi-column
+    dataField="studentTicket"
+    caption="Студ білет"></dxi-column>
+  <dxi-column
+    dataField="fullName"
+    caption="ФІО"></dxi-column>
+  <dxi-column
+    dataField="phone"
+    caption="Телефон"></dxi-column>
+  <dxi-column
+    dataField="dateOfBirthday"
+    caption="Дата народження"
+    dataType="date"
+    cellTemplate="date"></dxi-column>
+  <dxi-column
+    dataField="fullAddress"
+    caption="Адреса"></dxi-column>
+  <dxi-column
+    dataField="reasonBeneficiaries"
+    caption="Пільга"></dxi-column>
+
+  <dxi-column *ngIf="token"
+    caption="Дії"
+    dataField="students"
+    cellTemplate="actions">
+  </dxi-column>
+
+  <div *dxTemplate="let data of 'actions'" fxLayoutAlign="center center">
+    <md-icon (click)="openViewDialog(data.data)">remove_red_eye</md-icon>
+    <md-icon (click)="openEditDialog(data.data)">mode_edit</md-icon>
+    <md-icon (click)="openDeletingDialog(data.data)">delete</md-icon>
+  </div>
+
+  <div *dxTemplate="let data of 'date'">
+    {{data.value | date: 'dd/MM/yyyy'}}
+  </div>
+</dx-data-grid>

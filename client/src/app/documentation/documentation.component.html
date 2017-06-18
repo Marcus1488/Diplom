@@ -1,0 +1,24 @@
+<div style="height: calc(100vh - 50px);">
+  <div class="file-list" fxFlex="40" fxLayout="column" fxLayoutAlign="start center">
+    <md-card>
+      <md-card-title>Список файлів:</md-card-title>
+      <md-card-content>
+        <md-list style="max-height: 85%;overflow: auto;">
+          <md-list-item *ngFor="let file of files">
+            <md-icon md-list-icon *ngIf="token" (click)="removeFiles(file.id)">close</md-icon>
+            <span (click)="viewPdf(file)">{{file.name}}</span>
+          </md-list-item>
+        </md-list>
+      </md-card-content>
+      <md-card-actions *ngIf="token">
+        <button md-mini-fab class="add-file" (click)="openUploadDialog()">
+          <md-icon>add</md-icon>
+        </button>
+      </md-card-actions>
+    </md-card>
+  </div>
+  <div class="view-pdf" fxFlex="60" fxLayout="column" fxLayoutAlign="start center">
+    <h2>Перегляд файлу: </h2>
+    <iframe *ngIf="pdfSrc" width="70%" height="80%" [src]="pageurl" type="application/pdf"></iframe>
+  </div>
+</div>

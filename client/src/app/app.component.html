@@ -1,0 +1,40 @@
+<header class="min-width-content">
+  <div fxFill class="flex-container" fxLayout="row" fxLayoutAlign="space-around center">
+    <div fxFlex="25">
+      <img src="">
+    </div>
+    <div fxFlex="50" fxLayout="row" fxLayoutAlign="center">
+      <h1>Інформаційна сторінка класного керівника</h1>
+    </div>
+    <div *ngIf="!token" fxFlex="25" fxLayout="row" fxLayoutAlign="end" class="login">
+      <button md-raised-button routerLink="login">Увійти</button>
+    </div>
+    <div *ngIf="token"  fxFlex="25" fxLayout="row" fxLayoutAlign="end" class="login">
+      <button md-raised-button (click)="logout()">Вийти</button>
+    </div>
+  </div>
+</header>
+<md-sidenav-container class="min-width-content">
+  <md-sidenav [opened]="true" #sidenav mode="side">
+    <md-nav-list class="left-menu">
+      <a md-list-item routerLink="" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+        Головна
+      </a>
+      <a md-list-item routerLink="students" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+        Відомості про студентів
+      </a>
+      <a md-list-item routerLink="parents" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+        Відомості про батьків
+      </a>
+      <a md-list-item routerLink="studies" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+        Контроль якості навчання
+      </a>
+      <a md-list-item routerLink="documentation" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+        Документація класного керівника
+      </a>
+    </md-nav-list>
+  </md-sidenav>
+  <div class="main-content">
+    <router-outlet></router-outlet>
+  </div>
+</md-sidenav-container>

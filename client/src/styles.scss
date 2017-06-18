@@ -1,0 +1,30 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/theming';
+
+@include mat-core();
+
+$primary: mat-palette($mat-light-blue, 800);
+$accent: mat-palette($mat-light-blue, 600, A100, A400);
+$warn: mat-palette($mat-red, 600);
+$theme: mat-light-theme($primary, $accent, $warn);
+
+@include angular-material-theme($theme);
+
+body {
+  margin: 0px !important;
+}
+button {
+  color: black !important;
+}
+
+.custom-snackBar {
+  background: #ff5959 !important;
+}
+
+.min-width-content {
+  min-width: 800px;
+}
+
+md-icon {
+  cursor: pointer;
+}

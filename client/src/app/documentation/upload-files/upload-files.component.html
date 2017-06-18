@@ -1,0 +1,8 @@
+<md-dialog-content>
+  <input type="file" (change)="fileChange($event)" placeholder="Завантажити файл" accept=".pdf">
+</md-dialog-content>
+
+<md-dialog-actions style="margin-top: 20px;" fxLayout="row" fxLayoutAlign="space-around">
+  <button md-raised-button [disabled]="!fileList" (click)="upload()">Завантажити</button>
+  <button md-raised-button md-dialog-close>Закрити</button>
+</md-dialog-actions>

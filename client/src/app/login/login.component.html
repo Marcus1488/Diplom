@@ -1,0 +1,19 @@
+<div style="height: calc(100vh - 50px);" fxFlex="100" fxLayoutAlign="center center">
+  <md-card fxFlex="350px">
+    <md-card-content>
+      <form>
+        <div fxLayout="column" fxLayoutAlign="space-between center">
+          <md-input-container>
+            <input mdInput name="login" placeholder="Login"
+                   [(ngModel)]="login">
+          </md-input-container>
+          <md-input-container>
+            <input mdInput name="password" placeholder="Password"
+                   [(ngModel)]="password" type="password">
+          </md-input-container>
+          <button md-raised-button [disabled]="!login || !password" (click)="auth()">Увійти</button>
+        </div>
+      </form>
+    </md-card-content>
+  </md-card>
+</div>

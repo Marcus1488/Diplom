@@ -1,0 +1,11 @@
+<md-tab-group (selectChange)="changeSelectedTab($event)">
+  <md-tab label="Оцінки">
+    <app-performance></app-performance>
+  </md-tab>
+  <md-tab label="Пропуски">
+    <app-omissions></app-omissions>
+  </md-tab>
+  <md-tab label="Загальна">
+    <app-total-performance></app-total-performance>
+  </md-tab>
+</md-tab-group>

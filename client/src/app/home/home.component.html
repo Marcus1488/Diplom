@@ -1,0 +1,56 @@
+<md-sidenav-container>
+  <div class="info-block" fxLayout="column">
+    <div>
+      <h2>ГІРНИЧО-ЕЛЕКТРОМЕХАНІЧНИЙ КОЛЕДЖ</h2>
+      <h3>Державного вищого навчального закладу</h3>
+      <h3>"Криворізький національний університет"</h3>
+    </div>
+    <br>
+    <br>
+    <div>
+      <h3>Відділення: <span>{{config.department}}</span></h3>
+    </div>
+    <div>
+      <h3>Спеціальність: <span>{{config.speciality}}</span></h3>
+    </div>
+    <div>
+      <h3>Галузь знань: <span>{{config.discipline}}</span></h3>
+    </div>
+    <div>
+      <h3>Група: <span>{{config.group.name}}</span></h3>
+    </div>
+    <div>
+      <h3>Класний керівник: <span>{{config.teacher}}</span></h3>
+    </div>
+    <button md-mini-fab *ngIf="token" class="button-edit-holidays" (click)="editDefaultInfo()">
+      <md-icon>edit</md-icon>
+    </button>
+  </div>
+  <md-sidenav class="calendar-sidenav" [opened]="true" #sidenav mode="side" align="end">
+    <dx-calendar #calendar
+                 (onValueChanged)="getHolidaysByDate()"
+                 id="calendar-container"
+                 [min]="minDateValue"
+                 [max]="maxDateValue"
+                 [firstDayOfWeek]="0"
+                 [disabled]="false"
+                 [(value)]="currentValue"
+                 [zoomLevel]="zoomLevels[0]"
+                 [cellTemplate]="cellTemplate">
+    </dx-calendar>
+
+    <div class="holiday-list">
+      <h3 *ngIf="holidays && holidays.length > 0;else empty_holidays">Список подій:</h3>
+      <md-list>
+        <md-list-item *ngFor="let holiday of holidays">{{holiday.name}}</md-list-item>
+      </md-list>
+    </div>
+
+    <button *ngIf="token" md-mini-fab class="button-edit-holidays" (click)="openHolidays()">
+      <md-icon>edit</md-icon>
+    </button>
+  </md-sidenav>
+</md-sidenav-container>
+<ng-template #empty_holidays>
+  <h3>Немає запланованих подій на обрану дату!</h3>
+</ng-template>

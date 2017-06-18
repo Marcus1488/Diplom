@@ -1,0 +1,98 @@
+<md-card>
+  <md-card-title>{{courseNumber}} курс</md-card-title>
+  <md-card-content>
+    <md-tab-group>
+      <md-tab label="1 семестр">
+        <div class="box-tab-content">
+          <div fxLayoutAlign="end" style="margin-bottom: 10px" *ngIf="token">
+            <button md-raised-button (click)="openSettingItems(1)">Настройки місяців</button>
+          </div>
+          <div *ngIf="firstSemesterItems && firstSemesterItems.length > 0;else empty_school_items">
+            <dx-data-grid
+              id="gridContainer"
+              [dataSource]="omissionAllData.firstSemester"
+              [columnAutoWidth]="true"
+              [showBorders]="true"
+              [showRowLines]="true"
+              [allowColumnReordering]="true"
+              (onRowUpdated)="updateOmissions($event)">
+
+              <dxo-editing
+                mode="cell"
+                [allowUpdating]="token ? true : false">
+              </dxo-editing>
+
+              <dxi-column dataField="student.fullName" caption="ФІО" [allowEditing]="false"></dxi-column>
+
+              <dxi-column *ngFor="let entry of omissionAllData.firstSemester | keys"
+                          caption="{{entry.value.name}}">
+                <dxi-column dataField="{{entry.key}}.rating.serious"
+                            caption="Поважні"
+                            dataType="number">
+
+                </dxi-column>
+                <dxi-column dataField="{{entry.key}}.rating.notSerious"
+                            caption="Не поважні"
+                            dataType="number">
+                </dxi-column>
+                <dxi-column dataField="{{entry.key}}.rating"
+                            [allowEditing]="false"
+                            caption="Всього"
+                            cellTemplate="total">
+                </dxi-column>
+              </dxi-column>
+
+              <div *dxTemplate="let data of 'total'" fxLayoutAlign="center center">
+                {{data.value.serious + data.value.notSerious}}
+              </div>
+            </dx-data-grid>
+          </div>
+        </div>
+      </md-tab>
+      <md-tab label="2 семестр">
+        <div class="box-tab-content">
+          <div fxLayoutAlign="end" style="margin-bottom: 10px" *ngIf="token">
+            <button md-raised-button (click)="openSettingItems(2)">Настройки місяців</button>
+          </div>
+          <div *ngIf="secondSemesterItems && secondSemesterItems.length > 0;else empty_school_items">
+            <dx-data-grid
+              id="gridContainer1"
+              [dataSource]="omissionAllData.secondSemester"
+              [columnAutoWidth]="true"
+              [showBorders]="true"
+              [showRowLines]="true"
+              [allowColumnReordering]="true"
+              (onRowUpdated)="updateOmissions($event)">
+              <dxo-editing
+                mode="cell"
+                [allowUpdating]="token ? true : false">
+              </dxo-editing>
+
+              <dxi-column dataField="student.fullName" caption="ФІО" [allowEditing]="false"></dxi-column>
+
+              <dxi-column *ngFor="let entry of omissionAllData.secondSemester | keys"
+                          caption="{{entry.value.name}}">
+                <dxi-column dataField="{{entry.key}}.rating.serious"
+                            caption="Поважні"
+                            dataType="number">
+
+                </dxi-column>
+                <dxi-column dataField="{{entry.key}}.rating.notSerious"
+                            caption="Не поважні"
+                            dataType="number">
+
+                </dxi-column>
+              </dxi-column>
+            </dx-data-grid>
+          </div>
+        </div>
+      </md-tab>
+    </md-tab-group>
+  </md-card-content>
+</md-card>
+
+<ng-template #empty_school_items>
+  <div fxLayoutAlign="center">
+    Додайте місяців
+  </div>
+</ng-template>

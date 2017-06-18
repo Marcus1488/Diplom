@@ -1,0 +1,14 @@
+<md-tab-group (selectChange)="changeSelectedTab($event)">
+  <md-tab label="Анкетні дані">
+    <app-students></app-students>
+  </md-tab>
+  <md-tab label="Пільговики">
+    <app-beneficiaries></app-beneficiaries>
+  </md-tab>
+  <md-tab label="Неповні сім'ї">
+    <app-parent></app-parent>
+  </md-tab>
+  <md-tab label="Актив групи">
+    <app-active-groups></app-active-groups>
+  </md-tab>
+</md-tab-group>
